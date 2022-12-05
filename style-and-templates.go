@@ -12,6 +12,7 @@ func main() {
 	// router.StaticFS("/more_static", http.Dir("my_file_system"))
 	router.StaticFile("/favicon.ico", "./resources/favicon.ico")
 	router.LoadHTMLGlob("templates/**/*.tmpl")
+	router.StaticFS("/static", http.Dir("./static"))
 	router.GET("/", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "index/index.tmpl", gin.H{
 			"title": "Welcome",
