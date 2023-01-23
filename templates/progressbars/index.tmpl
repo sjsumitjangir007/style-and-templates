@@ -1,0 +1,25 @@
+{{define "progressbars/index.tmpl"}}
+<!DOCTYPE html>
+<html>
+
+<head>
+  {{template "layout/layout_metatags" .}}
+  {{template "layout/layout_head_scripts" .}}
+</head>
+
+<div class="root flex">
+    {{template "layout/layout_aside" .}}
+
+  <div class="h-screen flex flex-col w-full">
+    {{template "layout/layout_header" .}}
+    <section id="main-section" class="p-4 w-full h-full bg-yellow-50/30 dark:bg-gray-700 overflow-auto">
+        {{template "progressbars/template" .}}
+    </section>
+    {{template "layout/layout_footer" .}}
+  </div>
+</div>
+
+</body>
+
+</html>
+{{end}}

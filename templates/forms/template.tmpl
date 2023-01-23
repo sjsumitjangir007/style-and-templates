@@ -1,0 +1,371 @@
+{{define "forms/template"}}
+
+<div class="cards-section flex flex-col flex-wrap">
+    <h3 class="text-xl pb-5">
+        Form Inputs
+    </h3>
+    <div class="flex flex-wrap flex-direction-row gap-4">
+        <div class="preview-section">
+            <div>
+
+                <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select your
+                    country</label>
+                <select id="countries"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option>United States</option>
+                    <option>Canada</option>
+                    <option>France</option>
+                    <option>Germany</option>
+                </select>
+
+            </div>
+        </div>
+        <div class="preview-section">
+            <div>
+
+                <fieldset>
+                    <legend class="sr-only">Checkbox variants</legend>
+
+                    <div class="flex items-center mb-4">
+                        <input checked="" id="checkbox-1" type="checkbox" value=""
+                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checkbox-1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">I
+                            agree to the <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terms and
+                                conditions</a>.</label>
+                    </div>
+
+                    <div class="flex items-center mb-4">
+                        <input id="checkbox-2" type="checkbox" value=""
+                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checkbox-2" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">I want
+                            to get promotional offers</label>
+                    </div>
+
+                    <div class="flex items-center mb-4">
+                        <input id="checkbox-3" type="checkbox" value=""
+                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checkbox-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">I am
+                            18 years or older</label>
+                    </div>
+
+                    <div class="flex mb-4">
+                        <div class="flex items-center h-5">
+                            <input id="helper-checkbox" aria-describedby="helper-checkbox-text" type="checkbox" value=""
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        </div>
+                        <div class="ml-2 text-sm">
+                            <label for="helper-checkbox" class="font-medium text-gray-900 dark:text-gray-300">Free
+                                shipping via Flowbite</label>
+                            <p id="helper-checkbox-text" class="text-xs font-normal text-gray-500 dark:text-gray-400">
+                                For orders shipped from $25 in books or $29 in other categories</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center">
+                        <input id="international-shipping-disabled" type="checkbox" value=""
+                            class="w-4 h-4 border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+                            disabled="">
+                        <label for="international-shipping-disabled"
+                            class="ml-2 text-sm font-medium text-gray-400 dark:text-gray-500">Eligible for international
+                            shipping (disabled)</label>
+                    </div>
+                </fieldset>
+
+            </div>
+        </div>
+        <div class="preview-section">
+            <div>
+
+                <fieldset>
+                    <legend class="sr-only">Countries</legend>
+
+                    <div class="flex items-center mb-4">
+                        <input id="country-option-1" type="radio" name="countries" value="USA"
+                            class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600"
+                            checked="">
+                        <label for="country-option-1"
+                            class="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                            United States
+                        </label>
+                    </div>
+
+                    <div class="flex items-center mb-4">
+                        <input id="country-option-2" type="radio" name="countries" value="Germany"
+                            class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="country-option-2"
+                            class="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                            Germany
+                        </label>
+                    </div>
+
+                    <div class="flex items-center mb-4">
+                        <input id="country-option-3" type="radio" name="countries" value="Spain"
+                            class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="country-option-3"
+                            class="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                            Spain
+                        </label>
+                    </div>
+
+                    <div class="flex items-center mb-4">
+                        <input id="country-option-4" type="radio" name="countries" value="United Kingdom"
+                            class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring:blue-300 dark:focus-ring-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="country-option-4"
+                            class="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                            United Kingdom
+                        </label>
+                    </div>
+
+                    <div class="flex items-center">
+                        <input id="option-disabled" type="radio" name="countries" value="China"
+                            class="w-4 h-4 border-gray-200 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:bg-gray-700 dark:border-gray-600"
+                            disabled="">
+                        <label for="option-disabled"
+                            class="block ml-2 text-sm font-medium text-gray-300 dark:text-gray-700">
+                            China (disabled)
+                        </label>
+                    </div>
+                </fieldset>
+
+            </div>
+        </div>
+        <div class="preview-section">
+            <div>
+
+                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="user_avatar">Upload
+                    file</label>
+                <input
+                    class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                    aria-describedby="user_avatar_help" id="user_avatar" type="file">
+                <div class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="user_avatar_help">A profile picture is
+                    useful to confirm your are logged into your account</div>
+
+            </div>
+        </div>
+        <div class="preview-section">
+            <div>
+
+                <label class="relative inline-flex items-center mb-4 cursor-pointer">
+                    <input type="checkbox" value="" class="sr-only peer">
+                    <div
+                        class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+                    </div>
+                    <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Toggle me</span>
+                </label>
+
+                <label class="relative inline-flex items-center mb-4 cursor-pointer">
+                    <input type="checkbox" value="" class="sr-only peer" checked="">
+                    <div
+                        class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+                    </div>
+                    <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Checked toggle</span>
+                </label>
+
+                <label class="relative inline-flex items-center mb-3 cursor-pointer">
+                    <input type="checkbox" value="" class="sr-only peer" disabled="">
+                    <div
+                        class="w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+                    </div>
+                    <span class="ml-3 text-sm font-medium text-gray-400 dark:text-gray-500">Disabled toggle</span>
+                </label>
+
+            </div>
+        </div>
+
+
+        <div class="preview-section">
+            <div class="flex gap-10">
+                <div class="inline-flex items-center"><label
+                        class="relative flex items-center cursor-pointer p-3 rounded-full" for="html"
+                        style="position: relative; overflow: hidden;"><input id="html" name="type" type="radio"
+                            class="peer relative appearance-none w-5 h-5 border rounded-full border-blue-gray-200 cursor-pointer transition-all before:content[''] before:block before:bg-blue-gray-500 before:w-12 before:h-12 before:rounded-full before:absolute before:top-2/4 before:left-2/4 before:-translate-y-2/4 before:-translate-x-2/4 before:opacity-0 hover:before:opacity-10 before:transition-opacity text-blue-500 checked:border-blue-500 checked:before:bg-blue-500">
+                        <div
+                            class="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 pointer-events-none opacity-0 peer-checked:opacity-100 transition-opacity text-blue-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 16 16"
+                                fill="currentColor">
+                                <circle data-name="ellipse" cx="8" cy="8" r="8"></circle>
+                            </svg></div>
+                    </label><label class="text-gray-700 font-light select-none cursor-pointer mt-px"
+                        for="html">HTML</label></div>
+                <div class="inline-flex items-center"><label
+                        class="relative flex items-center cursor-pointer p-3 rounded-full" for="react"
+                        style="position: relative; overflow: hidden;"><input id="react" name="type" type="radio"
+                            class="peer relative appearance-none w-5 h-5 border rounded-full border-blue-gray-200 cursor-pointer transition-all before:content[''] before:block before:bg-blue-gray-500 before:w-12 before:h-12 before:rounded-full before:absolute before:top-2/4 before:left-2/4 before:-translate-y-2/4 before:-translate-x-2/4 before:opacity-0 hover:before:opacity-10 before:transition-opacity text-blue-500 checked:border-blue-500 checked:before:bg-blue-500"
+                            checked="">
+                        <div
+                            class="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 pointer-events-none opacity-0 peer-checked:opacity-100 transition-opacity text-blue-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 16 16"
+                                fill="currentColor">
+                                <circle data-name="ellipse" cx="8" cy="8" r="8"></circle>
+                            </svg></div>
+                    </label><label class="text-gray-700 font-light select-none cursor-pointer mt-px"
+                        for="react">React</label></div>
+            </div>
+        </div>
+        <div class="preview-section">
+            <div class="flex w-max gap-4">
+                <div class="inline-flex items-center"><label
+                        class="relative flex items-center cursor-pointer p-3 rounded-full" for="blue"><input id="blue"
+                            name="color" type="radio"
+                            class="peer relative appearance-none w-5 h-5 border rounded-full border-blue-gray-200 cursor-pointer transition-all before:content[''] before:block before:bg-blue-gray-500 before:w-12 before:h-12 before:rounded-full before:absolute before:top-2/4 before:left-2/4 before:-translate-y-2/4 before:-translate-x-2/4 before:opacity-0 hover:before:opacity-10 before:transition-opacity text-blue-500 checked:border-blue-500 checked:before:bg-blue-500"
+                            checked="">
+                        <div
+                            class="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 pointer-events-none opacity-0 peer-checked:opacity-100 transition-opacity text-blue-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 16 16"
+                                fill="currentColor">
+                                <circle data-name="ellipse" cx="8" cy="8" r="8"></circle>
+                            </svg></div>
+                    </label></div>
+                <div class="inline-flex items-center"><label
+                        class="relative flex items-center cursor-pointer p-3 rounded-full" for="red"><input id="red"
+                            name="color" type="radio"
+                            class="peer relative appearance-none w-5 h-5 border rounded-full border-blue-gray-200 cursor-pointer transition-all before:content[''] before:block before:bg-blue-gray-500 before:w-12 before:h-12 before:rounded-full before:absolute before:top-2/4 before:left-2/4 before:-translate-y-2/4 before:-translate-x-2/4 before:opacity-0 hover:before:opacity-10 before:transition-opacity text-red-500 checked:border-red-500 checked:before:bg-red-500">
+                        <div
+                            class="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 pointer-events-none opacity-0 peer-checked:opacity-100 transition-opacity text-red-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 16 16"
+                                fill="currentColor">
+                                <circle data-name="ellipse" cx="8" cy="8" r="8"></circle>
+                            </svg></div>
+                    </label></div>
+                <div class="inline-flex items-center"><label
+                        class="relative flex items-center cursor-pointer p-3 rounded-full" for="green"><input id="green"
+                            name="color" type="radio"
+                            class="peer relative appearance-none w-5 h-5 border rounded-full border-blue-gray-200 cursor-pointer transition-all before:content[''] before:block before:bg-blue-gray-500 before:w-12 before:h-12 before:rounded-full before:absolute before:top-2/4 before:left-2/4 before:-translate-y-2/4 before:-translate-x-2/4 before:opacity-0 hover:before:opacity-10 before:transition-opacity text-green-500 checked:border-green-500 checked:before:bg-green-500">
+                        <div
+                            class="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 pointer-events-none opacity-0 peer-checked:opacity-100 transition-opacity text-green-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 16 16"
+                                fill="currentColor">
+                                <circle data-name="ellipse" cx="8" cy="8" r="8"></circle>
+                            </svg></div>
+                    </label></div>
+                <div class="inline-flex items-center"><label
+                        class="relative flex items-center cursor-pointer p-3 rounded-full" for="amber"><input id="amber"
+                            name="color" type="radio"
+                            class="peer relative appearance-none w-5 h-5 border rounded-full border-blue-gray-200 cursor-pointer transition-all before:content[''] before:block before:bg-blue-gray-500 before:w-12 before:h-12 before:rounded-full before:absolute before:top-2/4 before:left-2/4 before:-translate-y-2/4 before:-translate-x-2/4 before:opacity-0 hover:before:opacity-10 before:transition-opacity text-amber-500 checked:border-amber-500 checked:before:bg-amber-500">
+                        <div
+                            class="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 pointer-events-none opacity-0 peer-checked:opacity-100 transition-opacity text-amber-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 16 16"
+                                fill="currentColor">
+                                <circle data-name="ellipse" cx="8" cy="8" r="8"></circle>
+                            </svg></div>
+                    </label></div>
+                <div class="inline-flex items-center"><label
+                        class="relative flex items-center cursor-pointer p-3 rounded-full" for="teal"><input id="teal"
+                            name="color" type="radio"
+                            class="peer relative appearance-none w-5 h-5 border rounded-full border-blue-gray-200 cursor-pointer transition-all before:content[''] before:block before:bg-blue-gray-500 before:w-12 before:h-12 before:rounded-full before:absolute before:top-2/4 before:left-2/4 before:-translate-y-2/4 before:-translate-x-2/4 before:opacity-0 hover:before:opacity-10 before:transition-opacity text-teal-500 checked:border-teal-500 checked:before:bg-teal-500">
+                        <div
+                            class="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 pointer-events-none opacity-0 peer-checked:opacity-100 transition-opacity text-teal-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 16 16"
+                                fill="currentColor">
+                                <circle data-name="ellipse" cx="8" cy="8" r="8"></circle>
+                            </svg></div>
+                    </label></div>
+                <div class="inline-flex items-center"><label
+                        class="relative flex items-center cursor-pointer p-3 rounded-full" for="indigo"><input
+                            id="indigo" name="color" type="radio"
+                            class="peer relative appearance-none w-5 h-5 border rounded-full border-blue-gray-200 cursor-pointer transition-all before:content[''] before:block before:bg-blue-gray-500 before:w-12 before:h-12 before:rounded-full before:absolute before:top-2/4 before:left-2/4 before:-translate-y-2/4 before:-translate-x-2/4 before:opacity-0 hover:before:opacity-10 before:transition-opacity text-indigo-500 checked:border-indigo-500 checked:before:bg-indigo-500">
+                        <div
+                            class="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 pointer-events-none opacity-0 peer-checked:opacity-100 transition-opacity text-indigo-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 16 16"
+                                fill="currentColor">
+                                <circle data-name="ellipse" cx="8" cy="8" r="8"></circle>
+                            </svg></div>
+                    </label></div>
+                <div class="inline-flex items-center"><label
+                        class="relative flex items-center cursor-pointer p-3 rounded-full" for="purple"><input
+                            id="purple" name="color" type="radio"
+                            class="peer relative appearance-none w-5 h-5 border rounded-full border-blue-gray-200 cursor-pointer transition-all before:content[''] before:block before:bg-blue-gray-500 before:w-12 before:h-12 before:rounded-full before:absolute before:top-2/4 before:left-2/4 before:-translate-y-2/4 before:-translate-x-2/4 before:opacity-0 hover:before:opacity-10 before:transition-opacity text-purple-500 checked:border-purple-500 checked:before:bg-purple-500">
+                        <div
+                            class="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 pointer-events-none opacity-0 peer-checked:opacity-100 transition-opacity text-purple-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 16 16"
+                                fill="currentColor">
+                                <circle data-name="ellipse" cx="8" cy="8" r="8"></circle>
+                            </svg></div>
+                    </label></div>
+                <div class="inline-flex items-center"><label
+                        class="relative flex items-center cursor-pointer p-3 rounded-full" for="pink"><input id="pink"
+                            name="color" type="radio"
+                            class="peer relative appearance-none w-5 h-5 border rounded-full border-blue-gray-200 cursor-pointer transition-all before:content[''] before:block before:bg-blue-gray-500 before:w-12 before:h-12 before:rounded-full before:absolute before:top-2/4 before:left-2/4 before:-translate-y-2/4 before:-translate-x-2/4 before:opacity-0 hover:before:opacity-10 before:transition-opacity text-pink-500 checked:border-pink-500 checked:before:bg-pink-500">
+                        <div
+                            class="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 pointer-events-none opacity-0 peer-checked:opacity-100 transition-opacity text-pink-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 16 16"
+                                fill="currentColor">
+                                <circle data-name="ellipse" cx="8" cy="8" r="8"></circle>
+                            </svg></div>
+                    </label></div>
+            </div>
+        </div>
+        <div class="preview-section">
+            <div class="inline-flex items-center"><label
+                    class="relative flex items-center cursor-pointer p-3 rounded-full" for="html-1"><input id="html-1"
+                        name="type" type="radio"
+                        class="peer relative appearance-none w-5 h-5 border rounded-full border-blue-gray-200 cursor-pointer transition-all before:content[''] before:block before:bg-blue-gray-500 before:w-12 before:h-12 before:rounded-full before:absolute before:top-2/4 before:left-2/4 before:-translate-y-2/4 before:-translate-x-2/4 before:opacity-0 hover:before:opacity-10 before:transition-opacity text-blue-500 checked:border-blue-500 checked:before:bg-blue-500">
+                    <div
+                        class="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 pointer-events-none opacity-0 peer-checked:opacity-100 transition-opacity text-blue-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                                clip-rule="evenodd"></path>
+                        </svg></div>
+                </label><label class="text-gray-700 font-light select-none cursor-pointer mt-px"
+                    for="html-1">HTML</label></div>
+            <div class="inline-flex items-center"><label
+                    class="relative flex items-center cursor-pointer p-3 rounded-full" for="react-1"><input id="react-1"
+                        name="type" type="radio"
+                        class="peer relative appearance-none w-5 h-5 border rounded-full border-blue-gray-200 cursor-pointer transition-all before:content[''] before:block before:bg-blue-gray-500 before:w-12 before:h-12 before:rounded-full before:absolute before:top-2/4 before:left-2/4 before:-translate-y-2/4 before:-translate-x-2/4 before:opacity-0 hover:before:opacity-10 before:transition-opacity text-blue-500 checked:border-blue-500 checked:before:bg-blue-500"
+                        checked="">
+                    <div
+                        class="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 pointer-events-none opacity-0 peer-checked:opacity-100 transition-opacity text-blue-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                                clip-rule="evenodd"></path>
+                        </svg></div>
+                </label><label class="text-gray-700 font-light select-none cursor-pointer mt-px"
+                    for="react-1">React</label></div>
+        </div>
+        <div class="preview-section">
+            <div class="flex gap-10">
+                <div class="inline-flex items-center"><label
+                        class="relative flex items-center cursor-pointer p-3 rounded-full" for="html-2"><input
+                            id="html-2" name="type" type="radio"
+                            class="peer relative appearance-none w-5 h-5 border rounded-full border-blue-gray-200 cursor-pointer transition-all before:content[''] before:block before:bg-blue-gray-500 before:w-12 before:h-12 before:rounded-full before:absolute before:top-2/4 before:left-2/4 before:-translate-y-2/4 before:-translate-x-2/4 before:opacity-0 hover:before:opacity-10 before:transition-opacity text-blue-500 checked:border-blue-500 checked:before:bg-blue-500">
+                        <div
+                            class="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 pointer-events-none opacity-0 peer-checked:opacity-100 transition-opacity text-blue-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 16 16"
+                                fill="currentColor">
+                                <circle data-name="ellipse" cx="8" cy="8" r="8"></circle>
+                            </svg></div>
+                    </label><label class="text-gray-700 font-light select-none cursor-pointer mt-px" for="html-2">Ripple
+                        Effect On</label></div>
+                <div class="inline-flex items-center"><label
+                        class="relative flex items-center cursor-pointer p-3 rounded-full" for="react-2"><input
+                            id="react-2" name="type" type="radio"
+                            class="peer relative appearance-none w-5 h-5 border rounded-full border-blue-gray-200 cursor-pointer transition-all before:content[''] before:block before:bg-blue-gray-500 before:w-12 before:h-12 before:rounded-full before:absolute before:top-2/4 before:left-2/4 before:-translate-y-2/4 before:-translate-x-2/4 before:opacity-0 hover:before:opacity-10 before:transition-opacity text-blue-500 checked:border-blue-500 checked:before:bg-blue-500">
+                        <div
+                            class="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 pointer-events-none opacity-0 peer-checked:opacity-100 transition-opacity text-blue-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 16 16"
+                                fill="currentColor">
+                                <circle data-name="ellipse" cx="8" cy="8" r="8"></circle>
+                            </svg></div>
+                    </label><label class="text-gray-700 font-light select-none cursor-pointer mt-px"
+                        for="react-2">Ripple Effect Off</label></div>
+            </div>
+        </div>
+        <div class="preview-section">
+            <div class="inline-flex items-center"><div class="relative inline-block w-8 h-4 cursor-pointer rounded-full"><input id="switch-component" type="checkbox" class="peer appearance-none w-8 h-4 absolute bg-blue-gray-100 rounded-full cursor-pointer transition-colors duration-300 checked:bg-blue-500 peer-checked:border-blue-500 peer-checked:before:bg-blue-500" checked=""><label for="switch-component" class="bg-white w-5 h-5 border border-blue-gray-100 rounded-full shadow-md absolute top-2/4 -left-1 -translate-y-2/4 peer-checked:translate-x-full transition-all duration-300 cursor-pointer before:content[''] before:block before:bg-blue-gray-500 before:w-10 before:h-10 before:rounded-full before:absolute before:top-2/4 before:left-2/4 before:-translate-y-2/4 before:-translate-x-2/4 before:transition-opacity before:opacity-0 hover:before:opacity-10 peer-checked:border-blue-500 peer-checked:before:bg-blue-500"><div class="inline-block top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 p-5 rounded-full" style="position: relative; overflow: hidden;"></div></label></div></div>
+        </div>
+        <div class="preview-section">
+            <div class="flex w-max gap-4"><div class="inline-flex items-center"><div class="relative inline-block w-8 h-4 cursor-pointer rounded-full"><input id="switch-1" type="checkbox" class="peer appearance-none w-8 h-4 absolute bg-blue-gray-100 rounded-full cursor-pointer transition-colors duration-300 checked:bg-blue-500 peer-checked:border-blue-500 peer-checked:before:bg-blue-500" checked=""><label for="switch-1" class="bg-white w-5 h-5 border border-blue-gray-100 rounded-full shadow-md absolute top-2/4 -left-1 -translate-y-2/4 peer-checked:translate-x-full transition-all duration-300 cursor-pointer before:content[''] before:block before:bg-blue-gray-500 before:w-10 before:h-10 before:rounded-full before:absolute before:top-2/4 before:left-2/4 before:-translate-y-2/4 before:-translate-x-2/4 before:transition-opacity before:opacity-0 hover:before:opacity-10 peer-checked:border-blue-500 peer-checked:before:bg-blue-500"><div class="inline-block top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 p-5 rounded-full"></div></label></div></div><div class="inline-flex items-center"><div class="relative inline-block w-8 h-4 cursor-pointer rounded-full"><input id="switch-2" type="checkbox" class="peer appearance-none w-8 h-4 absolute bg-blue-gray-100 rounded-full cursor-pointer transition-colors duration-300 checked:bg-red-500 peer-checked:border-red-500 peer-checked:before:bg-red-500" checked=""><label for="switch-2" class="bg-white w-5 h-5 border border-blue-gray-100 rounded-full shadow-md absolute top-2/4 -left-1 -translate-y-2/4 peer-checked:translate-x-full transition-all duration-300 cursor-pointer before:content[''] before:block before:bg-blue-gray-500 before:w-10 before:h-10 before:rounded-full before:absolute before:top-2/4 before:left-2/4 before:-translate-y-2/4 before:-translate-x-2/4 before:transition-opacity before:opacity-0 hover:before:opacity-10 peer-checked:border-red-500 peer-checked:before:bg-red-500"><div class="inline-block top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 p-5 rounded-full"></div></label></div></div><div class="inline-flex items-center"><div class="relative inline-block w-8 h-4 cursor-pointer rounded-full"><input id="switch-3" type="checkbox" class="peer appearance-none w-8 h-4 absolute bg-blue-gray-100 rounded-full cursor-pointer transition-colors duration-300 checked:bg-green-500 peer-checked:border-green-500 peer-checked:before:bg-green-500" checked=""><label for="switch-3" class="bg-white w-5 h-5 border border-blue-gray-100 rounded-full shadow-md absolute top-2/4 -left-1 -translate-y-2/4 peer-checked:translate-x-full transition-all duration-300 cursor-pointer before:content[''] before:block before:bg-blue-gray-500 before:w-10 before:h-10 before:rounded-full before:absolute before:top-2/4 before:left-2/4 before:-translate-y-2/4 before:-translate-x-2/4 before:transition-opacity before:opacity-0 hover:before:opacity-10 peer-checked:border-green-500 peer-checked:before:bg-green-500"><div class="inline-block top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 p-5 rounded-full"></div></label></div></div><div class="inline-flex items-center"><div class="relative inline-block w-8 h-4 cursor-pointer rounded-full"><input id="switch-4" type="checkbox" class="peer appearance-none w-8 h-4 absolute bg-blue-gray-100 rounded-full cursor-pointer transition-colors duration-300 checked:bg-amber-500 peer-checked:border-amber-500 peer-checked:before:bg-amber-500" checked=""><label for="switch-4" class="bg-white w-5 h-5 border border-blue-gray-100 rounded-full shadow-md absolute top-2/4 -left-1 -translate-y-2/4 peer-checked:translate-x-full transition-all duration-300 cursor-pointer before:content[''] before:block before:bg-blue-gray-500 before:w-10 before:h-10 before:rounded-full before:absolute before:top-2/4 before:left-2/4 before:-translate-y-2/4 before:-translate-x-2/4 before:transition-opacity before:opacity-0 hover:before:opacity-10 peer-checked:border-amber-500 peer-checked:before:bg-amber-500"><div class="inline-block top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 p-5 rounded-full"></div></label></div></div><div class="inline-flex items-center"><div class="relative inline-block w-8 h-4 cursor-pointer rounded-full"><input id="switch-5" type="checkbox" class="peer appearance-none w-8 h-4 absolute bg-blue-gray-100 rounded-full cursor-pointer transition-colors duration-300 checked:bg-teal-500 peer-checked:border-teal-500 peer-checked:before:bg-teal-500" checked=""><label for="switch-5" class="bg-white w-5 h-5 border border-blue-gray-100 rounded-full shadow-md absolute top-2/4 -left-1 -translate-y-2/4 peer-checked:translate-x-full transition-all duration-300 cursor-pointer before:content[''] before:block before:bg-blue-gray-500 before:w-10 before:h-10 before:rounded-full before:absolute before:top-2/4 before:left-2/4 before:-translate-y-2/4 before:-translate-x-2/4 before:transition-opacity before:opacity-0 hover:before:opacity-10 peer-checked:border-teal-500 peer-checked:before:bg-teal-500"><div class="inline-block top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 p-5 rounded-full"></div></label></div></div><div class="inline-flex items-center"><div class="relative inline-block w-8 h-4 cursor-pointer rounded-full"><input id="switch-6" type="checkbox" class="peer appearance-none w-8 h-4 absolute bg-blue-gray-100 rounded-full cursor-pointer transition-colors duration-300 checked:bg-indigo-500 peer-checked:border-indigo-500 peer-checked:before:bg-indigo-500" checked=""><label for="switch-6" class="bg-white w-5 h-5 border border-blue-gray-100 rounded-full shadow-md absolute top-2/4 -left-1 -translate-y-2/4 peer-checked:translate-x-full transition-all duration-300 cursor-pointer before:content[''] before:block before:bg-blue-gray-500 before:w-10 before:h-10 before:rounded-full before:absolute before:top-2/4 before:left-2/4 before:-translate-y-2/4 before:-translate-x-2/4 before:transition-opacity before:opacity-0 hover:before:opacity-10 peer-checked:border-indigo-500 peer-checked:before:bg-indigo-500"><div class="inline-block top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 p-5 rounded-full"></div></label></div></div><div class="inline-flex items-center"><div class="relative inline-block w-8 h-4 cursor-pointer rounded-full"><input id="switch-7" type="checkbox" class="peer appearance-none w-8 h-4 absolute bg-blue-gray-100 rounded-full cursor-pointer transition-colors duration-300 checked:bg-purple-500 peer-checked:border-purple-500 peer-checked:before:bg-purple-500" checked=""><label for="switch-7" class="bg-white w-5 h-5 border border-blue-gray-100 rounded-full shadow-md absolute top-2/4 -left-1 -translate-y-2/4 peer-checked:translate-x-full transition-all duration-300 cursor-pointer before:content[''] before:block before:bg-blue-gray-500 before:w-10 before:h-10 before:rounded-full before:absolute before:top-2/4 before:left-2/4 before:-translate-y-2/4 before:-translate-x-2/4 before:transition-opacity before:opacity-0 hover:before:opacity-10 peer-checked:border-purple-500 peer-checked:before:bg-purple-500"><div class="inline-block top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 p-5 rounded-full"></div></label></div></div><div class="inline-flex items-center"><div class="relative inline-block w-8 h-4 cursor-pointer rounded-full"><input id="switch-8" type="checkbox" class="peer appearance-none w-8 h-4 absolute bg-blue-gray-100 rounded-full cursor-pointer transition-colors duration-300 checked:bg-pink-500 peer-checked:border-pink-500 peer-checked:before:bg-pink-500" checked=""><label for="switch-8" class="bg-white w-5 h-5 border border-blue-gray-100 rounded-full shadow-md absolute top-2/4 -left-1 -translate-y-2/4 peer-checked:translate-x-full transition-all duration-300 cursor-pointer before:content[''] before:block before:bg-blue-gray-500 before:w-10 before:h-10 before:rounded-full before:absolute before:top-2/4 before:left-2/4 before:-translate-y-2/4 before:-translate-x-2/4 before:transition-opacity before:opacity-0 hover:before:opacity-10 peer-checked:border-pink-500 peer-checked:before:bg-pink-500"><div class="inline-block top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 p-5 rounded-full"></div></label></div></div></div>
+        </div>
+        <div class="preview-section">
+            <div class="inline-flex items-center"><div class="relative inline-block w-8 h-4 cursor-pointer rounded-full"><input id="auto-update" type="checkbox" class="peer appearance-none w-8 h-4 absolute bg-blue-gray-100 rounded-full cursor-pointer transition-colors duration-300 checked:bg-blue-500 peer-checked:border-blue-500 peer-checked:before:bg-blue-500"><label for="auto-update" class="bg-white w-5 h-5 border border-blue-gray-100 rounded-full shadow-md absolute top-2/4 -left-1 -translate-y-2/4 peer-checked:translate-x-full transition-all duration-300 cursor-pointer before:content[''] before:block before:bg-blue-gray-500 before:w-10 before:h-10 before:rounded-full before:absolute before:top-2/4 before:left-2/4 before:-translate-y-2/4 before:-translate-x-2/4 before:transition-opacity before:opacity-0 hover:before:opacity-10 peer-checked:border-blue-500 peer-checked:before:bg-blue-500"><div class="inline-block top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 p-5 rounded-full"></div></label></div><label for="auto-update" class="text-gray-700 font-light select-none cursor-pointer mt-px ml-3 mb-0">Automatic Update</label></div>
+        </div>
+        <div class="preview-section">
+            <div class="inline-flex items-center"><div class="relative inline-block w-8 h-4 cursor-pointer rounded-full"><input id="ripple-on" type="checkbox" class="peer appearance-none w-8 h-4 absolute bg-blue-gray-100 rounded-full cursor-pointer transition-colors duration-300 checked:bg-blue-500 peer-checked:border-blue-500 peer-checked:before:bg-blue-500"><label for="ripple-on" class="bg-white w-5 h-5 border border-blue-gray-100 rounded-full shadow-md absolute top-2/4 -left-1 -translate-y-2/4 peer-checked:translate-x-full transition-all duration-300 cursor-pointer before:content[''] before:block before:bg-blue-gray-500 before:w-10 before:h-10 before:rounded-full before:absolute before:top-2/4 before:left-2/4 before:-translate-y-2/4 before:-translate-x-2/4 before:transition-opacity before:opacity-0 hover:before:opacity-10 peer-checked:border-blue-500 peer-checked:before:bg-blue-500"><div class="inline-block top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 p-5 rounded-full"></div></label></div><label for="ripple-on" class="text-gray-700 font-light select-none cursor-pointer mt-px ml-3 mb-0">Ripple Effect On</label></div>
+            <div class="inline-flex items-center"><div class="relative inline-block w-8 h-4 cursor-pointer rounded-full"><input id="ripple-off" type="checkbox" class="peer appearance-none w-8 h-4 absolute bg-blue-gray-100 rounded-full cursor-pointer transition-colors duration-300 checked:bg-blue-500 peer-checked:border-blue-500 peer-checked:before:bg-blue-500"><label for="ripple-off" class="bg-white w-5 h-5 border border-blue-gray-100 rounded-full shadow-md absolute top-2/4 -left-1 -translate-y-2/4 peer-checked:translate-x-full transition-all duration-300 cursor-pointer before:content[''] before:block before:bg-blue-gray-500 before:w-10 before:h-10 before:rounded-full before:absolute before:top-2/4 before:left-2/4 before:-translate-y-2/4 before:-translate-x-2/4 before:transition-opacity before:opacity-0 hover:before:opacity-10 peer-checked:border-blue-500 peer-checked:before:bg-blue-500"></label></div><label for="ripple-off" class="text-gray-700 font-light select-none cursor-pointer mt-px ml-3 mb-0">Ripple Effect Off</label></div>
+        </div>
+    </div>
+</div>
+
+{{end}}

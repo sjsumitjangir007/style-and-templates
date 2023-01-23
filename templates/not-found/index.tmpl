@@ -1,13 +1,19 @@
 {{ define "not-found/index.tmpl" }}
+<!DOCTYPE html>
 <html>
 
-    <head>
-        <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    </head>
-    <body>
-        <h1 style="color: red;">
-            {{ .title }}
-        </h1>
-    </body>
+<head>
+  {{template "layout/layout_metatags" .}}
+  {{template "layout/layout_head_scripts" .}}
+</head>
+
+<div class="root flex">
+  <h1 class="p-10 text-2xl text-center text-gray-500 dark:text-gray-50">
+    {{.title}}
+  </h1>
+</div>
+
+</body>
+
 </html>
 {{ end }}
