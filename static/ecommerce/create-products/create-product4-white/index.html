@@ -34,7 +34,7 @@
 }
 
 :after,:before {
-    --tw-content: ""
+    --content: ""
 }
 
 html {
@@ -209,7 +209,7 @@ img,video {
 }
 
 [multiple],[type=date],[type=datetime-local],[type=email],[type=month],[type=number],[type=password],[type=search],[type=tel],[type=text],[type=time],[type=url],[type=week],select,textarea {
-    --tw-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -223,14 +223,14 @@ img,video {
 }
 
 [multiple]:focus,[type=date]:focus,[type=datetime-local]:focus,[type=email]:focus,[type=month]:focus,[type=number]:focus,[type=password]:focus,[type=search]:focus,[type=tel]:focus,[type=text]:focus,[type=time]:focus,[type=url]:focus,[type=week]:focus,select:focus,textarea:focus {
-    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: #1c64f2;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    --ring-inset: var(--empty,/*!*/ /*!*/);
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: #1c64f2;
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(1px + var(--ring-offset-width)) var(--ring-color);
     border-color: #1c64f2;
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow);
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -277,7 +277,7 @@ select {
 
 [type=checkbox],[type=radio] {
     color-adjust: exact;
-    --tw-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -308,13 +308,13 @@ select {
 }
 
 [type=checkbox]:focus,[type=radio]:focus {
-    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
-    --tw-ring-offset-width: 2px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: #1c64f2;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow);
+    --ring-inset: var(--empty,/*!*/ /*!*/);
+    --ring-offset-width: 2px;
+    --ring-offset-color: #fff;
+    --ring-color: #1c64f2;
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(2px + var(--ring-offset-width)) var(--ring-color);
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -396,11 +396,11 @@ input[type=range]:disabled::-webkit-slider-thumb {
 }
 
 input[type=range]:focus::-webkit-slider-thumb {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-    --tw-ring-opacity: 1px;
-    --tw-ring-color: rgb(164 202 254/var(--tw-ring-opacity));
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(4px + var(--ring-offset-width)) var(--ring-color);
+    --ring-opacity: 1px;
+    --ring-color: rgb(164 202 254/var(--ring-opacity));
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow,0 0 #0000);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -503,144 +503,144 @@ input[type=range]::-ms-fill-lower {
 }
 
 *,:after,:before {
-    --tw-border-spacing-x: 0;
-    --tw-border-spacing-y: 0;
-    --tw-translate-x: 0;
-    --tw-translate-y: 0;
-    --tw-rotate: 0;
-    --tw-skew-x: 0;
-    --tw-skew-y: 0;
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    --tw-pan-x: ;
-    --tw-pan-y: ;
-    --tw-pinch-zoom: ;
-    --tw-scroll-snap-strictness: proximity;
-    --tw-ordinal: ;
-    --tw-slashed-zero: ;
-    --tw-numeric-figure: ;
-    --tw-numeric-spacing: ;
-    --tw-numeric-fraction: ;
-    --tw-ring-inset: ;
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: rgba(63,131,248,.5);
-    --tw-ring-offset-shadow: 0 0 #0000;
-    --tw-ring-shadow: 0 0 #0000;
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    --tw-blur: ;
-    --tw-brightness: ;
-    --tw-contrast: ;
-    --tw-grayscale: ;
-    --tw-hue-rotate: ;
-    --tw-invert: ;
-    --tw-saturate: ;
-    --tw-sepia: ;
-    --tw-drop-shadow: ;
-    --tw-backdrop-blur: ;
-    --tw-backdrop-brightness: ;
-    --tw-backdrop-contrast: ;
-    --tw-backdrop-grayscale: ;
-    --tw-backdrop-hue-rotate: ;
-    --tw-backdrop-invert: ;
-    --tw-backdrop-opacity: ;
-    --tw-backdrop-saturate: ;
-    --tw-backdrop-sepia:
+    --border-spacing-x: 0;
+    --border-spacing-y: 0;
+    --translate-x: 0;
+    --translate-y: 0;
+    --rotate: 0;
+    --skew-x: 0;
+    --skew-y: 0;
+    --scale-x: 1;
+    --scale-y: 1;
+    --pan-x: ;
+    --pan-y: ;
+    --pinch-zoom: ;
+    --scroll-snap-strictness: proximity;
+    --ordinal: ;
+    --slashed-zero: ;
+    --numeric-figure: ;
+    --numeric-spacing: ;
+    --numeric-fraction: ;
+    --ring-inset: ;
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: rgba(63,131,248,.5);
+    --ring-offset-shadow: 0 0 #0000;
+    --ring-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
+    --shadow-colored: 0 0 #0000;
+    --blur: ;
+    --brightness: ;
+    --contrast: ;
+    --grayscale: ;
+    --hue-rotate: ;
+    --invert: ;
+    --saturate: ;
+    --sepia: ;
+    --drop-shadow: ;
+    --backdrop-blur: ;
+    --backdrop-brightness: ;
+    --backdrop-contrast: ;
+    --backdrop-grayscale: ;
+    --backdrop-hue-rotate: ;
+    --backdrop-invert: ;
+    --backdrop-opacity: ;
+    --backdrop-saturate: ;
+    --backdrop-sepia:
 }
 
 ::-webkit-backdrop {
-    --tw-border-spacing-x: 0;
-    --tw-border-spacing-y: 0;
-    --tw-translate-x: 0;
-    --tw-translate-y: 0;
-    --tw-rotate: 0;
-    --tw-skew-x: 0;
-    --tw-skew-y: 0;
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    --tw-pan-x: ;
-    --tw-pan-y: ;
-    --tw-pinch-zoom: ;
-    --tw-scroll-snap-strictness: proximity;
-    --tw-ordinal: ;
-    --tw-slashed-zero: ;
-    --tw-numeric-figure: ;
-    --tw-numeric-spacing: ;
-    --tw-numeric-fraction: ;
-    --tw-ring-inset: ;
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: rgba(63,131,248,.5);
-    --tw-ring-offset-shadow: 0 0 #0000;
-    --tw-ring-shadow: 0 0 #0000;
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    --tw-blur: ;
-    --tw-brightness: ;
-    --tw-contrast: ;
-    --tw-grayscale: ;
-    --tw-hue-rotate: ;
-    --tw-invert: ;
-    --tw-saturate: ;
-    --tw-sepia: ;
-    --tw-drop-shadow: ;
-    --tw-backdrop-blur: ;
-    --tw-backdrop-brightness: ;
-    --tw-backdrop-contrast: ;
-    --tw-backdrop-grayscale: ;
-    --tw-backdrop-hue-rotate: ;
-    --tw-backdrop-invert: ;
-    --tw-backdrop-opacity: ;
-    --tw-backdrop-saturate: ;
-    --tw-backdrop-sepia:
+    --border-spacing-x: 0;
+    --border-spacing-y: 0;
+    --translate-x: 0;
+    --translate-y: 0;
+    --rotate: 0;
+    --skew-x: 0;
+    --skew-y: 0;
+    --scale-x: 1;
+    --scale-y: 1;
+    --pan-x: ;
+    --pan-y: ;
+    --pinch-zoom: ;
+    --scroll-snap-strictness: proximity;
+    --ordinal: ;
+    --slashed-zero: ;
+    --numeric-figure: ;
+    --numeric-spacing: ;
+    --numeric-fraction: ;
+    --ring-inset: ;
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: rgba(63,131,248,.5);
+    --ring-offset-shadow: 0 0 #0000;
+    --ring-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
+    --shadow-colored: 0 0 #0000;
+    --blur: ;
+    --brightness: ;
+    --contrast: ;
+    --grayscale: ;
+    --hue-rotate: ;
+    --invert: ;
+    --saturate: ;
+    --sepia: ;
+    --drop-shadow: ;
+    --backdrop-blur: ;
+    --backdrop-brightness: ;
+    --backdrop-contrast: ;
+    --backdrop-grayscale: ;
+    --backdrop-hue-rotate: ;
+    --backdrop-invert: ;
+    --backdrop-opacity: ;
+    --backdrop-saturate: ;
+    --backdrop-sepia:
 }
 
 ::backdrop {
-    --tw-border-spacing-x: 0;
-    --tw-border-spacing-y: 0;
-    --tw-translate-x: 0;
-    --tw-translate-y: 0;
-    --tw-rotate: 0;
-    --tw-skew-x: 0;
-    --tw-skew-y: 0;
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    --tw-pan-x: ;
-    --tw-pan-y: ;
-    --tw-pinch-zoom: ;
-    --tw-scroll-snap-strictness: proximity;
-    --tw-ordinal: ;
-    --tw-slashed-zero: ;
-    --tw-numeric-figure: ;
-    --tw-numeric-spacing: ;
-    --tw-numeric-fraction: ;
-    --tw-ring-inset: ;
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: rgba(63,131,248,.5);
-    --tw-ring-offset-shadow: 0 0 #0000;
-    --tw-ring-shadow: 0 0 #0000;
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    --tw-blur: ;
-    --tw-brightness: ;
-    --tw-contrast: ;
-    --tw-grayscale: ;
-    --tw-hue-rotate: ;
-    --tw-invert: ;
-    --tw-saturate: ;
-    --tw-sepia: ;
-    --tw-drop-shadow: ;
-    --tw-backdrop-blur: ;
-    --tw-backdrop-brightness: ;
-    --tw-backdrop-contrast: ;
-    --tw-backdrop-grayscale: ;
-    --tw-backdrop-hue-rotate: ;
-    --tw-backdrop-invert: ;
-    --tw-backdrop-opacity: ;
-    --tw-backdrop-saturate: ;
-    --tw-backdrop-sepia:
+    --border-spacing-x: 0;
+    --border-spacing-y: 0;
+    --translate-x: 0;
+    --translate-y: 0;
+    --rotate: 0;
+    --skew-x: 0;
+    --skew-y: 0;
+    --scale-x: 1;
+    --scale-y: 1;
+    --pan-x: ;
+    --pan-y: ;
+    --pinch-zoom: ;
+    --scroll-snap-strictness: proximity;
+    --ordinal: ;
+    --slashed-zero: ;
+    --numeric-figure: ;
+    --numeric-spacing: ;
+    --numeric-fraction: ;
+    --ring-inset: ;
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: rgba(63,131,248,.5);
+    --ring-offset-shadow: 0 0 #0000;
+    --ring-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
+    --shadow-colored: 0 0 #0000;
+    --blur: ;
+    --brightness: ;
+    --contrast: ;
+    --grayscale: ;
+    --hue-rotate: ;
+    --invert: ;
+    --saturate: ;
+    --sepia: ;
+    --drop-shadow: ;
+    --backdrop-blur: ;
+    --backdrop-brightness: ;
+    --backdrop-contrast: ;
+    --backdrop-grayscale: ;
+    --backdrop-hue-rotate: ;
+    --backdrop-invert: ;
+    --backdrop-opacity: ;
+    --backdrop-saturate: ;
+    --backdrop-sepia:
 }
 
 .rec-clipper {
@@ -742,7 +742,7 @@ input[type=range]::-ms-fill-lower {
     margin-right: .5rem
 }
 
-.rD4HtsUG_hahmbh2Kj09 {
+.mb-2 {
     margin-bottom: .5rem
 }
 
@@ -750,7 +750,7 @@ input[type=range]::-ms-fill-lower {
     margin-bottom: 1.5rem
 }
 
-.margin-bottom-1-rem {
+.mb-4 {
     margin-bottom: 1rem
 }
 
@@ -766,7 +766,7 @@ input[type=range]::-ms-fill-lower {
     margin-left: .5rem
 }
 
-.KgBTWt39fdiAC__YVNt8 {
+.mt-4 {
     margin-top: 1rem
 }
 
@@ -786,7 +786,7 @@ input[type=range]::-ms-fill-lower {
     display: flex
 }
 
-.display-in-flex {
+.inline-flex {
     display: inline-flex
 }
 
@@ -814,7 +814,7 @@ input[type=range]::-ms-fill-lower {
     height: 1rem
 }
 
-.jCISvWkW5oStPH6Wrb_H {
+.w-full {
     width: 100%
 }
 
@@ -835,43 +835,43 @@ input[type=range]::-ms-fill-lower {
 }
 
 .panel-transform-toggle {
-    --tw-translate-x: -100%
+    --translate-x: -100%
 }
 
 ._txZr_XzKh1AA2GR58P5,.panel-transform-toggle {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    transform: translate(var(--translate-x),var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y))
 }
 
 ._txZr_XzKh1AA2GR58P5 {
-    --tw-translate-x: 100%
+    --translate-x: 100%
 }
 
 ._0PJkI8eA25FIbUKfI1v {
-    --tw-translate-x: 0px
+    --translate-x: 0px
 }
 
 .T8ntPwqv9_aqkqQBYkpk,._0PJkI8eA25FIbUKfI1v {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    transform: translate(var(--translate-x),var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y))
 }
 
 .T8ntPwqv9_aqkqQBYkpk {
-    --tw-translate-y: -100%
+    --translate-y: -100%
 }
 
 .mA7nMzdO5NVKdU288J6J {
-    --tw-translate-y: 100%
+    --translate-y: 100%
 }
 
 .R4jqCxTOcV8d4zX2X0UZ,.mA7nMzdO5NVKdU288J6J {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    transform: translate(var(--translate-x),var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y))
 }
 
 .R4jqCxTOcV8d4zX2X0UZ {
-    --tw-rotate: 180deg
+    --rotate: 180deg
 }
 
 .B_Mg78Zl0_AuSOcVLMGS {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    transform: translate(var(--translate-x),var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y))
 }
 
 .transform-none {
@@ -894,7 +894,7 @@ input[type=range]::-ms-fill-lower {
     align-items: flex-end
 }
 
-.al-center {
+.items-center {
     align-items: center
 }
 
@@ -911,21 +911,21 @@ input[type=range]::-ms-fill-lower {
 }
 
 .not-hidden-margin-bottom-top-1-rem>:not([hidden])~:not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-bottom: calc(1rem*var(--tw-space-y-reverse));
-    margin-top: calc(1rem*(1 - var(--tw-space-y-reverse)))
+    --space-y-reverse: 0;
+    margin-bottom: calc(1rem*var(--space-y-reverse));
+    margin-top: calc(1rem*(1 - var(--space-y-reverse)))
 }
 
 .__Iv72FadFpzwcpFl5_5>:not([hidden])~:not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-bottom: calc(.75rem*var(--tw-space-y-reverse));
-    margin-top: calc(.75rem*(1 - var(--tw-space-y-reverse)))
+    --space-y-reverse: 0;
+    margin-bottom: calc(.75rem*var(--space-y-reverse));
+    margin-top: calc(.75rem*(1 - var(--space-y-reverse)))
 }
 
 .not-hidden-margin-left-right-1-rem>:not([hidden])~:not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-left: calc(1rem*(1 - var(--tw-space-x-reverse)));
-    margin-right: calc(1rem*var(--tw-space-x-reverse))
+    --space-x-reverse: 0;
+    margin-left: calc(1rem*(1 - var(--space-x-reverse)));
+    margin-right: calc(1rem*var(--space-x-reverse))
 }
 
 .overflow-hidden {
@@ -936,7 +936,7 @@ input[type=range]::-ms-fill-lower {
     overflow-y: auto
 }
 
-.border-radius-point-5-rem {
+.rounded-lg {
     border-radius: .5rem
 }
 
@@ -948,38 +948,38 @@ input[type=range]::-ms-fill-lower {
     border-radius: .25rem
 }
 
-.border-width-1-px {
+.border {
     border-width: 1px
 }
 
 .border-color-28-100-242-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(28 100 242/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(28 100 242/var(--border-opacity))
 }
 
 .border-color-243-244-246-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(243 244 246/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(243 244 246/var(--border-opacity))
 }
 
 .border-color-209-213-219-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(209 213 219/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(209 213 219/var(--border-opacity))
 }
 
 .border-color-229-231-235-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(229 231 235/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(229 231 235/var(--border-opacity))
 }
 
 .background-color-243-244-246-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(243 244 246/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(243 244 246/var(--bg-opacity))
 }
 
 .background-color-white-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--bg-opacity))
 }
 
 .background-color-hsla-0-0-per-100-per-point-5 {
@@ -987,8 +987,8 @@ input[type=range]::-ms-fill-lower {
 }
 
 .background-color-17-24-39-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(17 24 39/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(17 24 39/var(--bg-opacity))
 }
 
 .bHPiH67mBn1_jgR3TrvW {
@@ -996,12 +996,12 @@ input[type=range]::-ms-fill-lower {
 }
 
 .background-color-249-250-251-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(249 250 251/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(249 250 251/var(--bg-opacity))
 }
 
 .F6maSyXBC_uv_A_dciar {
-    --tw-bg-opacity: 0.5
+    --bg-opacity: 0.5
 }
 
 .padding-1-rem {
@@ -1016,25 +1016,25 @@ input[type=range]::-ms-fill-lower {
     padding: .25rem
 }
 
-.padding-point-625-rem {
+.p-2 {
     padding: .625rem
 }
 
-.padding-point-5-rem {
+.p-2 {
     padding: .5rem
 }
 
-.padding-left-right-1-point-25-rem {
+.px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem
 }
 
-.padding-bottom-top-point-625-rem {
+.py-2 {
     padding-bottom: .625rem;
     padding-top: .625rem
 }
 
-.padding-bottom-top-point-5-rem {
+.py-2 {
     padding-bottom: .5rem;
     padding-top: .5rem
 }
@@ -1043,11 +1043,11 @@ input[type=range]::-ms-fill-lower {
     padding-bottom: 1rem
 }
 
-.text-align-center {
+.text-center {
     text-align: center
 }
 
-.MxG1ClE4KPrIvlL5_Q5x {
+.text-sm leading-5 {
     font-size: .875rem;
     line-height: 1.25rem
 }
@@ -1074,28 +1074,28 @@ input[type=range]::-ms-fill-lower {
 }
 
 .color-17-24-39-1 {
-    --tw-text-opacity: 1;
-    color: rgb(17 24 39/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(17 24 39/var(--text-opacity))
 }
 
 .color-107-114-128-1 {
-    --tw-text-opacity: 1;
-    color: rgb(107 114 128/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(107 114 128/var(--text-opacity))
 }
 
 .color-28-100-242-1 {
-    --tw-text-opacity: 1;
-    color: rgb(28 100 242/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(28 100 242/var(--text-opacity))
 }
 
 .color-white-1 {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(255 255 255/var(--text-opacity))
 }
 
 .color-156-163-175-1 {
-    --tw-text-opacity: 1;
-    color: rgb(156 163 175/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(156 163 175/var(--text-opacity))
 }
 
 .opacity-0 {
@@ -1107,11 +1107,11 @@ input[type=range]::-ms-fill-lower {
 }
 
 .ClETfzy1YZDVXhnOVdgH {
-    --tw-blur: blur(8px)
+    --blur: blur(8px)
 }
 
 .ClETfzy1YZDVXhnOVdgH,.__l7tEsuvTIL_QRvY8sk {
-    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+    filter: var(--blur) var(--brightness) var(--contrast) var(--grayscale) var(--hue-rotate) var(--invert) var(--saturate) var(--sepia) var(--drop-shadow)
 }
 
 .yvRWkoRx_Apshie5g15o {
@@ -1137,38 +1137,38 @@ input[type=range]::-ms-fill-lower {
 }
 
 .eFVdWe3MNoaU5uHcs1ZL:hover {
-    --tw-border-opacity: 1;
-    border-color: rgb(209 213 219/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(209 213 219/var(--border-opacity))
 }
 
 .djld5jFcbPSy1YdGoI7k:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--bg-opacity))
 }
 
 ._s1HFAQPzDGxzspem6eZ:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(229 231 235/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(229 231 235/var(--bg-opacity))
 }
 
 .DpMPWwlSESiYA8EE1xKM:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(243 244 246/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(243 244 246/var(--bg-opacity))
 }
 
 ._be7gCNOq8vw6dPtYNE0:hover {
-    --tw-text-opacity: 1;
-    color: rgb(28 100 242/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(28 100 242/var(--text-opacity))
 }
 
 .__3D_PX_oiQ5jff3N7d8:hover {
-    --tw-text-opacity: 1;
-    color: rgb(75 85 99/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(75 85 99/var(--text-opacity))
 }
 
 ._xQT_qSXfwWf6ZhwRle4:hover {
-    --tw-text-opacity: 1;
-    color: rgb(17 24 39/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(17 24 39/var(--text-opacity))
 }
 
 .m_8FxTcpOfmK___hAaJ6:focus {
@@ -1181,22 +1181,22 @@ input[type=range]::-ms-fill-lower {
 }
 
 ._FONMPVaCsLFJJGDaaIL:focus {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color)
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(4px + var(--ring-offset-width)) var(--ring-color)
 }
 
 .X3ifvK6lzvLzkZabaIQd:focus,._FONMPVaCsLFJJGDaaIL:focus {
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow,0 0 #0000)
 }
 
 .X3ifvK6lzvLzkZabaIQd:focus {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color)
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(2px + var(--ring-offset-width)) var(--ring-color)
 }
 
 .dark .border-color-63-131-248-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(63 131 248/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(63 131 248/var(--border-opacity))
 }
 
 .dark .border-color-transparent {
@@ -1204,23 +1204,23 @@ input[type=range]::-ms-fill-lower {
 }
 
 .dark .border-color-55-65-81-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(55 65 81/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(55 65 81/var(--border-opacity))
 }
 
 .dark .border-color-75-85-99-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(75 85 99/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(75 85 99/var(--border-opacity))
 }
 
 .dark .c4d_cyxeprbSxLoRnbIr {
-    --tw-border-opacity: 1;
-    border-color: rgb(107 114 128/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(107 114 128/var(--border-opacity))
 }
 
 .dark .background-color-31-41-55-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(31 41 55/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(31 41 55/var(--bg-opacity))
 }
 
 .dark .background-color-31-41-55-point-5 {
@@ -1228,76 +1228,76 @@ input[type=range]::-ms-fill-lower {
 }
 
 .dark .background-color-55-65-81-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(55 65 81/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(55 65 81/var(--bg-opacity))
 }
 
 .dark .background-opacity-0-point-8 {
-    --tw-bg-opacity: 0.8
+    --bg-opacity: 0.8
 }
 
 .dark .color-white-255-255-255-1 {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(255 255 255/var(--text-opacity))
 }
 
 .dark .color-156-163-175-1 {
-    --tw-text-opacity: 1;
-    color: rgb(156 163 175/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(156 163 175/var(--text-opacity))
 }
 
 .dark .color-63-131-248-1 {
-    --tw-text-opacity: 1;
-    color: rgb(63 131 248/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(63 131 248/var(--text-opacity))
 }
 
 .dark .color-209-213-219-1 {
-    --tw-text-opacity: 1;
-    color: rgb(209 213 219/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(209 213 219/var(--text-opacity))
 }
 
 .dark .color-156-163-175-1::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgb(156 163 175/var(--tw-placeholder-opacity))
+    --placeholder-opacity: 1;
+    color: rgb(156 163 175/var(--placeholder-opacity))
 }
 
 .dark .color-156-163-175-1::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgb(156 163 175/var(--tw-placeholder-opacity))
+    --placeholder-opacity: 1;
+    color: rgb(156 163 175/var(--placeholder-opacity))
 }
 
 .dark .apRlbPZRJ4JWA5RVdURT {
-    --tw-ring-offset-color: #1f2937
+    --ring-offset-color: #1f2937
 }
 
 .dark .GbuoIVQvgE1sPez3FB0O:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(31 41 55/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(31 41 55/var(--bg-opacity))
 }
 
 .dark .xotVay0PVtR3gElm6ql5:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(75 85 99/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(75 85 99/var(--bg-opacity))
 }
 
 .dark .V2alIkRVl_uBQKfQTjue:hover {
-    --tw-text-opacity: 1;
-    color: rgb(63 131 248/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(63 131 248/var(--text-opacity))
 }
 
 .dark ._VCO84hOChxSw1A3KE3f:hover {
-    --tw-text-opacity: 1;
-    color: rgb(209 213 219/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(209 213 219/var(--text-opacity))
 }
 
 .dark .DTyjKhtXBNaebZa5L0l9:hover {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(255 255 255/var(--text-opacity))
 }
 
 .dark .P53YJBBtllZv8_nFHFHW:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgb(75 85 99/var(--tw-ring-opacity))
+    --ring-opacity: 1;
+    --ring-color: rgb(75 85 99/var(--ring-opacity))
 }
 
 @media (min-width: 640px) {
@@ -1318,74 +1318,74 @@ input[type=range]::-ms-fill-lower {
           </style>
         </head>
         <body>
-          <!-- drawer init and show --><div class="text-align-center htKwwrf1lkuK40W2S8Ec">
-    <button id="createUserButton" class="color-white-1 bg-primary-700 hover:bg-primary-800 _FONMPVaCsLFJJGDaaIL focus:ring-primary-300 font-weight-500 border-radius-point-5-rem MxG1ClE4KPrIvlL5_Q5x padding-left-right-1-point-25-rem padding-bottom-top-point-625-rem margin-right-point-5-rem rD4HtsUG_hahmbh2Kj09 dark:bg-primary-600 dark:hover:bg-primary-700 qHIOIw8TObHgD3VvKa5x dark:focus:ring-primary-800" type="button" data-drawer-target="drawer-create-user" data-drawer-show="drawer-create-user" aria-controls="drawer-create-user">
+          <!-- drawer init and show --><div class="text-center htKwwrf1lkuK40W2S8Ec">
+    <button id="createUserButton" class="color-white-1 bg-primary-700 hover:bg-primary-800 _FONMPVaCsLFJJGDaaIL focus:ring-primary-300 font-weight-500 rounded-lg text-sm leading-5 px-5 py-2 margin-right-point-5-rem mb-2 dark:bg-primary-600 dark:hover:bg-primary-700 qHIOIw8TObHgD3VvKa5x dark:focus:ring-primary-800" type="button" data-drawer-target="drawer-create-user" data-drawer-show="drawer-create-user" aria-controls="drawer-create-user">
     Create user
     </button>
 </div>
 
 <!-- drawer component -->
-<div id="drawer-create-user" class="position-fx top-0 left-0 z-index-40 jCISvWkW5oStPH6Wrb_H EK89X18DKI1qL7Bj2rHP _i_P9SUKguI_982Yh_Kk padding-1-rem M4JgixW4UN7OS2HTxbTr _6rIGYGuoy5631LP6gZ1 panel-transform-toggle background-color-white-1 background-color-31-41-55-1" tabindex="-1" aria-labelledby="drawer-create-user-label" aria-hidden="true">
-    <h5 id="drawer-label" class="display-in-flex al-center SGCI_v4dZasZ65DtKHsW MxG1ClE4KPrIvlL5_Q5x font-weight-600 color-107-114-128-1 text-transform-uppercase color-156-163-175-1">New User</h5>
-    <button type="button" data-drawer-dismiss="drawer-create-user" aria-controls="drawer-create-user" class="color-156-163-175-1 bHPiH67mBn1_jgR3TrvW _s1HFAQPzDGxzspem6eZ _xQT_qSXfwWf6ZhwRle4 border-radius-point-5-rem MxG1ClE4KPrIvlL5_Q5x padding-point-375-rem position-ab h_B4NMrExslIH6pDuguB RuYIYC_9cfaevyC_j3SK display-in-flex al-center xotVay0PVtR3gElm6ql5 DTyjKhtXBNaebZa5L0l9">
+<div id="drawer-create-user" class="position-fx top-0 left-0 z-index-40 w-full EK89X18DKI1qL7Bj2rHP _i_P9SUKguI_982Yh_Kk padding-1-rem M4JgixW4UN7OS2HTxbTr _6rIGYGuoy5631LP6gZ1 panel-transform-toggle background-color-white-1 background-color-31-41-55-1" tabindex="-1" aria-labelledby="drawer-create-user-label" aria-hidden="true">
+    <h5 id="drawer-label" class="inline-flex items-center SGCI_v4dZasZ65DtKHsW text-sm leading-5 font-weight-600 color-107-114-128-1 text-transform-uppercase color-156-163-175-1">New User</h5>
+    <button type="button" data-drawer-dismiss="drawer-create-user" aria-controls="drawer-create-user" class="color-156-163-175-1 bHPiH67mBn1_jgR3TrvW _s1HFAQPzDGxzspem6eZ _xQT_qSXfwWf6ZhwRle4 rounded-lg text-sm leading-5 padding-point-375-rem position-ab h_B4NMrExslIH6pDuguB RuYIYC_9cfaevyC_j3SK inline-flex items-center xotVay0PVtR3gElm6ql5 DTyjKhtXBNaebZa5L0l9">
         <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
         <span class="rec-clipper">Close menu</span>
     </button>
     <form action="#">
         <div class="not-hidden-margin-bottom-top-1-rem">
             <div>
-                <label class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1" for="file_input">Upload avatar</label>
+                <label class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1" for="file_input">Upload avatar</label>
                 <div>
-                    <img class="HzSN_B__bXx8FUbQhXu_ q6R7ifHNsy60SzijPw4M margin-bottom-1-rem border-radius-9999-px" src="/assets/joseph-mcfall.png" alt="Joseph avatar">
-                    <div class="jCISvWkW5oStPH6Wrb_H">
-                        <input class="jCISvWkW5oStPH6Wrb_H MxG1ClE4KPrIvlL5_Q5x color-17-24-39-1 border-width-1-px border-color-209-213-219-1 border-radius-point-5-rem cursor-pointer background-color-249-250-251-1 color-156-163-175-1 qHIOIw8TObHgD3VvKa5x background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1" aria-describedby="file_input_help" id="file_input" type="file">
+                    <img class="HzSN_B__bXx8FUbQhXu_ q6R7ifHNsy60SzijPw4M mb-4 border-radius-9999-px" src="/assets/joseph-mcfall.png" alt="Joseph avatar">
+                    <div class="w-full">
+                        <input class="w-full text-sm leading-5 color-17-24-39-1 border border-color-209-213-219-1 rounded-lg cursor-pointer background-color-249-250-251-1 color-156-163-175-1 qHIOIw8TObHgD3VvKa5x background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1" aria-describedby="file_input_help" id="file_input" type="file">
                         <p class="SczeiPsQKuBQsFlbqCbz XklWzT8y98pp042XEQp4 font-weight-400 color-107-114-128-1 color-156-163-175-1" id="file_input_help">SVG, PNG, JPG or GIF (MAX. 800x400px).</p>
                     </div>
                 </div>
             </div>
             <div>
-                <label for="first-name" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">First Name</label>
-                <input type="text" name="first-name" id="first-name" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="John" required="">
+                <label for="first-name" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">First Name</label>
+                <input type="text" name="first-name" id="first-name" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="John" required="">
             </div>
             <div>
-                <label for="last-name" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Last Name</label>
-                <input type="text" name="last-name" id="last-name" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Doe" required="">
+                <label for="last-name" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Last Name</label>
+                <input type="text" name="last-name" id="last-name" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Doe" required="">
             </div>
             <div>
-                <label for="email" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Email</label>
-                <input type="email" name="email" id="email" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="name@company.com" required="">
+                <label for="email" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Email</label>
+                <input type="email" name="email" id="email" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="name@company.com" required="">
             </div>
             <div>
-                <label for="password" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Password</label>
-                <input type="password" name="password" id="password" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="•••••••••" required="">
+                <label for="password" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Password</label>
+                <input type="password" name="password" id="password" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="•••••••••" required="">
             </div>                        
             <div>
-                <label for="confirm-password" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Confirm password</label>
-                <input type="password" name="confirm-password" id="confirm-password" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="•••••••••" required="">
+                <label for="confirm-password" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Confirm password</label>
+                <input type="password" name="confirm-password" id="confirm-password" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="•••••••••" required="">
             </div>
             <div>
-                <label class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1" for="user_role">Assign Role</label>
+                <label class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1" for="user_role">Assign Role</label>
                 <div class="__Iv72FadFpzwcpFl5_5">
-                    <div class="display-flex al-center _ryfipzijJEI18CFfJIm">
+                    <div class="display-flex items-center _ryfipzijJEI18CFfJIm">
                         <input id="inline-checkbox" type="checkbox" value="" name="user_role" class="width-1-rem height-1-rem background-color-243-244-246-1 border-color-209-213-219-1 border-radius-point-25-rem text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 apRlbPZRJ4JWA5RVdURT X3ifvK6lzvLzkZabaIQd background-color-55-65-81-1 border-color-75-85-99-1">
-                        <label for="inline-checkbox" class="QGosQoeY76W_hWM2rgwJ MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-209-213-219-1">Administrator</label>
+                        <label for="inline-checkbox" class="QGosQoeY76W_hWM2rgwJ text-sm leading-5 font-weight-500 color-17-24-39-1 color-209-213-219-1">Administrator</label>
                     </div>
-                    <div class="display-flex al-center _ryfipzijJEI18CFfJIm">
+                    <div class="display-flex items-center _ryfipzijJEI18CFfJIm">
                         <input id="inline-2-checkbox" type="checkbox" value="" name="user_role" class="width-1-rem height-1-rem background-color-243-244-246-1 border-color-209-213-219-1 border-radius-point-25-rem text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 apRlbPZRJ4JWA5RVdURT X3ifvK6lzvLzkZabaIQd background-color-55-65-81-1 border-color-75-85-99-1">
-                        <label for="inline-2-checkbox" class="QGosQoeY76W_hWM2rgwJ MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-209-213-219-1">Member</label>
+                        <label for="inline-2-checkbox" class="QGosQoeY76W_hWM2rgwJ text-sm leading-5 font-weight-500 color-17-24-39-1 color-209-213-219-1">Member</label>
                     </div>
-                    <div class="display-flex al-center _ryfipzijJEI18CFfJIm">
+                    <div class="display-flex items-center _ryfipzijJEI18CFfJIm">
                         <input checked="" id="inline-checked-checkbox" type="checkbox" value="" name="user_role" class="width-1-rem height-1-rem background-color-243-244-246-1 border-color-209-213-219-1 border-radius-point-25-rem text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 apRlbPZRJ4JWA5RVdURT X3ifvK6lzvLzkZabaIQd background-color-55-65-81-1 border-color-75-85-99-1">
-                        <label for="inline-checked-checkbox" class="QGosQoeY76W_hWM2rgwJ MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-209-213-219-1">Viewer</label>
+                        <label for="inline-checked-checkbox" class="QGosQoeY76W_hWM2rgwJ text-sm leading-5 font-weight-500 color-17-24-39-1 color-209-213-219-1">Viewer</label>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="bottom-0 left-0 display-flex jc-center jCISvWkW5oStPH6Wrb_H f3MzTUUAX5Nwv2yQ2zXq KgBTWt39fdiAC__YVNt8 not-hidden-margin-left-right-1-rem a0r83CgtlNHWVVdB08Vu _7ucW0T768mwTdOiN8mq P4XBw8jIgTr9d9pndgsA">
-            <button type="submit" class="color-white-1 jCISvWkW5oStPH6Wrb_H jc-center bg-primary-700 hover:bg-primary-800 _FONMPVaCsLFJJGDaaIL qHIOIw8TObHgD3VvKa5x focus:ring-primary-300 font-weight-500 border-radius-point-5-rem MxG1ClE4KPrIvlL5_Q5x padding-left-right-1-point-25-rem padding-bottom-top-point-625-rem text-align-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+        <div class="bottom-0 left-0 display-flex jc-center w-full f3MzTUUAX5Nwv2yQ2zXq mt-4 not-hidden-margin-left-right-1-rem a0r83CgtlNHWVVdB08Vu _7ucW0T768mwTdOiN8mq P4XBw8jIgTr9d9pndgsA">
+            <button type="submit" class="color-white-1 w-full jc-center bg-primary-700 hover:bg-primary-800 _FONMPVaCsLFJJGDaaIL qHIOIw8TObHgD3VvKa5x focus:ring-primary-300 font-weight-500 rounded-lg text-sm leading-5 px-5 py-2 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
                 Add user
             </button>
-            <button type="button" data-drawer-dismiss="drawer-create-user" aria-controls="drawer-create-user" class="display-in-flex jCISvWkW5oStPH6Wrb_H jc-center color-107-114-128-1 al-center background-color-white-1 DpMPWwlSESiYA8EE1xKM _FONMPVaCsLFJJGDaaIL qHIOIw8TObHgD3VvKa5x focus:ring-primary-300 border-radius-point-5-rem border-width-1-px border-color-229-231-235-1 MxG1ClE4KPrIvlL5_Q5x font-weight-500 padding-left-right-1-point-25-rem padding-bottom-top-point-625-rem _xQT_qSXfwWf6ZhwRle4 m_8FxTcpOfmK___hAaJ6 background-color-55-65-81-1 color-209-213-219-1 c4d_cyxeprbSxLoRnbIr DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5 P53YJBBtllZv8_nFHFHW">
+            <button type="button" data-drawer-dismiss="drawer-create-user" aria-controls="drawer-create-user" class="inline-flex w-full jc-center color-107-114-128-1 items-center background-color-white-1 DpMPWwlSESiYA8EE1xKM _FONMPVaCsLFJJGDaaIL qHIOIw8TObHgD3VvKa5x focus:ring-primary-300 rounded-lg border border-color-229-231-235-1 text-sm leading-5 font-weight-500 px-5 py-2 _xQT_qSXfwWf6ZhwRle4 m_8FxTcpOfmK___hAaJ6 background-color-55-65-81-1 color-209-213-219-1 c4d_cyxeprbSxLoRnbIr DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5 P53YJBBtllZv8_nFHFHW">
                 <svg class="width-1-point-25-rem height-1-point-25-rem b7Lf_ucBvHbZEidPjF8t wikskPDYEBn0nlvDss8h" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                 Close
             </button>

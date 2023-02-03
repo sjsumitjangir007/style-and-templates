@@ -6,6 +6,7 @@
           <meta http-equiv="X-UA-Compatible" content="IE=edge">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/tailwind_all.css" />
           <script src="https://cdn.tailwindcss.com"></script>
           <script>
             tailwind.config = {
@@ -34,7 +35,7 @@
 }
 
 :after,:before {
-    --tw-content: ""
+    --content: ""
 }
 
 html {
@@ -209,7 +210,7 @@ img,video {
 }
 
 [multiple],[type=date],[type=datetime-local],[type=email],[type=month],[type=number],[type=password],[type=search],[type=tel],[type=text],[type=time],[type=url],[type=week],select,textarea {
-    --tw-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -223,14 +224,14 @@ img,video {
 }
 
 [multiple]:focus,[type=date]:focus,[type=datetime-local]:focus,[type=email]:focus,[type=month]:focus,[type=number]:focus,[type=password]:focus,[type=search]:focus,[type=tel]:focus,[type=text]:focus,[type=time]:focus,[type=url]:focus,[type=week]:focus,select:focus,textarea:focus {
-    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: #1c64f2;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    --ring-inset: var(--empty,/*!*/ /*!*/);
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: #1c64f2;
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(1px + var(--ring-offset-width)) var(--ring-color);
     border-color: #1c64f2;
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow);
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -277,7 +278,7 @@ select {
 
 [type=checkbox],[type=radio] {
     color-adjust: exact;
-    --tw-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -308,13 +309,13 @@ select {
 }
 
 [type=checkbox]:focus,[type=radio]:focus {
-    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
-    --tw-ring-offset-width: 2px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: #1c64f2;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow);
+    --ring-inset: var(--empty,/*!*/ /*!*/);
+    --ring-offset-width: 2px;
+    --ring-offset-color: #fff;
+    --ring-color: #1c64f2;
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(2px + var(--ring-offset-width)) var(--ring-color);
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -396,11 +397,11 @@ input[type=range]:disabled::-webkit-slider-thumb {
 }
 
 input[type=range]:focus::-webkit-slider-thumb {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-    --tw-ring-opacity: 1px;
-    --tw-ring-color: rgb(164 202 254/var(--tw-ring-opacity));
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(4px + var(--ring-offset-width)) var(--ring-color);
+    --ring-opacity: 1px;
+    --ring-color: rgb(164 202 254/var(--ring-opacity));
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow,0 0 #0000);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -495,147 +496,147 @@ input[type=range]::-ms-fill-lower {
 }
 
 *,:after,:before {
-    --tw-border-spacing-x: 0;
-    --tw-border-spacing-y: 0;
-    --tw-translate-x: 0;
-    --tw-translate-y: 0;
-    --tw-rotate: 0;
-    --tw-skew-x: 0;
-    --tw-skew-y: 0;
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    --tw-pan-x: ;
-    --tw-pan-y: ;
-    --tw-pinch-zoom: ;
-    --tw-scroll-snap-strictness: proximity;
-    --tw-ordinal: ;
-    --tw-slashed-zero: ;
-    --tw-numeric-figure: ;
-    --tw-numeric-spacing: ;
-    --tw-numeric-fraction: ;
-    --tw-ring-inset: ;
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: rgba(63,131,248,.5);
-    --tw-ring-offset-shadow: 0 0 #0000;
-    --tw-ring-shadow: 0 0 #0000;
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    --tw-blur: ;
-    --tw-brightness: ;
-    --tw-contrast: ;
-    --tw-grayscale: ;
-    --tw-hue-rotate: ;
-    --tw-invert: ;
-    --tw-saturate: ;
-    --tw-sepia: ;
-    --tw-drop-shadow: ;
-    --tw-backdrop-blur: ;
-    --tw-backdrop-brightness: ;
-    --tw-backdrop-contrast: ;
-    --tw-backdrop-grayscale: ;
-    --tw-backdrop-hue-rotate: ;
-    --tw-backdrop-invert: ;
-    --tw-backdrop-opacity: ;
-    --tw-backdrop-saturate: ;
-    --tw-backdrop-sepia:
+    --border-spacing-x: 0;
+    --border-spacing-y: 0;
+    --translate-x: 0;
+    --translate-y: 0;
+    --rotate: 0;
+    --skew-x: 0;
+    --skew-y: 0;
+    --scale-x: 1;
+    --scale-y: 1;
+    --pan-x: ;
+    --pan-y: ;
+    --pinch-zoom: ;
+    --scroll-snap-strictness: proximity;
+    --ordinal: ;
+    --slashed-zero: ;
+    --numeric-figure: ;
+    --numeric-spacing: ;
+    --numeric-fraction: ;
+    --ring-inset: ;
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: rgba(63,131,248,.5);
+    --ring-offset-shadow: 0 0 #0000;
+    --ring-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
+    --shadow-colored: 0 0 #0000;
+    --blur: ;
+    --brightness: ;
+    --contrast: ;
+    --grayscale: ;
+    --hue-rotate: ;
+    --invert: ;
+    --saturate: ;
+    --sepia: ;
+    --drop-shadow: ;
+    --backdrop-blur: ;
+    --backdrop-brightness: ;
+    --backdrop-contrast: ;
+    --backdrop-grayscale: ;
+    --backdrop-hue-rotate: ;
+    --backdrop-invert: ;
+    --backdrop-opacity: ;
+    --backdrop-saturate: ;
+    --backdrop-sepia:
 }
 
 ::-webkit-backdrop {
-    --tw-border-spacing-x: 0;
-    --tw-border-spacing-y: 0;
-    --tw-translate-x: 0;
-    --tw-translate-y: 0;
-    --tw-rotate: 0;
-    --tw-skew-x: 0;
-    --tw-skew-y: 0;
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    --tw-pan-x: ;
-    --tw-pan-y: ;
-    --tw-pinch-zoom: ;
-    --tw-scroll-snap-strictness: proximity;
-    --tw-ordinal: ;
-    --tw-slashed-zero: ;
-    --tw-numeric-figure: ;
-    --tw-numeric-spacing: ;
-    --tw-numeric-fraction: ;
-    --tw-ring-inset: ;
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: rgba(63,131,248,.5);
-    --tw-ring-offset-shadow: 0 0 #0000;
-    --tw-ring-shadow: 0 0 #0000;
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    --tw-blur: ;
-    --tw-brightness: ;
-    --tw-contrast: ;
-    --tw-grayscale: ;
-    --tw-hue-rotate: ;
-    --tw-invert: ;
-    --tw-saturate: ;
-    --tw-sepia: ;
-    --tw-drop-shadow: ;
-    --tw-backdrop-blur: ;
-    --tw-backdrop-brightness: ;
-    --tw-backdrop-contrast: ;
-    --tw-backdrop-grayscale: ;
-    --tw-backdrop-hue-rotate: ;
-    --tw-backdrop-invert: ;
-    --tw-backdrop-opacity: ;
-    --tw-backdrop-saturate: ;
-    --tw-backdrop-sepia:
+    --border-spacing-x: 0;
+    --border-spacing-y: 0;
+    --translate-x: 0;
+    --translate-y: 0;
+    --rotate: 0;
+    --skew-x: 0;
+    --skew-y: 0;
+    --scale-x: 1;
+    --scale-y: 1;
+    --pan-x: ;
+    --pan-y: ;
+    --pinch-zoom: ;
+    --scroll-snap-strictness: proximity;
+    --ordinal: ;
+    --slashed-zero: ;
+    --numeric-figure: ;
+    --numeric-spacing: ;
+    --numeric-fraction: ;
+    --ring-inset: ;
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: rgba(63,131,248,.5);
+    --ring-offset-shadow: 0 0 #0000;
+    --ring-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
+    --shadow-colored: 0 0 #0000;
+    --blur: ;
+    --brightness: ;
+    --contrast: ;
+    --grayscale: ;
+    --hue-rotate: ;
+    --invert: ;
+    --saturate: ;
+    --sepia: ;
+    --drop-shadow: ;
+    --backdrop-blur: ;
+    --backdrop-brightness: ;
+    --backdrop-contrast: ;
+    --backdrop-grayscale: ;
+    --backdrop-hue-rotate: ;
+    --backdrop-invert: ;
+    --backdrop-opacity: ;
+    --backdrop-saturate: ;
+    --backdrop-sepia:
 }
 
 ::backdrop {
-    --tw-border-spacing-x: 0;
-    --tw-border-spacing-y: 0;
-    --tw-translate-x: 0;
-    --tw-translate-y: 0;
-    --tw-rotate: 0;
-    --tw-skew-x: 0;
-    --tw-skew-y: 0;
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    --tw-pan-x: ;
-    --tw-pan-y: ;
-    --tw-pinch-zoom: ;
-    --tw-scroll-snap-strictness: proximity;
-    --tw-ordinal: ;
-    --tw-slashed-zero: ;
-    --tw-numeric-figure: ;
-    --tw-numeric-spacing: ;
-    --tw-numeric-fraction: ;
-    --tw-ring-inset: ;
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: rgba(63,131,248,.5);
-    --tw-ring-offset-shadow: 0 0 #0000;
-    --tw-ring-shadow: 0 0 #0000;
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    --tw-blur: ;
-    --tw-brightness: ;
-    --tw-contrast: ;
-    --tw-grayscale: ;
-    --tw-hue-rotate: ;
-    --tw-invert: ;
-    --tw-saturate: ;
-    --tw-sepia: ;
-    --tw-drop-shadow: ;
-    --tw-backdrop-blur: ;
-    --tw-backdrop-brightness: ;
-    --tw-backdrop-contrast: ;
-    --tw-backdrop-grayscale: ;
-    --tw-backdrop-hue-rotate: ;
-    --tw-backdrop-invert: ;
-    --tw-backdrop-opacity: ;
-    --tw-backdrop-saturate: ;
-    --tw-backdrop-sepia:
+    --border-spacing-x: 0;
+    --border-spacing-y: 0;
+    --translate-x: 0;
+    --translate-y: 0;
+    --rotate: 0;
+    --skew-x: 0;
+    --skew-y: 0;
+    --scale-x: 1;
+    --scale-y: 1;
+    --pan-x: ;
+    --pan-y: ;
+    --pinch-zoom: ;
+    --scroll-snap-strictness: proximity;
+    --ordinal: ;
+    --slashed-zero: ;
+    --numeric-figure: ;
+    --numeric-spacing: ;
+    --numeric-fraction: ;
+    --ring-inset: ;
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: rgba(63,131,248,.5);
+    --ring-offset-shadow: 0 0 #0000;
+    --ring-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
+    --shadow-colored: 0 0 #0000;
+    --blur: ;
+    --brightness: ;
+    --contrast: ;
+    --grayscale: ;
+    --hue-rotate: ;
+    --invert: ;
+    --saturate: ;
+    --sepia: ;
+    --drop-shadow: ;
+    --backdrop-blur: ;
+    --backdrop-brightness: ;
+    --backdrop-contrast: ;
+    --backdrop-grayscale: ;
+    --backdrop-hue-rotate: ;
+    --backdrop-invert: ;
+    --backdrop-opacity: ;
+    --backdrop-saturate: ;
+    --backdrop-sepia:
 }
 
-.RV8RoaI_SlEMC5CEQ3ms {
+.mx-auto {
     margin-left: auto;
     margin-right: auto
 }
@@ -648,7 +649,7 @@ input[type=range]::-ms-fill-lower {
     margin-right: 1.25rem
 }
 
-.rD4HtsUG_hahmbh2Kj09 {
+.mb-2 {
     margin-bottom: .5rem
 }
 
@@ -656,7 +657,7 @@ input[type=range]::-ms-fill-lower {
     display: flex
 }
 
-.display-in-flex {
+.inline-flex {
     display: inline-flex
 }
 
@@ -684,7 +685,7 @@ input[type=range]::-ms-fill-lower {
     flex-direction: column
 }
 
-.al-center {
+.items-center {
     align-items: center
 }
 
@@ -697,16 +698,16 @@ input[type=range]::-ms-fill-lower {
 }
 
 .background-color-white-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--bg-opacity))
 }
 
-.padding-lbottom-top-2-rem {
+.py-8 {
     padding-bottom: 2rem;
     padding-top: 2rem
 }
 
-.padding-left-right-1-rem {
+.px-4 {
     padding-left: 1rem;
     padding-right: 1rem
 }
@@ -720,7 +721,7 @@ input[type=range]::-ms-fill-lower {
     line-height: 2rem
 }
 
-.uyo8h_4Kh1IoUwm8bwJI {
+.text-xl leading-7 {
     font-size: 1.25rem;
     line-height: 1.75rem
 }
@@ -742,13 +743,13 @@ input[type=range]::-ms-fill-lower {
 }
 
 .color-17-24-39-1 {
-    --tw-text-opacity: 1;
-    color: rgb(17 24 39/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(17 24 39/var(--text-opacity))
 }
 
 .color-107-114-128-1 {
-    --tw-text-opacity: 1;
-    color: rgb(107 114 128/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(107 114 128/var(--text-opacity))
 }
 
 .text-decoration-line-underline {
@@ -766,18 +767,18 @@ input[type=range]::-ms-fill-lower {
 }
 
 .dark .background-color-17-24-39-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(17 24 39/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(17 24 39/var(--bg-opacity))
 }
 
 .dark .color-white-255-255-255-1 {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(255 255 255/var(--text-opacity))
 }
 
 .dark .color-156-163-175-1 {
-    --tw-text-opacity: 1;
-    color: rgb(156 163 175/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(156 163 175/var(--text-opacity))
 }
 
 @media (min-width: 1024px) {
@@ -790,19 +791,19 @@ input[type=range]::-ms-fill-lower {
           </style>
         </head>
         <body>
-          <aside aria-label="Related articles" class="padding-lbottom-top-2-rem padding-bottom-top-6-rem background-color-white-1 background-color-17-24-39-1">
-  <div class="padding-left-right-1-rem RV8RoaI_SlEMC5CEQ3ms max-width-1280-px">
+          <aside aria-label="Related articles" class="py-8 padding-bottom-top-6-rem background-color-white-1 background-color-17-24-39-1">
+  <div class="px-4 mx-auto max-width-1280-px">
       <h2 class="_BTfre_DcBxkj7buMlKq _e063bssp_1bldcJ6kR0 font-weight-700 color-17-24-39-1 color-white-255-255-255-1">Read next</h2>
       <article class="display-flex _BTfre_DcBxkj7buMlKq">
           <a href="#" class="flex-shrink-0">
               <img src="/assets/image-1.png" class="oCy9FgSEQBgM4N_bMejq width-8-rem VfTNVuFHfUOV2VUUsLM5 max-w-fullalign-middle border-radius-9999-px" alt="Image 1">
           </a>
           <div class="display-flex flex-direction-column jc-center">
-              <h2 class="rD4HtsUG_hahmbh2Kj09 uyo8h_4Kh1IoUwm8bwJI font-weight-700 line-height-1-point-25 color-17-24-39-1 color-white-255-255-255-1">
+              <h2 class="mb-2 text-xl leading-7 font-weight-700 line-height-1-point-25 color-17-24-39-1 color-white-255-255-255-1">
                   <a href="#">Our first office</a>
               </h2>
-              <p class="rD4HtsUG_hahmbh2Kj09 font-weight-300 color-107-114-128-1 color-156-163-175-1">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
-              <a href="#" class="display-in-flex al-center font-weight-500 text-decoration-line-underline aLkxBYrqOmZoa_nRh3yL text-primary-600 dark:text-primary-500 _LWmEJ3ddClfhUowkba_">
+              <p class="mb-2 font-weight-300 color-107-114-128-1 color-156-163-175-1">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
+              <a href="#" class="inline-flex items-center font-weight-500 text-decoration-line-underline aLkxBYrqOmZoa_nRh3yL text-primary-600 dark:text-primary-500 _LWmEJ3ddClfhUowkba_">
                   Read in 2 minutes
               </a>
           </div>
@@ -812,11 +813,11 @@ input[type=range]::-ms-fill-lower {
               <img src="/assets/image-2.png" class="oCy9FgSEQBgM4N_bMejq width-8-rem VfTNVuFHfUOV2VUUsLM5 max-width-100-per vertical-align-middle border-radius-9999-px" alt="Image 2">
           </a>
           <div class="display-flex flex-direction-column jc-center">
-              <h2 class="rD4HtsUG_hahmbh2Kj09 uyo8h_4Kh1IoUwm8bwJI font-weight-700 line-height-1-point-25 color-17-24-39-1 color-white-255-255-255-1">
+              <h2 class="mb-2 text-xl leading-7 font-weight-700 line-height-1-point-25 color-17-24-39-1 color-white-255-255-255-1">
                   <a href="#">Enterprise design tips</a>
               </h2>
-              <p class="rD4HtsUG_hahmbh2Kj09 font-weight-300 color-107-114-128-1 color-156-163-175-1">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
-              <a href="#" class="display-in-flex al-center font-weight-500 text-decoration-line-underline aLkxBYrqOmZoa_nRh3yL text-primary-600 dark:text-primary-500 _LWmEJ3ddClfhUowkba_">
+              <p class="mb-2 font-weight-300 color-107-114-128-1 color-156-163-175-1">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
+              <a href="#" class="inline-flex items-center font-weight-500 text-decoration-line-underline aLkxBYrqOmZoa_nRh3yL text-primary-600 dark:text-primary-500 _LWmEJ3ddClfhUowkba_">
                   Read in 12 minutes
               </a>
           </div>
@@ -826,11 +827,11 @@ input[type=range]::-ms-fill-lower {
               <img src="/assets/image-3.png" class="oCy9FgSEQBgM4N_bMejq width-8-rem VfTNVuFHfUOV2VUUsLM5 max-width-100-per vertical-align-middle border-radius-9999-px" alt="Image 3">
           </a>
           <div class="display-flex flex-direction-column jc-center">
-              <h2 class="rD4HtsUG_hahmbh2Kj09 uyo8h_4Kh1IoUwm8bwJI font-weight-700 line-height-1-point-25 color-17-24-39-1 color-white-255-255-255-1">
+              <h2 class="mb-2 text-xl leading-7 font-weight-700 line-height-1-point-25 color-17-24-39-1 color-white-255-255-255-1">
                   <a href="#">We partnered up with Google</a>
               </h2>
-              <p class="rD4HtsUG_hahmbh2Kj09 font-weight-300 color-107-114-128-1 color-156-163-175-1">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
-              <a href="#" class="display-in-flex al-center font-weight-500 text-decoration-line-underline aLkxBYrqOmZoa_nRh3yL text-primary-600 dark:text-primary-500 _LWmEJ3ddClfhUowkba_">
+              <p class="mb-2 font-weight-300 color-107-114-128-1 color-156-163-175-1">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
+              <a href="#" class="inline-flex items-center font-weight-500 text-decoration-line-underline aLkxBYrqOmZoa_nRh3yL text-primary-600 dark:text-primary-500 _LWmEJ3ddClfhUowkba_">
                   Read in 8 minutes
               </a>
           </div>

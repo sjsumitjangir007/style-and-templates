@@ -6,6 +6,7 @@
           <meta http-equiv="X-UA-Compatible" content="IE=edge">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/tailwind_all.css" />
           <script src="https://cdn.tailwindcss.com"></script>
           <script>
             tailwind.config = {
@@ -34,7 +35,7 @@
 }
 
 :after,:before {
-    --tw-content: ""
+    --content: ""
 }
 
 html {
@@ -216,7 +217,7 @@ img,video {
 }
 
 [multiple],[type=date],[type=datetime-local],[type=email],[type=month],[type=number],[type=password],[type=search],[type=tel],[type=text],[type=time],[type=url],[type=week],select,textarea {
-    --tw-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -230,14 +231,14 @@ img,video {
 }
 
 [multiple]:focus,[type=date]:focus,[type=datetime-local]:focus,[type=email]:focus,[type=month]:focus,[type=number]:focus,[type=password]:focus,[type=search]:focus,[type=tel]:focus,[type=text]:focus,[type=time]:focus,[type=url]:focus,[type=week]:focus,select:focus,textarea:focus {
-    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: #1c64f2;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    --ring-inset: var(--empty,/*!*/ /*!*/);
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: #1c64f2;
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(1px + var(--ring-offset-width)) var(--ring-color);
     border-color: #1c64f2;
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow);
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -287,7 +288,7 @@ select {
 
 [type=checkbox],[type=radio] {
     color-adjust: exact;
-    --tw-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -318,13 +319,13 @@ select {
 }
 
 [type=checkbox]:focus,[type=radio]:focus {
-    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
-    --tw-ring-offset-width: 2px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: #1c64f2;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow);
+    --ring-inset: var(--empty,/*!*/ /*!*/);
+    --ring-offset-width: 2px;
+    --ring-offset-color: #fff;
+    --ring-color: #1c64f2;
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(2px + var(--ring-offset-width)) var(--ring-color);
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -422,11 +423,11 @@ input[type=range]:disabled::-webkit-slider-thumb {
 }
 
 input[type=range]:focus::-webkit-slider-thumb {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-    --tw-ring-opacity: 1px;
-    --tw-ring-color: rgb(164 202 254/var(--tw-ring-opacity));
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(4px + var(--ring-offset-width)) var(--ring-color);
+    --ring-opacity: 1px;
+    --ring-color: rgb(164 202 254/var(--ring-opacity));
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow,0 0 #0000);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -456,55 +457,55 @@ input[type=range]::-ms-fill-lower {
 }
 
 *,:after,:before {
-    --tw-translate-x: 0;
-    --tw-translate-y: 0;
-    --tw-rotate: 0;
-    --tw-skew-x: 0;
-    --tw-skew-y: 0;
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    --tw-pan-x: ;
-    --tw-pan-y: ;
-    --tw-pinch-zoom: ;
-    --tw-scroll-snap-strictness: proximity;
-    --tw-ordinal: ;
-    --tw-slashed-zero: ;
-    --tw-numeric-figure: ;
-    --tw-numeric-spacing: ;
-    --tw-numeric-fraction: ;
-    --tw-ring-inset: ;
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: rgba(63,131,248,.5);
-    --tw-ring-offset-shadow: 0 0 #0000;
-    --tw-ring-shadow: 0 0 #0000;
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    --tw-blur: ;
-    --tw-brightness: ;
-    --tw-contrast: ;
-    --tw-grayscale: ;
-    --tw-hue-rotate: ;
-    --tw-invert: ;
-    --tw-saturate: ;
-    --tw-sepia: ;
-    --tw-drop-shadow: ;
-    --tw-backdrop-blur: ;
-    --tw-backdrop-brightness: ;
-    --tw-backdrop-contrast: ;
-    --tw-backdrop-grayscale: ;
-    --tw-backdrop-hue-rotate: ;
-    --tw-backdrop-invert: ;
-    --tw-backdrop-opacity: ;
-    --tw-backdrop-saturate: ;
-    --tw-backdrop-sepia:
+    --translate-x: 0;
+    --translate-y: 0;
+    --rotate: 0;
+    --skew-x: 0;
+    --skew-y: 0;
+    --scale-x: 1;
+    --scale-y: 1;
+    --pan-x: ;
+    --pan-y: ;
+    --pinch-zoom: ;
+    --scroll-snap-strictness: proximity;
+    --ordinal: ;
+    --slashed-zero: ;
+    --numeric-figure: ;
+    --numeric-spacing: ;
+    --numeric-fraction: ;
+    --ring-inset: ;
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: rgba(63,131,248,.5);
+    --ring-offset-shadow: 0 0 #0000;
+    --ring-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
+    --shadow-colored: 0 0 #0000;
+    --blur: ;
+    --brightness: ;
+    --contrast: ;
+    --grayscale: ;
+    --hue-rotate: ;
+    --invert: ;
+    --saturate: ;
+    --sepia: ;
+    --drop-shadow: ;
+    --backdrop-blur: ;
+    --backdrop-brightness: ;
+    --backdrop-contrast: ;
+    --backdrop-grayscale: ;
+    --backdrop-hue-rotate: ;
+    --backdrop-invert: ;
+    --backdrop-opacity: ;
+    --backdrop-saturate: ;
+    --backdrop-sepia:
 }
 
 .position-static {
     position: static
 }
 
-.RV8RoaI_SlEMC5CEQ3ms {
+.mx-auto {
     margin-left: auto;
     margin-right: auto
 }
@@ -514,7 +515,7 @@ input[type=range]::-ms-fill-lower {
     margin-top: 1rem
 }
 
-.margin-bottom-1-rem {
+.mb-4 {
     margin-bottom: 1rem
 }
 
@@ -530,7 +531,7 @@ input[type=range]::-ms-fill-lower {
     display: flex
 }
 
-.display-in-flex {
+.inline-flex {
     display: inline-flex
 }
 
@@ -558,7 +559,7 @@ input[type=range]::-ms-fill-lower {
     max-width: 640px
 }
 
-.al-center {
+.items-center {
     align-items: center
 }
 
@@ -567,32 +568,32 @@ input[type=range]::-ms-fill-lower {
 }
 
 .not-hidden-margin-left-right-1-rem>:not([hidden])~:not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-left: calc(1rem*(1 - var(--tw-space-x-reverse)));
-    margin-right: calc(1rem*var(--tw-space-x-reverse))
+    --space-x-reverse: 0;
+    margin-left: calc(1rem*(1 - var(--space-x-reverse)));
+    margin-right: calc(1rem*var(--space-x-reverse))
 }
 
 .B1cgbA6Bb4LQo0qFJKck>:not([hidden])~:not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-left: calc(.75rem*(1 - var(--tw-space-x-reverse)));
-    margin-right: calc(.75rem*var(--tw-space-x-reverse))
+    --space-x-reverse: 0;
+    margin-left: calc(.75rem*(1 - var(--space-x-reverse)));
+    margin-right: calc(.75rem*var(--space-x-reverse))
 }
 
 .xo89eFdVl6ZY_wuJOEj_>:not([hidden])~:not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-left: calc(1.5rem*(1 - var(--tw-space-x-reverse)));
-    margin-right: calc(1.5rem*var(--tw-space-x-reverse))
+    --space-x-reverse: 0;
+    margin-left: calc(1.5rem*(1 - var(--space-x-reverse)));
+    margin-right: calc(1.5rem*var(--space-x-reverse))
 }
 
 .not-hidden-border-bottom-top-width-1-px>:not([hidden])~:not([hidden]) {
-    --tw-divide-y-reverse: 0;
-    border-bottom-width: calc(1px*var(--tw-divide-y-reverse));
-    border-top-width: calc(1px*(1 - var(--tw-divide-y-reverse)))
+    --divide-y-reverse: 0;
+    border-bottom-width: calc(1px*var(--divide-y-reverse));
+    border-top-width: calc(1px*(1 - var(--divide-y-reverse)))
 }
 
 .yGKSom6xHdY1EhaYGurI>:not([hidden])~:not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgb(229 231 235/var(--tw-divide-opacity))
+    --divide-opacity: 1;
+    border-color: rgb(229 231 235/var(--divide-opacity))
 }
 
 .border-radius-point-25-rem {
@@ -604,16 +605,16 @@ input[type=range]::-ms-fill-lower {
 }
 
 .background-color-white-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--bg-opacity))
 }
 
-.padding-lbottom-top-2-rem {
+.py-8 {
     padding-bottom: 2rem;
     padding-top: 2rem
 }
 
-.padding-left-right-1-rem {
+.px-4 {
     padding-left: 1rem;
     padding-right: 1rem
 }
@@ -651,7 +652,7 @@ input[type=range]::-ms-fill-lower {
     padding-top: 1.5rem
 }
 
-.text-align-center {
+.text-center {
     text-align: center
 }
 
@@ -696,40 +697,40 @@ input[type=range]::-ms-fill-lower {
 }
 
 .color-17-24-39-1 {
-    --tw-text-opacity: 1;
-    color: rgb(17 24 39/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(17 24 39/var(--text-opacity))
 }
 
 .color-107-114-128-1 {
-    --tw-text-opacity: 1;
-    color: rgb(107 114 128/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(107 114 128/var(--text-opacity))
 }
 
 .dark .HYRf9RlDA82adxhJtlOL>:not([hidden])~:not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgb(55 65 81/var(--tw-divide-opacity))
+    --divide-opacity: 1;
+    border-color: rgb(55 65 81/var(--divide-opacity))
 }
 
 .dark .background-color-17-24-39-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(17 24 39/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(17 24 39/var(--bg-opacity))
 }
 
 .dark .color-white-255-255-255-1 {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(255 255 255/var(--text-opacity))
 }
 
 .dark .color-156-163-175-1 {
-    --tw-text-opacity: 1;
-    color: rgb(156 163 175/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(156 163 175/var(--text-opacity))
 }
 
 @media (min-width: 640px) {
     ._H1daFWD6CPZSMO4m9jG>:not([hidden])~:not([hidden]) {
-        --tw-space-x-reverse:0;
-        margin-left: calc(1.5rem*(1 - var(--tw-space-x-reverse)));
-        margin-right: calc(1.5rem*var(--tw-space-x-reverse))
+        --space-x-reverse:0;
+        margin-left: calc(1.5rem*(1 - var(--space-x-reverse)));
+        margin-right: calc(1.5rem*var(--space-x-reverse))
     }
 
     .IBnFXMOXF1_c25AC5s9x {
@@ -755,7 +756,7 @@ input[type=range]::-ms-fill-lower {
         margin-bottom:4rem
     }
 
-    .padding-left-right-1-point-5-rem {
+    .px-6 {
         padding-left: 1.5rem;
         padding-right: 1.5rem
     }
@@ -765,22 +766,22 @@ input[type=range]::-ms-fill-lower {
         </head>
         <body>
           <section class="background-color-white-1 background-color-17-24-39-1">
-  <div class="padding-lbottom-top-2-rem padding-left-right-1-rem RV8RoaI_SlEMC5CEQ3ms max-width-1280-px IBnFXMOXF1_c25AC5s9x padding-left-right-1-point-5-rem">
-      <div class="RV8RoaI_SlEMC5CEQ3ms max-width-640-px text-align-center">
-          <h2 class="margin-bottom-1-rem _Bu4HL5sPDOGN_IKUsOc letter-spacing-minu-point-025-em font-weight-800 color-17-24-39-1 color-white-255-255-255-1">Our Blog</h2>
+  <div class="py-8 px-4 mx-auto max-width-1280-px IBnFXMOXF1_c25AC5s9x px-6">
+      <div class="mx-auto max-width-640-px text-center">
+          <h2 class="mb-4 _Bu4HL5sPDOGN_IKUsOc letter-spacing-minu-point-025-em font-weight-800 color-17-24-39-1 color-white-255-255-255-1">Our Blog</h2>
           <p class="_BTfre_DcBxkj7buMlKq margin-bottom-4-rem font-weight-300 color-107-114-128-1 HUVIJuZ9QnvurQq0NDcX color-156-163-175-1">We use an agile approach to test assumptions and connect with the needs of your audience early and often.</p>
       </div> 
-      <div class="RV8RoaI_SlEMC5CEQ3ms max-width-640-px not-hidden-border-bottom-top-width-1-px yGKSom6xHdY1EhaYGurI HYRf9RlDA82adxhJtlOL">
-          <article class="Z1_SzDAYyMh8z9ORQVFR text-align-center">
-              <span class="bg-primary-100 text-primary-800 XklWzT8y98pp042XEQp4 font-weight-500 display-in-flex al-center cA4BPuqyV1eox6S0acvl AOldjxkjQirRFQcsh_FR border-radius-point-25-rem dark:bg-primary-200 dark:text-primary-800">
+      <div class="mx-auto max-width-640-px not-hidden-border-bottom-top-width-1-px yGKSom6xHdY1EhaYGurI HYRf9RlDA82adxhJtlOL">
+          <article class="Z1_SzDAYyMh8z9ORQVFR text-center">
+              <span class="bg-primary-100 text-primary-800 XklWzT8y98pp042XEQp4 font-weight-500 inline-flex items-center cA4BPuqyV1eox6S0acvl AOldjxkjQirRFQcsh_FR border-radius-point-25-rem dark:bg-primary-200 dark:text-primary-800">
                   <svg class="b7Lf_ucBvHbZEidPjF8t width-point-75-rem height-point-75-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
                   Tutorial
               </span>
               <h2 class="_MTwKeST1JpgVPLVq9Qc _e063bssp_1bldcJ6kR0 font-weight-700 letter-spacing-minu-point-025-em color-17-24-39-1 _Ht1F_7LGeBQcVBWKRiH color-white-255-255-255-1">
                   <a href="#">How to quickly deploy a static website</a>
               </h2>
-              <div class="display-flex jc-center al-center not-hidden-margin-left-right-1-rem color-107-114-128-1 _H1daFWD6CPZSMO4m9jG">
-                  <div class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
+              <div class="display-flex jc-center items-center not-hidden-margin-left-right-1-rem color-107-114-128-1 _H1daFWD6CPZSMO4m9jG">
+                  <div class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
                       <img class="width-1-point-5-rem _XD2a764x49B1E2F9f8X border-radius-9999-px" src="/assets/jese-leos.png" alt="Jese portrait">
                       <span class="VwrSTsh__so52zqMJvws font-weight-500 color-17-24-39-1 color-white-255-255-255-1">
                           Jese Leos
@@ -790,16 +791,16 @@ input[type=range]::-ms-fill-lower {
                   <span>178 shares</span>
               </div>
           </article>  
-          <article class="padding-bottom-top-1-point-5-rem text-align-center">
-              <span class="bg-primary-100 text-primary-800 XklWzT8y98pp042XEQp4 font-weight-500 display-in-flex al-center cA4BPuqyV1eox6S0acvl AOldjxkjQirRFQcsh_FR border-radius-point-25-rem dark:bg-primary-200 dark:text-primary-800">
+          <article class="padding-bottom-top-1-point-5-rem text-center">
+              <span class="bg-primary-100 text-primary-800 XklWzT8y98pp042XEQp4 font-weight-500 inline-flex items-center cA4BPuqyV1eox6S0acvl AOldjxkjQirRFQcsh_FR border-radius-point-25-rem dark:bg-primary-200 dark:text-primary-800">
                   <svg class="b7Lf_ucBvHbZEidPjF8t width-point-75-rem height-point-75-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clip-rule="evenodd"></path><path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"></path></svg>
                   Article
               </span>
               <h2 class="_MTwKeST1JpgVPLVq9Qc _e063bssp_1bldcJ6kR0 font-weight-700 letter-spacing-minu-point-025-em color-17-24-39-1 _Ht1F_7LGeBQcVBWKRiH color-white-255-255-255-1">
                   <a href="#">Short-Form vs. Long-Form Content: Which Is Better for SEO?</a>
               </h2>
-              <div class="display-flex jc-center al-center xo89eFdVl6ZY_wuJOEj_ color-107-114-128-1">
-                  <div class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
+              <div class="display-flex jc-center items-center xo89eFdVl6ZY_wuJOEj_ color-107-114-128-1">
+                  <div class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
                       <img class="width-1-point-5-rem _XD2a764x49B1E2F9f8X border-radius-9999-px" src="/assets/karen-nelson.png" alt="Karen portrait">
                       <span class="VwrSTsh__so52zqMJvws font-weight-500 color-17-24-39-1 color-white-255-255-255-1">
                           Karen Nelson
@@ -809,16 +810,16 @@ input[type=range]::-ms-fill-lower {
                   <span>178 shares</span>
               </div>
           </article>
-          <article class="_lAEBrJaxd1MpZcMUkYx text-align-center">
-              <span class="bg-primary-100 text-primary-800 XklWzT8y98pp042XEQp4 font-weight-500 display-in-flex al-center cA4BPuqyV1eox6S0acvl AOldjxkjQirRFQcsh_FR border-radius-point-25-rem dark:bg-primary-200 dark:text-primary-800">
+          <article class="_lAEBrJaxd1MpZcMUkYx text-center">
+              <span class="bg-primary-100 text-primary-800 XklWzT8y98pp042XEQp4 font-weight-500 inline-flex items-center cA4BPuqyV1eox6S0acvl AOldjxkjQirRFQcsh_FR border-radius-point-25-rem dark:bg-primary-200 dark:text-primary-800">
                   <svg class="b7Lf_ucBvHbZEidPjF8t width-point-75-rem height-point-75-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clip-rule="evenodd"></path><path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"></path></svg>
                   Article
               </span>
               <h2 class="_MTwKeST1JpgVPLVq9Qc _e063bssp_1bldcJ6kR0 font-weight-700 letter-spacing-minu-point-025-em color-17-24-39-1 _Ht1F_7LGeBQcVBWKRiH color-white-255-255-255-1">
                   <a href="#">5 Powerful Marketing Activities: Lessons From Successful Brands</a>
               </h2>
-              <div class="display-flex jc-center al-center xo89eFdVl6ZY_wuJOEj_ color-107-114-128-1">
-                  <div class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
+              <div class="display-flex jc-center items-center xo89eFdVl6ZY_wuJOEj_ color-107-114-128-1">
+                  <div class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
                       <img class="width-1-point-5-rem _XD2a764x49B1E2F9f8X border-radius-9999-px" src="/assets/thomas-lean.png" alt="Thomas portrait">
                       <span class="VwrSTsh__so52zqMJvws font-weight-500 color-17-24-39-1 color-white-255-255-255-1">
                           Thomas Lean

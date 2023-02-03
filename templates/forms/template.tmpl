@@ -365,6 +365,885 @@
             <div class="inline-flex items-center"><div class="relative inline-block w-8 h-4 cursor-pointer rounded-full"><input id="ripple-on" type="checkbox" class="peer appearance-none w-8 h-4 absolute bg-blue-gray-100 rounded-full cursor-pointer transition-colors duration-300 checked:bg-blue-500 peer-checked:border-blue-500 peer-checked:before:bg-blue-500"><label for="ripple-on" class="bg-white w-5 h-5 border border-blue-gray-100 rounded-full shadow-md absolute top-2/4 -left-1 -translate-y-2/4 peer-checked:translate-x-full transition-all duration-300 cursor-pointer before:content[''] before:block before:bg-blue-gray-500 before:w-10 before:h-10 before:rounded-full before:absolute before:top-2/4 before:left-2/4 before:-translate-y-2/4 before:-translate-x-2/4 before:transition-opacity before:opacity-0 hover:before:opacity-10 peer-checked:border-blue-500 peer-checked:before:bg-blue-500"><div class="inline-block top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 p-5 rounded-full"></div></label></div><label for="ripple-on" class="text-gray-700 font-light select-none cursor-pointer mt-px ml-3 mb-0">Ripple Effect On</label></div>
             <div class="inline-flex items-center"><div class="relative inline-block w-8 h-4 cursor-pointer rounded-full"><input id="ripple-off" type="checkbox" class="peer appearance-none w-8 h-4 absolute bg-blue-gray-100 rounded-full cursor-pointer transition-colors duration-300 checked:bg-blue-500 peer-checked:border-blue-500 peer-checked:before:bg-blue-500"><label for="ripple-off" class="bg-white w-5 h-5 border border-blue-gray-100 rounded-full shadow-md absolute top-2/4 -left-1 -translate-y-2/4 peer-checked:translate-x-full transition-all duration-300 cursor-pointer before:content[''] before:block before:bg-blue-gray-500 before:w-10 before:h-10 before:rounded-full before:absolute before:top-2/4 before:left-2/4 before:-translate-y-2/4 before:-translate-x-2/4 before:transition-opacity before:opacity-0 hover:before:opacity-10 peer-checked:border-blue-500 peer-checked:before:bg-blue-500"></label></div><label for="ripple-off" class="text-gray-700 font-light select-none cursor-pointer mt-px ml-3 mb-0">Ripple Effect Off</label></div>
         </div>
+
+        <div class="preview-section">
+
+<select class="block px-3 py-2 text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm w-52 focus:outline-none focus:ring-primary-500 focus:border-primary-500" name="animals">
+    <option value="">
+        Select an option
+    </option>
+    <option value="dog">
+        Dog
+    </option>
+    <option value="cat">
+        Cat
+    </option>
+    <option value="hamster">
+        Hamster
+    </option>
+    <option value="parrot">
+        Parrot
+    </option>
+    <option value="spider">
+        Spider
+    </option>
+    <option value="goldfish">
+        Goldfish
+    </option>
+</select>
+
+        </div>
+        <div class="preview-section">
+
+            <label class="text-gray-700" for="animals">
+                Animals
+                <select id="animals" class="block px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm w-52 focus:outline-none focus:ring-primary-500 focus:border-primary-500" name="animals">
+                    <option value="">
+                        Select an option
+                    </option>
+                    <option value="dog">
+                        Dog
+                    </option>
+                    <option value="cat">
+                        Cat
+                    </option>
+                    <option value="hamster">
+                        Hamster
+                    </option>
+                    <option value="parrot">
+                        Parrot
+                    </option>
+                    <option value="spider">
+                        Spider
+                    </option>
+                    <option value="goldfish">
+                        Goldfish
+                    </option>
+                </select>
+            </label>
+            
+        </div>
+        <div class="preview-section">
+
+            <div class="w-64">
+                <div class="relative mt-1">
+                    <button type="button" class="relative w-full py-3 pl-3 pr-10 text-left bg-white rounded-md shadow-lg cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                        <span class="flex items-center">
+                            <span class="block ml-3 truncate">
+                                John Jackson
+                            </span>
+                        </span>
+                        <span class="absolute inset-y-0 right-0 flex items-center pr-2 ml-3 pointer-events-none">
+                            <svg class="w-5 h-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l3 3a1 1 0 01-1.414 1.414L10 5.414 7.707 7.707a1 1 0 01-1.414-1.414l3-3A1 1 0 0110 3zm-3.707 9.293a1 1 0 011.414 0L10 14.586l2.293-2.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="absolute z-10 w-full mt-1 bg-white rounded-md shadow-lg">
+                        <ul tabindex="-1" role="listbox" aria-labelledby="listbox-label" aria-activedescendant="listbox-item-3" class="py-1 overflow-auto text-base rounded-md max-h-56 ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+                            <li id="listbox-item-0" role="option" class="relative py-2 pl-3 text-gray-900 cursor-default select-none hover:bg-indigo-500 hover:text-white pr-9">
+                                <div class="flex items-center">
+                                    <span class="block ml-3 font-normal truncate">
+                                        Mick Poulaz
+                                    </span>
+                                </div>
+                                <span class="absolute inset-y-0 right-0 flex items-center pr-4">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </li>
+                            <li id="listbox-item-1" role="option" class="relative py-2 pl-3 text-gray-900 cursor-default select-none hover:bg-indigo-500 hover:text-white pr-9">
+                                <div class="flex items-center">
+                                    <span class="block ml-3 font-normal truncate">
+                                        Julien Schiano
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="preview-section">
+
+            <div class="w-64">
+                <div class="relative mt-1">
+                    <button type="button" class="relative w-full py-3 pl-3 pr-10 text-left bg-white rounded-md shadow-lg cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                        <span class="flex items-center">
+                            <img src="/images/person/2.jpeg" alt="person" class="flex-shrink-0 w-6 h-6 rounded-full"/>
+                            <span class="block ml-3 truncate">
+                                John Jackson
+                            </span>
+                        </span>
+                        <span class="absolute inset-y-0 right-0 flex items-center pr-2 ml-3 pointer-events-none">
+                            <svg class="w-5 h-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l3 3a1 1 0 01-1.414 1.414L10 5.414 7.707 7.707a1 1 0 01-1.414-1.414l3-3A1 1 0 0110 3zm-3.707 9.293a1 1 0 011.414 0L10 14.586l2.293-2.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="absolute z-10 w-full mt-1 bg-white rounded-md shadow-lg">
+                        <ul tabindex="-1" role="listbox" aria-labelledby="listbox-label" aria-activedescendant="listbox-item-3" class="py-1 overflow-auto text-base rounded-md max-h-56 ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+                            <li id="listbox-item-0" role="option" class="relative py-2 pl-3 text-gray-900 cursor-default select-none hover:bg-indigo-500 hover:text-white pr-9">
+                                <div class="flex items-center">
+                                    <img src="/images/person/1.jpg" alt="person" class="flex-shrink-0 w-6 h-6 rounded-full"/>
+                                    <span class="block ml-3 font-normal truncate">
+                                        Mick Poulaz
+                                    </span>
+                                </div>
+                                <span class="absolute inset-y-0 right-0 flex items-center pr-4">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </li>
+                            <li id="listbox-item-1" role="option" class="relative py-2 pl-3 text-gray-900 cursor-default select-none hover:bg-indigo-500 hover:text-white pr-9">
+                                <div class="flex items-center">
+                                    <img src="/images/person/1.jpg" alt="person" class="flex-shrink-0 w-6 h-6 rounded-full"/>
+                                    <span class="block ml-3 font-normal truncate">
+                                        Julien Schiano
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="preview-section">
+
+            <div>
+                <label class="flex items-center mb-3 space-x-3">
+                    <input type="checkbox" name="checked-demo" class="form-tick appearance-none bg-white bg-check h-6 w-6 border border-gray-300 rounded-md checked:bg-blue-500 checked:border-transparent focus:outline-none"/>
+                        <span class="font-normal text-gray-700 dark:text-white">
+                            Blue
+                        </span>
+                    </label>
+                    <label class="flex items-center mb-3 space-x-3">
+                        <input type="checkbox" name="checked-demo" class="form-tick appearance-none bg-white bg-check h-6 w-6 border border-gray-300 rounded-md checked:bg-pink-500 checked:border-transparent focus:outline-none"/>
+                            <span class="font-normal text-gray-700 dark:text-white">
+                                Pink
+                            </span>
+                        </label>
+                        <label class="flex items-center mb-3 space-x-3">
+                            <input type="checkbox" name="checked-demo" class="form-tick appearance-none bg-white bg-check h-6 w-6 border border-gray-300 rounded-md checked:bg-green-500 checked:border-transparent focus:outline-none"/>
+                                <span class="font-normal text-gray-700 dark:text-white">
+                                    Green
+                                </span>
+                            </label>
+                            <label class="flex items-center mb-3 space-x-3">
+                                <input type="checkbox" name="checked-demo" class="form-tick appearance-none bg-white bg-check h-6 w-6 border border-gray-300 rounded-md checked:bg-yellow-500 checked:border-transparent focus:outline-none"/>
+                                    <span class="font-normal text-gray-700 dark:text-white">
+                                        Orange
+                                    </span>
+                                </label>
+                                <label class="flex items-center mb-3 space-x-3">
+                                    <input type="checkbox" name="checked-demo" class="form-tick appearance-none bg-white bg-check h-6 w-6 border border-gray-300 rounded-md checked:bg-purple-500 checked:border-transparent focus:outline-none"/>
+                                        <span class="font-normal text-gray-700 dark:text-white">
+                                            Purple
+                                        </span>
+                                    </label>
+                                    <label class="flex items-center mb-3 space-x-3">
+                                        <input type="checkbox" name="checked-demo" class="form-tick appearance-none bg-white bg-check h-6 w-6 border border-gray-300 rounded-md checked:bg-black checked:border-transparent focus:outline-none"/>
+                                            <span class="font-normal text-gray-700 dark:text-white">
+                                                Black
+                                            </span>
+                                        </label>
+                                        <label class="flex items-center mb-3 space-x-3">
+                                            <input type="checkbox" name="checked-demo" class="form-tick appearance-none bg-white bg-check h-6 w-6 border border-gray-300 rounded-md checked:bg-indigo-500 checked:border-transparent focus:outline-none"/>
+                                                <span class="font-normal text-gray-700 dark:text-white">
+                                                    Indigo
+                                                </span>
+                                            </label>
+                                            <label class="flex items-center mb-3 space-x-3">
+                                                <input type="checkbox" name="checked-demo" class="form-tick appearance-none bg-white bg-check h-6 w-6 border border-gray-300 rounded-md checked:bg-red-500 checked:border-transparent focus:outline-none"/>
+                                                    <span class="font-normal text-gray-700 dark:text-white">
+                                                        Red
+                                                    </span>
+                                                </label>
+                                                <label class="flex items-center mb-3 space-x-3">
+                                                    <input type="checkbox" name="checked-demo" class="form-tick appearance-none bg-white bg-check h-6 w-6 border border-gray-300 rounded-md checked:bg-gray-500 checked:border-transparent focus:outline-none"/>
+                                                        <span class="font-normal text-gray-700 dark:text-white">
+                                                            Gray
+                                                        </span>
+                                                    </label>
+                                                </div>
+            
+        </div>
+        <div class="preview-section">
+
+            <div>
+                <div class="mb-3">
+                    <div class="relative inline-block w-10 mr-2 align-middle select-none">
+                        <input type="checkbox" name="toggle" id="Blue" class="checked:bg-blue-500 outline-none focus:outline-none right-4 checked:right-0 duration-200 ease-in absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
+                            <label for="Blue" class="block h-6 overflow-hidden bg-gray-300 rounded-full cursor-pointer">
+                            </label>
+                        </div>
+                        <span class="font-medium text-gray-400">
+                            Blue
+                        </span>
+                    </div>
+                    <div class="mb-3">
+                        <div class="relative inline-block w-10 mr-2 align-middle select-none">
+                            <input type="checkbox" name="toggle" id="Pink" class="checked:bg-pink-500 outline-none focus:outline-none right-4 checked:right-0 duration-200 ease-in absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
+                                <label for="Pink" class="block h-6 overflow-hidden bg-gray-300 rounded-full cursor-pointer">
+                                </label>
+                            </div>
+                            <span class="font-medium text-gray-400">
+                                Pink
+                            </span>
+                        </div>
+                        <div class="mb-3">
+                            <div class="relative inline-block w-10 mr-2 align-middle select-none">
+                                <input type="checkbox" name="toggle" id="Green" class="checked:bg-green-500 outline-none focus:outline-none right-4 checked:right-0 duration-200 ease-in absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
+                                    <label for="Green" class="block h-6 overflow-hidden bg-gray-300 rounded-full cursor-pointer">
+                                    </label>
+                                </div>
+                                <span class="font-medium text-gray-400">
+                                    Green
+                                </span>
+                            </div>
+                            <div class="mb-3">
+                                <div class="relative inline-block w-10 mr-2 align-middle select-none">
+                                    <input type="checkbox" name="toggle" id="Orange" class="checked:bg-yellow-500 outline-none focus:outline-none right-4 checked:right-0 duration-200 ease-in absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
+                                        <label for="Orange" class="block h-6 overflow-hidden bg-gray-300 rounded-full cursor-pointer">
+                                        </label>
+                                    </div>
+                                    <span class="font-medium text-gray-400">
+                                        Orange
+                                    </span>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="relative inline-block w-10 mr-2 align-middle select-none">
+                                        <input type="checkbox" name="toggle" id="Purple" class="checked:bg-purple-500 outline-none focus:outline-none right-4 checked:right-0 duration-200 ease-in absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
+                                            <label for="Purple" class="block h-6 overflow-hidden bg-gray-300 rounded-full cursor-pointer">
+                                            </label>
+                                        </div>
+                                        <span class="font-medium text-gray-400">
+                                            Purple
+                                        </span>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="relative inline-block w-10 mr-2 align-middle select-none">
+                                            <input type="checkbox" name="toggle" id="Black" class="checked:bg-black outline-none focus:outline-none right-4 checked:right-0 duration-200 ease-in absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
+                                                <label for="Black" class="block h-6 overflow-hidden bg-gray-300 rounded-full cursor-pointer">
+                                                </label>
+                                            </div>
+                                            <span class="font-medium text-gray-400">
+                                                Black
+                                            </span>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="relative inline-block w-10 mr-2 align-middle select-none">
+                                                <input type="checkbox" name="toggle" id="Indigo" class="checked:bg-indigo-500 outline-none focus:outline-none right-4 checked:right-0 duration-200 ease-in absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
+                                                    <label for="Indigo" class="block h-6 overflow-hidden bg-gray-300 rounded-full cursor-pointer">
+                                                    </label>
+                                                </div>
+                                                <span class="font-medium text-gray-400">
+                                                    Indigo
+                                                </span>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="relative inline-block w-10 mr-2 align-middle select-none">
+                                                    <input type="checkbox" name="toggle" id="Red" class="checked:bg-red-500 outline-none focus:outline-none right-4 checked:right-0 duration-200 ease-in absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
+                                                        <label for="Red" class="block h-6 overflow-hidden bg-gray-300 rounded-full cursor-pointer">
+                                                        </label>
+                                                    </div>
+                                                    <span class="font-medium text-gray-400">
+                                                        Red
+                                                    </span>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <div class="relative inline-block w-10 mr-2 align-middle select-none">
+                                                        <input type="checkbox" name="toggle" id="Gray" class="checked:bg-gray-500 outline-none focus:outline-none right-4 checked:right-0 duration-200 ease-in absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
+                                                            <label for="Gray" class="block h-6 overflow-hidden bg-gray-300 rounded-full cursor-pointer">
+                                                            </label>
+                                                        </div>
+                                                        <span class="font-medium text-gray-400">
+                                                            Gray
+                                                        </span>
+                                                    </div>
+                                                </div>
+            
+        </div>
+        <div class="preview-section">
+
+<div class="flex items-center gap-8">
+    <label class="inline-flex items-center">
+        <input type="radio" name="vehicle" class="w-5 h-5 text-red-600"/>
+            <span class="ml-2 text-gray-700">
+                Car
+            </span>
+        </label>
+        <label class="inline-flex items-center">
+            <input type="radio" name="vehicle" class="w-5 h-5 text-red-600"/>
+                <span class="ml-2 text-gray-700">
+                    Cycle
+                </span>
+            </label>
+        </div>
+
+        </div>
+        <div class="preview-section">
+
+            <form class="flex flex-col justify-center w-3/4 max-w-sm space-y-3 md:flex-row md:w-full md:space-x-3 md:space-y-0">
+                <div class=" relative ">
+                    <input type="text" id="&quot;form-subscribe-Subscribe" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Email"/>
+                    </div>
+                    <button class="flex-shrink-0 px-4 py-2 text-base font-semibold text-white bg-purple-600 rounded-lg shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-purple-200" type="submit">
+                        Subscribe
+                    </button>
+                </form>
+            
+        </div>
+        <div class="preview-section">
+
+            <div class="flex flex-col max-w-md px-4 py-8 bg-white rounded-lg shadow dark:bg-gray-800 sm:px-6 md:px-8 lg:px-10">
+                <div class="self-center mb-2 text-xl font-light text-gray-800 sm:text-2xl dark:text-white">
+                    Create a new account
+                </div>
+                <span class="justify-center text-sm text-center text-gray-500 flex-items-center dark:text-gray-400">
+                    Already have an account ?
+                    <a href="#" target="_blank" class="text-sm text-blue-500 underline hover:text-blue-700">
+                        Sign in
+                    </a>
+                </span>
+                <div class="p-6 mt-8">
+                    <form action="#">
+                        <div class="flex flex-col mb-2">
+                            <div class=" relative ">
+                                <input type="text" id="create-account-pseudo" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" name="pseudo" placeholder="Pseudo"/>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 mb-2">
+                                <div class=" relative ">
+                                    <input type="text" id="create-account-first-name" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" name="First name" placeholder="First name"/>
+                                    </div>
+                                    <div class=" relative ">
+                                        <input type="text" id="create-account-last-name" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" name="Last name" placeholder="Last name"/>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col mb-2">
+                                        <div class=" relative ">
+                                            <input type="text" id="create-account-email" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Email"/>
+                                            </div>
+                                        </div>
+                                        <div class="flex w-full my-4">
+                                            <button type="submit" class="py-2 px-4  bg-purple-600 hover:bg-purple-700 focus:ring-purple-500 focus:ring-offset-purple-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                                                Login
+                                            </button>
+                                        </div>
+                                    </form>
+                                    <div class="flex items-center justify-center mt-6">
+                                        <div>
+                                            <label class="flex items-center mb-3 space-x-3">
+                                                <input type="checkbox" name="checked-demo" class="form-tick appearance-none bg-white bg-check h-6 w-6 border border-gray-300 rounded-md checked:bg-blue-500 checked:border-transparent focus:outline-none"/>
+                                                    <span class="font-normal text-gray-700 dark:text-white">
+                                                        Blue
+                                                    </span>
+                                                </label>
+                                                <label class="flex items-center mb-3 space-x-3">
+                                                    <input type="checkbox" name="checked-demo" class="form-tick appearance-none bg-white bg-check h-6 w-6 border border-gray-300 rounded-md checked:bg-pink-500 checked:border-transparent focus:outline-none"/>
+                                                        <span class="font-normal text-gray-700 dark:text-white">
+                                                            Pink
+                                                        </span>
+                                                    </label>
+                                                    <label class="flex items-center mb-3 space-x-3">
+                                                        <input type="checkbox" name="checked-demo" class="form-tick appearance-none bg-white bg-check h-6 w-6 border border-gray-300 rounded-md checked:bg-green-500 checked:border-transparent focus:outline-none"/>
+                                                            <span class="font-normal text-gray-700 dark:text-white">
+                                                                Green
+                                                            </span>
+                                                        </label>
+                                                        <label class="flex items-center mb-3 space-x-3">
+                                                            <input type="checkbox" name="checked-demo" class="form-tick appearance-none bg-white bg-check h-6 w-6 border border-gray-300 rounded-md checked:bg-yellow-500 checked:border-transparent focus:outline-none"/>
+                                                                <span class="font-normal text-gray-700 dark:text-white">
+                                                                    Orange
+                                                                </span>
+                                                            </label>
+                                                            <label class="flex items-center mb-3 space-x-3">
+                                                                <input type="checkbox" name="checked-demo" class="form-tick appearance-none bg-white bg-check h-6 w-6 border border-gray-300 rounded-md checked:bg-purple-500 checked:border-transparent focus:outline-none"/>
+                                                                    <span class="font-normal text-gray-700 dark:text-white">
+                                                                        Purple
+                                                                    </span>
+                                                                </label>
+                                                                <label class="flex items-center mb-3 space-x-3">
+                                                                    <input type="checkbox" name="checked-demo" class="form-tick appearance-none bg-white bg-check h-6 w-6 border border-gray-300 rounded-md checked:bg-black checked:border-transparent focus:outline-none"/>
+                                                                        <span class="font-normal text-gray-700 dark:text-white">
+                                                                            Black
+                                                                        </span>
+                                                                    </label>
+                                                                    <label class="flex items-center mb-3 space-x-3">
+                                                                        <input type="checkbox" name="checked-demo" class="form-tick appearance-none bg-white bg-check h-6 w-6 border border-gray-300 rounded-md checked:bg-indigo-500 checked:border-transparent focus:outline-none"/>
+                                                                            <span class="font-normal text-gray-700 dark:text-white">
+                                                                                Indigo
+                                                                            </span>
+                                                                        </label>
+                                                                        <label class="flex items-center mb-3 space-x-3">
+                                                                            <input type="checkbox" name="checked-demo" class="form-tick appearance-none bg-white bg-check h-6 w-6 border border-gray-300 rounded-md checked:bg-red-500 checked:border-transparent focus:outline-none"/>
+                                                                                <span class="font-normal text-gray-700 dark:text-white">
+                                                                                    Red
+                                                                                </span>
+                                                                            </label>
+                                                                            <label class="flex items-center mb-3 space-x-3">
+                                                                                <input type="checkbox" name="checked-demo" class="form-tick appearance-none bg-white bg-check h-6 w-6 border border-gray-300 rounded-md checked:bg-gray-500 checked:border-transparent focus:outline-none"/>
+                                                                                    <span class="font-normal text-gray-700 dark:text-white">
+                                                                                        Gray
+                                                                                    </span>
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+            
+        </div>
+        <div class="preview-section">
+
+            <div class="flex flex-col w-full max-w-md px-4 py-8 bg-white rounded-lg shadow dark:bg-gray-800 sm:px-6 md:px-8 lg:px-10">
+                <div class="self-center mb-6 text-xl font-light text-gray-600 sm:text-2xl dark:text-white">
+                    Login To Your Account
+                </div>
+                <div class="mt-8">
+                    <form action="#" autoComplete="off">
+                        <div class="flex flex-col mb-2">
+                            <div class="flex relative ">
+                                <span class="rounded-l-md inline-flex  items-center px-3 border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
+                                    <svg width="15" height="15" fill="currentColor" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1792 710v794q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-794q44 49 101 87 362 246 497 345 57 42 92.5 65.5t94.5 48 110 24.5h2q51 0 110-24.5t94.5-48 92.5-65.5q170-123 498-345 57-39 100-87zm0-294q0 79-49 151t-122 123q-376 261-468 325-10 7-42.5 30.5t-54 38-52 32.5-57.5 27-50 9h-2q-23 0-50-9t-57.5-27-52-32.5-54-38-42.5-30.5q-91-64-262-182.5t-205-142.5q-62-42-117-115.5t-55-136.5q0-78 41.5-130t118.5-52h1472q65 0 112.5 47t47.5 113z">
+                                        </path>
+                                    </svg>
+                                </span>
+                                <input type="text" id="sign-in-email" class=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Your email"/>
+                                </div>
+                            </div>
+                            <div class="flex flex-col mb-6">
+                                <div class="flex relative ">
+                                    <span class="rounded-l-md inline-flex  items-center px-3 border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
+                                        <svg width="15" height="15" fill="currentColor" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1376 768q40 0 68 28t28 68v576q0 40-28 68t-68 28h-960q-40 0-68-28t-28-68v-576q0-40 28-68t68-28h32v-320q0-185 131.5-316.5t316.5-131.5 316.5 131.5 131.5 316.5q0 26-19 45t-45 19h-64q-26 0-45-19t-19-45q0-106-75-181t-181-75-181 75-75 181v320h736z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <input type="password" id="sign-in-email" class=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Your password"/>
+                                    </div>
+                                </div>
+                                <div class="flex items-center mb-6 -mt-4">
+                                    <div class="flex ml-auto">
+                                        <a href="#" class="inline-flex text-xs font-thin text-gray-500 sm:text-sm dark:text-gray-100 hover:text-gray-700 dark:hover:text-white">
+                                            Forgot Your Password?
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flex w-full">
+                                    <button type="submit" class="py-2 px-4  bg-purple-600 hover:bg-purple-700 focus:ring-purple-500 focus:ring-offset-purple-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                                        Login
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="flex items-center justify-center mt-6">
+                            <a href="#" target="_blank" class="inline-flex items-center text-xs font-thin text-center text-gray-500 hover:text-gray-700 dark:text-gray-100 dark:hover:text-white">
+                                <span class="ml-2">
+                                    You don&#x27;t have an account?
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+            
+        </div>
+        <div class="preview-section">
+
+            <div class="flex flex-col w-full max-w-md px-4 py-8 bg-white rounded-lg shadow dark:bg-gray-800 sm:px-6 md:px-8 lg:px-10">
+                <div class="self-center mb-6 text-xl font-light text-gray-600 sm:text-2xl dark:text-white">
+                    Login To Your Account
+                </div>
+                <div class="flex gap-4 item-center">
+                    <button type="button" class="py-2 px-4 flex justify-center items-center  bg-blue-600 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                        <svg width="20" height="20" fill="currentColor" class="mr-2" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z">
+                            </path>
+                        </svg>
+                        Facebook
+                    </button>
+                </div>
+                <div class="mt-8">
+                    <form action="#" autoComplete="off">
+                        <div class="flex flex-col mb-2">
+                            <div class="flex relative ">
+                                <span class="rounded-l-md inline-flex  items-center px-3 border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
+                                    <svg width="15" height="15" fill="currentColor" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1792 710v794q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-794q44 49 101 87 362 246 497 345 57 42 92.5 65.5t94.5 48 110 24.5h2q51 0 110-24.5t94.5-48 92.5-65.5q170-123 498-345 57-39 100-87zm0-294q0 79-49 151t-122 123q-376 261-468 325-10 7-42.5 30.5t-54 38-52 32.5-57.5 27-50 9h-2q-23 0-50-9t-57.5-27-52-32.5-54-38-42.5-30.5q-91-64-262-182.5t-205-142.5q-62-42-117-115.5t-55-136.5q0-78 41.5-130t118.5-52h1472q65 0 112.5 47t47.5 113z">
+                                        </path>
+                                    </svg>
+                                </span>
+                                <input type="text" id="sign-in-email" class=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Your email"/>
+                                </div>
+                            </div>
+                            <div class="flex flex-col mb-6">
+                                <div class="flex relative ">
+                                    <span class="rounded-l-md inline-flex  items-center px-3 border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
+                                        <svg width="15" height="15" fill="currentColor" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1376 768q40 0 68 28t28 68v576q0 40-28 68t-68 28h-960q-40 0-68-28t-28-68v-576q0-40 28-68t68-28h32v-320q0-185 131.5-316.5t316.5-131.5 316.5 131.5 131.5 316.5q0 26-19 45t-45 19h-64q-26 0-45-19t-19-45q0-106-75-181t-181-75-181 75-75 181v320h736z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <input type="password" id="sign-in-email" class=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Your password"/>
+                                    </div>
+                                </div>
+                                <div class="flex items-center mb-6 -mt-4">
+                                    <div class="flex ml-auto">
+                                        <a href="#" class="inline-flex text-xs font-thin text-gray-500 sm:text-sm dark:text-gray-100 hover:text-gray-700 dark:hover:text-white">
+                                            Forgot Your Password?
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flex w-full">
+                                    <button type="submit" class="py-2 px-4  bg-purple-600 hover:bg-purple-700 focus:ring-purple-500 focus:ring-offset-purple-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                                        Login
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="flex items-center justify-center mt-6">
+                            <a href="#" target="_blank" class="inline-flex items-center text-xs font-thin text-center text-gray-500 hover:text-gray-700 dark:text-gray-100 dark:hover:text-white">
+                                <span class="ml-2">
+                                    You don&#x27;t have an account?
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+            
+        </div>
+        <div class="preview-section w-full">
+
+            <div class="flex flex-col w-full max-w-md px-4 py-8 bg-white rounded-lg shadow dark:bg-gray-800 sm:px-6 md:px-8 lg:px-10">
+                <div class="self-center mb-6 text-xl font-light text-gray-600 sm:text-2xl dark:text-white">
+                    Login To Your Account
+                </div>
+                <div class="flex gap-4 item-center">
+                    <button type="button" class="py-2 px-4 flex justify-center items-center  bg-blue-600 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                        <svg width="20" height="20" fill="currentColor" class="mr-2" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z">
+                            </path>
+                        </svg>
+                        Facebook
+                    </button>
+                    <button type="button" class="py-2 px-4 flex justify-center items-center  bg-red-600 hover:bg-red-700 focus:ring-red-500 focus:ring-offset-red-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                        <svg width="20" height="20" fill="currentColor" class="mr-2" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M896 786h725q12 67 12 128 0 217-91 387.5t-259.5 266.5-386.5 96q-157 0-299-60.5t-245-163.5-163.5-245-60.5-299 60.5-299 163.5-245 245-163.5 299-60.5q300 0 515 201l-209 201q-123-119-306-119-129 0-238.5 65t-173.5 176.5-64 243.5 64 243.5 173.5 176.5 238.5 65q87 0 160-24t120-60 82-82 51.5-87 22.5-78h-436v-264z">
+                            </path>
+                        </svg>
+                        Google
+                    </button>
+                </div>
+                <div class="mt-8">
+                    <form action="#" autoComplete="off">
+                        <div class="flex flex-col mb-2">
+                            <div class="flex relative ">
+                                <span class="rounded-l-md inline-flex  items-center px-3 border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
+                                    <svg width="15" height="15" fill="currentColor" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1792 710v794q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-794q44 49 101 87 362 246 497 345 57 42 92.5 65.5t94.5 48 110 24.5h2q51 0 110-24.5t94.5-48 92.5-65.5q170-123 498-345 57-39 100-87zm0-294q0 79-49 151t-122 123q-376 261-468 325-10 7-42.5 30.5t-54 38-52 32.5-57.5 27-50 9h-2q-23 0-50-9t-57.5-27-52-32.5-54-38-42.5-30.5q-91-64-262-182.5t-205-142.5q-62-42-117-115.5t-55-136.5q0-78 41.5-130t118.5-52h1472q65 0 112.5 47t47.5 113z">
+                                        </path>
+                                    </svg>
+                                </span>
+                                <input type="text" id="sign-in-email" class=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Your email"/>
+                                </div>
+                            </div>
+                            <div class="flex flex-col mb-6">
+                                <div class="flex relative ">
+                                    <span class="rounded-l-md inline-flex  items-center px-3 border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
+                                        <svg width="15" height="15" fill="currentColor" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1376 768q40 0 68 28t28 68v576q0 40-28 68t-68 28h-960q-40 0-68-28t-28-68v-576q0-40 28-68t68-28h32v-320q0-185 131.5-316.5t316.5-131.5 316.5 131.5 131.5 316.5q0 26-19 45t-45 19h-64q-26 0-45-19t-19-45q0-106-75-181t-181-75-181 75-75 181v320h736z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <input type="password" id="sign-in-email" class=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Your password"/>
+                                    </div>
+                                </div>
+                                <div class="flex items-center mb-6 -mt-4">
+                                    <div class="flex ml-auto">
+                                        <a href="#" class="inline-flex text-xs font-thin text-gray-500 sm:text-sm dark:text-gray-100 hover:text-gray-700 dark:hover:text-white">
+                                            Forgot Your Password?
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flex w-full">
+                                    <button type="submit" class="py-2 px-4  bg-purple-600 hover:bg-purple-700 focus:ring-purple-500 focus:ring-offset-purple-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                                        Login
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="flex items-center justify-center mt-6">
+                            <a href="#" target="_blank" class="inline-flex items-center text-xs font-thin text-center text-gray-500 hover:text-gray-700 dark:text-gray-100 dark:hover:text-white">
+                                <span class="ml-2">
+                                    You don&#x27;t have an account?
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+            
+        </div>
+        <div class="preview-section w-full">
+
+            <form class="flex w-full max-w-sm space-x-3">
+                <div class="w-full max-w-2xl px-5 py-10 m-auto mt-10 bg-white rounded-lg shadow dark:bg-gray-800">
+                    <div class="mb-6 text-3xl font-light text-center text-gray-800 dark:text-white">
+                        Contact us !
+                    </div>
+                    <div class="grid max-w-xl grid-cols-2 gap-4 m-auto">
+                        <div class="col-span-2 lg:col-span-1">
+                            <div class=" relative ">
+                                <input type="text" id="contact-form-name" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Name"/>
+                                </div>
+                            </div>
+                            <div class="col-span-2 lg:col-span-1">
+                                <div class=" relative ">
+                                    <input type="text" id="contact-form-email" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="email"/>
+                                    </div>
+                                </div>
+                                <div class="col-span-2">
+                                    <label class="text-gray-700" for="name">
+                                        <textarea class="flex-1 w-full px-4 py-2 text-base text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" id="comment" placeholder="Enter your comment" name="comment" rows="5" cols="40">
+                                        </textarea>
+                                    </label>
+                                </div>
+                                <div class="col-span-2 text-right">
+                                    <button type="submit" class="py-2 px-4  bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                                        Send
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+            
+        </div>
+        <div class="preview-section w-full">
+
+            <div class="w-full h-screen font-sans bg-cover bg-landscape" style="background-image: url('https://www.tailwind-kit.com/images/landscape/2.jpg');">
+                <div class="container flex items-center justify-center flex-1 h-full mx-auto">
+                    <div class="w-full max-w-lg">
+                        <div class="leading-loose">
+                            <form class="max-w-sm p-10 m-auto rounded shadow-xl bg-white/25">
+                                <p class="mb-8 text-2xl font-light text-center text-white">
+                                    Login
+                                </p>
+                                <div class="mb-2">
+                                    <div class=" relative ">
+                                        <input type="text" id="login-with-bg-email" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="email"/>
+                                        </div>
+                                    </div>
+                                    <div class="mb-2">
+                                        <div class=" relative ">
+                                            <input type="text" id="login-with-bg-password" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="password"/>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center justify-between mt-4">
+                                            <button type="submit" class="py-2 px-4  bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                                                Validate
+                                            </button>
+                                        </div>
+                                        <div class="text-center">
+                                            <a class="right-0 inline-block text-sm font-light align-baseline text-500 hover:text-gray-800">
+                                                Create an account
+                                            </a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+        </div>
+        <div class="preview-section w-full">
+
+            <div class="flex flex-wrap w-full">
+                <div class="flex flex-col w-full md:w-1/2">
+                    <div class="flex justify-center pt-12 md:justify-start md:pl-12 md:-mb-24">
+                        <a href="#" class="p-4 text-xl font-bold text-white bg-black">
+                            Design.
+                        </a>
+                    </div>
+                    <div class="flex flex-col justify-center px-8 pt-8 my-auto md:justify-start md:pt-0 md:px-24 lg:px-32">
+                        <p class="text-3xl text-center">
+                            Welcome.
+                        </p>
+                        <form class="flex flex-col pt-3 md:pt-8">
+                            <div class="flex flex-col pt-4">
+                                <div class="flex relative ">
+                                    <span class=" inline-flex  items-center px-3 border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
+                                        <svg width="15" height="15" fill="currentColor" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1792 710v794q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-794q44 49 101 87 362 246 497 345 57 42 92.5 65.5t94.5 48 110 24.5h2q51 0 110-24.5t94.5-48 92.5-65.5q170-123 498-345 57-39 100-87zm0-294q0 79-49 151t-122 123q-376 261-468 325-10 7-42.5 30.5t-54 38-52 32.5-57.5 27-50 9h-2q-23 0-50-9t-57.5-27-52-32.5-54-38-42.5-30.5q-91-64-262-182.5t-205-142.5q-62-42-117-115.5t-55-136.5q0-78 41.5-130t118.5-52h1472q65 0 112.5 47t47.5 113z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <input type="text" id="design-login-email" class=" flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Email"/>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col pt-4 mb-12">
+                                    <div class="flex relative ">
+                                        <span class=" inline-flex  items-center px-3 border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
+                                            <svg width="15" height="15" fill="currentColor" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1376 768q40 0 68 28t28 68v576q0 40-28 68t-68 28h-960q-40 0-68-28t-28-68v-576q0-40 28-68t68-28h32v-320q0-185 131.5-316.5t316.5-131.5 316.5 131.5 131.5 316.5q0 26-19 45t-45 19h-64q-26 0-45-19t-19-45q0-106-75-181t-181-75-181 75-75 181v320h736z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                        <input type="password" id="design-login-password" class=" flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Password"/>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="w-full px-4 py-2 text-base font-semibold text-center text-white transition duration-200 ease-in bg-black shadow-md hover:text-black hover:bg-white focus:outline-none focus:ring-2">
+                                        <span class="w-full">
+                                            Submit
+                                        </span>
+                                    </button>
+                                </form>
+                                <div class="pt-12 pb-12 text-center">
+                                    <p>
+                                        Don&#x27;t have an account?
+                                        <a href="#" class="font-semibold underline">
+                                            Register here.
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-1/2 shadow-2xl">
+                            <img class="hidden object-cover w-full h-screen md:block" src="https://www.tailwind-kit.com/images/object/9.jpg"/>
+                        </div>
+                    </div>
+            
+        </div>
+        <div class="preview-section w-full">
+
+            <div class="bg-white rounded-lg shadow sm:max-w-md sm:w-full sm:mx-auto sm:overflow-hidden">
+                <div class="px-4 py-8 sm:px-10">
+                    <div class="relative mt-6">
+                        <div class="absolute inset-0 flex items-center">
+                            <div class="w-full border-t border-gray-300">
+                            </div>
+                        </div>
+                        <div class="relative flex justify-center text-sm leading-5">
+                            <span class="px-2 text-gray-500 bg-white">
+                                Search criteria
+                            </span>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <div class="w-full space-y-6">
+                            <div class="w-full">
+                                <div class=" relative ">
+                                    <input type="text" id="search-form-price" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Your price"/>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <div class=" relative ">
+                                        <input type="text" id="search-form-location" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Your location"/>
+                                        </div>
+                                    </div>
+                                    <div class="w-full">
+                                        <div class=" relative ">
+                                            <input type="text" id="search-form-name" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Your name"/>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <span class="block w-full rounded-md shadow-sm">
+                                                <button type="button" class="py-2 px-4  bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                                                    Search
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-4 py-6 border-t-2 border-gray-200 bg-gray-50 sm:px-10">
+                                <p class="text-xs leading-5 text-gray-500">
+                                    This data are display for information and can change
+                                </p>
+                            </div>
+                        </div>
+            
+        </div>
+        <div class="preview-section w-full">
+
+<section class="h-screen bg-gray-100/50">
+    <form class="container max-w-2xl mx-auto shadow-md md:w-3/4">
+        <div class="p-4 border-t-2 border-indigo-400 rounded-lg bg-gray-100/5 ">
+            <div class="max-w-sm mx-auto md:w-full md:mx-0">
+                <div class="inline-flex items-center space-x-4">
+                    <a href="#" class="relative block">
+                        <img alt="profil" src="/assets/tailwindkit/1.jpg" class="mx-auto object-cover rounded-full h-16 w-16 "/>
+                    </a>
+                    <h1 class="text-gray-600">
+                        Charlie
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="space-y-6 bg-white">
+            <div class="items-center w-full p-4 space-y-4 text-gray-500 md:inline-flex md:space-y-0">
+                <h2 class="max-w-sm mx-auto md:w-1/3">
+                    Account
+                </h2>
+                <div class="max-w-sm mx-auto md:w-2/3">
+                    <div class=" relative ">
+                        <input type="text" id="user-info-email" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Email"/>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+                <div class="items-center w-full p-4 space-y-4 text-gray-500 md:inline-flex md:space-y-0">
+                    <h2 class="max-w-sm mx-auto md:w-1/3">
+                        Personal info
+                    </h2>
+                    <div class="max-w-sm mx-auto space-y-5 md:w-2/3">
+                        <div>
+                            <div class=" relative ">
+                                <input type="text" id="user-info-name" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Name"/>
+                                </div>
+                            </div>
+                            <div>
+                                <div class=" relative ">
+                                    <input type="text" id="user-info-phone" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Phone number"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                        <div class="items-center w-full p-8 space-y-4 text-gray-500 md:inline-flex md:space-y-0">
+                            <h2 class="max-w-sm mx-auto md:w-4/12">
+                                Change password
+                            </h2>
+                            <div class="w-full max-w-sm pl-2 mx-auto space-y-5 md:w-5/12 md:pl-9 md:inline-flex">
+                                <div class=" relative ">
+                                    <input type="text" id="user-info-password" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Password"/>
+                                    </div>
+                                </div>
+                                <div class="text-center md:w-3/12 md:pl-6">
+                                    <button type="button" class="py-2 px-4  bg-pink-600 hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                                        Change
+                                    </button>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="w-full px-4 pb-4 ml-auto text-gray-500 md:w-1/3">
+                                <button type="submit" class="py-2 px-4  bg-blue-600 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                                    Save
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+
+        </div>
+
+        <div class="preview-section">
+
+        </div>
     </div>
 </div>
 

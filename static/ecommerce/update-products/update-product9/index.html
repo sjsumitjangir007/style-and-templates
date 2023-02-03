@@ -34,7 +34,7 @@
 }
 
 :after,:before {
-    --tw-content: ""
+    --content: ""
 }
 
 html {
@@ -209,7 +209,7 @@ img,video {
 }
 
 [multiple],[type=date],[type=datetime-local],[type=email],[type=month],[type=number],[type=password],[type=search],[type=tel],[type=text],[type=time],[type=url],[type=week],select,textarea {
-    --tw-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -223,14 +223,14 @@ img,video {
 }
 
 [multiple]:focus,[type=date]:focus,[type=datetime-local]:focus,[type=email]:focus,[type=month]:focus,[type=number]:focus,[type=password]:focus,[type=search]:focus,[type=tel]:focus,[type=text]:focus,[type=time]:focus,[type=url]:focus,[type=week]:focus,select:focus,textarea:focus {
-    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: #1c64f2;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    --ring-inset: var(--empty,/*!*/ /*!*/);
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: #1c64f2;
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(1px + var(--ring-offset-width)) var(--ring-color);
     border-color: #1c64f2;
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow);
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -277,7 +277,7 @@ select {
 
 [type=checkbox],[type=radio] {
     color-adjust: exact;
-    --tw-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -308,13 +308,13 @@ select {
 }
 
 [type=checkbox]:focus,[type=radio]:focus {
-    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
-    --tw-ring-offset-width: 2px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: #1c64f2;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow);
+    --ring-inset: var(--empty,/*!*/ /*!*/);
+    --ring-offset-width: 2px;
+    --ring-offset-color: #fff;
+    --ring-color: #1c64f2;
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(2px + var(--ring-offset-width)) var(--ring-color);
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -396,11 +396,11 @@ input[type=range]:disabled::-webkit-slider-thumb {
 }
 
 input[type=range]:focus::-webkit-slider-thumb {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-    --tw-ring-opacity: 1px;
-    --tw-ring-color: rgb(164 202 254/var(--tw-ring-opacity));
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(4px + var(--ring-offset-width)) var(--ring-color);
+    --ring-opacity: 1px;
+    --ring-color: rgb(164 202 254/var(--ring-opacity));
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow,0 0 #0000);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -561,144 +561,144 @@ input[type=range]::-ms-fill-lower {
 }
 
 *,:after,:before {
-    --tw-border-spacing-x: 0;
-    --tw-border-spacing-y: 0;
-    --tw-translate-x: 0;
-    --tw-translate-y: 0;
-    --tw-rotate: 0;
-    --tw-skew-x: 0;
-    --tw-skew-y: 0;
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    --tw-pan-x: ;
-    --tw-pan-y: ;
-    --tw-pinch-zoom: ;
-    --tw-scroll-snap-strictness: proximity;
-    --tw-ordinal: ;
-    --tw-slashed-zero: ;
-    --tw-numeric-figure: ;
-    --tw-numeric-spacing: ;
-    --tw-numeric-fraction: ;
-    --tw-ring-inset: ;
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: rgba(63,131,248,.5);
-    --tw-ring-offset-shadow: 0 0 #0000;
-    --tw-ring-shadow: 0 0 #0000;
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    --tw-blur: ;
-    --tw-brightness: ;
-    --tw-contrast: ;
-    --tw-grayscale: ;
-    --tw-hue-rotate: ;
-    --tw-invert: ;
-    --tw-saturate: ;
-    --tw-sepia: ;
-    --tw-drop-shadow: ;
-    --tw-backdrop-blur: ;
-    --tw-backdrop-brightness: ;
-    --tw-backdrop-contrast: ;
-    --tw-backdrop-grayscale: ;
-    --tw-backdrop-hue-rotate: ;
-    --tw-backdrop-invert: ;
-    --tw-backdrop-opacity: ;
-    --tw-backdrop-saturate: ;
-    --tw-backdrop-sepia:
+    --border-spacing-x: 0;
+    --border-spacing-y: 0;
+    --translate-x: 0;
+    --translate-y: 0;
+    --rotate: 0;
+    --skew-x: 0;
+    --skew-y: 0;
+    --scale-x: 1;
+    --scale-y: 1;
+    --pan-x: ;
+    --pan-y: ;
+    --pinch-zoom: ;
+    --scroll-snap-strictness: proximity;
+    --ordinal: ;
+    --slashed-zero: ;
+    --numeric-figure: ;
+    --numeric-spacing: ;
+    --numeric-fraction: ;
+    --ring-inset: ;
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: rgba(63,131,248,.5);
+    --ring-offset-shadow: 0 0 #0000;
+    --ring-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
+    --shadow-colored: 0 0 #0000;
+    --blur: ;
+    --brightness: ;
+    --contrast: ;
+    --grayscale: ;
+    --hue-rotate: ;
+    --invert: ;
+    --saturate: ;
+    --sepia: ;
+    --drop-shadow: ;
+    --backdrop-blur: ;
+    --backdrop-brightness: ;
+    --backdrop-contrast: ;
+    --backdrop-grayscale: ;
+    --backdrop-hue-rotate: ;
+    --backdrop-invert: ;
+    --backdrop-opacity: ;
+    --backdrop-saturate: ;
+    --backdrop-sepia:
 }
 
 ::-webkit-backdrop {
-    --tw-border-spacing-x: 0;
-    --tw-border-spacing-y: 0;
-    --tw-translate-x: 0;
-    --tw-translate-y: 0;
-    --tw-rotate: 0;
-    --tw-skew-x: 0;
-    --tw-skew-y: 0;
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    --tw-pan-x: ;
-    --tw-pan-y: ;
-    --tw-pinch-zoom: ;
-    --tw-scroll-snap-strictness: proximity;
-    --tw-ordinal: ;
-    --tw-slashed-zero: ;
-    --tw-numeric-figure: ;
-    --tw-numeric-spacing: ;
-    --tw-numeric-fraction: ;
-    --tw-ring-inset: ;
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: rgba(63,131,248,.5);
-    --tw-ring-offset-shadow: 0 0 #0000;
-    --tw-ring-shadow: 0 0 #0000;
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    --tw-blur: ;
-    --tw-brightness: ;
-    --tw-contrast: ;
-    --tw-grayscale: ;
-    --tw-hue-rotate: ;
-    --tw-invert: ;
-    --tw-saturate: ;
-    --tw-sepia: ;
-    --tw-drop-shadow: ;
-    --tw-backdrop-blur: ;
-    --tw-backdrop-brightness: ;
-    --tw-backdrop-contrast: ;
-    --tw-backdrop-grayscale: ;
-    --tw-backdrop-hue-rotate: ;
-    --tw-backdrop-invert: ;
-    --tw-backdrop-opacity: ;
-    --tw-backdrop-saturate: ;
-    --tw-backdrop-sepia:
+    --border-spacing-x: 0;
+    --border-spacing-y: 0;
+    --translate-x: 0;
+    --translate-y: 0;
+    --rotate: 0;
+    --skew-x: 0;
+    --skew-y: 0;
+    --scale-x: 1;
+    --scale-y: 1;
+    --pan-x: ;
+    --pan-y: ;
+    --pinch-zoom: ;
+    --scroll-snap-strictness: proximity;
+    --ordinal: ;
+    --slashed-zero: ;
+    --numeric-figure: ;
+    --numeric-spacing: ;
+    --numeric-fraction: ;
+    --ring-inset: ;
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: rgba(63,131,248,.5);
+    --ring-offset-shadow: 0 0 #0000;
+    --ring-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
+    --shadow-colored: 0 0 #0000;
+    --blur: ;
+    --brightness: ;
+    --contrast: ;
+    --grayscale: ;
+    --hue-rotate: ;
+    --invert: ;
+    --saturate: ;
+    --sepia: ;
+    --drop-shadow: ;
+    --backdrop-blur: ;
+    --backdrop-brightness: ;
+    --backdrop-contrast: ;
+    --backdrop-grayscale: ;
+    --backdrop-hue-rotate: ;
+    --backdrop-invert: ;
+    --backdrop-opacity: ;
+    --backdrop-saturate: ;
+    --backdrop-sepia:
 }
 
 ::backdrop {
-    --tw-border-spacing-x: 0;
-    --tw-border-spacing-y: 0;
-    --tw-translate-x: 0;
-    --tw-translate-y: 0;
-    --tw-rotate: 0;
-    --tw-skew-x: 0;
-    --tw-skew-y: 0;
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    --tw-pan-x: ;
-    --tw-pan-y: ;
-    --tw-pinch-zoom: ;
-    --tw-scroll-snap-strictness: proximity;
-    --tw-ordinal: ;
-    --tw-slashed-zero: ;
-    --tw-numeric-figure: ;
-    --tw-numeric-spacing: ;
-    --tw-numeric-fraction: ;
-    --tw-ring-inset: ;
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: rgba(63,131,248,.5);
-    --tw-ring-offset-shadow: 0 0 #0000;
-    --tw-ring-shadow: 0 0 #0000;
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    --tw-blur: ;
-    --tw-brightness: ;
-    --tw-contrast: ;
-    --tw-grayscale: ;
-    --tw-hue-rotate: ;
-    --tw-invert: ;
-    --tw-saturate: ;
-    --tw-sepia: ;
-    --tw-drop-shadow: ;
-    --tw-backdrop-blur: ;
-    --tw-backdrop-brightness: ;
-    --tw-backdrop-contrast: ;
-    --tw-backdrop-grayscale: ;
-    --tw-backdrop-hue-rotate: ;
-    --tw-backdrop-invert: ;
-    --tw-backdrop-opacity: ;
-    --tw-backdrop-saturate: ;
-    --tw-backdrop-sepia:
+    --border-spacing-x: 0;
+    --border-spacing-y: 0;
+    --translate-x: 0;
+    --translate-y: 0;
+    --rotate: 0;
+    --skew-x: 0;
+    --skew-y: 0;
+    --scale-x: 1;
+    --scale-y: 1;
+    --pan-x: ;
+    --pan-y: ;
+    --pinch-zoom: ;
+    --scroll-snap-strictness: proximity;
+    --ordinal: ;
+    --slashed-zero: ;
+    --numeric-figure: ;
+    --numeric-spacing: ;
+    --numeric-fraction: ;
+    --ring-inset: ;
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: rgba(63,131,248,.5);
+    --ring-offset-shadow: 0 0 #0000;
+    --ring-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
+    --shadow-colored: 0 0 #0000;
+    --blur: ;
+    --brightness: ;
+    --contrast: ;
+    --grayscale: ;
+    --hue-rotate: ;
+    --invert: ;
+    --saturate: ;
+    --sepia: ;
+    --drop-shadow: ;
+    --backdrop-blur: ;
+    --backdrop-brightness: ;
+    --backdrop-contrast: ;
+    --backdrop-grayscale: ;
+    --backdrop-hue-rotate: ;
+    --backdrop-invert: ;
+    --backdrop-opacity: ;
+    --backdrop-saturate: ;
+    --backdrop-sepia:
 }
 
 .rec-clipper {
@@ -805,16 +805,16 @@ input[type=range]::-ms-fill-lower {
     z-index: 30
 }
 
-.RV8RoaI_SlEMC5CEQ3ms {
+.mx-auto {
     margin-left: auto;
     margin-right: auto
 }
 
-.margin-bottom-1-rem {
+.mb-4 {
     margin-bottom: 1rem
 }
 
-.rD4HtsUG_hahmbh2Kj09 {
+.mb-2 {
     margin-bottom: .5rem
 }
 
@@ -870,7 +870,7 @@ input[type=range]::-ms-fill-lower {
     display: flex
 }
 
-.display-in-flex {
+.inline-flex {
     display: inline-flex
 }
 
@@ -898,7 +898,7 @@ input[type=range]::-ms-fill-lower {
     height: 2rem
 }
 
-.jCISvWkW5oStPH6Wrb_H {
+.w-full {
     width: 100%
 }
 
@@ -927,43 +927,43 @@ input[type=range]::-ms-fill-lower {
 }
 
 .panel-transform-toggle {
-    --tw-translate-x: -100%
+    --translate-x: -100%
 }
 
 ._txZr_XzKh1AA2GR58P5,.panel-transform-toggle {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    transform: translate(var(--translate-x),var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y))
 }
 
 ._txZr_XzKh1AA2GR58P5 {
-    --tw-translate-x: 100%
+    --translate-x: 100%
 }
 
 ._0PJkI8eA25FIbUKfI1v {
-    --tw-translate-x: 0px
+    --translate-x: 0px
 }
 
 .T8ntPwqv9_aqkqQBYkpk,._0PJkI8eA25FIbUKfI1v {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    transform: translate(var(--translate-x),var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y))
 }
 
 .T8ntPwqv9_aqkqQBYkpk {
-    --tw-translate-y: -100%
+    --translate-y: -100%
 }
 
 .mA7nMzdO5NVKdU288J6J {
-    --tw-translate-y: 100%
+    --translate-y: 100%
 }
 
 .R4jqCxTOcV8d4zX2X0UZ,.mA7nMzdO5NVKdU288J6J {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    transform: translate(var(--translate-x),var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y))
 }
 
 .R4jqCxTOcV8d4zX2X0UZ {
-    --tw-rotate: 180deg
+    --rotate: 180deg
 }
 
 .B_Mg78Zl0_AuSOcVLMGS {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    transform: translate(var(--translate-x),var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y))
 }
 
 .transform-none {
@@ -990,7 +990,7 @@ input[type=range]::-ms-fill-lower {
     align-items: flex-end
 }
 
-.al-center {
+.items-center {
     align-items: center
 }
 
@@ -1010,62 +1010,62 @@ input[type=range]::-ms-fill-lower {
     justify-content: space-between
 }
 
-.Ced8tRkG1VjcbmNVdBtj {
+.gap-4 {
     gap: 1rem
 }
 
 .not-hidden-margin-bottom-top-1-rem>:not([hidden])~:not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-bottom: calc(1rem*var(--tw-space-y-reverse));
-    margin-top: calc(1rem*(1 - var(--tw-space-y-reverse)))
+    --space-y-reverse: 0;
+    margin-bottom: calc(1rem*var(--space-y-reverse));
+    margin-top: calc(1rem*(1 - var(--space-y-reverse)))
 }
 
 .B1cgbA6Bb4LQo0qFJKck>:not([hidden])~:not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-left: calc(.75rem*(1 - var(--tw-space-x-reverse)));
-    margin-right: calc(.75rem*var(--tw-space-x-reverse))
+    --space-x-reverse: 0;
+    margin-left: calc(.75rem*(1 - var(--space-x-reverse)));
+    margin-right: calc(.75rem*var(--space-x-reverse))
 }
 
 .rALiclNssVZsLNt7zOhR>:not([hidden])~:not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-left: calc(.5rem*(1 - var(--tw-space-x-reverse)));
-    margin-right: calc(.5rem*var(--tw-space-x-reverse))
+    --space-x-reverse: 0;
+    margin-left: calc(.5rem*(1 - var(--space-x-reverse)));
+    margin-right: calc(.5rem*var(--space-x-reverse))
 }
 
 .not-hidden-margin-left-right-point-25-rem>:not([hidden])~:not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-left: calc(.25rem*(1 - var(--tw-space-x-reverse)));
-    margin-right: calc(.25rem*var(--tw-space-x-reverse))
+    --space-x-reverse: 0;
+    margin-left: calc(.25rem*(1 - var(--space-x-reverse)));
+    margin-right: calc(.25rem*var(--space-x-reverse))
 }
 
 ._LFTxJkvRWfI_UdU8mi1>:not([hidden])~:not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-left: calc(-1rem*(1 - var(--tw-space-x-reverse)));
-    margin-right: calc(-1rem*var(--tw-space-x-reverse))
+    --space-x-reverse: 0;
+    margin-left: calc(-1rem*(1 - var(--space-x-reverse)));
+    margin-right: calc(-1rem*var(--space-x-reverse))
 }
 
 .__Iv72FadFpzwcpFl5_5>:not([hidden])~:not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-bottom: calc(.75rem*var(--tw-space-y-reverse));
-    margin-top: calc(.75rem*(1 - var(--tw-space-y-reverse)))
+    --space-y-reverse: 0;
+    margin-bottom: calc(.75rem*var(--space-y-reverse));
+    margin-top: calc(.75rem*(1 - var(--space-y-reverse)))
 }
 
 .not-hidden-margin-left-right-1-rem>:not([hidden])~:not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-left: calc(1rem*(1 - var(--tw-space-x-reverse)));
-    margin-right: calc(1rem*var(--tw-space-x-reverse))
+    --space-x-reverse: 0;
+    margin-left: calc(1rem*(1 - var(--space-x-reverse)));
+    margin-right: calc(1rem*var(--space-x-reverse))
 }
 
 .yGKSom6xHdY1EhaYGurI>:not([hidden])~:not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgb(229 231 235/var(--tw-divide-opacity))
+    --divide-opacity: 1;
+    border-color: rgb(229 231 235/var(--divide-opacity))
 }
 
 .overflow-hidden {
     overflow: hidden
 }
 
-.border-radius-point-5-rem {
+.rounded-lg {
     border-radius: .5rem
 }
 
@@ -1086,7 +1086,7 @@ input[type=range]::-ms-fill-lower {
     border-bottom-right-radius: .5rem
 }
 
-.border-width-1-px {
+.border {
     border-width: 1px
 }
 
@@ -1103,48 +1103,48 @@ input[type=range]::-ms-fill-lower {
 }
 
 .border-color-28-100-242-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(28 100 242/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(28 100 242/var(--border-opacity))
 }
 
 .border-color-243-244-246-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(243 244 246/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(243 244 246/var(--border-opacity))
 }
 
 .border-color-209-213-219-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(209 213 219/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(209 213 219/var(--border-opacity))
 }
 
 .border-color-229-231-235-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(229 231 235/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(229 231 235/var(--border-opacity))
 }
 
 ._WlCPLL0LIv8ViOuJIFs {
-    --tw-border-opacity: 1;
-    border-color: rgb(255 255 255/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(255 255 255/var(--border-opacity))
 }
 
 ._e170CiS9C9Yn0KXSSNe {
-    --tw-border-opacity: 1!important;
-    border-color: rgb(255 255 255/var(--tw-border-opacity))!important
+    --border-opacity: 1!important;
+    border-color: rgb(255 255 255/var(--border-opacity))!important
 }
 
 .QatzkcsV8pEcuVZXWI0r {
-    --tw-border-opacity: 1;
-    border-color: rgb(224 36 36/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(224 36 36/var(--border-opacity))
 }
 
 .background-color-243-244-246-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(243 244 246/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(243 244 246/var(--bg-opacity))
 }
 
 .background-color-white-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--bg-opacity))
 }
 
 .background-color-hsla-0-0-per-100-per-point-5 {
@@ -1152,18 +1152,18 @@ input[type=range]::-ms-fill-lower {
 }
 
 .background-color-17-24-39-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(17 24 39/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(17 24 39/var(--bg-opacity))
 }
 
 .background-color-249-250-251-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(249 250 251/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(249 250 251/var(--bg-opacity))
 }
 
 .cpvySQJhi7WPQ1TJZjyD {
-    --tw-bg-opacity: 1!important;
-    background-color: rgb(66 133 244/var(--tw-bg-opacity))!important
+    --bg-opacity: 1!important;
+    background-color: rgb(66 133 244/var(--bg-opacity))!important
 }
 
 .bHPiH67mBn1_jgR3TrvW {
@@ -1171,59 +1171,59 @@ input[type=range]::-ms-fill-lower {
 }
 
 .XDk1_npkBoOBSU2LMU0G {
-    --tw-bg-opacity: 1!important;
-    background-color: rgb(144 97 249/var(--tw-bg-opacity))!important
+    --bg-opacity: 1!important;
+    background-color: rgb(144 97 249/var(--bg-opacity))!important
 }
 
 .E8z2PxxMQ5eIT2O_qpQx {
-    --tw-bg-opacity: 1!important;
-    background-color: rgb(104 117 245/var(--tw-bg-opacity))!important
+    --bg-opacity: 1!important;
+    background-color: rgb(104 117 245/var(--bg-opacity))!important
 }
 
 .jLwNgOJvJbT8CgmDxohW {
-    --tw-bg-opacity: 1!important;
-    background-color: rgb(231 70 148/var(--tw-bg-opacity))!important
+    --bg-opacity: 1!important;
+    background-color: rgb(231 70 148/var(--bg-opacity))!important
 }
 
 ._WXL3OTCvMA1WTA2Kd__ {
-    --tw-bg-opacity: 1!important;
-    background-color: rgb(22 189 202/var(--tw-bg-opacity))!important
+    --bg-opacity: 1!important;
+    background-color: rgb(22 189 202/var(--bg-opacity))!important
 }
 
 .JH3Lv27VDS9S3CkhGBXx {
-    --tw-bg-opacity: 1!important;
-    background-color: rgb(49 196 141/var(--tw-bg-opacity))!important
+    --bg-opacity: 1!important;
+    background-color: rgb(49 196 141/var(--bg-opacity))!important
 }
 
 .Vg4qo7M_3Yiawl64oMmJ {
-    --tw-bg-opacity: 1!important;
-    background-color: rgb(250 202 21/var(--tw-bg-opacity))!important
+    --bg-opacity: 1!important;
+    background-color: rgb(250 202 21/var(--bg-opacity))!important
 }
 
 .g5QKJ7_U6hvpT2Wwm2JF {
-    --tw-bg-opacity: 1!important;
-    background-color: rgb(255 138 76/var(--tw-bg-opacity))!important
+    --bg-opacity: 1!important;
+    background-color: rgb(255 138 76/var(--bg-opacity))!important
 }
 
 .mSU27_LHUL7etCkQqE7s {
-    --tw-bg-opacity: 1!important;
-    background-color: rgb(240 82 82/var(--tw-bg-opacity))!important
+    --bg-opacity: 1!important;
+    background-color: rgb(240 82 82/var(--bg-opacity))!important
 }
 
 .u3chZtZqgJMWp3CocYzX {
-    --tw-bg-opacity: 1!important;
-    background-color: rgb(55 65 81/var(--tw-bg-opacity))!important
+    --bg-opacity: 1!important;
+    background-color: rgb(55 65 81/var(--bg-opacity))!important
 }
 
 .F6maSyXBC_uv_A_dciar {
-    --tw-bg-opacity: 0.5
+    --bg-opacity: 0.5
 }
 
-.padding-point-625-rem {
+.p-2 {
     padding: .625rem
 }
 
-.padding-point-5-rem {
+.p-2 {
     padding: .5rem
 }
 
@@ -1239,27 +1239,27 @@ input[type=range]::-ms-fill-lower {
     padding: .75rem
 }
 
-.padding-left-right-1-rem {
+.px-4 {
     padding-left: 1rem;
     padding-right: 1rem
 }
 
-.padding-lbottom-top-2-rem {
+.py-8 {
     padding-bottom: 2rem;
     padding-top: 2rem
 }
 
-.padding-left-right-1-point-25-rem {
+.px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem
 }
 
-.padding-bottom-top-point-625-rem {
+.py-2 {
     padding-bottom: .625rem;
     padding-top: .625rem
 }
 
-.padding-bottom-top-point-5-rem {
+.py-2 {
     padding-bottom: .5rem;
     padding-top: .5rem
 }
@@ -1306,16 +1306,16 @@ input[type=range]::-ms-fill-lower {
     padding-left: 1rem
 }
 
-.text-align-center {
+.text-center {
     text-align: center
 }
 
-.uyo8h_4Kh1IoUwm8bwJI {
+.text-xl leading-7 {
     font-size: 1.25rem;
     line-height: 1.75rem
 }
 
-.MxG1ClE4KPrIvlL5_Q5x {
+.text-sm leading-5 {
     font-size: .875rem;
     line-height: 1.25rem
 }
@@ -1338,33 +1338,33 @@ input[type=range]::-ms-fill-lower {
 }
 
 .color-17-24-39-1 {
-    --tw-text-opacity: 1;
-    color: rgb(17 24 39/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(17 24 39/var(--text-opacity))
 }
 
 .color-107-114-128-1 {
-    --tw-text-opacity: 1;
-    color: rgb(107 114 128/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(107 114 128/var(--text-opacity))
 }
 
 .color-28-100-242-1 {
-    --tw-text-opacity: 1;
-    color: rgb(28 100 242/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(28 100 242/var(--text-opacity))
 }
 
 .color-white-1 {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(255 255 255/var(--text-opacity))
 }
 
 ._k4LlnOHrNO4Fe0v_QGs {
-    --tw-text-opacity: 1;
-    color: rgb(31 41 55/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(31 41 55/var(--text-opacity))
 }
 
 ._Vf4q96EaVweU8Te8R7I {
-    --tw-text-opacity: 1;
-    color: rgb(224 36 36/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(224 36 36/var(--text-opacity))
 }
 
 .opacity-0 {
@@ -1376,17 +1376,17 @@ input[type=range]::-ms-fill-lower {
 }
 
 .ltPMSn_g3PKyqeS8vmZk {
-    --tw-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
-    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)
+    --shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+    --shadow-colored: 0 1px 2px 0 var(--shadow-color);
+    box-shadow: var(--ring-offset-shadow,0 0 #0000),var(--ring-shadow,0 0 #0000),var(--shadow)
 }
 
 .ClETfzy1YZDVXhnOVdgH {
-    --tw-blur: blur(8px)
+    --blur: blur(8px)
 }
 
 .ClETfzy1YZDVXhnOVdgH,.__l7tEsuvTIL_QRvY8sk {
-    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+    filter: var(--blur) var(--brightness) var(--contrast) var(--grayscale) var(--hue-rotate) var(--invert) var(--saturate) var(--sepia) var(--drop-shadow)
 }
 
 .yvRWkoRx_Apshie5g15o {
@@ -1416,13 +1416,13 @@ input[type=range]::-ms-fill-lower {
 }
 
 .eFVdWe3MNoaU5uHcs1ZL:hover {
-    --tw-border-opacity: 1;
-    border-color: rgb(209 213 219/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(209 213 219/var(--border-opacity))
 }
 
 .djld5jFcbPSy1YdGoI7k:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--bg-opacity))
 }
 
 .Bazdf0LUPiBYVkukEV3i:hover {
@@ -1430,43 +1430,43 @@ input[type=range]::-ms-fill-lower {
 }
 
 .AuG_AQhY3FbFBSoB8wJ0:hover {
-    --tw-bg-opacity: 1!important;
-    background-color: rgb(229 231 235/var(--tw-bg-opacity))!important
+    --bg-opacity: 1!important;
+    background-color: rgb(229 231 235/var(--bg-opacity))!important
 }
 
 .DpMPWwlSESiYA8EE1xKM:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(243 244 246/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(243 244 246/var(--bg-opacity))
 }
 
 .IKTEifZbzgNUUwKKuydY:hover {
-    --tw-bg-opacity: 1!important;
-    background-color: rgb(75 85 99/var(--tw-bg-opacity))!important
+    --bg-opacity: 1!important;
+    background-color: rgb(75 85 99/var(--bg-opacity))!important
 }
 
 ._2vrbtasf6kpgU0SqCxk:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(224 36 36/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(224 36 36/var(--bg-opacity))
 }
 
 ._be7gCNOq8vw6dPtYNE0:hover {
-    --tw-text-opacity: 1;
-    color: rgb(28 100 242/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(28 100 242/var(--text-opacity))
 }
 
 .__3D_PX_oiQ5jff3N7d8:hover {
-    --tw-text-opacity: 1;
-    color: rgb(75 85 99/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(75 85 99/var(--text-opacity))
 }
 
 ._xQT_qSXfwWf6ZhwRle4:hover {
-    --tw-text-opacity: 1;
-    color: rgb(17 24 39/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(17 24 39/var(--text-opacity))
 }
 
 ._lvH1U9a1qR55wvLD2NC:hover {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(255 255 255/var(--text-opacity))
 }
 
 .m_8FxTcpOfmK___hAaJ6:focus {
@@ -1479,47 +1479,47 @@ input[type=range]::-ms-fill-lower {
 }
 
 .X3ifvK6lzvLzkZabaIQd:focus {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color)
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(2px + var(--ring-offset-width)) var(--ring-color)
 }
 
 .X3ifvK6lzvLzkZabaIQd:focus,._FONMPVaCsLFJJGDaaIL:focus {
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow,0 0 #0000)
 }
 
 ._FONMPVaCsLFJJGDaaIL:focus {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color)
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(4px + var(--ring-offset-width)) var(--ring-color)
 }
 
 .W83fbcqTDAidAC5iVTZ9:focus {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(var(--tw-ring-offset-width)) var(--tw-ring-color);
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(var(--ring-offset-width)) var(--ring-color);
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow,0 0 #0000)
 }
 
 .Xf_nkaEk9RWCaqvQByvp:focus {
-    --tw-ring-color: rgba(66,133,244,.5)
+    --ring-color: rgba(66,133,244,.5)
 }
 
 .ySeTR5mxhrLv_M5M51IE:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgb(243 244 246/var(--tw-ring-opacity))
+    --ring-opacity: 1;
+    --ring-color: rgb(243 244 246/var(--ring-opacity))
 }
 
 .BmbNHT2fTUPQcjxkS_AF:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgb(248 180 180/var(--tw-ring-opacity))
+    --ring-opacity: 1;
+    --ring-color: rgb(248 180 180/var(--ring-opacity))
 }
 
 .dark .WoQqugRcWrYbmsWhxCUr>:not([hidden])~:not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgb(75 85 99/var(--tw-divide-opacity))
+    --divide-opacity: 1;
+    border-color: rgb(75 85 99/var(--divide-opacity))
 }
 
 .dark .border-color-63-131-248-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(63 131 248/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(63 131 248/var(--border-opacity))
 }
 
 .dark .border-color-transparent {
@@ -1527,33 +1527,33 @@ input[type=range]::-ms-fill-lower {
 }
 
 .dark .border-color-55-65-81-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(55 65 81/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(55 65 81/var(--border-opacity))
 }
 
 .dark .border-color-75-85-99-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(75 85 99/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(75 85 99/var(--border-opacity))
 }
 
 .dark .Hy7fSoMkW1_3XuxzLIXq {
-    --tw-border-opacity: 1;
-    border-color: rgb(31 41 55/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(31 41 55/var(--border-opacity))
 }
 
 .dark .RDd0t5s_eX2F8wkW8XC_ {
-    --tw-border-opacity: 1!important;
-    border-color: rgb(31 41 55/var(--tw-border-opacity))!important
+    --border-opacity: 1!important;
+    border-color: rgb(31 41 55/var(--border-opacity))!important
 }
 
 .dark .s8SeTMYjMx__lmlA1xPh {
-    --tw-border-opacity: 1;
-    border-color: rgb(240 82 82/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(240 82 82/var(--border-opacity))
 }
 
 .dark .background-color-31-41-55-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(31 41 55/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(31 41 55/var(--bg-opacity))
 }
 
 .dark .background-color-31-41-55-point-5 {
@@ -1561,111 +1561,111 @@ input[type=range]::-ms-fill-lower {
 }
 
 .dark .background-color-17-24-39-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(17 24 39/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(17 24 39/var(--bg-opacity))
 }
 
 .dark .background-color-55-65-81-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(55 65 81/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(55 65 81/var(--bg-opacity))
 }
 
 .dark ._uoTEG_CU7r6UxI59Mw4 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(75 85 99/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(75 85 99/var(--bg-opacity))
 }
 
 .dark .background-opacity-0-point-8 {
-    --tw-bg-opacity: 0.8
+    --bg-opacity: 0.8
 }
 
 .dark .color-white-255-255-255-1 {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(255 255 255/var(--text-opacity))
 }
 
 .dark .color-156-163-175-1 {
-    --tw-text-opacity: 1;
-    color: rgb(156 163 175/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(156 163 175/var(--text-opacity))
 }
 
 .dark .color-63-131-248-1 {
-    --tw-text-opacity: 1;
-    color: rgb(63 131 248/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(63 131 248/var(--text-opacity))
 }
 
 .dark .color-209-213-219-1 {
-    --tw-text-opacity: 1;
-    color: rgb(209 213 219/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(209 213 219/var(--text-opacity))
 }
 
 .dark .QMg9ot58eFU1MktA3i85 {
-    --tw-text-opacity: 1;
-    color: rgb(240 82 82/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(240 82 82/var(--text-opacity))
 }
 
 .dark .color-156-163-175-1::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgb(156 163 175/var(--tw-placeholder-opacity))
+    --placeholder-opacity: 1;
+    color: rgb(156 163 175/var(--placeholder-opacity))
 }
 
 .dark .color-156-163-175-1::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgb(156 163 175/var(--tw-placeholder-opacity))
+    --placeholder-opacity: 1;
+    color: rgb(156 163 175/var(--placeholder-opacity))
 }
 
 .dark .apRlbPZRJ4JWA5RVdURT {
-    --tw-ring-offset-color: #1f2937
+    --ring-offset-color: #1f2937
 }
 
 .dark .GbuoIVQvgE1sPez3FB0O:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(31 41 55/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(31 41 55/var(--bg-opacity))
 }
 
 .dark .phUeF4Q_MSVQ9S00hdm_:hover {
-    --tw-bg-opacity: 1!important;
-    background-color: rgb(75 85 99/var(--tw-bg-opacity))!important
+    --bg-opacity: 1!important;
+    background-color: rgb(75 85 99/var(--bg-opacity))!important
 }
 
 .dark .xotVay0PVtR3gElm6ql5:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(75 85 99/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(75 85 99/var(--bg-opacity))
 }
 
 .dark ._OovBxfPdK7Rjv2nh2Ot:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(55 65 81/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(55 65 81/var(--bg-opacity))
 }
 
 .dark .mjQ5_LY0AbHQ_EJj7qy4:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(224 36 36/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(224 36 36/var(--bg-opacity))
 }
 
 .dark .V2alIkRVl_uBQKfQTjue:hover {
-    --tw-text-opacity: 1;
-    color: rgb(63 131 248/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(63 131 248/var(--text-opacity))
 }
 
 .dark ._VCO84hOChxSw1A3KE3f:hover {
-    --tw-text-opacity: 1;
-    color: rgb(209 213 219/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(209 213 219/var(--text-opacity))
 }
 
 .dark .DTyjKhtXBNaebZa5L0l9:hover {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(255 255 255/var(--text-opacity))
 }
 
 .dark .__8kBLtrR_iuU2wW25Lp:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgb(55 65 81/var(--tw-ring-opacity))
+    --ring-opacity: 1;
+    --ring-color: rgb(55 65 81/var(--ring-opacity))
 }
 
 .dark .M5sqom8AcnqAX31nf13M:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgb(119 29 29/var(--tw-ring-opacity))
+    --ring-opacity: 1;
+    --ring-color: rgb(119 29 29/var(--ring-opacity))
 }
 
 @media (min-width: 640px) {
@@ -1694,9 +1694,9 @@ input[type=range]::-ms-fill-lower {
     }
 
     .Nlj9GFezeDrrSMc8mB0T>:not([hidden])~:not([hidden]) {
-        --tw-divide-x-reverse: 0;
-        border-left-width: calc(1px*(1 - var(--tw-divide-x-reverse)));
-        border-right-width: calc(1px*var(--tw-divide-x-reverse))
+        --divide-x-reverse: 0;
+        border-left-width: calc(1px*(1 - var(--divide-x-reverse)));
+        border-right-width: calc(1px*var(--divide-x-reverse))
     }
 
     .sCLAUGaesab9D0cBf8e_ {
@@ -1727,15 +1727,15 @@ input[type=range]::-ms-fill-lower {
     }
 
     .GHTkY6_vcDBrE7v2PrzJ>:not([hidden])~:not([hidden]) {
-        --tw-space-y-reverse: 0;
-        margin-bottom: calc(0px*var(--tw-space-y-reverse));
-        margin-top: calc(0px*(1 - var(--tw-space-y-reverse)))
+        --space-y-reverse: 0;
+        margin-bottom: calc(0px*var(--space-y-reverse));
+        margin-top: calc(0px*(1 - var(--space-y-reverse)))
     }
 
     .oMWvLBjtaY1vTdo7u3vN>:not([hidden])~:not([hidden]) {
-        --tw-space-x-reverse: 0;
-        margin-left: calc(1rem*(1 - var(--tw-space-x-reverse)));
-        margin-right: calc(1rem*var(--tw-space-x-reverse))
+        --space-x-reverse: 0;
+        margin-left: calc(1rem*(1 - var(--space-x-reverse)));
+        margin-right: calc(1rem*var(--space-x-reverse))
     }
 }
 
@@ -1760,40 +1760,40 @@ input[type=range]::-ms-fill-lower {
         </head>
         <body>
           <section class="background-color-white-1 background-color-17-24-39-1">
-  <div class="padding-left-right-1-rem padding-lbottom-top-2-rem RV8RoaI_SlEMC5CEQ3ms SbPKkTqWXkzvA2E0REZ8 padding-bottom-top-4-rem">
-      <h2 class="margin-bottom-1-rem uyo8h_4Kh1IoUwm8bwJI font-weight-700 color-17-24-39-1 color-white-255-255-255-1">Update event</h2>
+  <div class="px-4 py-8 mx-auto SbPKkTqWXkzvA2E0REZ8 padding-bottom-top-4-rem">
+      <h2 class="mb-4 text-xl leading-7 font-weight-700 color-17-24-39-1 color-white-255-255-255-1">Update event</h2>
       <form action="#">
-          <div class="Ced8tRkG1VjcbmNVdBtj qPk6ygVqUyrzTx0CVDbs hAFtnIdYDiO6M_67F11P _yVFMQjJHRhTCuZdvVB5 rVDZiB_sQDW_cniUhBYT ErxvPfEi6Z6YsQPQkidi">
-              <div class="margin-bottom-1-rem not-hidden-margin-bottom-top-1-rem _36PTq56G0_g2PgsxjuS">
+          <div class="gap-4 qPk6ygVqUyrzTx0CVDbs hAFtnIdYDiO6M_67F11P _yVFMQjJHRhTCuZdvVB5 rVDZiB_sQDW_cniUhBYT ErxvPfEi6Z6YsQPQkidi">
+              <div class="mb-4 not-hidden-margin-bottom-top-1-rem _36PTq56G0_g2PgsxjuS">
                   <div>
-                      <label for="title" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Title</label>
-                      <input type="text" name="title" id="title" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" value="The 4th Digital Transformation" placeholder="Ex. Meeting with James" required="">
+                      <label for="title" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Title</label>
+                      <input type="text" name="title" id="title" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" value="The 4th Digital Transformation" placeholder="Ex. Meeting with James" required="">
                   </div>
                   <div>
-                      <label for="location" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Select Date</label>
-                      <div date-rangepicker="" class="al-center not-hidden-margin-bottom-top-1-rem display-flex GHTkY6_vcDBrE7v2PrzJ">
-                          <div class="QYPW4nl6nHaIbrtaXf4h jCISvWkW5oStPH6Wrb_H">
-                              <div class="position-ab BlSalPC4mE3l43xyY9d0 left-0 display-flex al-center padding-left-point-75-rem ubsPczbxEg7lOg0_Eg1A">
+                      <label for="location" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Select Date</label>
+                      <div date-rangepicker="" class="items-center not-hidden-margin-bottom-top-1-rem display-flex GHTkY6_vcDBrE7v2PrzJ">
+                          <div class="QYPW4nl6nHaIbrtaXf4h w-full">
+                              <div class="position-ab BlSalPC4mE3l43xyY9d0 left-0 display-flex items-center padding-left-point-75-rem ubsPczbxEg7lOg0_Eg1A">
                                   <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem color-107-114-128-1 color-156-163-175-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
                               </div>
-                              <input name="start" type="text" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-500 focus:border-primary-500 show jCISvWkW5oStPH6Wrb_H padding-left-2-point-5-rem padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500 datepicker-input" value="22/11/2022" placeholder="Select date start">
+                              <input name="start" type="text" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-500 focus:border-primary-500 show w-full padding-left-2-point-5-rem p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500 datepicker-input" value="22/11/2022" placeholder="Select date start">
                           </div>
                           <span class="hide color-107-114-128-1 BRYfetjr5WbpNe5zZl9x display-flex">to</span>
-                          <div class="QYPW4nl6nHaIbrtaXf4h jCISvWkW5oStPH6Wrb_H">
-                              <div class="position-ab BlSalPC4mE3l43xyY9d0 left-0 display-flex al-center padding-left-point-75-rem ubsPczbxEg7lOg0_Eg1A">
+                          <div class="QYPW4nl6nHaIbrtaXf4h w-full">
+                              <div class="position-ab BlSalPC4mE3l43xyY9d0 left-0 display-flex items-center padding-left-point-75-rem ubsPczbxEg7lOg0_Eg1A">
                                   <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem color-107-114-128-1 color-156-163-175-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
                               </div>
-                              <input name="end" type="text" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-500 focus:border-primary-500 show jCISvWkW5oStPH6Wrb_H padding-left-2-point-5-rem padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500 datepicker-input" value="30/11/2022" placeholder="Select date end">
+                              <input name="end" type="text" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-500 focus:border-primary-500 show w-full padding-left-2-point-5-rem p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500 datepicker-input" value="30/11/2022" placeholder="Select date end">
                           </div>
                       </div>  
                   </div>
-                  <div class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
-                      <div class="display-flex al-center HzSN_B__bXx8FUbQhXu_">
+                  <div class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
+                      <div class="display-flex items-center HzSN_B__bXx8FUbQhXu_">
                           <input id="event-duration-checkbox" type="checkbox" value="" class="width-1-rem height-1-rem background-color-243-244-246-1 border-color-209-213-219-1 border-radius-point-25-rem text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 apRlbPZRJ4JWA5RVdURT X3ifvK6lzvLzkZabaIQd background-color-55-65-81-1 border-color-75-85-99-1" checked="">
-                          <label for="event-duration-checkbox" class="QGosQoeY76W_hWM2rgwJ MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-209-213-219-1">All day</label>
+                          <label for="event-duration-checkbox" class="QGosQoeY76W_hWM2rgwJ text-sm leading-5 font-weight-500 color-17-24-39-1 color-209-213-219-1">All day</label>
                       </div>
                       <label for="time-select" class="rec-clipper">Select an option</label>
-                      <select id="time-select" class="_ai51jxW84YycfjuGyBg background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-500 focus:border-primary-500 show padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                      <select id="time-select" class="_ai51jxW84YycfjuGyBg background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-500 focus:border-primary-500 show p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500">
                           <option selected="">Daily</option>
                           <option value="WW">Weekly on Wednesday</option>
                           <option value="EW">Every weekday</option>
@@ -1801,32 +1801,32 @@ input[type=range]::-ms-fill-lower {
                       </select>
                   </div>
                   <div>
-                      <div class="display-flex al-center rD4HtsUG_hahmbh2Kj09">
-                          <button type="button" class="color-white-1 cpvySQJhi7WPQ1TJZjyD Bazdf0LUPiBYVkukEV3i _FONMPVaCsLFJJGDaaIL qHIOIw8TObHgD3VvKa5x Xf_nkaEk9RWCaqvQByvp font-weight-500 border-radius-point-5-rem MxG1ClE4KPrIvlL5_Q5x padding-left-right-1-point-25-rem padding-bottom-top-point-625-rem text-align-center dark:focus:ring-[#4285F4]/55">
+                      <div class="display-flex items-center mb-2">
+                          <button type="button" class="color-white-1 cpvySQJhi7WPQ1TJZjyD Bazdf0LUPiBYVkukEV3i _FONMPVaCsLFJJGDaaIL qHIOIw8TObHgD3VvKa5x Xf_nkaEk9RWCaqvQByvp font-weight-500 rounded-lg text-sm leading-5 px-5 py-2 text-center dark:focus:ring-[#4285F4]/55">
                               Join with Google Meet
                           </button>
                           <div class="Ljy4iPgx864jXhJbnInL">
-                              <button data-tooltip-target="tooltip-call-options" type="button" class="color-107-114-128-1 bHPiH67mBn1_jgR3TrvW AuG_AQhY3FbFBSoB8wJ0 _xQT_qSXfwWf6ZhwRle4 border-radius-point-5-rem MxG1ClE4KPrIvlL5_Q5x padding-point-375-rem gIFtGbAiQuKVOg5QUCDU display-in-flex al-center phUeF4Q_MSVQ9S00hdm_ DTyjKhtXBNaebZa5L0l9 color-156-163-175-1">
+                              <button data-tooltip-target="tooltip-call-options" type="button" class="color-107-114-128-1 bHPiH67mBn1_jgR3TrvW AuG_AQhY3FbFBSoB8wJ0 _xQT_qSXfwWf6ZhwRle4 rounded-lg text-sm leading-5 padding-point-375-rem gIFtGbAiQuKVOg5QUCDU inline-flex items-center phUeF4Q_MSVQ9S00hdm_ DTyjKhtXBNaebZa5L0l9 color-156-163-175-1">
                                   <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg>
                                   <span class="rec-clipper">Call options</span>
                               </button>
-                              <div id="tooltip-call-options" role="tooltip" class="display-in-block position-ab visibility-hidden z-index-10 padding-bottom-top-point-5-rem cA4BPuqyV1eox6S0acvl XklWzT8y98pp042XEQp4 color-white-1 background-color-17-24-39-1 border-radius-point-5-rem ltPMSn_g3PKyqeS8vmZk opacity-0 M4SAv60iaayh2_Cd_QyF transition-duration-point-3-s Usqns9w__onp5CWoXDJ0 background-color-55-65-81-1">
+                              <div id="tooltip-call-options" role="tooltip" class="display-in-block position-ab visibility-hidden z-index-10 py-2 cA4BPuqyV1eox6S0acvl XklWzT8y98pp042XEQp4 color-white-1 background-color-17-24-39-1 rounded-lg ltPMSn_g3PKyqeS8vmZk opacity-0 M4SAv60iaayh2_Cd_QyF transition-duration-point-3-s Usqns9w__onp5CWoXDJ0 background-color-55-65-81-1">
                                   Video call options
                                   <div class="POMYoNHqN8pOsNYFYFHr" data-popper-arrow=""></div>
                               </div>
-                              <button data-tooltip-target="tooltip-copy-info" type="button" class="color-107-114-128-1 bHPiH67mBn1_jgR3TrvW AuG_AQhY3FbFBSoB8wJ0 _xQT_qSXfwWf6ZhwRle4 border-radius-point-5-rem MxG1ClE4KPrIvlL5_Q5x padding-point-375-rem gIFtGbAiQuKVOg5QUCDU display-in-flex al-center phUeF4Q_MSVQ9S00hdm_ DTyjKhtXBNaebZa5L0l9 color-156-163-175-1">
+                              <button data-tooltip-target="tooltip-copy-info" type="button" class="color-107-114-128-1 bHPiH67mBn1_jgR3TrvW AuG_AQhY3FbFBSoB8wJ0 _xQT_qSXfwWf6ZhwRle4 rounded-lg text-sm leading-5 padding-point-375-rem gIFtGbAiQuKVOg5QUCDU inline-flex items-center phUeF4Q_MSVQ9S00hdm_ DTyjKhtXBNaebZa5L0l9 color-156-163-175-1">
                                   <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9 2a2 2 0 00-2 2v8a2 2 0 002 2h6a2 2 0 002-2V6.414A2 2 0 0016.414 5L14 2.586A2 2 0 0012.586 2H9z"></path><path d="M3 8a2 2 0 012-2v10h8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"></path></svg>
                                   <span class="rec-clipper">Copy conference info</span>
                               </button>
-                              <div id="tooltip-copy-info" role="tooltip" class="display-in-block position-ab visibility-hidden z-index-10 padding-bottom-top-point-5-rem cA4BPuqyV1eox6S0acvl XklWzT8y98pp042XEQp4 color-white-1 background-color-17-24-39-1 border-radius-point-5-rem ltPMSn_g3PKyqeS8vmZk opacity-0 M4SAv60iaayh2_Cd_QyF transition-duration-point-3-s Usqns9w__onp5CWoXDJ0 background-color-55-65-81-1">
+                              <div id="tooltip-copy-info" role="tooltip" class="display-in-block position-ab visibility-hidden z-index-10 py-2 cA4BPuqyV1eox6S0acvl XklWzT8y98pp042XEQp4 color-white-1 background-color-17-24-39-1 rounded-lg ltPMSn_g3PKyqeS8vmZk opacity-0 M4SAv60iaayh2_Cd_QyF transition-duration-point-3-s Usqns9w__onp5CWoXDJ0 background-color-55-65-81-1">
                                   Copy conference info
                                   <div class="POMYoNHqN8pOsNYFYFHr" data-popper-arrow=""></div>
                               </div>
-                              <button data-tooltip-target="tooltip-remove-conference" type="button" class="color-107-114-128-1 bHPiH67mBn1_jgR3TrvW AuG_AQhY3FbFBSoB8wJ0 _xQT_qSXfwWf6ZhwRle4 border-radius-point-5-rem MxG1ClE4KPrIvlL5_Q5x padding-point-375-rem gIFtGbAiQuKVOg5QUCDU display-in-flex al-center phUeF4Q_MSVQ9S00hdm_ DTyjKhtXBNaebZa5L0l9 color-156-163-175-1">
+                              <button data-tooltip-target="tooltip-remove-conference" type="button" class="color-107-114-128-1 bHPiH67mBn1_jgR3TrvW AuG_AQhY3FbFBSoB8wJ0 _xQT_qSXfwWf6ZhwRle4 rounded-lg text-sm leading-5 padding-point-375-rem gIFtGbAiQuKVOg5QUCDU inline-flex items-center phUeF4Q_MSVQ9S00hdm_ DTyjKhtXBNaebZa5L0l9 color-156-163-175-1">
                                   <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                                   <span class="rec-clipper">Remove conference</span>
                               </button>
-                              <div id="tooltip-remove-conference" role="tooltip" class="display-in-block position-ab visibility-hidden z-index-10 padding-bottom-top-point-5-rem cA4BPuqyV1eox6S0acvl XklWzT8y98pp042XEQp4 color-white-1 background-color-17-24-39-1 border-radius-point-5-rem ltPMSn_g3PKyqeS8vmZk opacity-0 M4SAv60iaayh2_Cd_QyF transition-duration-point-3-s Usqns9w__onp5CWoXDJ0 background-color-55-65-81-1">
+                              <div id="tooltip-remove-conference" role="tooltip" class="display-in-block position-ab visibility-hidden z-index-10 py-2 cA4BPuqyV1eox6S0acvl XklWzT8y98pp042XEQp4 color-white-1 background-color-17-24-39-1 rounded-lg ltPMSn_g3PKyqeS8vmZk opacity-0 M4SAv60iaayh2_Cd_QyF transition-duration-point-3-s Usqns9w__onp5CWoXDJ0 background-color-55-65-81-1">
                                   Remove conference
                                   <div class="POMYoNHqN8pOsNYFYFHr" data-popper-arrow=""></div>
                               </div>
@@ -1836,8 +1836,8 @@ input[type=range]::-ms-fill-lower {
                       <p class="XklWzT8y98pp042XEQp4 font-weight-300 color-107-114-128-1 color-156-163-175-1">Up to 100 guest connections</p>
                   </div>
                   <div>
-                      <div class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Tag Color</div>
-                      <div class="display-flex al-center rALiclNssVZsLNt7zOhR">
+                      <div class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Tag Color</div>
+                      <div class="display-flex items-center rALiclNssVZsLNt7zOhR">
                           <button type="button" class="width-1-point-5-rem _XD2a764x49B1E2F9f8X XDk1_npkBoOBSU2LMU0G kgpUDAwSszZxVH0K_LQT"></button>
                           <button type="button" class="width-1-point-5-rem _XD2a764x49B1E2F9f8X E8z2PxxMQ5eIT2O_qpQx kgpUDAwSszZxVH0K_LQT"></button>
                           <button type="button" class="width-1-point-5-rem _XD2a764x49B1E2F9f8X kgpUDAwSszZxVH0K_LQT bg-primary-600"></button>
@@ -1850,76 +1850,76 @@ input[type=range]::-ms-fill-lower {
                       </div>
                   </div>
                   <div>
-                      <label for="description" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Description</label>
-                      <div class="jCISvWkW5oStPH6Wrb_H margin-bottom-1-rem background-color-243-244-246-1 border-width-1-px border-color-229-231-235-1 border-radius-point-5-rem _uoTEG_CU7r6UxI59Mw4 border-color-75-85-99-1">
-                          <div class="display-flex al-center jc-space-between padding-left-right-point-75-rem padding-bottom-top-point-5-rem border-bottom-width-1-px border-color-75-85-99-1">
-                              <div class="display-flex SaxexKs0G0X_YQvtMxF3 al-center yGKSom6xHdY1EhaYGurI Nlj9GFezeDrrSMc8mB0T WoQqugRcWrYbmsWhxCUr">
-                                  <div class="display-flex al-center not-hidden-margin-left-right-point-25-rem sCLAUGaesab9D0cBf8e_">
-                                      <button type="button" class="padding-point-5-rem color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
+                      <label for="description" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Description</label>
+                      <div class="w-full mb-4 background-color-243-244-246-1 border border-color-229-231-235-1 rounded-lg _uoTEG_CU7r6UxI59Mw4 border-color-75-85-99-1">
+                          <div class="display-flex items-center jc-space-between padding-left-right-point-75-rem py-2 border-bottom-width-1-px border-color-75-85-99-1">
+                              <div class="display-flex SaxexKs0G0X_YQvtMxF3 items-center yGKSom6xHdY1EhaYGurI Nlj9GFezeDrrSMc8mB0T WoQqugRcWrYbmsWhxCUr">
+                                  <div class="display-flex items-center not-hidden-margin-left-right-point-25-rem sCLAUGaesab9D0cBf8e_">
+                                      <button type="button" class="p-2 color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
                                           <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z" clip-rule="evenodd"></path></svg>
                                           <span class="rec-clipper">Attach file</span>
                                       </button>
-                                      <button type="button" class="padding-point-5-rem color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
+                                      <button type="button" class="p-2 color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
                                           <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
                                           <span class="rec-clipper">Embed map</span>
                                       </button>
-                                      <button type="button" class="padding-point-5-rem color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
+                                      <button type="button" class="p-2 color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
                                           <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"></path></svg>
                                           <span class="rec-clipper">Upload image</span>
                                       </button>
-                                      <button type="button" class="padding-point-5-rem color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
+                                      <button type="button" class="p-2 color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
                                           <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                                           <span class="rec-clipper">Format code</span>
                                       </button>
-                                      <button type="button" class="padding-point-5-rem color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
+                                      <button type="button" class="p-2 color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
                                           <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z" clip-rule="evenodd"></path></svg>
                                           <span class="rec-clipper">Add emoji</span>
                                       </button>
                                   </div>
-                                  <div class="SaxexKs0G0X_YQvtMxF3 al-center hide not-hidden-margin-left-right-point-25-rem display-flex UOs3xk7_SKo_Hcsbq8nt">
-                                      <button type="button" class="padding-point-5-rem color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
+                                  <div class="SaxexKs0G0X_YQvtMxF3 items-center hide not-hidden-margin-left-right-point-25-rem display-flex UOs3xk7_SKo_Hcsbq8nt">
+                                      <button type="button" class="p-2 color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
                                           <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
                                           <span class="rec-clipper">Timeline</span>
                                       </button>
-                                      <button type="button" class="padding-point-5-rem color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
+                                      <button type="button" class="p-2 color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
                                           <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                                           <span class="rec-clipper">Download</span>
                                       </button>
                                   </div>
                               </div>
-                              <button type="button" data-tooltip-target="tooltip-fullscreen" class="padding-point-5-rem color-107-114-128-1 border-radius-point-25-rem cursor-pointer lk_Qvs8GwdI2Q78kOWK_ _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
+                              <button type="button" data-tooltip-target="tooltip-fullscreen" class="p-2 color-107-114-128-1 border-radius-point-25-rem cursor-pointer lk_Qvs8GwdI2Q78kOWK_ _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
                                   <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 11-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 01-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 012 0v1.586l2.293-2.293a1 1 0 111.414 1.414L6.414 15H8a1 1 0 010 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 010-2h1.586l-2.293-2.293a1 1 0 111.414-1.414L15 13.586V12a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
                                   <span class="rec-clipper">Full screen</span>
                               </button>
-                              <div id="tooltip-fullscreen" role="tooltip" class="position-ab z-index-10 visibility-hidden display-in-block padding-left-right-point-75-rem padding-bottom-top-point-5-rem MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-white-1 M4SAv60iaayh2_Cd_QyF transition-duration-point-3-s background-color-17-24-39-1 border-radius-point-5-rem ltPMSn_g3PKyqeS8vmZk opacity-0 Usqns9w__onp5CWoXDJ0 background-color-55-65-81-1" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 335px, 0px);">
+                              <div id="tooltip-fullscreen" role="tooltip" class="position-ab z-index-10 visibility-hidden display-in-block padding-left-right-point-75-rem py-2 text-sm leading-5 font-weight-500 color-white-1 M4SAv60iaayh2_Cd_QyF transition-duration-point-3-s background-color-17-24-39-1 rounded-lg ltPMSn_g3PKyqeS8vmZk opacity-0 Usqns9w__onp5CWoXDJ0 background-color-55-65-81-1" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 335px, 0px);">
                                   Show full screen
                                   <div class="POMYoNHqN8pOsNYFYFHr" data-popper-arrow=""></div>
                               </div>
                           </div>
-                          <div class="padding-left-right-1-rem padding-bottom-top-point-5-rem HCKAzjPNYaEE1SstZz5I background-color-249-250-251-1 background-color-55-65-81-1">
-                              <textarea id="description" rows="8" class="show jCISvWkW5oStPH6Wrb_H padding-left-right-0 MxG1ClE4KPrIvlL5_Q5x _k4LlnOHrNO4Fe0v_QGs border-width-0 background-color-249-250-251-1 background-color-55-65-81-1 W83fbcqTDAidAC5iVTZ9 color-white-255-255-255-1 color-156-163-175-1" placeholder="Write event description here..." required="">The 4th Digital Transformation and Industry 4.0 Free Online Conference Organized by Flowbite and Themesberg, Live on Saturday 26th Nov at 02:00 pm GMT | 04:00 pm EET on Zoom Webinars</textarea>
+                          <div class="px-4 py-2 HCKAzjPNYaEE1SstZz5I background-color-249-250-251-1 background-color-55-65-81-1">
+                              <textarea id="description" rows="8" class="show w-full padding-left-right-0 text-sm leading-5 _k4LlnOHrNO4Fe0v_QGs border-width-0 background-color-249-250-251-1 background-color-55-65-81-1 W83fbcqTDAidAC5iVTZ9 color-white-255-255-255-1 color-156-163-175-1" placeholder="Write event description here..." required="">The 4th Digital Transformation and Industry 4.0 Free Online Conference Organized by Flowbite and Themesberg, Live on Saturday 26th Nov at 02:00 pm GMT | 04:00 pm EET on Zoom Webinars</textarea>
                           </div>
                       </div>
                   </div>
                   <div>
-                      <div class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Reminder</div>
+                      <div class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Reminder</div>
                       <div class="not-hidden-margin-bottom-top-1-rem display-flex GHTkY6_vcDBrE7v2PrzJ oMWvLBjtaY1vTdo7u3vN">
-                          <div class="jCISvWkW5oStPH6Wrb_H">
+                          <div class="w-full">
                               <label for="reminder-type" class="rec-clipper">Reminder type</label>
-                              <select id="reminder-type" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-500 focus:border-primary-500 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                              <select id="reminder-type" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-500 focus:border-primary-500 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500">
                                   <option selected="">Notification</option>
                                   <option value="AL">Alarm</option>
                                   <option value="EM">Email</option>
                                   <option value="SM">SMS</option>
                               </select>
                           </div>
-                          <div class="jCISvWkW5oStPH6Wrb_H">
+                          <div class="w-full">
                               <label for="reminder-counter" class="rec-clipper">Counter</label>
-                              <input type="number" name="reminder-counter" id="reminder-counter-days" class="background-color-249-250-251-1 MxG1ClE4KPrIvlL5_Q5x border-width-1-px border-color-209-213-219-1 color-17-24-39-1 border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" value="4" placeholder="Ex. 3" required="">
+                              <input type="number" name="reminder-counter" id="reminder-counter-days" class="background-color-249-250-251-1 text-sm leading-5 border border-color-209-213-219-1 color-17-24-39-1 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" value="4" placeholder="Ex. 3" required="">
                           </div>
-                          <div class="jCISvWkW5oStPH6Wrb_H">
+                          <div class="w-full">
                               <label for="reminder-length-type" class="rec-clipper">Length</label>
-                              <select id="reminder-length-type" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-500 focus:border-primary-500 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                              <select id="reminder-length-type" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-500 focus:border-primary-500 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500">
                                   <option selected="">Days</option>
                                   <option value="WE">Weeks</option>
                                   <option value="MO">Months</option>
@@ -1928,57 +1928,57 @@ input[type=range]::-ms-fill-lower {
                       </div>
                   </div>
               </div>
-              <div class="margin-bottom-1-rem not-hidden-margin-bottom-top-1-rem">
+              <div class="mb-4 not-hidden-margin-bottom-top-1-rem">
                   <div>
-                      <label for="add-guests" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Add guests</label>
+                      <label for="add-guests" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Add guests</label>
                       <div class="QYPW4nl6nHaIbrtaXf4h">
-                          <input type="search" id="add-guests" class="show jCISvWkW5oStPH6Wrb_H padding-point-75-rem mhot0RlBMBaJgbqzaf8O MxG1ClE4KPrIvlL5_Q5x color-17-24-39-1 border-width-1-px border-color-209-213-219-1 border-radius-point-5-rem background-color-249-250-251-1 focus:ring-primary-500 focus:border-primary-500 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Add guest email">
-                          <button type="button" class="color-white-1 position-ab display-in-flex al-center RuYIYC_9cfaevyC_j3SK Y46Wpo9_BAWI3OQBHUjI bg-primary-700 hover:bg-primary-800 _FONMPVaCsLFJJGDaaIL qHIOIw8TObHgD3VvKa5x focus:ring-primary-300 font-weight-500 border-radius-point-5-rem XklWzT8y98pp042XEQp4 padding-left-right-point-75-rem yT1GQH4LxzcERAjp6XzU dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+                          <input type="search" id="add-guests" class="show w-full padding-point-75-rem mhot0RlBMBaJgbqzaf8O text-sm leading-5 color-17-24-39-1 border border-color-209-213-219-1 rounded-lg background-color-249-250-251-1 focus:ring-primary-500 focus:border-primary-500 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Add guest email">
+                          <button type="button" class="color-white-1 position-ab inline-flex items-center RuYIYC_9cfaevyC_j3SK Y46Wpo9_BAWI3OQBHUjI bg-primary-700 hover:bg-primary-800 _FONMPVaCsLFJJGDaaIL qHIOIw8TObHgD3VvKa5x focus:ring-primary-300 font-weight-500 rounded-lg XklWzT8y98pp042XEQp4 padding-left-right-point-75-rem yT1GQH4LxzcERAjp6XzU dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
                               <svg class="width-1-rem height-1-rem _g_tVEs0RNoEZPzttEU8 gFQHHdBH5ucepz2cp78t" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
                               Add
                           </button>
                       </div>
                   </div>
-                  <div class="al-center display-flex oMWvLBjtaY1vTdo7u3vN">
-                      <div class="display-flex margin-bottom-1-rem _LFTxJkvRWfI_UdU8mi1 margin-bottom-0">
+                  <div class="items-center display-flex oMWvLBjtaY1vTdo7u3vN">
+                      <div class="display-flex mb-4 _LFTxJkvRWfI_UdU8mi1 margin-bottom-0">
                           <img class="width-2-rem _pwSRUXRHN5bHphyTRKz bQPRusdUv2Wr50Lq2KOG _WlCPLL0LIv8ViOuJIFs border-radius-9999-px Hy7fSoMkW1_3XuxzLIXq" src="/assets/helene-engels.png" alt="Helene Engels">
                           <img class="width-2-rem _pwSRUXRHN5bHphyTRKz bQPRusdUv2Wr50Lq2KOG _WlCPLL0LIv8ViOuJIFs border-radius-9999-px Hy7fSoMkW1_3XuxzLIXq" src="/assets/robert-brown.png" alt="Robert Brown">
                           <img class="width-2-rem _pwSRUXRHN5bHphyTRKz bQPRusdUv2Wr50Lq2KOG _WlCPLL0LIv8ViOuJIFs border-radius-9999-px Hy7fSoMkW1_3XuxzLIXq" src="/assets/bonnie-green.png" alt="Bonnie Green">
-                          <button type="button" class="display-flex al-center jc-center width-2-rem _pwSRUXRHN5bHphyTRKz XklWzT8y98pp042XEQp4 font-weight-500 color-white-1 u3chZtZqgJMWp3CocYzX bQPRusdUv2Wr50Lq2KOG _e170CiS9C9Yn0KXSSNe border-radius-9999-px IKTEifZbzgNUUwKKuydY RDd0t5s_eX2F8wkW8XC_">+9</button>
+                          <button type="button" class="display-flex items-center jc-center width-2-rem _pwSRUXRHN5bHphyTRKz XklWzT8y98pp042XEQp4 font-weight-500 color-white-1 u3chZtZqgJMWp3CocYzX bQPRusdUv2Wr50Lq2KOG _e170CiS9C9Yn0KXSSNe border-radius-9999-px IKTEifZbzgNUUwKKuydY RDd0t5s_eX2F8wkW8XC_">+9</button>
                       </div>
-                      <button type="button" class="display-in-flex al-center padding-left-right-point-75-rem padding-bottom-top-point-5-rem XklWzT8y98pp042XEQp4 font-weight-500 color-17-24-39-1 background-color-white-1 border-width-1-px border-color-229-231-235-1 border-radius-point-5-rem qHIOIw8TObHgD3VvKa5x DpMPWwlSESiYA8EE1xKM hover:text-primary-700 m_8FxTcpOfmK___hAaJ6 _FONMPVaCsLFJJGDaaIL ySeTR5mxhrLv_M5M51IE __8kBLtrR_iuU2wW25Lp background-color-31-41-55-1 color-156-163-175-1 border-color-75-85-99-1 DTyjKhtXBNaebZa5L0l9 _OovBxfPdK7Rjv2nh2Ot">
+                      <button type="button" class="inline-flex items-center padding-left-right-point-75-rem py-2 XklWzT8y98pp042XEQp4 font-weight-500 color-17-24-39-1 background-color-white-1 border border-color-229-231-235-1 rounded-lg qHIOIw8TObHgD3VvKa5x DpMPWwlSESiYA8EE1xKM hover:text-primary-700 m_8FxTcpOfmK___hAaJ6 _FONMPVaCsLFJJGDaaIL ySeTR5mxhrLv_M5M51IE __8kBLtrR_iuU2wW25Lp background-color-31-41-55-1 color-156-163-175-1 border-color-75-85-99-1 DTyjKhtXBNaebZa5L0l9 _OovBxfPdK7Rjv2nh2Ot">
                           <svg aria-hidden="true" class="width-1-rem height-1-rem b7Lf_ucBvHbZEidPjF8t wikskPDYEBn0nlvDss8h" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
                           Add member
                       </button>
-                      <button type="button" class="display-in-flex al-center padding-left-right-point-75-rem padding-bottom-top-point-5-rem QGosQoeY76W_hWM2rgwJ XklWzT8y98pp042XEQp4 font-weight-500 color-17-24-39-1 background-color-white-1 border-width-1-px border-color-229-231-235-1 border-radius-point-5-rem hgL0WEiGLNST9A6vRVaz qHIOIw8TObHgD3VvKa5x DpMPWwlSESiYA8EE1xKM hover:text-primary-700 m_8FxTcpOfmK___hAaJ6 _FONMPVaCsLFJJGDaaIL ySeTR5mxhrLv_M5M51IE __8kBLtrR_iuU2wW25Lp background-color-31-41-55-1 color-156-163-175-1 border-color-75-85-99-1 DTyjKhtXBNaebZa5L0l9 _OovBxfPdK7Rjv2nh2Ot">
+                      <button type="button" class="inline-flex items-center padding-left-right-point-75-rem py-2 QGosQoeY76W_hWM2rgwJ XklWzT8y98pp042XEQp4 font-weight-500 color-17-24-39-1 background-color-white-1 border border-color-229-231-235-1 rounded-lg hgL0WEiGLNST9A6vRVaz qHIOIw8TObHgD3VvKa5x DpMPWwlSESiYA8EE1xKM hover:text-primary-700 m_8FxTcpOfmK___hAaJ6 _FONMPVaCsLFJJGDaaIL ySeTR5mxhrLv_M5M51IE __8kBLtrR_iuU2wW25Lp background-color-31-41-55-1 color-156-163-175-1 border-color-75-85-99-1 DTyjKhtXBNaebZa5L0l9 _OovBxfPdK7Rjv2nh2Ot">
                           <svg aria-hidden="true" class="width-1-rem height-1-rem b7Lf_ucBvHbZEidPjF8t wikskPDYEBn0nlvDss8h" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                           Find a time
                       </button>
                   </div>
                   <div>
-                      <label class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1" for="guest-permission-checkbox">Guest Permissions</label>
+                      <label class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1" for="guest-permission-checkbox">Guest Permissions</label>
                       <div class="__Iv72FadFpzwcpFl5_5">
-                          <div class="display-flex al-center _ryfipzijJEI18CFfJIm">
+                          <div class="display-flex items-center _ryfipzijJEI18CFfJIm">
                               <input id="guest-permission-checkbox" type="checkbox" value="" class="width-1-rem height-1-rem background-color-243-244-246-1 border-color-209-213-219-1 border-radius-point-25-rem text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 apRlbPZRJ4JWA5RVdURT X3ifvK6lzvLzkZabaIQd background-color-55-65-81-1 border-color-75-85-99-1">
-                              <label for="guest-permission-checkbox" class="QGosQoeY76W_hWM2rgwJ MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-209-213-219-1">Modify event</label>
+                              <label for="guest-permission-checkbox" class="QGosQoeY76W_hWM2rgwJ text-sm leading-5 font-weight-500 color-17-24-39-1 color-209-213-219-1">Modify event</label>
                           </div>
-                          <div class="display-flex al-center _ryfipzijJEI18CFfJIm">
+                          <div class="display-flex items-center _ryfipzijJEI18CFfJIm">
                               <input id="guest-permission-2-checkbox" type="checkbox" value="" class="width-1-rem height-1-rem background-color-243-244-246-1 border-color-209-213-219-1 border-radius-point-25-rem text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 apRlbPZRJ4JWA5RVdURT X3ifvK6lzvLzkZabaIQd background-color-55-65-81-1 border-color-75-85-99-1">
-                              <label for="guest-permission-2-checkbox" class="QGosQoeY76W_hWM2rgwJ MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-209-213-219-1">Invite others</label>
+                              <label for="guest-permission-2-checkbox" class="QGosQoeY76W_hWM2rgwJ text-sm leading-5 font-weight-500 color-17-24-39-1 color-209-213-219-1">Invite others</label>
                           </div>
-                          <div class="display-flex al-center _ryfipzijJEI18CFfJIm">
+                          <div class="display-flex items-center _ryfipzijJEI18CFfJIm">
                               <input checked="" id="guest-permission-3-checkbox" type="checkbox" value="" class="width-1-rem height-1-rem background-color-243-244-246-1 border-color-209-213-219-1 border-radius-point-25-rem text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 apRlbPZRJ4JWA5RVdURT X3ifvK6lzvLzkZabaIQd background-color-55-65-81-1 border-color-75-85-99-1">
-                              <label for="guest-permission-3-checkbox" class="QGosQoeY76W_hWM2rgwJ MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-209-213-219-1">See guest list</label>
+                              <label for="guest-permission-3-checkbox" class="QGosQoeY76W_hWM2rgwJ text-sm leading-5 font-weight-500 color-17-24-39-1 color-209-213-219-1">See guest list</label>
                           </div>
                       </div>
                   </div>
               </div>
           </div>
-          <div class="display-flex al-center not-hidden-margin-left-right-1-rem">
-              <button type="submit" class="color-white-1 bg-primary-700 hover:bg-primary-800 _FONMPVaCsLFJJGDaaIL qHIOIw8TObHgD3VvKa5x focus:ring-primary-300 font-weight-500 border-radius-point-5-rem MxG1ClE4KPrIvlL5_Q5x padding-left-right-1-point-25-rem padding-bottom-top-point-625-rem text-align-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+          <div class="display-flex items-center not-hidden-margin-left-right-1-rem">
+              <button type="submit" class="color-white-1 bg-primary-700 hover:bg-primary-800 _FONMPVaCsLFJJGDaaIL qHIOIw8TObHgD3VvKa5x focus:ring-primary-300 font-weight-500 rounded-lg text-sm leading-5 px-5 py-2 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
                   Update event
               </button>
-              <button type="button" class="_Vf4q96EaVweU8Te8R7I display-in-flex al-center _lvH1U9a1qR55wvLD2NC border-width-1-px QatzkcsV8pEcuVZXWI0r _2vrbtasf6kpgU0SqCxk _FONMPVaCsLFJJGDaaIL qHIOIw8TObHgD3VvKa5x BmbNHT2fTUPQcjxkS_AF font-weight-500 border-radius-point-5-rem MxG1ClE4KPrIvlL5_Q5x padding-left-right-1-point-25-rem padding-bottom-top-point-625-rem text-align-center s8SeTMYjMx__lmlA1xPh QMg9ot58eFU1MktA3i85 DTyjKhtXBNaebZa5L0l9 mjQ5_LY0AbHQ_EJj7qy4 M5sqom8AcnqAX31nf13M">
+              <button type="button" class="_Vf4q96EaVweU8Te8R7I inline-flex items-center _lvH1U9a1qR55wvLD2NC border QatzkcsV8pEcuVZXWI0r _2vrbtasf6kpgU0SqCxk _FONMPVaCsLFJJGDaaIL qHIOIw8TObHgD3VvKa5x BmbNHT2fTUPQcjxkS_AF font-weight-500 rounded-lg text-sm leading-5 px-5 py-2 text-center s8SeTMYjMx__lmlA1xPh QMg9ot58eFU1MktA3i85 DTyjKhtXBNaebZa5L0l9 mjQ5_LY0AbHQ_EJj7qy4 M5sqom8AcnqAX31nf13M">
                   <svg class="width-1-point-25-rem height-1-point-25-rem b7Lf_ucBvHbZEidPjF8t wikskPDYEBn0nlvDss8h" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
                   Delete
               </button>

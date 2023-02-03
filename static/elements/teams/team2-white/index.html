@@ -35,7 +35,7 @@
 }
 
 :after,:before {
-    --tw-content: ""
+    --content: ""
 }
 
 html {
@@ -217,7 +217,7 @@ img,video {
 }
 
 [multiple],[type=date],[type=datetime-local],[type=email],[type=month],[type=number],[type=password],[type=search],[type=tel],[type=text],[type=time],[type=url],[type=week],select,textarea {
-    --tw-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -231,14 +231,14 @@ img,video {
 }
 
 [multiple]:focus,[type=date]:focus,[type=datetime-local]:focus,[type=email]:focus,[type=month]:focus,[type=number]:focus,[type=password]:focus,[type=search]:focus,[type=tel]:focus,[type=text]:focus,[type=time]:focus,[type=url]:focus,[type=week]:focus,select:focus,textarea:focus {
-    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: #1c64f2;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    --ring-inset: var(--empty,/*!*/ /*!*/);
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: #1c64f2;
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(1px + var(--ring-offset-width)) var(--ring-color);
     border-color: #1c64f2;
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow);
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -288,7 +288,7 @@ select {
 
 [type=checkbox],[type=radio] {
     color-adjust: exact;
-    --tw-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -319,13 +319,13 @@ select {
 }
 
 [type=checkbox]:focus,[type=radio]:focus {
-    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
-    --tw-ring-offset-width: 2px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: #1c64f2;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow);
+    --ring-inset: var(--empty,/*!*/ /*!*/);
+    --ring-offset-width: 2px;
+    --ring-offset-color: #fff;
+    --ring-color: #1c64f2;
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(2px + var(--ring-offset-width)) var(--ring-color);
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -423,11 +423,11 @@ input[type=range]:disabled::-webkit-slider-thumb {
 }
 
 input[type=range]:focus::-webkit-slider-thumb {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-    --tw-ring-opacity: 1px;
-    --tw-ring-color: rgb(164 202 254/var(--tw-ring-opacity));
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(4px + var(--ring-offset-width)) var(--ring-color);
+    --ring-opacity: 1px;
+    --ring-color: rgb(164 202 254/var(--ring-opacity));
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow,0 0 #0000);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -457,60 +457,60 @@ input[type=range]::-ms-fill-lower {
 }
 
 *,:after,:before {
-    --tw-translate-x: 0;
-    --tw-translate-y: 0;
-    --tw-rotate: 0;
-    --tw-skew-x: 0;
-    --tw-skew-y: 0;
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    --tw-pan-x: ;
-    --tw-pan-y: ;
-    --tw-pinch-zoom: ;
-    --tw-scroll-snap-strictness: proximity;
-    --tw-ordinal: ;
-    --tw-slashed-zero: ;
-    --tw-numeric-figure: ;
-    --tw-numeric-spacing: ;
-    --tw-numeric-fraction: ;
-    --tw-ring-inset: ;
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: rgba(63,131,248,.5);
-    --tw-ring-offset-shadow: 0 0 #0000;
-    --tw-ring-shadow: 0 0 #0000;
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    --tw-blur: ;
-    --tw-brightness: ;
-    --tw-contrast: ;
-    --tw-grayscale: ;
-    --tw-hue-rotate: ;
-    --tw-invert: ;
-    --tw-saturate: ;
-    --tw-sepia: ;
-    --tw-drop-shadow: ;
-    --tw-backdrop-blur: ;
-    --tw-backdrop-brightness: ;
-    --tw-backdrop-contrast: ;
-    --tw-backdrop-grayscale: ;
-    --tw-backdrop-hue-rotate: ;
-    --tw-backdrop-invert: ;
-    --tw-backdrop-opacity: ;
-    --tw-backdrop-saturate: ;
-    --tw-backdrop-sepia:
+    --translate-x: 0;
+    --translate-y: 0;
+    --rotate: 0;
+    --skew-x: 0;
+    --skew-y: 0;
+    --scale-x: 1;
+    --scale-y: 1;
+    --pan-x: ;
+    --pan-y: ;
+    --pinch-zoom: ;
+    --scroll-snap-strictness: proximity;
+    --ordinal: ;
+    --slashed-zero: ;
+    --numeric-figure: ;
+    --numeric-spacing: ;
+    --numeric-fraction: ;
+    --ring-inset: ;
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: rgba(63,131,248,.5);
+    --ring-offset-shadow: 0 0 #0000;
+    --ring-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
+    --shadow-colored: 0 0 #0000;
+    --blur: ;
+    --brightness: ;
+    --contrast: ;
+    --grayscale: ;
+    --hue-rotate: ;
+    --invert: ;
+    --saturate: ;
+    --sepia: ;
+    --drop-shadow: ;
+    --backdrop-blur: ;
+    --backdrop-brightness: ;
+    --backdrop-contrast: ;
+    --backdrop-grayscale: ;
+    --backdrop-hue-rotate: ;
+    --backdrop-invert: ;
+    --backdrop-opacity: ;
+    --backdrop-saturate: ;
+    --backdrop-sepia:
 }
 
-.RV8RoaI_SlEMC5CEQ3ms {
+.mx-auto {
     margin-left: auto;
     margin-right: auto
 }
 
-.margin-bottom-1-rem {
+.mb-4 {
     margin-bottom: 1rem
 }
 
-.rD4HtsUG_hahmbh2Kj09 {
+.mb-2 {
     margin-bottom: .5rem
 }
 
@@ -522,7 +522,7 @@ input[type=range]::-ms-fill-lower {
     display: flex
 }
 
-.i0EfZzmTLElZVOble53D {
+.grid {
     display: grid
 }
 
@@ -554,7 +554,7 @@ input[type=range]::-ms-fill-lower {
     flex-direction: column
 }
 
-.al-center {
+.items-center {
     align-items: center
 }
 
@@ -567,20 +567,20 @@ input[type=range]::-ms-fill-lower {
 }
 
 .not-hidden-margin-left-right-1-rem>:not([hidden])~:not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-left: calc(1rem*(1 - var(--tw-space-x-reverse)));
-    margin-right: calc(1rem*var(--tw-space-x-reverse))
+    --space-x-reverse: 0;
+    margin-left: calc(1rem*(1 - var(--space-x-reverse)));
+    margin-right: calc(1rem*var(--space-x-reverse))
 }
 
 .not-hidden-border-bottom-top-width-1-px>:not([hidden])~:not([hidden]) {
-    --tw-divide-y-reverse: 0;
-    border-bottom-width: calc(1px*var(--tw-divide-y-reverse));
-    border-top-width: calc(1px*(1 - var(--tw-divide-y-reverse)))
+    --divide-y-reverse: 0;
+    border-bottom-width: calc(1px*var(--divide-y-reverse));
+    border-top-width: calc(1px*(1 - var(--divide-y-reverse)))
 }
 
 .yGKSom6xHdY1EhaYGurI>:not([hidden])~:not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgb(229 231 235/var(--tw-divide-opacity))
+    --divide-opacity: 1;
+    border-color: rgb(229 231 235/var(--divide-opacity))
 }
 
 .border-radius-9999-px {
@@ -588,16 +588,16 @@ input[type=range]::-ms-fill-lower {
 }
 
 .background-color-white-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--bg-opacity))
 }
 
-.padding-lbottom-top-2-rem {
+.py-8 {
     padding-bottom: 2rem;
     padding-top: 2rem
 }
 
-.padding-left-right-1-rem {
+.px-4 {
     padding-left: 1rem;
     padding-right: 1rem
 }
@@ -610,7 +610,7 @@ input[type=range]::-ms-fill-lower {
     padding-top: 2rem
 }
 
-.text-align-center {
+.text-center {
     text-align: center
 }
 
@@ -619,7 +619,7 @@ input[type=range]::-ms-fill-lower {
     line-height: 2.5rem
 }
 
-.uyo8h_4Kh1IoUwm8bwJI {
+.text-xl leading-7 {
     font-size: 1.25rem;
     line-height: 1.75rem
 }
@@ -641,33 +641,33 @@ input[type=range]::-ms-fill-lower {
 }
 
 .color-107-114-128-1 {
-    --tw-text-opacity: 1;
-    color: rgb(107 114 128/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(107 114 128/var(--text-opacity))
 }
 
 ._xQT_qSXfwWf6ZhwRle4:hover,.color-17-24-39-1 {
-    --tw-text-opacity: 1;
-    color: rgb(17 24 39/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(17 24 39/var(--text-opacity))
 }
 
 .dark .HYRf9RlDA82adxhJtlOL>:not([hidden])~:not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgb(55 65 81/var(--tw-divide-opacity))
+    --divide-opacity: 1;
+    border-color: rgb(55 65 81/var(--divide-opacity))
 }
 
 .dark .background-color-17-24-39-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(17 24 39/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(17 24 39/var(--bg-opacity))
 }
 
 .dark .color-156-163-175-1 {
-    --tw-text-opacity: 1;
-    color: rgb(156 163 175/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(156 163 175/var(--text-opacity))
 }
 
 .dark .DTyjKhtXBNaebZa5L0l9:hover,.dark .color-white-255-255-255-1 {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(255 255 255/var(--text-opacity))
 }
 
 @media (min-width: 640px) {
@@ -714,7 +714,7 @@ input[type=range]::-ms-fill-lower {
         padding-top: 4rem
     }
 
-    .padding-left-right-1-point-5-rem {
+    .px-6 {
         padding-left: 1.5rem;
         padding-right: 1.5rem
     }
@@ -726,12 +726,12 @@ input[type=range]::-ms-fill-lower {
 <body>
     <section class="background-color-white-1 background-color-17-24-39-1">
         <div
-            class="i0EfZzmTLElZVOble53D _SsnJIltm5dBbDh6WR5Z padding-lbottom-top-2-rem padding-left-right-1-rem RV8RoaI_SlEMC5CEQ3ms max-width-1280-px bkn9u4HE5LeLYsQ0a0MO padding-bottom-top-4-rem padding-left-right-1-point-5-rem">
+            class="grid _SsnJIltm5dBbDh6WR5Z py-8 px-4 mx-auto max-width-1280-px bkn9u4HE5LeLYsQ0a0MO padding-bottom-top-4-rem px-6">
             <div class="color-107-114-128-1 MozT3ykswwrve9XfJmlm color-156-163-175-1">
                 <h2
-                    class="margin-bottom-1-rem _Bu4HL5sPDOGN_IKUsOc letter-spacing-minu-point-025-em font-weight-800 color-17-24-39-1 color-white-255-255-255-1">
+                    class="mb-4 _Bu4HL5sPDOGN_IKUsOc letter-spacing-minu-point-025-em font-weight-800 color-17-24-39-1 color-white-255-255-255-1">
                     Our people make us great</h2>
-                <p class="rD4HtsUG_hahmbh2Kj09 BygxL63OH6g8tW90EiE8">Here at Flowbite we focus on markets where
+                <p class="mb-2 BygxL63OH6g8tW90EiE8">Here at Flowbite we focus on markets where
                     technology, innovation, and capital can unlock long-term value.</p>
                 <p class="font-weight-300 BygxL63OH6g8tW90EiE8">Working here means you’ll interact with talented
                     professionals, will be challenged to solve difficult problems and think in new and creative ways.
@@ -740,18 +740,18 @@ input[type=range]::-ms-fill-lower {
             <div class="not-hidden-border-bottom-top-width-1-px yGKSom6xHdY1EhaYGurI HYRf9RlDA82adxhJtlOL">
                 <!-- Profile Card -->
                 <div
-                    class="display-flex flex-direction-column al-center RFT3unXiLA2kbmlb8f6_ NI4l00MAefTC50CSMpOB">
-                    <img class="RV8RoaI_SlEMC5CEQ3ms margin-bottom-1-rem width-9-rem oQy_ld_TtjdVS_Q8VG5n border-radius-9999-px hgL0WEiGLNST9A6vRVaz aLs97gQo0BaQliEfvo62"
+                    class="display-flex flex-direction-column items-center RFT3unXiLA2kbmlb8f6_ NI4l00MAefTC50CSMpOB">
+                    <img class="mx-auto mb-4 width-9-rem oQy_ld_TtjdVS_Q8VG5n border-radius-9999-px hgL0WEiGLNST9A6vRVaz aLs97gQo0BaQliEfvo62"
                         src="/assets/bonnie-green.png"
                         alt="Bonnie Avatar">
-                    <div class="text-align-center GK0ePfhaD3_1ZkFYEui8">
+                    <div class="text-center GK0ePfhaD3_1ZkFYEui8">
                         <h3
-                            class="uyo8h_4Kh1IoUwm8bwJI font-weight-700 letter-spacing-minu-point-025-em color-17-24-39-1 color-white-255-255-255-1">
+                            class="text-xl leading-7 font-weight-700 letter-spacing-minu-point-025-em color-17-24-39-1 color-white-255-255-255-1">
                             <a href="#">Bonnie Green</a>
                         </h3>
                         <span class="color-107-114-128-1 color-156-163-175-1">CEO/Co-founder</span>
                         <p
-                            class="pwHzQSmcpCtRGfVoeOdG margin-bottom-1-rem wfYeBrW4MRQzEZ3x_GDI font-weight-300 color-107-114-128-1 color-156-163-175-1">
+                            class="pwHzQSmcpCtRGfVoeOdG mb-4 wfYeBrW4MRQzEZ3x_GDI font-weight-300 color-107-114-128-1 color-156-163-175-1">
                             Bonnie drives the technical strategy of the themesberg platform and brand.</p>
                         <ul class="display-flex jc-center not-hidden-margin-left-right-1-rem Hj4H7baNKv12UV_1oPzC">
                             <li>
@@ -799,18 +799,18 @@ input[type=range]::-ms-fill-lower {
                 </div>
                 <!-- Profile Card -->
                 <div
-                    class="display-flex flex-direction-column al-center XG_JHZii6VUFSUkjd4Kc RFT3unXiLA2kbmlb8f6_ NI4l00MAefTC50CSMpOB">
-                    <img class="RV8RoaI_SlEMC5CEQ3ms margin-bottom-1-rem width-9-rem oQy_ld_TtjdVS_Q8VG5n border-radius-9999-px hgL0WEiGLNST9A6vRVaz aLs97gQo0BaQliEfvo62"
+                    class="display-flex flex-direction-column items-center XG_JHZii6VUFSUkjd4Kc RFT3unXiLA2kbmlb8f6_ NI4l00MAefTC50CSMpOB">
+                    <img class="mx-auto mb-4 width-9-rem oQy_ld_TtjdVS_Q8VG5n border-radius-9999-px hgL0WEiGLNST9A6vRVaz aLs97gQo0BaQliEfvo62"
                         src="/assets/roberta-casas.png"
                         alt="Roberta Avatar">
-                    <div class="text-align-center GK0ePfhaD3_1ZkFYEui8">
+                    <div class="text-center GK0ePfhaD3_1ZkFYEui8">
                         <h3
-                            class="uyo8h_4Kh1IoUwm8bwJI font-weight-700 letter-spacing-minu-point-025-em color-17-24-39-1 color-white-255-255-255-1">
+                            class="text-xl leading-7 font-weight-700 letter-spacing-minu-point-025-em color-17-24-39-1 color-white-255-255-255-1">
                             <a href="#">Roberta Casas</a>
                         </h3>
                         <span class="color-107-114-128-1 color-156-163-175-1">CTO/Co-founder</span>
                         <p
-                            class="pwHzQSmcpCtRGfVoeOdG margin-bottom-1-rem wfYeBrW4MRQzEZ3x_GDI font-weight-300 color-107-114-128-1 color-156-163-175-1">
+                            class="pwHzQSmcpCtRGfVoeOdG mb-4 wfYeBrW4MRQzEZ3x_GDI font-weight-300 color-107-114-128-1 color-156-163-175-1">
                             Bonnie drives the technical strategy of the themesberg platform and brand.</p>
                         <ul class="display-flex jc-center not-hidden-margin-left-right-1-rem Hj4H7baNKv12UV_1oPzC">
                             <li>
@@ -858,18 +858,18 @@ input[type=range]::-ms-fill-lower {
                 </div>
                 <!-- Profile Card -->
                 <div
-                    class="display-flex flex-direction-column al-center XG_JHZii6VUFSUkjd4Kc NI4l00MAefTC50CSMpOB">
-                    <img class="RV8RoaI_SlEMC5CEQ3ms margin-bottom-1-rem width-9-rem oQy_ld_TtjdVS_Q8VG5n border-radius-9999-px hgL0WEiGLNST9A6vRVaz aLs97gQo0BaQliEfvo62"
+                    class="display-flex flex-direction-column items-center XG_JHZii6VUFSUkjd4Kc NI4l00MAefTC50CSMpOB">
+                    <img class="mx-auto mb-4 width-9-rem oQy_ld_TtjdVS_Q8VG5n border-radius-9999-px hgL0WEiGLNST9A6vRVaz aLs97gQo0BaQliEfvo62"
                         src="/assets/thomas-lean.png"
                         alt="Jese Avatar">
-                    <div class="text-align-center GK0ePfhaD3_1ZkFYEui8">
+                    <div class="text-center GK0ePfhaD3_1ZkFYEui8">
                         <h3
-                            class="uyo8h_4Kh1IoUwm8bwJI font-weight-700 letter-spacing-minu-point-025-em color-17-24-39-1 color-white-255-255-255-1">
+                            class="text-xl leading-7 font-weight-700 letter-spacing-minu-point-025-em color-17-24-39-1 color-white-255-255-255-1">
                             <a href="#">Jese Leos</a>
                         </h3>
                         <span class="color-107-114-128-1 color-156-163-175-1">Designer</span>
                         <p
-                            class="pwHzQSmcpCtRGfVoeOdG margin-bottom-1-rem wfYeBrW4MRQzEZ3x_GDI font-weight-300 color-107-114-128-1 color-156-163-175-1">
+                            class="pwHzQSmcpCtRGfVoeOdG mb-4 wfYeBrW4MRQzEZ3x_GDI font-weight-300 color-107-114-128-1 color-156-163-175-1">
                             Bonnie drives the technical strategy of the themesberg platform and brand.</p>
                         <ul class="display-flex jc-center not-hidden-margin-left-right-1-rem Hj4H7baNKv12UV_1oPzC">
                             <li>

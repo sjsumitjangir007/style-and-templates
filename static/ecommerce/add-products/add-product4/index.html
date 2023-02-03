@@ -34,7 +34,7 @@
 }
 
 :after,:before {
-    --tw-content: ""
+    --content: ""
 }
 
 html {
@@ -209,7 +209,7 @@ img,video {
 }
 
 [multiple],[type=date],[type=datetime-local],[type=email],[type=month],[type=number],[type=password],[type=search],[type=tel],[type=text],[type=time],[type=url],[type=week],select,textarea {
-    --tw-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -223,14 +223,14 @@ img,video {
 }
 
 [multiple]:focus,[type=date]:focus,[type=datetime-local]:focus,[type=email]:focus,[type=month]:focus,[type=number]:focus,[type=password]:focus,[type=search]:focus,[type=tel]:focus,[type=text]:focus,[type=time]:focus,[type=url]:focus,[type=week]:focus,select:focus,textarea:focus {
-    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: #1c64f2;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    --ring-inset: var(--empty,/*!*/ /*!*/);
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: #1c64f2;
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(1px + var(--ring-offset-width)) var(--ring-color);
     border-color: #1c64f2;
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow);
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -277,7 +277,7 @@ select {
 
 [type=checkbox],[type=radio] {
     color-adjust: exact;
-    --tw-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -308,13 +308,13 @@ select {
 }
 
 [type=checkbox]:focus,[type=radio]:focus {
-    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
-    --tw-ring-offset-width: 2px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: #1c64f2;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow);
+    --ring-inset: var(--empty,/*!*/ /*!*/);
+    --ring-offset-width: 2px;
+    --ring-offset-color: #fff;
+    --ring-color: #1c64f2;
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(2px + var(--ring-offset-width)) var(--ring-color);
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -396,11 +396,11 @@ input[type=range]:disabled::-webkit-slider-thumb {
 }
 
 input[type=range]:focus::-webkit-slider-thumb {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-    --tw-ring-opacity: 1px;
-    --tw-ring-color: rgb(164 202 254/var(--tw-ring-opacity));
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(4px + var(--ring-offset-width)) var(--ring-color);
+    --ring-opacity: 1px;
+    --ring-color: rgb(164 202 254/var(--ring-opacity));
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow,0 0 #0000);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -561,144 +561,144 @@ input[type=range]::-ms-fill-lower {
 }
 
 *,:after,:before {
-    --tw-border-spacing-x: 0;
-    --tw-border-spacing-y: 0;
-    --tw-translate-x: 0;
-    --tw-translate-y: 0;
-    --tw-rotate: 0;
-    --tw-skew-x: 0;
-    --tw-skew-y: 0;
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    --tw-pan-x: ;
-    --tw-pan-y: ;
-    --tw-pinch-zoom: ;
-    --tw-scroll-snap-strictness: proximity;
-    --tw-ordinal: ;
-    --tw-slashed-zero: ;
-    --tw-numeric-figure: ;
-    --tw-numeric-spacing: ;
-    --tw-numeric-fraction: ;
-    --tw-ring-inset: ;
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: rgba(63,131,248,.5);
-    --tw-ring-offset-shadow: 0 0 #0000;
-    --tw-ring-shadow: 0 0 #0000;
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    --tw-blur: ;
-    --tw-brightness: ;
-    --tw-contrast: ;
-    --tw-grayscale: ;
-    --tw-hue-rotate: ;
-    --tw-invert: ;
-    --tw-saturate: ;
-    --tw-sepia: ;
-    --tw-drop-shadow: ;
-    --tw-backdrop-blur: ;
-    --tw-backdrop-brightness: ;
-    --tw-backdrop-contrast: ;
-    --tw-backdrop-grayscale: ;
-    --tw-backdrop-hue-rotate: ;
-    --tw-backdrop-invert: ;
-    --tw-backdrop-opacity: ;
-    --tw-backdrop-saturate: ;
-    --tw-backdrop-sepia:
+    --border-spacing-x: 0;
+    --border-spacing-y: 0;
+    --translate-x: 0;
+    --translate-y: 0;
+    --rotate: 0;
+    --skew-x: 0;
+    --skew-y: 0;
+    --scale-x: 1;
+    --scale-y: 1;
+    --pan-x: ;
+    --pan-y: ;
+    --pinch-zoom: ;
+    --scroll-snap-strictness: proximity;
+    --ordinal: ;
+    --slashed-zero: ;
+    --numeric-figure: ;
+    --numeric-spacing: ;
+    --numeric-fraction: ;
+    --ring-inset: ;
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: rgba(63,131,248,.5);
+    --ring-offset-shadow: 0 0 #0000;
+    --ring-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
+    --shadow-colored: 0 0 #0000;
+    --blur: ;
+    --brightness: ;
+    --contrast: ;
+    --grayscale: ;
+    --hue-rotate: ;
+    --invert: ;
+    --saturate: ;
+    --sepia: ;
+    --drop-shadow: ;
+    --backdrop-blur: ;
+    --backdrop-brightness: ;
+    --backdrop-contrast: ;
+    --backdrop-grayscale: ;
+    --backdrop-hue-rotate: ;
+    --backdrop-invert: ;
+    --backdrop-opacity: ;
+    --backdrop-saturate: ;
+    --backdrop-sepia:
 }
 
 ::-webkit-backdrop {
-    --tw-border-spacing-x: 0;
-    --tw-border-spacing-y: 0;
-    --tw-translate-x: 0;
-    --tw-translate-y: 0;
-    --tw-rotate: 0;
-    --tw-skew-x: 0;
-    --tw-skew-y: 0;
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    --tw-pan-x: ;
-    --tw-pan-y: ;
-    --tw-pinch-zoom: ;
-    --tw-scroll-snap-strictness: proximity;
-    --tw-ordinal: ;
-    --tw-slashed-zero: ;
-    --tw-numeric-figure: ;
-    --tw-numeric-spacing: ;
-    --tw-numeric-fraction: ;
-    --tw-ring-inset: ;
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: rgba(63,131,248,.5);
-    --tw-ring-offset-shadow: 0 0 #0000;
-    --tw-ring-shadow: 0 0 #0000;
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    --tw-blur: ;
-    --tw-brightness: ;
-    --tw-contrast: ;
-    --tw-grayscale: ;
-    --tw-hue-rotate: ;
-    --tw-invert: ;
-    --tw-saturate: ;
-    --tw-sepia: ;
-    --tw-drop-shadow: ;
-    --tw-backdrop-blur: ;
-    --tw-backdrop-brightness: ;
-    --tw-backdrop-contrast: ;
-    --tw-backdrop-grayscale: ;
-    --tw-backdrop-hue-rotate: ;
-    --tw-backdrop-invert: ;
-    --tw-backdrop-opacity: ;
-    --tw-backdrop-saturate: ;
-    --tw-backdrop-sepia:
+    --border-spacing-x: 0;
+    --border-spacing-y: 0;
+    --translate-x: 0;
+    --translate-y: 0;
+    --rotate: 0;
+    --skew-x: 0;
+    --skew-y: 0;
+    --scale-x: 1;
+    --scale-y: 1;
+    --pan-x: ;
+    --pan-y: ;
+    --pinch-zoom: ;
+    --scroll-snap-strictness: proximity;
+    --ordinal: ;
+    --slashed-zero: ;
+    --numeric-figure: ;
+    --numeric-spacing: ;
+    --numeric-fraction: ;
+    --ring-inset: ;
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: rgba(63,131,248,.5);
+    --ring-offset-shadow: 0 0 #0000;
+    --ring-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
+    --shadow-colored: 0 0 #0000;
+    --blur: ;
+    --brightness: ;
+    --contrast: ;
+    --grayscale: ;
+    --hue-rotate: ;
+    --invert: ;
+    --saturate: ;
+    --sepia: ;
+    --drop-shadow: ;
+    --backdrop-blur: ;
+    --backdrop-brightness: ;
+    --backdrop-contrast: ;
+    --backdrop-grayscale: ;
+    --backdrop-hue-rotate: ;
+    --backdrop-invert: ;
+    --backdrop-opacity: ;
+    --backdrop-saturate: ;
+    --backdrop-sepia:
 }
 
 ::backdrop {
-    --tw-border-spacing-x: 0;
-    --tw-border-spacing-y: 0;
-    --tw-translate-x: 0;
-    --tw-translate-y: 0;
-    --tw-rotate: 0;
-    --tw-skew-x: 0;
-    --tw-skew-y: 0;
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    --tw-pan-x: ;
-    --tw-pan-y: ;
-    --tw-pinch-zoom: ;
-    --tw-scroll-snap-strictness: proximity;
-    --tw-ordinal: ;
-    --tw-slashed-zero: ;
-    --tw-numeric-figure: ;
-    --tw-numeric-spacing: ;
-    --tw-numeric-fraction: ;
-    --tw-ring-inset: ;
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: rgba(63,131,248,.5);
-    --tw-ring-offset-shadow: 0 0 #0000;
-    --tw-ring-shadow: 0 0 #0000;
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    --tw-blur: ;
-    --tw-brightness: ;
-    --tw-contrast: ;
-    --tw-grayscale: ;
-    --tw-hue-rotate: ;
-    --tw-invert: ;
-    --tw-saturate: ;
-    --tw-sepia: ;
-    --tw-drop-shadow: ;
-    --tw-backdrop-blur: ;
-    --tw-backdrop-brightness: ;
-    --tw-backdrop-contrast: ;
-    --tw-backdrop-grayscale: ;
-    --tw-backdrop-hue-rotate: ;
-    --tw-backdrop-invert: ;
-    --tw-backdrop-opacity: ;
-    --tw-backdrop-saturate: ;
-    --tw-backdrop-sepia:
+    --border-spacing-x: 0;
+    --border-spacing-y: 0;
+    --translate-x: 0;
+    --translate-y: 0;
+    --rotate: 0;
+    --skew-x: 0;
+    --skew-y: 0;
+    --scale-x: 1;
+    --scale-y: 1;
+    --pan-x: ;
+    --pan-y: ;
+    --pinch-zoom: ;
+    --scroll-snap-strictness: proximity;
+    --ordinal: ;
+    --slashed-zero: ;
+    --numeric-figure: ;
+    --numeric-spacing: ;
+    --numeric-fraction: ;
+    --ring-inset: ;
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: rgba(63,131,248,.5);
+    --ring-offset-shadow: 0 0 #0000;
+    --ring-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
+    --shadow-colored: 0 0 #0000;
+    --blur: ;
+    --brightness: ;
+    --contrast: ;
+    --grayscale: ;
+    --hue-rotate: ;
+    --invert: ;
+    --saturate: ;
+    --sepia: ;
+    --drop-shadow: ;
+    --backdrop-blur: ;
+    --backdrop-brightness: ;
+    --backdrop-contrast: ;
+    --backdrop-grayscale: ;
+    --backdrop-hue-rotate: ;
+    --backdrop-invert: ;
+    --backdrop-opacity: ;
+    --backdrop-saturate: ;
+    --backdrop-sepia:
 }
 
 .rec-clipper {
@@ -789,16 +789,16 @@ input[type=range]::-ms-fill-lower {
     z-index: 30
 }
 
-.RV8RoaI_SlEMC5CEQ3ms {
+.mx-auto {
     margin-left: auto;
     margin-right: auto
 }
 
-.rD4HtsUG_hahmbh2Kj09 {
+.mb-2 {
     margin-bottom: .5rem
 }
 
-.margin-bottom-1-rem {
+.mb-4 {
     margin-bottom: 1rem
 }
 
@@ -810,7 +810,7 @@ input[type=range]::-ms-fill-lower {
     margin-bottom: .75rem
 }
 
-.KgBTWt39fdiAC__YVNt8 {
+.mt-4 {
     margin-top: 1rem
 }
 
@@ -826,7 +826,7 @@ input[type=range]::-ms-fill-lower {
     display: flex
 }
 
-.display-in-flex {
+.inline-flex {
     display: inline-flex
 }
 
@@ -834,7 +834,7 @@ input[type=range]::-ms-fill-lower {
     display: table
 }
 
-.i0EfZzmTLElZVOble53D {
+.grid {
     display: grid
 }
 
@@ -862,7 +862,7 @@ input[type=range]::-ms-fill-lower {
     height: 2.5rem
 }
 
-.jCISvWkW5oStPH6Wrb_H {
+.w-full {
     width: 100%
 }
 
@@ -891,43 +891,43 @@ input[type=range]::-ms-fill-lower {
 }
 
 .panel-transform-toggle {
-    --tw-translate-x: -100%
+    --translate-x: -100%
 }
 
 ._txZr_XzKh1AA2GR58P5,.panel-transform-toggle {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    transform: translate(var(--translate-x),var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y))
 }
 
 ._txZr_XzKh1AA2GR58P5 {
-    --tw-translate-x: 100%
+    --translate-x: 100%
 }
 
 ._0PJkI8eA25FIbUKfI1v {
-    --tw-translate-x: 0px
+    --translate-x: 0px
 }
 
 .T8ntPwqv9_aqkqQBYkpk,._0PJkI8eA25FIbUKfI1v {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    transform: translate(var(--translate-x),var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y))
 }
 
 .T8ntPwqv9_aqkqQBYkpk {
-    --tw-translate-y: -100%
+    --translate-y: -100%
 }
 
 .mA7nMzdO5NVKdU288J6J {
-    --tw-translate-y: 100%
+    --translate-y: 100%
 }
 
 .R4jqCxTOcV8d4zX2X0UZ,.mA7nMzdO5NVKdU288J6J {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    transform: translate(var(--translate-x),var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y))
 }
 
 .R4jqCxTOcV8d4zX2X0UZ {
-    --tw-rotate: 180deg
+    --rotate: 180deg
 }
 
 .B_Mg78Zl0_AuSOcVLMGS {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    transform: translate(var(--translate-x),var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y))
 }
 
 .transform-none {
@@ -958,7 +958,7 @@ input[type=range]::-ms-fill-lower {
     align-items: flex-end
 }
 
-.al-center {
+.items-center {
     align-items: center
 }
 
@@ -978,32 +978,32 @@ input[type=range]::-ms-fill-lower {
     justify-content: space-between
 }
 
-.Ced8tRkG1VjcbmNVdBtj {
+.gap-4 {
     gap: 1rem
 }
 
 .not-hidden-margin-bottom-top-1-rem>:not([hidden])~:not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-bottom: calc(1rem*var(--tw-space-y-reverse));
-    margin-top: calc(1rem*(1 - var(--tw-space-y-reverse)))
+    --space-y-reverse: 0;
+    margin-bottom: calc(1rem*var(--space-y-reverse));
+    margin-top: calc(1rem*(1 - var(--space-y-reverse)))
 }
 
 .not-hidden-margin-left-right-point-25-rem>:not([hidden])~:not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-left: calc(.25rem*(1 - var(--tw-space-x-reverse)));
-    margin-right: calc(.25rem*var(--tw-space-x-reverse))
+    --space-x-reverse: 0;
+    margin-left: calc(.25rem*(1 - var(--space-x-reverse)));
+    margin-right: calc(.25rem*var(--space-x-reverse))
 }
 
 .yGKSom6xHdY1EhaYGurI>:not([hidden])~:not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgb(229 231 235/var(--tw-divide-opacity))
+    --divide-opacity: 1;
+    border-color: rgb(229 231 235/var(--divide-opacity))
 }
 
 .overflow-hidden {
     overflow: hidden
 }
 
-.border-radius-point-5-rem {
+.rounded-lg {
     border-radius: .5rem
 }
 
@@ -1016,7 +1016,7 @@ input[type=range]::-ms-fill-lower {
     border-bottom-right-radius: .5rem
 }
 
-.border-width-1-px {
+.border {
     border-width: 1px
 }
 
@@ -1041,33 +1041,33 @@ input[type=range]::-ms-fill-lower {
 }
 
 .border-color-28-100-242-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(28 100 242/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(28 100 242/var(--border-opacity))
 }
 
 .border-color-243-244-246-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(243 244 246/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(243 244 246/var(--border-opacity))
 }
 
 .border-color-229-231-235-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(229 231 235/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(229 231 235/var(--border-opacity))
 }
 
 .border-color-209-213-219-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(209 213 219/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(209 213 219/var(--border-opacity))
 }
 
 .background-color-243-244-246-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(243 244 246/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(243 244 246/var(--bg-opacity))
 }
 
 .background-color-white-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--bg-opacity))
 }
 
 .background-color-hsla-0-0-per-100-per-point-5 {
@@ -1075,38 +1075,38 @@ input[type=range]::-ms-fill-lower {
 }
 
 .background-color-17-24-39-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(17 24 39/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(17 24 39/var(--bg-opacity))
 }
 
 .OQGCGYWKsg16L0Oz8ctQ {
-    --tw-bg-opacity: 1!important;
-    background-color: rgb(249 250 251/var(--tw-bg-opacity))!important
+    --bg-opacity: 1!important;
+    background-color: rgb(249 250 251/var(--bg-opacity))!important
 }
 
 .background-color-249-250-251-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(249 250 251/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(249 250 251/var(--bg-opacity))
 }
 
 .F6maSyXBC_uv_A_dciar {
-    --tw-bg-opacity: 0.5
+    --bg-opacity: 0.5
 }
 
-.padding-point-625-rem {
+.p-2 {
     padding: .625rem
 }
 
-.padding-point-5-rem {
+.p-2 {
     padding: .5rem
 }
 
-.padding-lbottom-top-2-rem {
+.py-8 {
     padding-bottom: 2rem;
     padding-top: 2rem
 }
 
-.padding-left-right-1-rem {
+.px-4 {
     padding-left: 1rem;
     padding-right: 1rem
 }
@@ -1116,7 +1116,7 @@ input[type=range]::-ms-fill-lower {
     padding-top: 1rem
 }
 
-.padding-bottom-top-point-5-rem {
+.py-2 {
     padding-bottom: .5rem;
     padding-top: .5rem
 }
@@ -1131,12 +1131,12 @@ input[type=range]::-ms-fill-lower {
     padding-right: 0
 }
 
-.padding-left-right-1-point-25-rem {
+.px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem
 }
 
-.padding-bottom-top-point-625-rem {
+.py-2 {
     padding-bottom: .625rem;
     padding-top: .625rem
 }
@@ -1165,11 +1165,11 @@ input[type=range]::-ms-fill-lower {
     text-align: left
 }
 
-.text-align-center {
+.text-center {
     text-align: center
 }
 
-.MxG1ClE4KPrIvlL5_Q5x {
+.text-sm leading-5 {
     font-size: .875rem;
     line-height: 1.25rem
 }
@@ -1192,33 +1192,33 @@ input[type=range]::-ms-fill-lower {
 }
 
 .color-17-24-39-1 {
-    --tw-text-opacity: 1;
-    color: rgb(17 24 39/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(17 24 39/var(--text-opacity))
 }
 
 .color-107-114-128-1 {
-    --tw-text-opacity: 1;
-    color: rgb(107 114 128/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(107 114 128/var(--text-opacity))
 }
 
 .color-28-100-242-1 {
-    --tw-text-opacity: 1;
-    color: rgb(28 100 242/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(28 100 242/var(--text-opacity))
 }
 
 .color-white-1 {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(255 255 255/var(--text-opacity))
 }
 
 ._k4LlnOHrNO4Fe0v_QGs {
-    --tw-text-opacity: 1;
-    color: rgb(31 41 55/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(31 41 55/var(--text-opacity))
 }
 
 .color-156-163-175-1 {
-    --tw-text-opacity: 1;
-    color: rgb(156 163 175/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(156 163 175/var(--text-opacity))
 }
 
 .opacity-0 {
@@ -1230,17 +1230,17 @@ input[type=range]::-ms-fill-lower {
 }
 
 .ltPMSn_g3PKyqeS8vmZk {
-    --tw-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
-    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)
+    --shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+    --shadow-colored: 0 1px 2px 0 var(--shadow-color);
+    box-shadow: var(--ring-offset-shadow,0 0 #0000),var(--ring-shadow,0 0 #0000),var(--shadow)
 }
 
 .ClETfzy1YZDVXhnOVdgH {
-    --tw-blur: blur(8px)
+    --blur: blur(8px)
 }
 
 .ClETfzy1YZDVXhnOVdgH,.__l7tEsuvTIL_QRvY8sk {
-    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+    filter: var(--blur) var(--brightness) var(--contrast) var(--grayscale) var(--hue-rotate) var(--invert) var(--saturate) var(--sepia) var(--drop-shadow)
 }
 
 .yvRWkoRx_Apshie5g15o {
@@ -1270,38 +1270,38 @@ input[type=range]::-ms-fill-lower {
 }
 
 .eFVdWe3MNoaU5uHcs1ZL:hover {
-    --tw-border-opacity: 1;
-    border-color: rgb(209 213 219/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(209 213 219/var(--border-opacity))
 }
 
 .djld5jFcbPSy1YdGoI7k:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--bg-opacity))
 }
 
 .i5QXsHiD5pDQkTCnC_Ga:hover {
-    --tw-bg-opacity: 1!important;
-    background-color: rgb(243 244 246/var(--tw-bg-opacity))!important
+    --bg-opacity: 1!important;
+    background-color: rgb(243 244 246/var(--bg-opacity))!important
 }
 
 .DpMPWwlSESiYA8EE1xKM:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(243 244 246/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(243 244 246/var(--bg-opacity))
 }
 
 ._be7gCNOq8vw6dPtYNE0:hover {
-    --tw-text-opacity: 1;
-    color: rgb(28 100 242/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(28 100 242/var(--text-opacity))
 }
 
 .__3D_PX_oiQ5jff3N7d8:hover {
-    --tw-text-opacity: 1;
-    color: rgb(75 85 99/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(75 85 99/var(--text-opacity))
 }
 
 ._xQT_qSXfwWf6ZhwRle4:hover {
-    --tw-text-opacity: 1;
-    color: rgb(17 24 39/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(17 24 39/var(--text-opacity))
 }
 
 .qHIOIw8TObHgD3VvKa5x:focus {
@@ -1310,38 +1310,38 @@ input[type=range]::-ms-fill-lower {
 }
 
 ._FONMPVaCsLFJJGDaaIL:focus {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color)
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(4px + var(--ring-offset-width)) var(--ring-color)
 }
 
 .W83fbcqTDAidAC5iVTZ9:focus,._FONMPVaCsLFJJGDaaIL:focus {
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow,0 0 #0000)
 }
 
 .W83fbcqTDAidAC5iVTZ9:focus {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(var(--tw-ring-offset-width)) var(--tw-ring-color)
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(var(--ring-offset-width)) var(--ring-color)
 }
 
 .X3ifvK6lzvLzkZabaIQd:focus {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(2px + var(--ring-offset-width)) var(--ring-color);
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow,0 0 #0000)
 }
 
 ._bKyZ1er5YE_NnrwOCm9:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgb(229 231 235/var(--tw-ring-opacity))
+    --ring-opacity: 1;
+    --ring-color: rgb(229 231 235/var(--ring-opacity))
 }
 
 .dark .WoQqugRcWrYbmsWhxCUr>:not([hidden])~:not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgb(75 85 99/var(--tw-divide-opacity))
+    --divide-opacity: 1;
+    border-color: rgb(75 85 99/var(--divide-opacity))
 }
 
 .dark .border-color-63-131-248-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(63 131 248/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(63 131 248/var(--border-opacity))
 }
 
 .dark .border-color-transparent {
@@ -1349,28 +1349,28 @@ input[type=range]::-ms-fill-lower {
 }
 
 .dark .border-color-55-65-81-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(55 65 81/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(55 65 81/var(--border-opacity))
 }
 
 .dark .kL_7y0ybSfIase01w3HA {
-    --tw-border-opacity: 1!important;
-    border-color: rgb(55 65 81/var(--tw-border-opacity))!important
+    --border-opacity: 1!important;
+    border-color: rgb(55 65 81/var(--border-opacity))!important
 }
 
 .dark .border-color-75-85-99-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(75 85 99/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(75 85 99/var(--border-opacity))
 }
 
 .dark ._oZ8dD13GI4s2IHZBKEF {
-    --tw-border-opacity: 1!important;
-    border-color: rgb(75 85 99/var(--tw-border-opacity))!important
+    --border-opacity: 1!important;
+    border-color: rgb(75 85 99/var(--border-opacity))!important
 }
 
 .dark .background-color-31-41-55-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(31 41 55/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(31 41 55/var(--bg-opacity))
 }
 
 .dark .background-color-31-41-55-point-5 {
@@ -1378,96 +1378,96 @@ input[type=range]::-ms-fill-lower {
 }
 
 .dark .background-color-17-24-39-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(17 24 39/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(17 24 39/var(--bg-opacity))
 }
 
 .dark ._8cyJaw1Hw99bmiijgNZ {
-    --tw-bg-opacity: 1!important;
-    background-color: rgb(55 65 81/var(--tw-bg-opacity))!important
+    --bg-opacity: 1!important;
+    background-color: rgb(55 65 81/var(--bg-opacity))!important
 }
 
 .dark .background-color-55-65-81-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(55 65 81/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(55 65 81/var(--bg-opacity))
 }
 
 .dark .background-opacity-0-point-8 {
-    --tw-bg-opacity: 0.8
+    --bg-opacity: 0.8
 }
 
 .dark .color-white-255-255-255-1 {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(255 255 255/var(--text-opacity))
 }
 
 .dark .color-156-163-175-1 {
-    --tw-text-opacity: 1;
-    color: rgb(156 163 175/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(156 163 175/var(--text-opacity))
 }
 
 .dark .color-63-131-248-1 {
-    --tw-text-opacity: 1;
-    color: rgb(63 131 248/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(63 131 248/var(--text-opacity))
 }
 
 .dark .color-209-213-219-1 {
-    --tw-text-opacity: 1;
-    color: rgb(209 213 219/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(209 213 219/var(--text-opacity))
 }
 
 .dark .color-156-163-175-1::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgb(156 163 175/var(--tw-placeholder-opacity))
+    --placeholder-opacity: 1;
+    color: rgb(156 163 175/var(--placeholder-opacity))
 }
 
 .dark .color-156-163-175-1::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgb(156 163 175/var(--tw-placeholder-opacity))
+    --placeholder-opacity: 1;
+    color: rgb(156 163 175/var(--placeholder-opacity))
 }
 
 .dark .apRlbPZRJ4JWA5RVdURT {
-    --tw-ring-offset-color: #1f2937
+    --ring-offset-color: #1f2937
 }
 
 .dark .M8MVO3Wk4V6jCw0WpZs5:hover {
-    --tw-border-opacity: 1;
-    border-color: rgb(107 114 128/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(107 114 128/var(--border-opacity))
 }
 
 .dark .GbuoIVQvgE1sPez3FB0O:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(31 41 55/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(31 41 55/var(--bg-opacity))
 }
 
 .dark .phUeF4Q_MSVQ9S00hdm_:hover {
-    --tw-bg-opacity: 1!important;
-    background-color: rgb(75 85 99/var(--tw-bg-opacity))!important
+    --bg-opacity: 1!important;
+    background-color: rgb(75 85 99/var(--bg-opacity))!important
 }
 
 .dark .xotVay0PVtR3gElm6ql5:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(75 85 99/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(75 85 99/var(--bg-opacity))
 }
 
 .dark .V2alIkRVl_uBQKfQTjue:hover {
-    --tw-text-opacity: 1;
-    color: rgb(63 131 248/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(63 131 248/var(--text-opacity))
 }
 
 .dark ._VCO84hOChxSw1A3KE3f:hover {
-    --tw-text-opacity: 1;
-    color: rgb(209 213 219/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(209 213 219/var(--text-opacity))
 }
 
 .dark .DTyjKhtXBNaebZa5L0l9:hover {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(255 255 255/var(--text-opacity))
 }
 
 .dark .dL828_bWYVzgFnPVtC_D:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgb(31 41 55/var(--tw-ring-opacity))
+    --ring-opacity: 1;
+    --ring-color: rgb(31 41 55/var(--ring-opacity))
 }
 
 @media (min-width: 640px) {
@@ -1484,27 +1484,27 @@ input[type=range]::-ms-fill-lower {
     }
 
     .SGqensOKx3gy996_A_ZF>:not([hidden])~:not([hidden]) {
-        --tw-space-y-reverse: 0;
-        margin-bottom: calc(1.5rem*var(--tw-space-y-reverse));
-        margin-top: calc(1.5rem*(1 - var(--tw-space-y-reverse)))
+        --space-y-reverse: 0;
+        margin-bottom: calc(1.5rem*var(--space-y-reverse));
+        margin-top: calc(1.5rem*(1 - var(--space-y-reverse)))
     }
 
     ._uGk0TKCucyvLBoD8KyB>:not([hidden])~:not([hidden]) {
-        --tw-space-x-reverse: 0;
-        margin-left: calc(1rem*(1 - var(--tw-space-x-reverse)));
-        margin-right: calc(1rem*var(--tw-space-x-reverse))
+        --space-x-reverse: 0;
+        margin-left: calc(1rem*(1 - var(--space-x-reverse)));
+        margin-right: calc(1rem*var(--space-x-reverse))
     }
 
     ._rT9gacXyvSO1fCjLFak>:not([hidden])~:not([hidden]) {
-        --tw-space-y-reverse: 0;
-        margin-bottom: calc(0px*var(--tw-space-y-reverse));
-        margin-top: calc(0px*(1 - var(--tw-space-y-reverse)))
+        --space-y-reverse: 0;
+        margin-bottom: calc(0px*var(--space-y-reverse));
+        margin-top: calc(0px*(1 - var(--space-y-reverse)))
     }
 
     .Nlj9GFezeDrrSMc8mB0T>:not([hidden])~:not([hidden]) {
-        --tw-divide-x-reverse: 0;
-        border-left-width: calc(1px*(1 - var(--tw-divide-x-reverse)));
-        border-right-width: calc(1px*var(--tw-divide-x-reverse))
+        --divide-x-reverse: 0;
+        border-left-width: calc(1px*(1 - var(--divide-x-reverse)));
+        border-right-width: calc(1px*var(--divide-x-reverse))
     }
 
     ._kWIOV0qD_6JvPTQrwHs {
@@ -1551,11 +1551,11 @@ input[type=range]::-ms-fill-lower {
         </head>
         <body>
           <section class="background-color-white-1 background-color-17-24-39-1">
-  <div class="padding-lbottom-top-2-rem padding-left-right-1-rem RV8RoaI_SlEMC5CEQ3ms zPUWoedBRkxixyLsgtwE padding-bottom-top-4-rem">
+  <div class="py-8 px-4 mx-auto zPUWoedBRkxixyLsgtwE padding-bottom-top-4-rem">
       <form action="#">
           <div id="create-product-accordion-collapse" data-accordion="collapse">
               <h2 id="create-product-accordion-collapse-heading-1">
-                  <button type="button" class="display-flex jc-space-between al-center x1NtnN5a2v_Vi6iT26nf padding-left-right-1-rem jCISvWkW5oStPH6Wrb_H font-weight-500 line-height-1 text-align-left color-17-24-39-1 OQGCGYWKsg16L0Oz8ctQ _kWIOV0qD_6JvPTQrwHs _FONMPVaCsLFJJGDaaIL _bKyZ1er5YE_NnrwOCm9 dL828_bWYVzgFnPVtC_D kL_7y0ybSfIase01w3HA color-white-255-255-255-1 i5QXsHiD5pDQkTCnC_Ga _8cyJaw1Hw99bmiijgNZ phUeF4Q_MSVQ9S00hdm_" data-accordion-target="#create-product-accordion-collapse-body-1" aria-expanded="true" aria-controls="create-product-accordion-collapse-body-1">
+                  <button type="button" class="display-flex jc-space-between items-center x1NtnN5a2v_Vi6iT26nf px-4 w-full font-weight-500 line-height-1 text-align-left color-17-24-39-1 OQGCGYWKsg16L0Oz8ctQ _kWIOV0qD_6JvPTQrwHs _FONMPVaCsLFJJGDaaIL _bKyZ1er5YE_NnrwOCm9 dL828_bWYVzgFnPVtC_D kL_7y0ybSfIase01w3HA color-white-255-255-255-1 i5QXsHiD5pDQkTCnC_Ga _8cyJaw1Hw99bmiijgNZ phUeF4Q_MSVQ9S00hdm_" data-accordion-target="#create-product-accordion-collapse-body-1" aria-expanded="true" aria-controls="create-product-accordion-collapse-body-1">
                       <span>General Information</span>
                       <svg data-accordion-icon="" class="width-1-point-5-rem _XD2a764x49B1E2F9f8X R4jqCxTOcV8d4zX2X0UZ flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                   </button>
@@ -1563,27 +1563,27 @@ input[type=range]::-ms-fill-lower {
               <div id="create-product-accordion-collapse-body-1" class="" aria-labelledby="create-product-accordion-collapse-heading-1">
                   <div class="x1NtnN5a2v_Vi6iT26nf border-color-229-231-235-1 hao1XUiLwm82uRmdZ0qR border-color-55-65-81-1">
                       <!-- Inputs -->
-                      <div class="i0EfZzmTLElZVOble53D Ced8tRkG1VjcbmNVdBtj SsyHV_rMDBj9IOCcJvnZ H9X3EXuW0z4B30VXngca">
+                      <div class="grid gap-4 SsyHV_rMDBj9IOCcJvnZ H9X3EXuW0z4B30VXngca">
                           <!-- Column -->
                           <div class="not-hidden-margin-bottom-top-1-rem SGqensOKx3gy996_A_ZF">
                               <div>
-                                  <label for="name" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Product Name</label>
-                                  <input type="text" name="name" id="name" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Type product name" required="">
+                                  <label for="name" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Product Name</label>
+                                  <input type="text" name="name" id="name" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Type product name" required="">
                               </div>
                               <div class="not-hidden-margin-bottom-top-1-rem display-flex _uGk0TKCucyvLBoD8KyB _rT9gacXyvSO1fCjLFak">
-                                  <div class="jCISvWkW5oStPH6Wrb_H">
-                                      <label for="brand" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Brand</label>
-                                      <input type="text" name="brand" id="brand" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Product brand" required="">
+                                  <div class="w-full">
+                                      <label for="brand" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Brand</label>
+                                      <input type="text" name="brand" id="brand" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Product brand" required="">
                                   </div>
-                                  <div class="jCISvWkW5oStPH6Wrb_H">
-                                      <label for="price" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Price</label>
-                                      <input type="number" name="price" id="price" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="$2999" required="">
+                                  <div class="w-full">
+                                      <label for="price" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Price</label>
+                                      <input type="number" name="price" id="price" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="$2999" required="">
                                   </div>
                               </div>
                               <div class="not-hidden-margin-bottom-top-1-rem display-flex _uGk0TKCucyvLBoD8KyB _rT9gacXyvSO1fCjLFak">
-                                  <div class="jCISvWkW5oStPH6Wrb_H">
-                                      <label for="category" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Category</label>
-                                      <select id="category" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-500 focus:border-primary-500 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                                  <div class="w-full">
+                                      <label for="category" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Category</label>
+                                      <select id="category" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-500 focus:border-primary-500 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500">
                                           <option selected="">Select category</option>
                                           <option value="TV">TV/Monitors</option>
                                           <option value="PC">PC</option>
@@ -1591,9 +1591,9 @@ input[type=range]::-ms-fill-lower {
                                           <option value="PH">Phones</option>
                                       </select>
                                   </div>
-                                  <div class="jCISvWkW5oStPH6Wrb_H">
-                                      <label for="return-policy" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Return Policy</label>
-                                      <select id="return-policy" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-500 focus:border-primary-500 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                                  <div class="w-full">
+                                      <label for="return-policy" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Return Policy</label>
+                                      <select id="return-policy" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-500 focus:border-primary-500 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500">
                                           <option selected="">30 days</option>
                                           <option value="10">10 days</option>
                                           <option value="NO">None</option>
@@ -1601,118 +1601,118 @@ input[type=range]::-ms-fill-lower {
                                   </div>
                               </div>
                               <div class="not-hidden-margin-bottom-top-1-rem display-flex _uGk0TKCucyvLBoD8KyB _rT9gacXyvSO1fCjLFak">
-                                  <div class="jCISvWkW5oStPH6Wrb_H">
-                                      <label for="shipping" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Ships From</label>
-                                      <input type="text" name="shipping" id="shipping" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Bergside Inc." required="">
+                                  <div class="w-full">
+                                      <label for="shipping" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Ships From</label>
+                                      <input type="text" name="shipping" id="shipping" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Bergside Inc." required="">
                                   </div>
-                                  <div class="jCISvWkW5oStPH6Wrb_H">
-                                      <label for="sold-by" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Sold By</label>
-                                      <input type="text" name="sold-by" id="sold-by" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Flowbite LLC" required="">
+                                  <div class="w-full">
+                                      <label for="sold-by" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Sold By</label>
+                                      <input type="text" name="sold-by" id="sold-by" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Flowbite LLC" required="">
                                   </div>
                               </div>
                               <div class="not-hidden-margin-bottom-top-1-rem display-flex _uGk0TKCucyvLBoD8KyB _rT9gacXyvSO1fCjLFak">
-                                  <div class="jCISvWkW5oStPH6Wrb_H">
-                                      <label for="import-fees" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Import Fees</label>
-                                      <input type="number" name="import-fees" id="import-fees" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="0" required="">
+                                  <div class="w-full">
+                                      <label for="import-fees" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Import Fees</label>
+                                      <input type="number" name="import-fees" id="import-fees" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="0" required="">
                                   </div>
-                                  <div class="jCISvWkW5oStPH6Wrb_H">
-                                      <label for="product-state" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Product State</label>
-                                      <select id="product-state" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-500 focus:border-primary-500 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                                  <div class="w-full">
+                                      <label for="product-state" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Product State</label>
+                                      <select id="product-state" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-500 focus:border-primary-500 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500">
                                           <option selected="">New</option>
                                           <option value="RE">Refurbished</option>
                                       </select>
                                   </div>
                               </div>
                               <div>
-                                  <label for="description" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Description</label>
-                                  <div class="margin-bottom-1-rem jCISvWkW5oStPH6Wrb_H background-color-243-244-246-1 border-radius-point-5-rem border-width-1-px border-color-229-231-235-1 background-color-55-65-81-1 border-color-75-85-99-1">
-                                      <div class="display-flex jc-space-between al-center padding-bottom-top-point-5-rem padding-left-right-point-75-rem border-bottom-width-1-px border-color-75-85-99-1">
-                                          <div class="display-flex SaxexKs0G0X_YQvtMxF3 al-center yGKSom6xHdY1EhaYGurI Nlj9GFezeDrrSMc8mB0T WoQqugRcWrYbmsWhxCUr">
-                                              <div class="display-flex al-center not-hidden-margin-left-right-point-25-rem sCLAUGaesab9D0cBf8e_">
-                                                  <button type="button" class="padding-point-5-rem color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
+                                  <label for="description" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Description</label>
+                                  <div class="mb-4 w-full background-color-243-244-246-1 rounded-lg border border-color-229-231-235-1 background-color-55-65-81-1 border-color-75-85-99-1">
+                                      <div class="display-flex jc-space-between items-center py-2 padding-left-right-point-75-rem border-bottom-width-1-px border-color-75-85-99-1">
+                                          <div class="display-flex SaxexKs0G0X_YQvtMxF3 items-center yGKSom6xHdY1EhaYGurI Nlj9GFezeDrrSMc8mB0T WoQqugRcWrYbmsWhxCUr">
+                                              <div class="display-flex items-center not-hidden-margin-left-right-point-25-rem sCLAUGaesab9D0cBf8e_">
+                                                  <button type="button" class="p-2 color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
                                                       <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z" clip-rule="evenodd"></path></svg>
                                                       <span class="rec-clipper">Attach file</span>
                                                   </button>
-                                                  <button type="button" class="padding-point-5-rem color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
+                                                  <button type="button" class="p-2 color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
                                                       <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
                                                       <span class="rec-clipper">Embed map</span>
                                                   </button>
-                                                  <button type="button" class="padding-point-5-rem color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
+                                                  <button type="button" class="p-2 color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
                                                       <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"></path></svg>
                                                       <span class="rec-clipper">Upload image</span>
                                                   </button>
-                                                  <button type="button" class="padding-point-5-rem color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
+                                                  <button type="button" class="p-2 color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
                                                       <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                                                       <span class="rec-clipper">Format code</span>
                                                   </button>
-                                                  <button type="button" class="padding-point-5-rem color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
+                                                  <button type="button" class="p-2 color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
                                                       <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z" clip-rule="evenodd"></path></svg>
                                                       <span class="rec-clipper">Add emoji</span>
                                                   </button>
                                               </div>
-                                              <div class="hide SaxexKs0G0X_YQvtMxF3 al-center not-hidden-margin-left-right-point-25-rem display-flex UOs3xk7_SKo_Hcsbq8nt">
-                                                  <button type="button" class="padding-point-5-rem color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
+                                              <div class="hide SaxexKs0G0X_YQvtMxF3 items-center not-hidden-margin-left-right-point-25-rem display-flex UOs3xk7_SKo_Hcsbq8nt">
+                                                  <button type="button" class="p-2 color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
                                                       <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
                                                       <span class="rec-clipper">Timeline</span>
                                                   </button>
-                                                  <button type="button" class="padding-point-5-rem color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
+                                                  <button type="button" class="p-2 color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
                                                       <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                                                       <span class="rec-clipper">Download</span>
                                                   </button>
                                               </div>
                                           </div>
-                                          <button type="button" data-tooltip-target="tooltip-fullscreen" class="padding-point-5-rem color-107-114-128-1 border-radius-point-25-rem cursor-pointer lk_Qvs8GwdI2Q78kOWK_ _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
+                                          <button type="button" data-tooltip-target="tooltip-fullscreen" class="p-2 color-107-114-128-1 border-radius-point-25-rem cursor-pointer lk_Qvs8GwdI2Q78kOWK_ _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
                                               <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 11-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 01-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 012 0v1.586l2.293-2.293a1 1 0 111.414 1.414L6.414 15H8a1 1 0 010 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 010-2h1.586l-2.293-2.293a1 1 0 111.414-1.414L15 13.586V12a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
                                               <span class="rec-clipper">Full screen</span>
                                           </button>
-                                          <div id="tooltip-fullscreen" role="tooltip" class="display-in-block position-ab visibility-hidden z-index-10 padding-bottom-top-point-5-rem padding-left-right-point-75-rem MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-white-1 background-color-17-24-39-1 border-radius-point-5-rem ltPMSn_g3PKyqeS8vmZk opacity-0 M4SAv60iaayh2_Cd_QyF transition-duration-point-3-s Usqns9w__onp5CWoXDJ0 background-color-55-65-81-1" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 335px, 0px);">
+                                          <div id="tooltip-fullscreen" role="tooltip" class="display-in-block position-ab visibility-hidden z-index-10 py-2 padding-left-right-point-75-rem text-sm leading-5 font-weight-500 color-white-1 background-color-17-24-39-1 rounded-lg ltPMSn_g3PKyqeS8vmZk opacity-0 M4SAv60iaayh2_Cd_QyF transition-duration-point-3-s Usqns9w__onp5CWoXDJ0 background-color-55-65-81-1" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 335px, 0px);">
                                               Show full screen
                                               <div class="POMYoNHqN8pOsNYFYFHr" data-popper-arrow=""></div>
                                           </div>
                                       </div>
-                                      <div class="padding-bottom-top-point-5-rem padding-left-right-1-rem background-color-249-250-251-1 HCKAzjPNYaEE1SstZz5I background-color-55-65-81-1">
-                                          <textarea id="description" rows="8" class="show padding-left-right-0 jCISvWkW5oStPH6Wrb_H MxG1ClE4KPrIvlL5_Q5x _k4LlnOHrNO4Fe0v_QGs background-color-249-250-251-1 border-width-0 background-color-55-65-81-1 W83fbcqTDAidAC5iVTZ9 color-white-255-255-255-1 color-156-163-175-1" placeholder="Write product description here" required=""></textarea>
+                                      <div class="py-2 px-4 background-color-249-250-251-1 HCKAzjPNYaEE1SstZz5I background-color-55-65-81-1">
+                                          <textarea id="description" rows="8" class="show padding-left-right-0 w-full text-sm leading-5 _k4LlnOHrNO4Fe0v_QGs background-color-249-250-251-1 border-width-0 background-color-55-65-81-1 W83fbcqTDAidAC5iVTZ9 color-white-255-255-255-1 color-156-163-175-1" placeholder="Write product description here" required=""></textarea>
                                       </div>
                                   </div>
                               </div>
-                              <div class="display-flex al-center">
+                              <div class="display-flex items-center">
                                   <input id="product-options" type="checkbox" value="" class="width-1-rem height-1-rem text-primary-600 background-color-243-244-246-1 border-radius-point-25-rem border-color-209-213-219-1 focus:ring-primary-500 dark:focus:ring-primary-600 apRlbPZRJ4JWA5RVdURT X3ifvK6lzvLzkZabaIQd background-color-55-65-81-1 border-color-75-85-99-1">
-                                  <label for="product-options" class="QGosQoeY76W_hWM2rgwJ MxG1ClE4KPrIvlL5_Q5x color-107-114-128-1 color-209-213-219-1">Product has multiple options, like different colors or sizes</label>
+                                  <label for="product-options" class="QGosQoeY76W_hWM2rgwJ text-sm leading-5 color-107-114-128-1 color-209-213-219-1">Product has multiple options, like different colors or sizes</label>
                               </div>
                           </div>
                           <!-- Column -->
                           <div class="not-hidden-margin-bottom-top-1-rem SGqensOKx3gy996_A_ZF">
                               <div>
-                                  <label for="tags" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Tags</label>
-                                  <input type="text" name="tags" id="tags" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="e.g computer, pc" required="">
+                                  <label for="tags" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Tags</label>
+                                  <input type="text" name="tags" id="tags" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="e.g computer, pc" required="">
                               </div>
                               <div>
-                                  <label for="item-weight" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Item Weight (kg)</label>
-                                  <input type="number" name="item-weight" id="item-weight" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="12" required="">
+                                  <label for="item-weight" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Item Weight (kg)</label>
+                                  <input type="number" name="item-weight" id="item-weight" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="12" required="">
                               </div>
                               <div class="not-hidden-margin-bottom-top-1-rem display-flex _uGk0TKCucyvLBoD8KyB _rT9gacXyvSO1fCjLFak">
-                                  <div class="jCISvWkW5oStPH6Wrb_H">
-                                      <label for="length" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Length (cm)</label>
-                                      <input type="number" name="length" id="length" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="105" required="">
+                                  <div class="w-full">
+                                      <label for="length" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Length (cm)</label>
+                                      <input type="number" name="length" id="length" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="105" required="">
                                   </div>
-                                  <div class="jCISvWkW5oStPH6Wrb_H">
-                                      <label for="breadth" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Breadth (cm)</label>
-                                      <input type="number" name="breadth" id="breadth" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="15" required="">
+                                  <div class="w-full">
+                                      <label for="breadth" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Breadth (cm)</label>
+                                      <input type="number" name="breadth" id="breadth" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="15" required="">
                                   </div>
-                                  <div class="jCISvWkW5oStPH6Wrb_H">
-                                      <label for="width" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Width (cm)</label>
-                                      <input type="number" name="width" id="width" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="23" required="">
+                                  <div class="w-full">
+                                      <label for="width" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Width (cm)</label>
+                                      <input type="number" name="width" id="width" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="23" required="">
                                   </div>
                               </div>
                               <div>
-                                  <label for="dropzone-file" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Product Images</label>
-                                  <div class="display-flex jc-center al-center jCISvWkW5oStPH6Wrb_H">
-                                      <label for="dropzone-file" class="display-flex flex-direction-column jc-center al-center jCISvWkW5oStPH6Wrb_H TTHKzTGysuSDVgqduagg background-color-249-250-251-1 border-radius-point-5-rem bQPRusdUv2Wr50Lq2KOG border-color-209-213-219-1 _aogeNsMdM_urLDNFElr cursor-pointer dark:hover:bg-bray-800 background-color-55-65-81-1 DpMPWwlSESiYA8EE1xKM border-color-75-85-99-1 M8MVO3Wk4V6jCw0WpZs5 xotVay0PVtR3gElm6ql5">
-                                          <div class="display-flex flex-direction-column jc-center al-center gIuGmIIrEocd3ATSA0CM Z1_SzDAYyMh8z9ORQVFR">
+                                  <label for="dropzone-file" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Product Images</label>
+                                  <div class="display-flex jc-center items-center w-full">
+                                      <label for="dropzone-file" class="display-flex flex-direction-column jc-center items-center w-full TTHKzTGysuSDVgqduagg background-color-249-250-251-1 rounded-lg bQPRusdUv2Wr50Lq2KOG border-color-209-213-219-1 _aogeNsMdM_urLDNFElr cursor-pointer dark:hover:bg-bray-800 background-color-55-65-81-1 DpMPWwlSESiYA8EE1xKM border-color-75-85-99-1 M8MVO3Wk4V6jCw0WpZs5 xotVay0PVtR3gElm6ql5">
+                                          <div class="display-flex flex-direction-column jc-center items-center gIuGmIIrEocd3ATSA0CM Z1_SzDAYyMh8z9ORQVFR">
                                               <svg aria-hidden="true" class="cq1ij1EsUw0V2rrqeYEc bt0MUzUgiWUaZjB4iWGh _EiPZYgyUypIYjFtegNh color-156-163-175-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
-                                              <p class="rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x color-107-114-128-1 color-156-163-175-1"><span class="font-weight-600">Click to upload</span> or drag and drop</p>
-                                              <p class="margin-bottom-1-rem XklWzT8y98pp042XEQp4 color-107-114-128-1 color-156-163-175-1">Max. File Size: 30MB</p>
-                                              <button type="button" class="padding-bottom-top-point-5-rem padding-left-right-point-75-rem XklWzT8y98pp042XEQp4 font-weight-500 text-align-center color-white-1 bg-primary-700 border-radius-point-5-rem hover:bg-primary-800 _FONMPVaCsLFJJGDaaIL qHIOIw8TObHgD3VvKa5x focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Extra small</button>
+                                              <p class="mb-2 text-sm leading-5 color-107-114-128-1 color-156-163-175-1"><span class="font-weight-600">Click to upload</span> or drag and drop</p>
+                                              <p class="mb-4 XklWzT8y98pp042XEQp4 color-107-114-128-1 color-156-163-175-1">Max. File Size: 30MB</p>
+                                              <button type="button" class="py-2 padding-left-right-point-75-rem XklWzT8y98pp042XEQp4 font-weight-500 text-center color-white-1 bg-primary-700 rounded-lg hover:bg-primary-800 _FONMPVaCsLFJJGDaaIL qHIOIw8TObHgD3VvKa5x focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Extra small</button>
                                           </div>
                                           <input id="dropzone-file" type="file" class="hide">
                                       </label>
@@ -1723,7 +1723,7 @@ input[type=range]::-ms-fill-lower {
                   </div>
               </div>
               <h2 id="create-product-accordion-collapse-heading-2">
-              <button type="button" class="display-flex jc-space-between al-center x1NtnN5a2v_Vi6iT26nf padding-left-right-1-rem jCISvWkW5oStPH6Wrb_H font-weight-500 line-height-1 text-align-left color-17-24-39-1 OQGCGYWKsg16L0Oz8ctQ border-top-width-1-px border-color-229-231-235-1 _kWIOV0qD_6JvPTQrwHs _FONMPVaCsLFJJGDaaIL _bKyZ1er5YE_NnrwOCm9 dL828_bWYVzgFnPVtC_D _oZ8dD13GI4s2IHZBKEF color-white-255-255-255-1 i5QXsHiD5pDQkTCnC_Ga _8cyJaw1Hw99bmiijgNZ phUeF4Q_MSVQ9S00hdm_" data-accordion-target="#create-product-accordion-collapse-body-2" aria-expanded="false" aria-controls="create-product-accordion-collapse-body-2">
+              <button type="button" class="display-flex jc-space-between items-center x1NtnN5a2v_Vi6iT26nf px-4 w-full font-weight-500 line-height-1 text-align-left color-17-24-39-1 OQGCGYWKsg16L0Oz8ctQ border-top-width-1-px border-color-229-231-235-1 _kWIOV0qD_6JvPTQrwHs _FONMPVaCsLFJJGDaaIL _bKyZ1er5YE_NnrwOCm9 dL828_bWYVzgFnPVtC_D _oZ8dD13GI4s2IHZBKEF color-white-255-255-255-1 i5QXsHiD5pDQkTCnC_Ga _8cyJaw1Hw99bmiijgNZ phUeF4Q_MSVQ9S00hdm_" data-accordion-target="#create-product-accordion-collapse-body-2" aria-expanded="false" aria-controls="create-product-accordion-collapse-body-2">
                   <span>Discount</span>
                   <svg data-accordion-icon="" class="width-1-point-5-rem _XD2a764x49B1E2F9f8X flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
               </button>
@@ -1731,56 +1731,56 @@ input[type=range]::-ms-fill-lower {
               <div id="create-product-accordion-collapse-body-2" class="hide" aria-labelledby="create-product-accordion-collapse-heading-2">
                   <div class="UV0UXx_CGh3nufuH2fPZ border-color-229-231-235-1 tBanKYXNNJQnd7c3GJie border-color-55-65-81-1">
                       <!-- Inputs -->
-                      <div class="i0EfZzmTLElZVOble53D Ced8tRkG1VjcbmNVdBtj SsyHV_rMDBj9IOCcJvnZ H9X3EXuW0z4B30VXngca">
+                      <div class="grid gap-4 SsyHV_rMDBj9IOCcJvnZ H9X3EXuW0z4B30VXngca">
                           <!-- Column -->
                           <div class="not-hidden-margin-bottom-top-1-rem SGqensOKx3gy996_A_ZF">
                               <div class="not-hidden-margin-bottom-top-1-rem display-flex _uGk0TKCucyvLBoD8KyB _rT9gacXyvSO1fCjLFak">
-                                  <div class="jCISvWkW5oStPH6Wrb_H">
-                                      <label for="discount" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Discount Type</label>
-                                      <select id="discount" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-500 focus:border-primary-500 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                                  <div class="w-full">
+                                      <label for="discount" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Discount Type</label>
+                                      <select id="discount" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-500 focus:border-primary-500 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500">
                                           <option selected="">Percent off</option>
                                           <option value="SU">Sum</option>
                                       </select>
                                   </div>
-                                  <div class="jCISvWkW5oStPH6Wrb_H">
-                                      <label for="minimum-order" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Minimum Order Amount</label>
+                                  <div class="w-full">
+                                      <label for="minimum-order" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Minimum Order Amount</label>
                                       <div class="QYPW4nl6nHaIbrtaXf4h">
-                                          <div class="display-flex position-ab BlSalPC4mE3l43xyY9d0 left-0 al-center padding-left-point-75-rem ubsPczbxEg7lOg0_Eg1A">
+                                          <div class="display-flex position-ab BlSalPC4mE3l43xyY9d0 left-0 items-center padding-left-point-75-rem ubsPczbxEg7lOg0_Eg1A">
                                               <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem color-107-114-128-1 color-156-163-175-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"></path><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clip-rule="evenodd"></path></svg>
                                           </div>
-                                          <input type="number" id="minimum-order" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-500 focus:border-primary-500 show jCISvWkW5oStPH6Wrb_H padding-left-2-point-5-rem padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="400">
+                                          <input type="number" id="minimum-order" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-500 focus:border-primary-500 show w-full padding-left-2-point-5-rem p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="400">
                                       </div>
                                   </div>
                               </div>
-                              <div class="jCISvWkW5oStPH6Wrb_H">
-                                  <label for="discount-worth" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Discount worth</label>
+                              <div class="w-full">
+                                  <label for="discount-worth" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Discount worth</label>
                                   <div class="QYPW4nl6nHaIbrtaXf4h">
-                                      <div class="display-flex position-ab BlSalPC4mE3l43xyY9d0 left-0 al-center padding-left-point-75-rem ubsPczbxEg7lOg0_Eg1A">
+                                      <div class="display-flex position-ab BlSalPC4mE3l43xyY9d0 left-0 items-center padding-left-point-75-rem ubsPczbxEg7lOg0_Eg1A">
                                           <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem color-107-114-128-1 color-156-163-175-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 2a2 2 0 00-2 2v14l3.5-2 3.5 2 3.5-2 3.5 2V4a2 2 0 00-2-2H5zm2.5 3a1.5 1.5 0 100 3 1.5 1.5 0 000-3zm6.207.293a1 1 0 00-1.414 0l-6 6a1 1 0 101.414 1.414l6-6a1 1 0 000-1.414zM12.5 10a1.5 1.5 0 100 3 1.5 1.5 0 000-3z" clip-rule="evenodd"></path></svg>
                                       </div>
-                                      <input type="number" id="discount-worth" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-500 focus:border-primary-500 show jCISvWkW5oStPH6Wrb_H padding-left-2-point-5-rem padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="10">
+                                      <input type="number" id="discount-worth" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-500 focus:border-primary-500 show w-full padding-left-2-point-5-rem p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="10">
                                   </div>
                               </div>
-                              <div class="display-flex al-center">
+                              <div class="display-flex items-center">
                                   <input id="offer-checkbox" type="checkbox" value="" class="width-1-rem height-1-rem text-primary-600 background-color-243-244-246-1 border-radius-point-25-rem border-color-209-213-219-1 focus:ring-primary-500 dark:focus:ring-primary-600 apRlbPZRJ4JWA5RVdURT X3ifvK6lzvLzkZabaIQd background-color-55-65-81-1 border-color-75-85-99-1">
-                                  <label for="offer-checkbox" class="QGosQoeY76W_hWM2rgwJ MxG1ClE4KPrIvlL5_Q5x color-107-114-128-1 color-209-213-219-1">I understand that the discount given in this offer will be borne by me</label>
+                                  <label for="offer-checkbox" class="QGosQoeY76W_hWM2rgwJ text-sm leading-5 color-107-114-128-1 color-209-213-219-1">I understand that the discount given in this offer will be borne by me</label>
                               </div>
                           </div>
                           <!-- Column -->
                           <div>
-                              <label for="datepicker" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Offer Validity Period</label>
-                              <div date-rangepicker="" class="al-center not-hidden-margin-bottom-top-1-rem jCISvWkW5oStPH6Wrb_H display-flex _uGk0TKCucyvLBoD8KyB _rT9gacXyvSO1fCjLFak">
-                                  <div class="QYPW4nl6nHaIbrtaXf4h jCISvWkW5oStPH6Wrb_H">
-                                      <div class="display-flex position-ab BlSalPC4mE3l43xyY9d0 left-0 al-center padding-left-point-75-rem ubsPczbxEg7lOg0_Eg1A">
+                              <label for="datepicker" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Offer Validity Period</label>
+                              <div date-rangepicker="" class="items-center not-hidden-margin-bottom-top-1-rem w-full display-flex _uGk0TKCucyvLBoD8KyB _rT9gacXyvSO1fCjLFak">
+                                  <div class="QYPW4nl6nHaIbrtaXf4h w-full">
+                                      <div class="display-flex position-ab BlSalPC4mE3l43xyY9d0 left-0 items-center padding-left-point-75-rem ubsPczbxEg7lOg0_Eg1A">
                                           <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem color-107-114-128-1 color-156-163-175-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
                                       </div>
-                                      <input id="datepicker" name="start" type="text" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-500 focus:border-primary-500 show jCISvWkW5oStPH6Wrb_H padding-left-2-point-5-rem padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500 datepicker-input" placeholder="Select date start">
+                                      <input id="datepicker" name="start" type="text" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-500 focus:border-primary-500 show w-full padding-left-2-point-5-rem p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500 datepicker-input" placeholder="Select date start">
                                   </div>
-                                  <div class="QYPW4nl6nHaIbrtaXf4h jCISvWkW5oStPH6Wrb_H">
-                                      <div class="display-flex position-ab BlSalPC4mE3l43xyY9d0 left-0 al-center padding-left-point-75-rem ubsPczbxEg7lOg0_Eg1A">
+                                  <div class="QYPW4nl6nHaIbrtaXf4h w-full">
+                                      <div class="display-flex position-ab BlSalPC4mE3l43xyY9d0 left-0 items-center padding-left-point-75-rem ubsPczbxEg7lOg0_Eg1A">
                                           <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem color-107-114-128-1 color-156-163-175-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
                                       </div>
-                                      <input name="end" type="text" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-500 focus:border-primary-500 show jCISvWkW5oStPH6Wrb_H padding-left-2-point-5-rem padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500 datepicker-input" placeholder="Select date end">
+                                      <input name="end" type="text" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-500 focus:border-primary-500 show w-full padding-left-2-point-5-rem p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500 datepicker-input" placeholder="Select date end">
                                   </div>
                               </div>                                  
                           </div>
@@ -1788,7 +1788,7 @@ input[type=range]::-ms-fill-lower {
                   </div>
               </div>
           </div>
-          <button type="submit" class="display-in-flex al-center padding-left-right-1-point-25-rem padding-bottom-top-point-625-rem KgBTWt39fdiAC__YVNt8 AuB0Ecr_8CO7ghWxxqa1 MxG1ClE4KPrIvlL5_Q5x font-weight-500 text-align-center color-white-1 bg-primary-700 border-radius-point-5-rem _FONMPVaCsLFJJGDaaIL focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800">
+          <button type="submit" class="inline-flex items-center px-5 py-2 mt-4 AuB0Ecr_8CO7ghWxxqa1 text-sm leading-5 font-weight-500 text-center color-white-1 bg-primary-700 rounded-lg _FONMPVaCsLFJJGDaaIL focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800">
               Add product
           </button>
       </form>

@@ -6,6 +6,7 @@
           <meta http-equiv="X-UA-Compatible" content="IE=edge">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/tailwind_all.css" />
           <script src="https://cdn.tailwindcss.com"></script>
           <script>
             tailwind.config = {
@@ -34,7 +35,7 @@
 }
 
 :after,:before {
-    --tw-content: ""
+    --content: ""
 }
 
 html {
@@ -209,7 +210,7 @@ img,video {
 }
 
 [multiple],[type=date],[type=datetime-local],[type=email],[type=month],[type=number],[type=password],[type=search],[type=tel],[type=text],[type=time],[type=url],[type=week],select,textarea {
-    --tw-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -223,14 +224,14 @@ img,video {
 }
 
 [multiple]:focus,[type=date]:focus,[type=datetime-local]:focus,[type=email]:focus,[type=month]:focus,[type=number]:focus,[type=password]:focus,[type=search]:focus,[type=tel]:focus,[type=text]:focus,[type=time]:focus,[type=url]:focus,[type=week]:focus,select:focus,textarea:focus {
-    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: #1c64f2;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    --ring-inset: var(--empty,/*!*/ /*!*/);
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: #1c64f2;
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(1px + var(--ring-offset-width)) var(--ring-color);
     border-color: #1c64f2;
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow);
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -277,7 +278,7 @@ select {
 
 [type=checkbox],[type=radio] {
     color-adjust: exact;
-    --tw-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -308,13 +309,13 @@ select {
 }
 
 [type=checkbox]:focus,[type=radio]:focus {
-    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
-    --tw-ring-offset-width: 2px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: #1c64f2;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow);
+    --ring-inset: var(--empty,/*!*/ /*!*/);
+    --ring-offset-width: 2px;
+    --ring-offset-color: #fff;
+    --ring-color: #1c64f2;
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(2px + var(--ring-offset-width)) var(--ring-color);
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -396,11 +397,11 @@ input[type=range]:disabled::-webkit-slider-thumb {
 }
 
 input[type=range]:focus::-webkit-slider-thumb {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-    --tw-ring-opacity: 1px;
-    --tw-ring-color: rgb(164 202 254/var(--tw-ring-opacity));
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(4px + var(--ring-offset-width)) var(--ring-color);
+    --ring-opacity: 1px;
+    --ring-color: rgb(164 202 254/var(--ring-opacity));
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow,0 0 #0000);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -503,144 +504,144 @@ input[type=range]::-ms-fill-lower {
 }
 
 *,:after,:before {
-    --tw-border-spacing-x: 0;
-    --tw-border-spacing-y: 0;
-    --tw-translate-x: 0;
-    --tw-translate-y: 0;
-    --tw-rotate: 0;
-    --tw-skew-x: 0;
-    --tw-skew-y: 0;
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    --tw-pan-x: ;
-    --tw-pan-y: ;
-    --tw-pinch-zoom: ;
-    --tw-scroll-snap-strictness: proximity;
-    --tw-ordinal: ;
-    --tw-slashed-zero: ;
-    --tw-numeric-figure: ;
-    --tw-numeric-spacing: ;
-    --tw-numeric-fraction: ;
-    --tw-ring-inset: ;
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: rgba(63,131,248,.5);
-    --tw-ring-offset-shadow: 0 0 #0000;
-    --tw-ring-shadow: 0 0 #0000;
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    --tw-blur: ;
-    --tw-brightness: ;
-    --tw-contrast: ;
-    --tw-grayscale: ;
-    --tw-hue-rotate: ;
-    --tw-invert: ;
-    --tw-saturate: ;
-    --tw-sepia: ;
-    --tw-drop-shadow: ;
-    --tw-backdrop-blur: ;
-    --tw-backdrop-brightness: ;
-    --tw-backdrop-contrast: ;
-    --tw-backdrop-grayscale: ;
-    --tw-backdrop-hue-rotate: ;
-    --tw-backdrop-invert: ;
-    --tw-backdrop-opacity: ;
-    --tw-backdrop-saturate: ;
-    --tw-backdrop-sepia:
+    --border-spacing-x: 0;
+    --border-spacing-y: 0;
+    --translate-x: 0;
+    --translate-y: 0;
+    --rotate: 0;
+    --skew-x: 0;
+    --skew-y: 0;
+    --scale-x: 1;
+    --scale-y: 1;
+    --pan-x: ;
+    --pan-y: ;
+    --pinch-zoom: ;
+    --scroll-snap-strictness: proximity;
+    --ordinal: ;
+    --slashed-zero: ;
+    --numeric-figure: ;
+    --numeric-spacing: ;
+    --numeric-fraction: ;
+    --ring-inset: ;
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: rgba(63,131,248,.5);
+    --ring-offset-shadow: 0 0 #0000;
+    --ring-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
+    --shadow-colored: 0 0 #0000;
+    --blur: ;
+    --brightness: ;
+    --contrast: ;
+    --grayscale: ;
+    --hue-rotate: ;
+    --invert: ;
+    --saturate: ;
+    --sepia: ;
+    --drop-shadow: ;
+    --backdrop-blur: ;
+    --backdrop-brightness: ;
+    --backdrop-contrast: ;
+    --backdrop-grayscale: ;
+    --backdrop-hue-rotate: ;
+    --backdrop-invert: ;
+    --backdrop-opacity: ;
+    --backdrop-saturate: ;
+    --backdrop-sepia:
 }
 
 ::-webkit-backdrop {
-    --tw-border-spacing-x: 0;
-    --tw-border-spacing-y: 0;
-    --tw-translate-x: 0;
-    --tw-translate-y: 0;
-    --tw-rotate: 0;
-    --tw-skew-x: 0;
-    --tw-skew-y: 0;
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    --tw-pan-x: ;
-    --tw-pan-y: ;
-    --tw-pinch-zoom: ;
-    --tw-scroll-snap-strictness: proximity;
-    --tw-ordinal: ;
-    --tw-slashed-zero: ;
-    --tw-numeric-figure: ;
-    --tw-numeric-spacing: ;
-    --tw-numeric-fraction: ;
-    --tw-ring-inset: ;
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: rgba(63,131,248,.5);
-    --tw-ring-offset-shadow: 0 0 #0000;
-    --tw-ring-shadow: 0 0 #0000;
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    --tw-blur: ;
-    --tw-brightness: ;
-    --tw-contrast: ;
-    --tw-grayscale: ;
-    --tw-hue-rotate: ;
-    --tw-invert: ;
-    --tw-saturate: ;
-    --tw-sepia: ;
-    --tw-drop-shadow: ;
-    --tw-backdrop-blur: ;
-    --tw-backdrop-brightness: ;
-    --tw-backdrop-contrast: ;
-    --tw-backdrop-grayscale: ;
-    --tw-backdrop-hue-rotate: ;
-    --tw-backdrop-invert: ;
-    --tw-backdrop-opacity: ;
-    --tw-backdrop-saturate: ;
-    --tw-backdrop-sepia:
+    --border-spacing-x: 0;
+    --border-spacing-y: 0;
+    --translate-x: 0;
+    --translate-y: 0;
+    --rotate: 0;
+    --skew-x: 0;
+    --skew-y: 0;
+    --scale-x: 1;
+    --scale-y: 1;
+    --pan-x: ;
+    --pan-y: ;
+    --pinch-zoom: ;
+    --scroll-snap-strictness: proximity;
+    --ordinal: ;
+    --slashed-zero: ;
+    --numeric-figure: ;
+    --numeric-spacing: ;
+    --numeric-fraction: ;
+    --ring-inset: ;
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: rgba(63,131,248,.5);
+    --ring-offset-shadow: 0 0 #0000;
+    --ring-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
+    --shadow-colored: 0 0 #0000;
+    --blur: ;
+    --brightness: ;
+    --contrast: ;
+    --grayscale: ;
+    --hue-rotate: ;
+    --invert: ;
+    --saturate: ;
+    --sepia: ;
+    --drop-shadow: ;
+    --backdrop-blur: ;
+    --backdrop-brightness: ;
+    --backdrop-contrast: ;
+    --backdrop-grayscale: ;
+    --backdrop-hue-rotate: ;
+    --backdrop-invert: ;
+    --backdrop-opacity: ;
+    --backdrop-saturate: ;
+    --backdrop-sepia:
 }
 
 ::backdrop {
-    --tw-border-spacing-x: 0;
-    --tw-border-spacing-y: 0;
-    --tw-translate-x: 0;
-    --tw-translate-y: 0;
-    --tw-rotate: 0;
-    --tw-skew-x: 0;
-    --tw-skew-y: 0;
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    --tw-pan-x: ;
-    --tw-pan-y: ;
-    --tw-pinch-zoom: ;
-    --tw-scroll-snap-strictness: proximity;
-    --tw-ordinal: ;
-    --tw-slashed-zero: ;
-    --tw-numeric-figure: ;
-    --tw-numeric-spacing: ;
-    --tw-numeric-fraction: ;
-    --tw-ring-inset: ;
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: rgba(63,131,248,.5);
-    --tw-ring-offset-shadow: 0 0 #0000;
-    --tw-ring-shadow: 0 0 #0000;
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    --tw-blur: ;
-    --tw-brightness: ;
-    --tw-contrast: ;
-    --tw-grayscale: ;
-    --tw-hue-rotate: ;
-    --tw-invert: ;
-    --tw-saturate: ;
-    --tw-sepia: ;
-    --tw-drop-shadow: ;
-    --tw-backdrop-blur: ;
-    --tw-backdrop-brightness: ;
-    --tw-backdrop-contrast: ;
-    --tw-backdrop-grayscale: ;
-    --tw-backdrop-hue-rotate: ;
-    --tw-backdrop-invert: ;
-    --tw-backdrop-opacity: ;
-    --tw-backdrop-saturate: ;
-    --tw-backdrop-sepia:
+    --border-spacing-x: 0;
+    --border-spacing-y: 0;
+    --translate-x: 0;
+    --translate-y: 0;
+    --rotate: 0;
+    --skew-x: 0;
+    --skew-y: 0;
+    --scale-x: 1;
+    --scale-y: 1;
+    --pan-x: ;
+    --pan-y: ;
+    --pinch-zoom: ;
+    --scroll-snap-strictness: proximity;
+    --ordinal: ;
+    --slashed-zero: ;
+    --numeric-figure: ;
+    --numeric-spacing: ;
+    --numeric-fraction: ;
+    --ring-inset: ;
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: rgba(63,131,248,.5);
+    --ring-offset-shadow: 0 0 #0000;
+    --ring-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
+    --shadow-colored: 0 0 #0000;
+    --blur: ;
+    --brightness: ;
+    --contrast: ;
+    --grayscale: ;
+    --hue-rotate: ;
+    --invert: ;
+    --saturate: ;
+    --sepia: ;
+    --drop-shadow: ;
+    --backdrop-blur: ;
+    --backdrop-brightness: ;
+    --backdrop-contrast: ;
+    --backdrop-grayscale: ;
+    --backdrop-hue-rotate: ;
+    --backdrop-invert: ;
+    --backdrop-opacity: ;
+    --backdrop-saturate: ;
+    --backdrop-sepia:
 }
 
 .visibility-visible {
@@ -710,7 +711,7 @@ input[type=range]::-ms-fill-lower {
     z-index: 30
 }
 
-.RV8RoaI_SlEMC5CEQ3ms {
+.mx-auto {
     margin-left: auto;
     margin-right: auto
 }
@@ -727,7 +728,7 @@ input[type=range]::-ms-fill-lower {
     margin-bottom: .75rem
 }
 
-.rD4HtsUG_hahmbh2Kj09 {
+.mb-2 {
     margin-bottom: .5rem
 }
 
@@ -755,7 +756,7 @@ input[type=range]::-ms-fill-lower {
     display: flex
 }
 
-.display-in-flex {
+.inline-flex {
     display: inline-flex
 }
 
@@ -763,7 +764,7 @@ input[type=range]::-ms-fill-lower {
     display: table
 }
 
-.i0EfZzmTLElZVOble53D {
+.grid {
     display: grid
 }
 
@@ -791,7 +792,7 @@ input[type=range]::-ms-fill-lower {
     height: 1.75rem
 }
 
-.jCISvWkW5oStPH6Wrb_H {
+.w-full {
     width: 100%
 }
 
@@ -816,43 +817,43 @@ input[type=range]::-ms-fill-lower {
 }
 
 .panel-transform-toggle {
-    --tw-translate-x: -100%
+    --translate-x: -100%
 }
 
 ._txZr_XzKh1AA2GR58P5,.panel-transform-toggle {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    transform: translate(var(--translate-x),var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y))
 }
 
 ._txZr_XzKh1AA2GR58P5 {
-    --tw-translate-x: 100%
+    --translate-x: 100%
 }
 
 ._0PJkI8eA25FIbUKfI1v {
-    --tw-translate-x: 0px
+    --translate-x: 0px
 }
 
 .T8ntPwqv9_aqkqQBYkpk,._0PJkI8eA25FIbUKfI1v {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    transform: translate(var(--translate-x),var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y))
 }
 
 .T8ntPwqv9_aqkqQBYkpk {
-    --tw-translate-y: -100%
+    --translate-y: -100%
 }
 
 .mA7nMzdO5NVKdU288J6J {
-    --tw-translate-y: 100%
+    --translate-y: 100%
 }
 
 .R4jqCxTOcV8d4zX2X0UZ,.mA7nMzdO5NVKdU288J6J {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    transform: translate(var(--translate-x),var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y))
 }
 
 .R4jqCxTOcV8d4zX2X0UZ {
-    --tw-rotate: 180deg
+    --rotate: 180deg
 }
 
 .B_Mg78Zl0_AuSOcVLMGS {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    transform: translate(var(--translate-x),var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y))
 }
 
 .transform-none {
@@ -879,7 +880,7 @@ input[type=range]::-ms-fill-lower {
     align-items: flex-end
 }
 
-.al-center {
+.items-center {
     align-items: center
 }
 
@@ -895,21 +896,21 @@ input[type=range]::-ms-fill-lower {
     justify-content: center
 }
 
-.Ced8tRkG1VjcbmNVdBtj {
+.gap-4 {
     gap: 1rem
 }
 
 .rALiclNssVZsLNt7zOhR>:not([hidden])~:not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-left: calc(.5rem*(1 - var(--tw-space-x-reverse)));
-    margin-right: calc(.5rem*var(--tw-space-x-reverse))
+    --space-x-reverse: 0;
+    margin-left: calc(.5rem*(1 - var(--space-x-reverse)));
+    margin-right: calc(.5rem*var(--space-x-reverse))
 }
 
 .overflow-hidden {
     overflow: hidden
 }
 
-.border-radius-point-5-rem {
+.rounded-lg {
     border-radius: .5rem
 }
 
@@ -917,33 +918,33 @@ input[type=range]::-ms-fill-lower {
     border-radius: 9999px
 }
 
-.border-width-1-px {
+.border {
     border-width: 1px
 }
 
 .border-color-28-100-242-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(28 100 242/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(28 100 242/var(--border-opacity))
 }
 
 .border-color-243-244-246-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(243 244 246/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(243 244 246/var(--border-opacity))
 }
 
 .border-color-229-231-235-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(229 231 235/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(229 231 235/var(--border-opacity))
 }
 
 .background-color-243-244-246-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(243 244 246/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(243 244 246/var(--bg-opacity))
 }
 
 .background-color-white-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--bg-opacity))
 }
 
 .background-color-hsla-0-0-per-100-per-point-5 {
@@ -951,24 +952,24 @@ input[type=range]::-ms-fill-lower {
 }
 
 .background-color-17-24-39-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(17 24 39/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(17 24 39/var(--bg-opacity))
 }
 
 .F6maSyXBC_uv_A_dciar {
-    --tw-bg-opacity: 0.5
+    --bg-opacity: 0.5
 }
 
 .padding-1-rem {
     padding: 1rem
 }
 
-.padding-lbottom-top-2-rem {
+.py-8 {
     padding-bottom: 2rem;
     padding-top: 2rem
 }
 
-.padding-left-right-1-rem {
+.px-4 {
     padding-left: 1rem;
     padding-right: 1rem
 }
@@ -978,12 +979,12 @@ input[type=range]::-ms-fill-lower {
     line-height: 2rem
 }
 
-.MxG1ClE4KPrIvlL5_Q5x {
+.text-sm leading-5 {
     font-size: .875rem;
     line-height: 1.25rem
 }
 
-.uyo8h_4Kh1IoUwm8bwJI {
+.text-xl leading-7 {
     font-size: 1.25rem;
     line-height: 1.75rem
 }
@@ -1009,18 +1010,18 @@ input[type=range]::-ms-fill-lower {
 }
 
 .color-17-24-39-1 {
-    --tw-text-opacity: 1;
-    color: rgb(17 24 39/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(17 24 39/var(--text-opacity))
 }
 
 .color-107-114-128-1 {
-    --tw-text-opacity: 1;
-    color: rgb(107 114 128/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(107 114 128/var(--text-opacity))
 }
 
 .color-28-100-242-1 {
-    --tw-text-opacity: 1;
-    color: rgb(28 100 242/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(28 100 242/var(--text-opacity))
 }
 
 .opacity-0 {
@@ -1032,17 +1033,17 @@ input[type=range]::-ms-fill-lower {
 }
 
 .Z_eHUjNDQejPt5Nblzcx {
-    --tw-shadow: 0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);
-    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),0 2px 4px -2px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)
+    --shadow: 0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);
+    --shadow-colored: 0 4px 6px -1px var(--shadow-color),0 2px 4px -2px var(--shadow-color);
+    box-shadow: var(--ring-offset-shadow,0 0 #0000),var(--ring-shadow,0 0 #0000),var(--shadow)
 }
 
 .ClETfzy1YZDVXhnOVdgH {
-    --tw-blur: blur(8px)
+    --blur: blur(8px)
 }
 
 .ClETfzy1YZDVXhnOVdgH,.__l7tEsuvTIL_QRvY8sk {
-    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+    filter: var(--blur) var(--brightness) var(--contrast) var(--grayscale) var(--hue-rotate) var(--invert) var(--saturate) var(--sepia) var(--drop-shadow)
 }
 
 .yvRWkoRx_Apshie5g15o {
@@ -1076,28 +1077,28 @@ input[type=range]::-ms-fill-lower {
 }
 
 .eFVdWe3MNoaU5uHcs1ZL:hover {
-    --tw-border-opacity: 1;
-    border-color: rgb(209 213 219/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(209 213 219/var(--border-opacity))
 }
 
 .djld5jFcbPSy1YdGoI7k:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--bg-opacity))
 }
 
 ._be7gCNOq8vw6dPtYNE0:hover {
-    --tw-text-opacity: 1;
-    color: rgb(28 100 242/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(28 100 242/var(--text-opacity))
 }
 
 .__3D_PX_oiQ5jff3N7d8:hover {
-    --tw-text-opacity: 1;
-    color: rgb(75 85 99/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(75 85 99/var(--text-opacity))
 }
 
 .WvrFEtphYDYX1sAkd4TH:hover {
-    --tw-text-opacity: 1;
-    color: rgb(55 65 81/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(55 65 81/var(--text-opacity))
 }
 
 ._LWmEJ3ddClfhUowkba_:hover {
@@ -1111,8 +1112,8 @@ input[type=range]::-ms-fill-lower {
 }
 
 .dark .border-color-63-131-248-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(63 131 248/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(63 131 248/var(--border-opacity))
 }
 
 .dark .border-color-transparent {
@@ -1120,18 +1121,18 @@ input[type=range]::-ms-fill-lower {
 }
 
 .dark .border-color-55-65-81-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(55 65 81/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(55 65 81/var(--border-opacity))
 }
 
 .dark .Hy7fSoMkW1_3XuxzLIXq {
-    --tw-border-opacity: 1;
-    border-color: rgb(31 41 55/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(31 41 55/var(--border-opacity))
 }
 
 .dark .background-color-31-41-55-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(31 41 55/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(31 41 55/var(--bg-opacity))
 }
 
 .dark .background-color-31-41-55-point-5 {
@@ -1139,47 +1140,47 @@ input[type=range]::-ms-fill-lower {
 }
 
 .dark .background-color-17-24-39-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(17 24 39/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(17 24 39/var(--bg-opacity))
 }
 
 .dark .background-opacity-0-point-8 {
-    --tw-bg-opacity: 0.8
+    --bg-opacity: 0.8
 }
 
 .dark .color-white-255-255-255-1 {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(255 255 255/var(--text-opacity))
 }
 
 .dark .color-156-163-175-1 {
-    --tw-text-opacity: 1;
-    color: rgb(156 163 175/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(156 163 175/var(--text-opacity))
 }
 
 .dark .color-63-131-248-1 {
-    --tw-text-opacity: 1;
-    color: rgb(63 131 248/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(63 131 248/var(--text-opacity))
 }
 
 .dark .GbuoIVQvgE1sPez3FB0O:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(31 41 55/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(31 41 55/var(--bg-opacity))
 }
 
 .dark .V2alIkRVl_uBQKfQTjue:hover {
-    --tw-text-opacity: 1;
-    color: rgb(63 131 248/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(63 131 248/var(--text-opacity))
 }
 
 .dark ._VCO84hOChxSw1A3KE3f:hover {
-    --tw-text-opacity: 1;
-    color: rgb(209 213 219/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(209 213 219/var(--text-opacity))
 }
 
 .dark .V6K1lgYle5x1_8j4in7F:hover {
-    --tw-text-opacity: 1;
-    color: rgb(229 231 235/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(229 231 235/var(--text-opacity))
 }
 
 @media (min-width: 640px) {
@@ -1217,203 +1218,203 @@ input[type=range]::-ms-fill-lower {
           </style>
         </head>
         <body>
-          <aside aria-label="Related articles" class="padding-lbottom-top-2-rem background-color-white-1 background-color-17-24-39-1 padding-bottom-top-4-rem">
-  <div class="padding-left-right-1-rem RV8RoaI_SlEMC5CEQ3ms jCISvWkW5oStPH6Wrb_H max-width-1280-px">
+          <aside aria-label="Related articles" class="py-8 background-color-white-1 background-color-17-24-39-1 padding-bottom-top-4-rem">
+  <div class="px-4 mx-auto w-full max-width-1280-px">
       <h2 class="_BTfre_DcBxkj7buMlKq _e063bssp_1bldcJ6kR0 font-weight-700 color-17-24-39-1 color-white-255-255-255-1">Trending on Flowbite</h2>
       <div id="animation-carousel" data-carousel="slide">
-          <div class="QYPW4nl6nHaIbrtaXf4h overflow-hidden border-radius-point-5-rem e5xUb0Xh20jUU1bzpat5">
+          <div class="QYPW4nl6nHaIbrtaXf4h overflow-hidden rounded-lg e5xUb0Xh20jUU1bzpat5">
               <div class="hide background-color-white-1 _rQfu5s_ozvMmIHvaipS sNk1Ftxlo5_azsr1wF3F background-color-17-24-39-1" data-carousel-item="">
-                  <div class="i0EfZzmTLElZVOble53D _i9FbfrBNYoFTPUHnAds Ced8tRkG1VjcbmNVdBtj hAFtnIdYDiO6M_67F11P _yVFMQjJHRhTCuZdvVB5">
-                      <article class="padding-1-rem RV8RoaI_SlEMC5CEQ3ms wfYeBrW4MRQzEZ3x_GDI background-color-white-1 border-radius-point-5-rem Z_eHUjNDQejPt5Nblzcx border-width-1-px border-color-229-231-235-1 Hy7fSoMkW1_3XuxzLIXq background-color-31-41-55-1 border-color-55-65-81-1">
+                  <div class="grid _i9FbfrBNYoFTPUHnAds gap-4 hAFtnIdYDiO6M_67F11P _yVFMQjJHRhTCuZdvVB5">
+                      <article class="padding-1-rem mx-auto wfYeBrW4MRQzEZ3x_GDI background-color-white-1 rounded-lg Z_eHUjNDQejPt5Nblzcx border border-color-229-231-235-1 Hy7fSoMkW1_3XuxzLIXq background-color-31-41-55-1 border-color-55-65-81-1">
                           <a href="#">
-                              <img class="zowa96dbBIC9HZMnkiFW border-radius-point-5-rem" src="/assets/office-laptops.png" alt="office laptop working">
+                              <img class="zowa96dbBIC9HZMnkiFW rounded-lg" src="/assets/office-laptops.png" alt="office laptop working">
                           </a>
-                          <div class="display-flex al-center cq1ij1EsUw0V2rrqeYEc rALiclNssVZsLNt7zOhR">
+                          <div class="display-flex items-center cq1ij1EsUw0V2rrqeYEc rALiclNssVZsLNt7zOhR">
                               <img class="width-2-rem _pwSRUXRHN5bHphyTRKz border-radius-9999-px" src="/assets/jese-leos.png" alt="Jese Leos avatar">
                               <div class="font-weight-500 color-white-255-255-255-1">
                                   <div>Jese Leos</div>
-                                  <div class="MxG1ClE4KPrIvlL5_Q5x font-weight-400 color-107-114-128-1 color-156-163-175-1">Aug 15, 2021 · 16 min read</div>
+                                  <div class="text-sm leading-5 font-weight-400 color-107-114-128-1 color-156-163-175-1">Aug 15, 2021 · 16 min read</div>
                               </div>
                           </div>
-                          <h3 class="rD4HtsUG_hahmbh2Kj09 uyo8h_4Kh1IoUwm8bwJI font-weight-700 letter-spacing-minu-point-025-em color-17-24-39-1 V08UEtft_yVfsj8mKvEE color-white-255-255-255-1">
+                          <h3 class="mb-2 text-xl leading-7 font-weight-700 letter-spacing-minu-point-025-em color-17-24-39-1 V08UEtft_yVfsj8mKvEE color-white-255-255-255-1">
                               <a href="#">Our first office</a>
                           </h3>
                           <p class="cq1ij1EsUw0V2rrqeYEc font-weight-300 color-107-114-128-1 color-156-163-175-1">Over the past year, Volosoft has undergone many changes! After months of preparation and some hard work, we moved to our new office.</p>
-                          <a href="#" class="display-in-flex al-center font-weight-500 text-primary-600 hover:text-primary-800 dark:text-primary-500 _LWmEJ3ddClfhUowkba_">
+                          <a href="#" class="inline-flex items-center font-weight-500 text-primary-600 hover:text-primary-800 dark:text-primary-500 _LWmEJ3ddClfhUowkba_">
                               Read more <svg class="Qb_iTGHfm9vYhcGcCMcV margin-left-point-25-rem width-1-rem height-1-rem" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                           </a>
                       </article>
-                      <article class="hide padding-1-rem RV8RoaI_SlEMC5CEQ3ms wfYeBrW4MRQzEZ3x_GDI background-color-white-1 border-radius-point-5-rem Z_eHUjNDQejPt5Nblzcx background-color-31-41-55-1 border-width-1-px border-color-229-231-235-1 Hy7fSoMkW1_3XuxzLIXq mVqi6z4YMC4_3WgpFYWB">
+                      <article class="hide padding-1-rem mx-auto wfYeBrW4MRQzEZ3x_GDI background-color-white-1 rounded-lg Z_eHUjNDQejPt5Nblzcx background-color-31-41-55-1 border border-color-229-231-235-1 Hy7fSoMkW1_3XuxzLIXq mVqi6z4YMC4_3WgpFYWB">
                           <a href="#">
-                              <img class="zowa96dbBIC9HZMnkiFW border-radius-point-5-rem" src="/assets/google-hq.png" alt="google hq">
+                              <img class="zowa96dbBIC9HZMnkiFW rounded-lg" src="/assets/google-hq.png" alt="google hq">
                           </a>
-                          <div class="display-flex al-center cq1ij1EsUw0V2rrqeYEc rALiclNssVZsLNt7zOhR">
+                          <div class="display-flex items-center cq1ij1EsUw0V2rrqeYEc rALiclNssVZsLNt7zOhR">
                               <img class="width-2-rem _pwSRUXRHN5bHphyTRKz border-radius-9999-px" src="/assets/roberta-casas.png" alt="Roberta Casas avatar">
                               <div class="font-weight-500 color-white-255-255-255-1">
                                   <div>Roberta Casas</div>
-                                  <div class="MxG1ClE4KPrIvlL5_Q5x font-weight-400 color-107-114-128-1 color-156-163-175-1">Aug 15, 2021 · 16 min read</div>
+                                  <div class="text-sm leading-5 font-weight-400 color-107-114-128-1 color-156-163-175-1">Aug 15, 2021 · 16 min read</div>
                               </div>
                           </div>
-                          <h3 class="rD4HtsUG_hahmbh2Kj09 uyo8h_4Kh1IoUwm8bwJI font-weight-700 letter-spacing-minu-point-025-em color-17-24-39-1 V08UEtft_yVfsj8mKvEE color-white-255-255-255-1">
+                          <h3 class="mb-2 text-xl leading-7 font-weight-700 letter-spacing-minu-point-025-em color-17-24-39-1 V08UEtft_yVfsj8mKvEE color-white-255-255-255-1">
                               <a href="#">We partnered up with Google</a>
                           </h3>
                           <p class="cq1ij1EsUw0V2rrqeYEc font-weight-300 color-107-114-128-1 color-156-163-175-1">Over the past year, Volosoft has undergone many changes! After months of preparation and some hard work, we moved to our new office.</p>
-                          <a href="#" class="display-in-flex al-center font-weight-500 text-primary-600 hover:text-primary-800 dark:text-primary-500 _LWmEJ3ddClfhUowkba_">
+                          <a href="#" class="inline-flex items-center font-weight-500 text-primary-600 hover:text-primary-800 dark:text-primary-500 _LWmEJ3ddClfhUowkba_">
                               Read more <svg class="Qb_iTGHfm9vYhcGcCMcV margin-left-point-25-rem width-1-rem height-1-rem" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                           </a>
                       </article>
-                      <article class="hide padding-1-rem RV8RoaI_SlEMC5CEQ3ms wfYeBrW4MRQzEZ3x_GDI background-color-white-1 border-radius-point-5-rem Z_eHUjNDQejPt5Nblzcx background-color-31-41-55-1 border-width-1-px border-color-229-231-235-1 Hy7fSoMkW1_3XuxzLIXq show">
+                      <article class="hide padding-1-rem mx-auto wfYeBrW4MRQzEZ3x_GDI background-color-white-1 rounded-lg Z_eHUjNDQejPt5Nblzcx background-color-31-41-55-1 border border-color-229-231-235-1 Hy7fSoMkW1_3XuxzLIXq show">
                           <a href="#">
-                              <img class="zowa96dbBIC9HZMnkiFW border-radius-point-5-rem" src="/assets/office-laptops-2.png" alt="office laptop working">
+                              <img class="zowa96dbBIC9HZMnkiFW rounded-lg" src="/assets/office-laptops-2.png" alt="office laptop working">
                           </a>
-                          <div class="display-flex al-center cq1ij1EsUw0V2rrqeYEc rALiclNssVZsLNt7zOhR">
+                          <div class="display-flex items-center cq1ij1EsUw0V2rrqeYEc rALiclNssVZsLNt7zOhR">
                               <img class="width-2-rem _pwSRUXRHN5bHphyTRKz border-radius-9999-px" src="/assets/sofia-mcguire.png" alt="Sofia McGuire avatar">
                               <div class="font-weight-500 color-white-255-255-255-1">
                                   <div>Sofia McGuire</div>
-                                  <div class="MxG1ClE4KPrIvlL5_Q5x font-weight-400 color-107-114-128-1 color-156-163-175-1">Aug 15, 2021 · 16 min read</div>
+                                  <div class="text-sm leading-5 font-weight-400 color-107-114-128-1 color-156-163-175-1">Aug 15, 2021 · 16 min read</div>
                               </div>
                           </div>
-                          <h3 class="rD4HtsUG_hahmbh2Kj09 uyo8h_4Kh1IoUwm8bwJI font-weight-700 letter-spacing-minu-point-025-em color-17-24-39-1 V08UEtft_yVfsj8mKvEE color-white-255-255-255-1">
+                          <h3 class="mb-2 text-xl leading-7 font-weight-700 letter-spacing-minu-point-025-em color-17-24-39-1 V08UEtft_yVfsj8mKvEE color-white-255-255-255-1">
                               <a href="#">Our first project with React</a>
                           </h3>
                           <p class="cq1ij1EsUw0V2rrqeYEc font-weight-300 color-107-114-128-1 color-156-163-175-1">Over the past year, Volosoft has undergone many changes! After months of preparation and some hard work, we moved to our new office.</p>
-                          <a href="#" class="display-in-flex al-center font-weight-500 text-primary-600 hover:text-primary-800 dark:text-primary-500 _LWmEJ3ddClfhUowkba_">
+                          <a href="#" class="inline-flex items-center font-weight-500 text-primary-600 hover:text-primary-800 dark:text-primary-500 _LWmEJ3ddClfhUowkba_">
                               Read more <svg class="Qb_iTGHfm9vYhcGcCMcV margin-left-point-25-rem width-1-rem height-1-rem" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                           </a>
                       </article>
                   </div>
               </div>
               <div class="hide background-color-white-1 _rQfu5s_ozvMmIHvaipS sNk1Ftxlo5_azsr1wF3F background-color-17-24-39-1" data-carousel-item="">
-                  <div class="i0EfZzmTLElZVOble53D _i9FbfrBNYoFTPUHnAds Ced8tRkG1VjcbmNVdBtj hAFtnIdYDiO6M_67F11P _yVFMQjJHRhTCuZdvVB5">
-                      <article class="padding-1-rem RV8RoaI_SlEMC5CEQ3ms wfYeBrW4MRQzEZ3x_GDI background-color-white-1 border-radius-point-5-rem Z_eHUjNDQejPt5Nblzcx background-color-31-41-55-1 border-width-1-px border-color-229-231-235-1 Hy7fSoMkW1_3XuxzLIXq">
+                  <div class="grid _i9FbfrBNYoFTPUHnAds gap-4 hAFtnIdYDiO6M_67F11P _yVFMQjJHRhTCuZdvVB5">
+                      <article class="padding-1-rem mx-auto wfYeBrW4MRQzEZ3x_GDI background-color-white-1 rounded-lg Z_eHUjNDQejPt5Nblzcx background-color-31-41-55-1 border border-color-229-231-235-1 Hy7fSoMkW1_3XuxzLIXq">
                           <a href="#">
-                              <img class="zowa96dbBIC9HZMnkiFW border-radius-point-5-rem" src="/assets/google-hq.png" alt="google hq">
+                              <img class="zowa96dbBIC9HZMnkiFW rounded-lg" src="/assets/google-hq.png" alt="google hq">
                           </a>
-                          <div class="display-flex al-center cq1ij1EsUw0V2rrqeYEc rALiclNssVZsLNt7zOhR">
+                          <div class="display-flex items-center cq1ij1EsUw0V2rrqeYEc rALiclNssVZsLNt7zOhR">
                               <img class="width-2-rem _pwSRUXRHN5bHphyTRKz border-radius-9999-px" src="/assets/roberta-casas.png" alt="Roberta Casas avatar">
                               <div class="font-weight-500 color-white-255-255-255-1">
                                   <div>Roberta Casas</div>
-                                  <div class="MxG1ClE4KPrIvlL5_Q5x font-weight-400 color-107-114-128-1 color-156-163-175-1">Aug 15, 2021 · 16 min read</div>
+                                  <div class="text-sm leading-5 font-weight-400 color-107-114-128-1 color-156-163-175-1">Aug 15, 2021 · 16 min read</div>
                               </div>
                           </div>
-                          <h3 class="rD4HtsUG_hahmbh2Kj09 uyo8h_4Kh1IoUwm8bwJI font-weight-700 letter-spacing-minu-point-025-em color-17-24-39-1 V08UEtft_yVfsj8mKvEE color-white-255-255-255-1">
+                          <h3 class="mb-2 text-xl leading-7 font-weight-700 letter-spacing-minu-point-025-em color-17-24-39-1 V08UEtft_yVfsj8mKvEE color-white-255-255-255-1">
                               <a href="#">We partnered up with Google</a>
                           </h3>
                           <p class="cq1ij1EsUw0V2rrqeYEc font-weight-300 color-107-114-128-1 color-156-163-175-1">Over the past year, Volosoft has undergone many changes! After months of preparation and some hard work, we moved to our new office.</p>
-                          <a href="#" class="display-in-flex al-center font-weight-500 text-primary-600 hover:text-primary-800 dark:text-primary-500 _LWmEJ3ddClfhUowkba_">
+                          <a href="#" class="inline-flex items-center font-weight-500 text-primary-600 hover:text-primary-800 dark:text-primary-500 _LWmEJ3ddClfhUowkba_">
                               Read more <svg class="Qb_iTGHfm9vYhcGcCMcV margin-left-point-25-rem width-1-rem height-1-rem" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                           </a>
                       </article>
-                      <article class="hide padding-1-rem RV8RoaI_SlEMC5CEQ3ms wfYeBrW4MRQzEZ3x_GDI background-color-white-1 border-radius-point-5-rem Z_eHUjNDQejPt5Nblzcx background-color-31-41-55-1 border-width-1-px border-color-229-231-235-1 Hy7fSoMkW1_3XuxzLIXq mVqi6z4YMC4_3WgpFYWB">
+                      <article class="hide padding-1-rem mx-auto wfYeBrW4MRQzEZ3x_GDI background-color-white-1 rounded-lg Z_eHUjNDQejPt5Nblzcx background-color-31-41-55-1 border border-color-229-231-235-1 Hy7fSoMkW1_3XuxzLIXq mVqi6z4YMC4_3WgpFYWB">
                           <a href="#">
-                              <img class="zowa96dbBIC9HZMnkiFW border-radius-point-5-rem" src="/assets/office-laptops.png" alt="office laptop working">
+                              <img class="zowa96dbBIC9HZMnkiFW rounded-lg" src="/assets/office-laptops.png" alt="office laptop working">
                           </a>
-                          <div class="display-flex al-center cq1ij1EsUw0V2rrqeYEc rALiclNssVZsLNt7zOhR">
+                          <div class="display-flex items-center cq1ij1EsUw0V2rrqeYEc rALiclNssVZsLNt7zOhR">
                               <img class="width-2-rem _pwSRUXRHN5bHphyTRKz border-radius-9999-px" src="/assets/jese-leos.png" alt="Jese Leos avatar">
                               <div class="font-weight-500 color-white-255-255-255-1">
                                   <div>Jese Leos</div>
-                                  <div class="MxG1ClE4KPrIvlL5_Q5x font-weight-400 color-107-114-128-1 color-156-163-175-1">Aug 15, 2021 · 16 min read</div>
+                                  <div class="text-sm leading-5 font-weight-400 color-107-114-128-1 color-156-163-175-1">Aug 15, 2021 · 16 min read</div>
                               </div>
                           </div>
-                          <h3 class="rD4HtsUG_hahmbh2Kj09 uyo8h_4Kh1IoUwm8bwJI font-weight-700 letter-spacing-minu-point-025-em color-17-24-39-1 V08UEtft_yVfsj8mKvEE color-white-255-255-255-1">
+                          <h3 class="mb-2 text-xl leading-7 font-weight-700 letter-spacing-minu-point-025-em color-17-24-39-1 V08UEtft_yVfsj8mKvEE color-white-255-255-255-1">
                               <a href="#">Our first office</a>
                           </h3>
                           <p class="cq1ij1EsUw0V2rrqeYEc font-weight-300 color-107-114-128-1 color-156-163-175-1">Over the past year, Volosoft has undergone many changes! After months of preparation and some hard work, we moved to our new office.</p>
-                          <a href="#" class="display-in-flex al-center font-weight-500 text-primary-600 hover:text-primary-800 dark:text-primary-500 _LWmEJ3ddClfhUowkba_">
+                          <a href="#" class="inline-flex items-center font-weight-500 text-primary-600 hover:text-primary-800 dark:text-primary-500 _LWmEJ3ddClfhUowkba_">
                               Read more <svg class="Qb_iTGHfm9vYhcGcCMcV margin-left-point-25-rem width-1-rem height-1-rem" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                           </a>
                       </article>
-                      <article class="hide padding-1-rem RV8RoaI_SlEMC5CEQ3ms wfYeBrW4MRQzEZ3x_GDI background-color-white-1 border-radius-point-5-rem Z_eHUjNDQejPt5Nblzcx background-color-31-41-55-1 border-width-1-px border-color-229-231-235-1 Hy7fSoMkW1_3XuxzLIXq show">
+                      <article class="hide padding-1-rem mx-auto wfYeBrW4MRQzEZ3x_GDI background-color-white-1 rounded-lg Z_eHUjNDQejPt5Nblzcx background-color-31-41-55-1 border border-color-229-231-235-1 Hy7fSoMkW1_3XuxzLIXq show">
                           <a href="#">
-                              <img class="zowa96dbBIC9HZMnkiFW border-radius-point-5-rem" src="/assets/office-laptops-2.png" alt="office laptop working">
+                              <img class="zowa96dbBIC9HZMnkiFW rounded-lg" src="/assets/office-laptops-2.png" alt="office laptop working">
                           </a>
-                          <div class="display-flex al-center cq1ij1EsUw0V2rrqeYEc rALiclNssVZsLNt7zOhR">
+                          <div class="display-flex items-center cq1ij1EsUw0V2rrqeYEc rALiclNssVZsLNt7zOhR">
                               <img class="width-2-rem _pwSRUXRHN5bHphyTRKz border-radius-9999-px" src="/assets/sofia-mcguire.png" alt="Sofia McGuire avatar">
                               <div class="font-weight-500 color-white-255-255-255-1">
                                   <div>Sofia McGuire</div>
-                                  <div class="MxG1ClE4KPrIvlL5_Q5x font-weight-400 color-107-114-128-1 color-156-163-175-1">Aug 15, 2021 · 16 min read</div>
+                                  <div class="text-sm leading-5 font-weight-400 color-107-114-128-1 color-156-163-175-1">Aug 15, 2021 · 16 min read</div>
                               </div>
                           </div>
-                          <h3 class="rD4HtsUG_hahmbh2Kj09 uyo8h_4Kh1IoUwm8bwJI font-weight-700 letter-spacing-minu-point-025-em color-17-24-39-1 V08UEtft_yVfsj8mKvEE color-white-255-255-255-1">
+                          <h3 class="mb-2 text-xl leading-7 font-weight-700 letter-spacing-minu-point-025-em color-17-24-39-1 V08UEtft_yVfsj8mKvEE color-white-255-255-255-1">
                               <a href="#">Our first project with React</a>
                           </h3>
                           <p class="cq1ij1EsUw0V2rrqeYEc font-weight-300 color-107-114-128-1 color-156-163-175-1">Over the past year, Volosoft has undergone many changes! After months of preparation and some hard work, we moved to our new office.</p>
-                          <a href="#" class="display-in-flex al-center font-weight-500 text-primary-600 hover:text-primary-800 dark:text-primary-500 _LWmEJ3ddClfhUowkba_">
+                          <a href="#" class="inline-flex items-center font-weight-500 text-primary-600 hover:text-primary-800 dark:text-primary-500 _LWmEJ3ddClfhUowkba_">
                               Read more <svg class="Qb_iTGHfm9vYhcGcCMcV margin-left-point-25-rem width-1-rem height-1-rem" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                           </a>
                       </article>
                   </div>
               </div>
               <div class="hide background-color-white-1 _rQfu5s_ozvMmIHvaipS sNk1Ftxlo5_azsr1wF3F background-color-17-24-39-1" data-carousel-item="">
-                  <div class="i0EfZzmTLElZVOble53D _i9FbfrBNYoFTPUHnAds Ced8tRkG1VjcbmNVdBtj hAFtnIdYDiO6M_67F11P _yVFMQjJHRhTCuZdvVB5">
-                      <article class="padding-1-rem RV8RoaI_SlEMC5CEQ3ms wfYeBrW4MRQzEZ3x_GDI background-color-white-1 border-radius-point-5-rem Z_eHUjNDQejPt5Nblzcx background-color-31-41-55-1 border-width-1-px border-color-229-231-235-1 Hy7fSoMkW1_3XuxzLIXq">
+                  <div class="grid _i9FbfrBNYoFTPUHnAds gap-4 hAFtnIdYDiO6M_67F11P _yVFMQjJHRhTCuZdvVB5">
+                      <article class="padding-1-rem mx-auto wfYeBrW4MRQzEZ3x_GDI background-color-white-1 rounded-lg Z_eHUjNDQejPt5Nblzcx background-color-31-41-55-1 border border-color-229-231-235-1 Hy7fSoMkW1_3XuxzLIXq">
                           <a href="#">
-                              <img class="zowa96dbBIC9HZMnkiFW border-radius-point-5-rem" src="/assets/office-laptops-2.png" alt="office laptop working">
+                              <img class="zowa96dbBIC9HZMnkiFW rounded-lg" src="/assets/office-laptops-2.png" alt="office laptop working">
                           </a>
-                          <div class="display-flex al-center cq1ij1EsUw0V2rrqeYEc rALiclNssVZsLNt7zOhR">
+                          <div class="display-flex items-center cq1ij1EsUw0V2rrqeYEc rALiclNssVZsLNt7zOhR">
                               <img class="width-2-rem _pwSRUXRHN5bHphyTRKz border-radius-9999-px" src="/assets/sofia-mcguire.png" alt="Sofia McGuire avatar">
                               <div class="font-weight-500 color-white-255-255-255-1">
                                   <div>Sofia McGuire</div>
-                                  <div class="MxG1ClE4KPrIvlL5_Q5x font-weight-400 color-107-114-128-1 color-156-163-175-1">Aug 15, 2021 · 16 min read</div>
+                                  <div class="text-sm leading-5 font-weight-400 color-107-114-128-1 color-156-163-175-1">Aug 15, 2021 · 16 min read</div>
                               </div>
                           </div>
-                          <h3 class="rD4HtsUG_hahmbh2Kj09 uyo8h_4Kh1IoUwm8bwJI font-weight-700 letter-spacing-minu-point-025-em color-17-24-39-1 V08UEtft_yVfsj8mKvEE color-white-255-255-255-1">
+                          <h3 class="mb-2 text-xl leading-7 font-weight-700 letter-spacing-minu-point-025-em color-17-24-39-1 V08UEtft_yVfsj8mKvEE color-white-255-255-255-1">
                               <a href="#">Our first project with React</a>
                           </h3>
                           <p class="cq1ij1EsUw0V2rrqeYEc font-weight-300 color-107-114-128-1 color-156-163-175-1">Over the past year, Volosoft has undergone many changes! After months of preparation and some hard work, we moved to our new office.</p>
-                          <a href="#" class="display-in-flex al-center font-weight-500 text-primary-600 hover:text-primary-800 dark:text-primary-500 _LWmEJ3ddClfhUowkba_">
+                          <a href="#" class="inline-flex items-center font-weight-500 text-primary-600 hover:text-primary-800 dark:text-primary-500 _LWmEJ3ddClfhUowkba_">
                               Read more <svg class="Qb_iTGHfm9vYhcGcCMcV margin-left-point-25-rem width-1-rem height-1-rem" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                           </a>
                       </article>
-                      <article class="hide padding-1-rem RV8RoaI_SlEMC5CEQ3ms wfYeBrW4MRQzEZ3x_GDI background-color-white-1 border-radius-point-5-rem Z_eHUjNDQejPt5Nblzcx background-color-31-41-55-1 border-width-1-px border-color-229-231-235-1 Hy7fSoMkW1_3XuxzLIXq mVqi6z4YMC4_3WgpFYWB">
+                      <article class="hide padding-1-rem mx-auto wfYeBrW4MRQzEZ3x_GDI background-color-white-1 rounded-lg Z_eHUjNDQejPt5Nblzcx background-color-31-41-55-1 border border-color-229-231-235-1 Hy7fSoMkW1_3XuxzLIXq mVqi6z4YMC4_3WgpFYWB">
                           <a href="#">
-                              <img class="zowa96dbBIC9HZMnkiFW border-radius-point-5-rem" src="/assets/google-hq.png" alt="google hq">
+                              <img class="zowa96dbBIC9HZMnkiFW rounded-lg" src="/assets/google-hq.png" alt="google hq">
                           </a>
-                          <div class="display-flex al-center cq1ij1EsUw0V2rrqeYEc rALiclNssVZsLNt7zOhR">
+                          <div class="display-flex items-center cq1ij1EsUw0V2rrqeYEc rALiclNssVZsLNt7zOhR">
                               <img class="width-2-rem _pwSRUXRHN5bHphyTRKz border-radius-9999-px" src="/assets/roberta-casas.png" alt="Roberta Casas avatar">
                               <div class="font-weight-500 color-white-255-255-255-1">
                                   <div>Roberta Casas</div>
-                                  <div class="MxG1ClE4KPrIvlL5_Q5x font-weight-400 color-107-114-128-1 color-156-163-175-1">Aug 15, 2021 · 16 min read</div>
+                                  <div class="text-sm leading-5 font-weight-400 color-107-114-128-1 color-156-163-175-1">Aug 15, 2021 · 16 min read</div>
                               </div>
                           </div>
-                          <h3 class="rD4HtsUG_hahmbh2Kj09 uyo8h_4Kh1IoUwm8bwJI font-weight-700 letter-spacing-minu-point-025-em color-17-24-39-1 V08UEtft_yVfsj8mKvEE color-white-255-255-255-1">
+                          <h3 class="mb-2 text-xl leading-7 font-weight-700 letter-spacing-minu-point-025-em color-17-24-39-1 V08UEtft_yVfsj8mKvEE color-white-255-255-255-1">
                               <a href="#">We partnered up with Google</a>
                           </h3>
                           <p class="cq1ij1EsUw0V2rrqeYEc font-weight-300 color-107-114-128-1 color-156-163-175-1">Over the past year, Volosoft has undergone many changes! After months of preparation and some hard work, we moved to our new office.</p>
-                          <a href="#" class="display-in-flex al-center font-weight-500 text-primary-600 hover:text-primary-800 dark:text-primary-500 _LWmEJ3ddClfhUowkba_">
+                          <a href="#" class="inline-flex items-center font-weight-500 text-primary-600 hover:text-primary-800 dark:text-primary-500 _LWmEJ3ddClfhUowkba_">
                               Read more <svg class="Qb_iTGHfm9vYhcGcCMcV margin-left-point-25-rem width-1-rem height-1-rem" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                           </a>
                       </article>
-                      <article class="hide padding-1-rem RV8RoaI_SlEMC5CEQ3ms wfYeBrW4MRQzEZ3x_GDI background-color-white-1 border-radius-point-5-rem Z_eHUjNDQejPt5Nblzcx background-color-31-41-55-1 border-width-1-px border-color-229-231-235-1 Hy7fSoMkW1_3XuxzLIXq show">
+                      <article class="hide padding-1-rem mx-auto wfYeBrW4MRQzEZ3x_GDI background-color-white-1 rounded-lg Z_eHUjNDQejPt5Nblzcx background-color-31-41-55-1 border border-color-229-231-235-1 Hy7fSoMkW1_3XuxzLIXq show">
                           <a href="#">
-                              <img class="zowa96dbBIC9HZMnkiFW border-radius-point-5-rem" src="/assets/office-laptops.png" alt="office laptop working">
+                              <img class="zowa96dbBIC9HZMnkiFW rounded-lg" src="/assets/office-laptops.png" alt="office laptop working">
                           </a>
-                          <div class="display-flex al-center cq1ij1EsUw0V2rrqeYEc rALiclNssVZsLNt7zOhR">
+                          <div class="display-flex items-center cq1ij1EsUw0V2rrqeYEc rALiclNssVZsLNt7zOhR">
                               <img class="width-2-rem _pwSRUXRHN5bHphyTRKz border-radius-9999-px" src="/assets/jese-leos.png" alt="Jese Leos avatar">
                               <div class="font-weight-500 color-white-255-255-255-1">
                                   <div>Jese Leos</div>
-                                  <div class="MxG1ClE4KPrIvlL5_Q5x font-weight-400 color-107-114-128-1 color-156-163-175-1">Aug 15, 2021 · 16 min read</div>
+                                  <div class="text-sm leading-5 font-weight-400 color-107-114-128-1 color-156-163-175-1">Aug 15, 2021 · 16 min read</div>
                               </div>
                           </div>
-                          <h3 class="rD4HtsUG_hahmbh2Kj09 uyo8h_4Kh1IoUwm8bwJI font-weight-700 letter-spacing-minu-point-025-em color-17-24-39-1 V08UEtft_yVfsj8mKvEE color-white-255-255-255-1">
+                          <h3 class="mb-2 text-xl leading-7 font-weight-700 letter-spacing-minu-point-025-em color-17-24-39-1 V08UEtft_yVfsj8mKvEE color-white-255-255-255-1">
                               <a href="#">Our first office</a>
                           </h3>
                           <p class="cq1ij1EsUw0V2rrqeYEc font-weight-300 color-107-114-128-1 color-156-163-175-1">Over the past year, Volosoft has undergone many changes! After months of preparation and some hard work, we moved to our new office.</p>
-                          <a href="#" class="display-in-flex al-center font-weight-500 text-primary-600 hover:text-primary-800 dark:text-primary-500 _LWmEJ3ddClfhUowkba_">
+                          <a href="#" class="inline-flex items-center font-weight-500 text-primary-600 hover:text-primary-800 dark:text-primary-500 _LWmEJ3ddClfhUowkba_">
                               Read more <svg class="Qb_iTGHfm9vYhcGcCMcV margin-left-point-25-rem width-1-rem height-1-rem" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                           </a>
                       </article>
                   </div>
               </div>
           </div>
-          <div class="display-flex jc-center al-center RUJLlQh9QthRacqdXl3i">
-              <button type="button" class="display-flex jc-center al-center _ryfipzijJEI18CFfJIm j34KztD3SBxL_tQWzosr cursor-pointer group qHIOIw8TObHgD3VvKa5x" data-carousel-prev="">
+          <div class="display-flex jc-center items-center RUJLlQh9QthRacqdXl3i">
+              <button type="button" class="display-flex jc-center items-center _ryfipzijJEI18CFfJIm j34KztD3SBxL_tQWzosr cursor-pointer group qHIOIw8TObHgD3VvKa5x" data-carousel-prev="">
                   <span class="color-107-114-128-1 color-156-163-175-1 WvrFEtphYDYX1sAkd4TH V6K1lgYle5x1_8j4in7F">
                       <svg class="HMfQov_yvpcryT2VjE29 fGULyrX3v9TS2am2Wk6K" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
                       <span class="hide">Previous</span>
                   </span>
               </button>
-              <button type="button" class="display-flex jc-center al-center j34KztD3SBxL_tQWzosr cursor-pointer group qHIOIw8TObHgD3VvKa5x" data-carousel-next="">
+              <button type="button" class="display-flex jc-center items-center j34KztD3SBxL_tQWzosr cursor-pointer group qHIOIw8TObHgD3VvKa5x" data-carousel-next="">
                   <span class="color-107-114-128-1 color-156-163-175-1 WvrFEtphYDYX1sAkd4TH V6K1lgYle5x1_8j4in7F">
                       <svg class="HMfQov_yvpcryT2VjE29 fGULyrX3v9TS2am2Wk6K" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                       <span class="hide">Next</span>

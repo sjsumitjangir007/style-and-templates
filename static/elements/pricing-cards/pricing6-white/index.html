@@ -34,7 +34,7 @@
 }
 
 :after,:before {
-    --tw-content: ""
+    --content: ""
 }
 
 html {
@@ -216,7 +216,7 @@ img,video {
 }
 
 [multiple],[type=date],[type=datetime-local],[type=email],[type=month],[type=number],[type=password],[type=search],[type=tel],[type=text],[type=time],[type=url],[type=week],select,textarea {
-    --tw-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -230,14 +230,14 @@ img,video {
 }
 
 [multiple]:focus,[type=date]:focus,[type=datetime-local]:focus,[type=email]:focus,[type=month]:focus,[type=number]:focus,[type=password]:focus,[type=search]:focus,[type=tel]:focus,[type=text]:focus,[type=time]:focus,[type=url]:focus,[type=week]:focus,select:focus,textarea:focus {
-    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: #1c64f2;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    --ring-inset: var(--empty,/*!*/ /*!*/);
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: #1c64f2;
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(1px + var(--ring-offset-width)) var(--ring-color);
     border-color: #1c64f2;
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow);
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -287,7 +287,7 @@ select {
 
 [type=checkbox],[type=radio] {
     color-adjust: exact;
-    --tw-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -318,13 +318,13 @@ select {
 }
 
 [type=checkbox]:focus,[type=radio]:focus {
-    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
-    --tw-ring-offset-width: 2px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: #1c64f2;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow);
+    --ring-inset: var(--empty,/*!*/ /*!*/);
+    --ring-offset-width: 2px;
+    --ring-offset-color: #fff;
+    --ring-color: #1c64f2;
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(2px + var(--ring-offset-width)) var(--ring-color);
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -422,11 +422,11 @@ input[type=range]:disabled::-webkit-slider-thumb {
 }
 
 input[type=range]:focus::-webkit-slider-thumb {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-    --tw-ring-opacity: 1px;
-    --tw-ring-color: rgb(164 202 254/var(--tw-ring-opacity));
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(4px + var(--ring-offset-width)) var(--ring-color);
+    --ring-opacity: 1px;
+    --ring-color: rgb(164 202 254/var(--ring-opacity));
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow,0 0 #0000);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -460,7 +460,7 @@ input[type=range]::-ms-fill-lower {
     border-color: #d1d5db;
     border-radius: 9999px;
     border-width: 1px;
-    box-shadow: var(--tw-ring-inset) 0 0 0 calc(var(--tw-ring-offset-width)) var(--tw-ring-color);
+    box-shadow: var(--ring-inset) 0 0 0 calc(var(--ring-offset-width)) var(--ring-color);
     content: "";
     height: 1.25rem;
     left: .125rem;
@@ -486,48 +486,48 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
 }
 
 *,:after,:before {
-    --tw-translate-x: 0;
-    --tw-translate-y: 0;
-    --tw-rotate: 0;
-    --tw-skew-x: 0;
-    --tw-skew-y: 0;
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    --tw-pan-x: ;
-    --tw-pan-y: ;
-    --tw-pinch-zoom: ;
-    --tw-scroll-snap-strictness: proximity;
-    --tw-ordinal: ;
-    --tw-slashed-zero: ;
-    --tw-numeric-figure: ;
-    --tw-numeric-spacing: ;
-    --tw-numeric-fraction: ;
-    --tw-ring-inset: ;
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: rgba(63,131,248,.5);
-    --tw-ring-offset-shadow: 0 0 #0000;
-    --tw-ring-shadow: 0 0 #0000;
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    --tw-blur: ;
-    --tw-brightness: ;
-    --tw-contrast: ;
-    --tw-grayscale: ;
-    --tw-hue-rotate: ;
-    --tw-invert: ;
-    --tw-saturate: ;
-    --tw-sepia: ;
-    --tw-drop-shadow: ;
-    --tw-backdrop-blur: ;
-    --tw-backdrop-brightness: ;
-    --tw-backdrop-contrast: ;
-    --tw-backdrop-grayscale: ;
-    --tw-backdrop-hue-rotate: ;
-    --tw-backdrop-invert: ;
-    --tw-backdrop-opacity: ;
-    --tw-backdrop-saturate: ;
-    --tw-backdrop-sepia:
+    --translate-x: 0;
+    --translate-y: 0;
+    --rotate: 0;
+    --skew-x: 0;
+    --skew-y: 0;
+    --scale-x: 1;
+    --scale-y: 1;
+    --pan-x: ;
+    --pan-y: ;
+    --pinch-zoom: ;
+    --scroll-snap-strictness: proximity;
+    --ordinal: ;
+    --slashed-zero: ;
+    --numeric-figure: ;
+    --numeric-spacing: ;
+    --numeric-fraction: ;
+    --ring-inset: ;
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: rgba(63,131,248,.5);
+    --ring-offset-shadow: 0 0 #0000;
+    --ring-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
+    --shadow-colored: 0 0 #0000;
+    --blur: ;
+    --brightness: ;
+    --contrast: ;
+    --grayscale: ;
+    --hue-rotate: ;
+    --invert: ;
+    --saturate: ;
+    --sepia: ;
+    --drop-shadow: ;
+    --backdrop-blur: ;
+    --backdrop-brightness: ;
+    --backdrop-contrast: ;
+    --backdrop-grayscale: ;
+    --backdrop-hue-rotate: ;
+    --backdrop-invert: ;
+    --backdrop-opacity: ;
+    --backdrop-saturate: ;
+    --backdrop-sepia:
 }
 
 .rec-clipper {
@@ -585,7 +585,7 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
     z-index: 40
 }
 
-.RV8RoaI_SlEMC5CEQ3ms {
+.mx-auto {
     margin-left: auto;
     margin-right: auto
 }
@@ -604,7 +604,7 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
     margin-bottom: 2rem
 }
 
-.margin-bottom-1-rem {
+.mb-4 {
     margin-bottom: 1rem
 }
 
@@ -612,7 +612,7 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
     margin-bottom: 1.25rem
 }
 
-.KgBTWt39fdiAC__YVNt8 {
+.mt-4 {
     margin-top: 1rem
 }
 
@@ -624,7 +624,7 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
     margin-left: .5rem
 }
 
-.rD4HtsUG_hahmbh2Kj09 {
+.mb-2 {
     margin-bottom: .5rem
 }
 
@@ -636,7 +636,7 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
     display: flex
 }
 
-.display-in-flex {
+.inline-flex {
     display: inline-flex
 }
 
@@ -644,7 +644,7 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
     display: table
 }
 
-.i0EfZzmTLElZVOble53D {
+.grid {
     display: grid
 }
 
@@ -685,31 +685,31 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
 }
 
 .panel-transform-toggle {
-    --tw-translate-x: -100%
+    --translate-x: -100%
 }
 
 ._txZr_XzKh1AA2GR58P5,.panel-transform-toggle {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    transform: translate(var(--translate-x),var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y))
 }
 
 ._txZr_XzKh1AA2GR58P5 {
-    --tw-translate-x: 100%
+    --translate-x: 100%
 }
 
 ._0PJkI8eA25FIbUKfI1v {
-    --tw-translate-x: 0px
+    --translate-x: 0px
 }
 
 .R4jqCxTOcV8d4zX2X0UZ,._0PJkI8eA25FIbUKfI1v {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    transform: translate(var(--translate-x),var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y))
 }
 
 .R4jqCxTOcV8d4zX2X0UZ {
-    --tw-rotate: 180deg
+    --rotate: 180deg
 }
 
 .B_Mg78Zl0_AuSOcVLMGS {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    transform: translate(var(--translate-x),var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y))
 }
 
 .cursor-pointer {
@@ -732,7 +732,7 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
     align-items: flex-end
 }
 
-.al-center {
+.items-center {
     align-items: center
 }
 
@@ -753,22 +753,22 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
 }
 
 .not-hidden-margin-bottom-top-1-rem>:not([hidden])~:not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-bottom: calc(1rem*var(--tw-space-y-reverse));
-    margin-top: calc(1rem*(1 - var(--tw-space-y-reverse)))
+    --space-y-reverse: 0;
+    margin-bottom: calc(1rem*var(--space-y-reverse));
+    margin-top: calc(1rem*(1 - var(--space-y-reverse)))
 }
 
 .B1cgbA6Bb4LQo0qFJKck>:not([hidden])~:not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-left: calc(.75rem*(1 - var(--tw-space-x-reverse)));
-    margin-right: calc(.75rem*var(--tw-space-x-reverse))
+    --space-x-reverse: 0;
+    margin-left: calc(.75rem*(1 - var(--space-x-reverse)));
+    margin-right: calc(.75rem*var(--space-x-reverse))
 }
 
 .border-radius-9999-px {
     border-radius: 9999px
 }
 
-.border-radius-point-5-rem {
+.rounded-lg {
     border-radius: .5rem
 }
 
@@ -780,33 +780,33 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
     border-width: 2px
 }
 
-.border-width-1-px {
+.border {
     border-width: 1px
 }
 
 .border-color-28-100-242-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(28 100 242/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(28 100 242/var(--border-opacity))
 }
 
 .border-color-243-244-246-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(243 244 246/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(243 244 246/var(--border-opacity))
 }
 
 .border-color-229-231-235-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(229 231 235/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(229 231 235/var(--border-opacity))
 }
 
 .background-color-243-244-246-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(243 244 246/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(243 244 246/var(--bg-opacity))
 }
 
 .background-color-white-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--bg-opacity))
 }
 
 .background-color-hsla-0-0-per-100-per-point-5 {
@@ -814,44 +814,44 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
 }
 
 .background-color-17-24-39-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(17 24 39/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(17 24 39/var(--bg-opacity))
 }
 
 .vyuwQLkFO7jUAv3Xr23z {
-    --tw-bg-opacity: 1;
-    background-color: rgb(229 231 235/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(229 231 235/var(--bg-opacity))
 }
 
 .F6maSyXBC_uv_A_dciar {
-    --tw-bg-opacity: 0.5
+    --bg-opacity: 0.5
 }
 
 .rhHZLKCNkg6rp7jwfB1J {
     padding: 1.5rem
 }
 
-.padding-lbottom-top-2-rem {
+.py-8 {
     padding-bottom: 2rem;
     padding-top: 2rem
 }
 
-.padding-left-right-1-rem {
+.px-4 {
     padding-left: 1rem;
     padding-right: 1rem
 }
 
-.padding-left-right-1-point-25-rem {
+.px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem
 }
 
-.padding-bottom-top-point-625-rem {
+.py-2 {
     padding-bottom: .625rem;
     padding-top: .625rem
 }
 
-.padding-bottom-top-point-5-rem {
+.py-2 {
     padding-bottom: .5rem;
     padding-top: .5rem
 }
@@ -870,7 +870,7 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
     text-align: left
 }
 
-.text-align-center {
+.text-center {
     text-align: center
 }
 
@@ -894,7 +894,7 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
     line-height: 1
 }
 
-.MxG1ClE4KPrIvlL5_Q5x {
+.text-sm leading-5 {
     font-size: .875rem;
     line-height: 1.25rem
 }
@@ -916,23 +916,23 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
 }
 
 .color-17-24-39-1 {
-    --tw-text-opacity: 1;
-    color: rgb(17 24 39/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(17 24 39/var(--text-opacity))
 }
 
 .color-107-114-128-1 {
-    --tw-text-opacity: 1;
-    color: rgb(107 114 128/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(107 114 128/var(--text-opacity))
 }
 
 .color-28-100-242-1 {
-    --tw-text-opacity: 1;
-    color: rgb(28 100 242/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(28 100 242/var(--text-opacity))
 }
 
 .color-white-1 {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(255 255 255/var(--text-opacity))
 }
 
 ._WpI1448IA8LaTDAzPM8 {
@@ -949,17 +949,17 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
 }
 
 .lhxYQ_2y3sYNN3W1V_3q {
-    --tw-shadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px -1px rgba(0,0,0,.1);
-    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color),0 1px 2px -1px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)
+    --shadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px -1px rgba(0,0,0,.1);
+    --shadow-colored: 0 1px 3px 0 var(--shadow-color),0 1px 2px -1px var(--shadow-color);
+    box-shadow: var(--ring-offset-shadow,0 0 #0000),var(--ring-shadow,0 0 #0000),var(--shadow)
 }
 
 .ClETfzy1YZDVXhnOVdgH {
-    --tw-blur: blur(8px)
+    --blur: blur(8px)
 }
 
 .ClETfzy1YZDVXhnOVdgH,.__l7tEsuvTIL_QRvY8sk {
-    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+    filter: var(--blur) var(--brightness) var(--contrast) var(--grayscale) var(--hue-rotate) var(--invert) var(--saturate) var(--sepia) var(--drop-shadow)
 }
 
 .yvRWkoRx_Apshie5g15o {
@@ -979,44 +979,44 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
 }
 
 .eFVdWe3MNoaU5uHcs1ZL:hover {
-    --tw-border-opacity: 1;
-    border-color: rgb(209 213 219/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(209 213 219/var(--border-opacity))
 }
 
 .djld5jFcbPSy1YdGoI7k:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--bg-opacity))
 }
 
 .cp_PWZGFVjP9OYZEqyk5:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(55 65 81/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(55 65 81/var(--bg-opacity))
 }
 
 ._be7gCNOq8vw6dPtYNE0:hover {
-    --tw-text-opacity: 1;
-    color: rgb(28 100 242/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(28 100 242/var(--text-opacity))
 }
 
 .__3D_PX_oiQ5jff3N7d8:hover {
-    --tw-text-opacity: 1;
-    color: rgb(75 85 99/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(75 85 99/var(--text-opacity))
 }
 
 ._FONMPVaCsLFJJGDaaIL:focus {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(4px + var(--ring-offset-width)) var(--ring-color);
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow,0 0 #0000)
 }
 
 ._bKyZ1er5YE_NnrwOCm9:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgb(229 231 235/var(--tw-ring-opacity))
+    --ring-opacity: 1;
+    --ring-color: rgb(229 231 235/var(--ring-opacity))
 }
 
 .dark .border-color-63-131-248-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(63 131 248/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(63 131 248/var(--border-opacity))
 }
 
 .dark .border-color-transparent {
@@ -1024,13 +1024,13 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
 }
 
 .dark .border-color-55-65-81-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(55 65 81/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(55 65 81/var(--border-opacity))
 }
 
 .dark .background-color-31-41-55-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(31 41 55/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(31 41 55/var(--bg-opacity))
 }
 
 .dark .background-color-31-41-55-point-5 {
@@ -1038,62 +1038,62 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
 }
 
 .dark .background-color-17-24-39-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(17 24 39/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(17 24 39/var(--bg-opacity))
 }
 
 .dark .background-color-55-65-81-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(55 65 81/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(55 65 81/var(--bg-opacity))
 }
 
 .dark ._uoTEG_CU7r6UxI59Mw4 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(75 85 99/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(75 85 99/var(--bg-opacity))
 }
 
 .dark .background-opacity-0-point-8 {
-    --tw-bg-opacity: 0.8
+    --bg-opacity: 0.8
 }
 
 .dark .color-white-255-255-255-1 {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(255 255 255/var(--text-opacity))
 }
 
 .dark .color-156-163-175-1 {
-    --tw-text-opacity: 1;
-    color: rgb(156 163 175/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(156 163 175/var(--text-opacity))
 }
 
 .dark .color-63-131-248-1 {
-    --tw-text-opacity: 1;
-    color: rgb(63 131 248/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(63 131 248/var(--text-opacity))
 }
 
 .dark .GbuoIVQvgE1sPez3FB0O:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(31 41 55/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(31 41 55/var(--bg-opacity))
 }
 
 .dark .bZKhCKcJzh50OYdd2QVr:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(107 114 128/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(107 114 128/var(--bg-opacity))
 }
 
 .dark .V2alIkRVl_uBQKfQTjue:hover {
-    --tw-text-opacity: 1;
-    color: rgb(63 131 248/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(63 131 248/var(--text-opacity))
 }
 
 .dark ._VCO84hOChxSw1A3KE3f:hover {
-    --tw-text-opacity: 1;
-    color: rgb(209 213 219/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(209 213 219/var(--text-opacity))
 }
 
 .dark .P53YJBBtllZv8_nFHFHW:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgb(75 85 99/var(--tw-ring-opacity))
+    --ring-opacity: 1;
+    --ring-color: rgb(75 85 99/var(--ring-opacity))
 }
 
 @media (min-width: 640px) {
@@ -1113,7 +1113,7 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
         margin-bottom:3rem
     }
 
-    .padding-left-right-1-point-5-rem {
+    .px-6 {
         padding-left: 1.5rem;
         padding-right: 1.5rem
     }
@@ -1141,17 +1141,17 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
         </head>
         <body>
           <section class="background-color-white-1 background-color-17-24-39-1">
-  <div class="padding-lbottom-top-2-rem padding-left-right-1-rem RV8RoaI_SlEMC5CEQ3ms max-width-1280-px IBnFXMOXF1_c25AC5s9x padding-left-right-1-point-5-rem">
-      <div class="RV8RoaI_SlEMC5CEQ3ms max-width-768-px text-align-center _BTfre_DcBxkj7buMlKq UQG9UVQJe8Lmwqvo0kfd">
-          <h2 class="margin-bottom-1-rem _Bu4HL5sPDOGN_IKUsOc letter-spacing-minu-point-025-em font-weight-800 color-17-24-39-1 color-white-255-255-255-1">Designed for business teams like yours</h2>
+  <div class="py-8 px-4 mx-auto max-width-1280-px IBnFXMOXF1_c25AC5s9x px-6">
+      <div class="mx-auto max-width-768-px text-center _BTfre_DcBxkj7buMlKq UQG9UVQJe8Lmwqvo0kfd">
+          <h2 class="mb-4 _Bu4HL5sPDOGN_IKUsOc letter-spacing-minu-point-025-em font-weight-800 color-17-24-39-1 color-white-255-255-255-1">Designed for business teams like yours</h2>
           <p class="zowa96dbBIC9HZMnkiFW font-weight-300 color-107-114-128-1 HUVIJuZ9QnvurQq0NDcX color-156-163-175-1">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
-          <div class="display-flex jc-center al-center">
+          <div class="display-flex jc-center items-center">
               <span class="osxEM2eQc4Pc_arzCZsv font-weight-500 color-17-24-39-1 color-white-255-255-255-1">
                 Monthly
               </span>
               <!-- Switch Container -->
               <div>
-                <label for="toggle-example" class="display-flex QYPW4nl6nHaIbrtaXf4h al-center KmicKCo2aIIAJvfPPnrM cursor-pointer">
+                <label for="toggle-example" class="display-flex QYPW4nl6nHaIbrtaXf4h items-center KmicKCo2aIIAJvfPPnrM cursor-pointer">
                   <input type="checkbox" id="toggle-example" class="rec-clipper">
                   <div class="ypyUJHicDkra304ep7aN _XD2a764x49B1E2F9f8X vyuwQLkFO7jUAv3Xr23z border-radius-9999-px bQPRusdUv2Wr50Lq2KOG border-color-229-231-235-1 QCmsfcdBlgf_hEzo7s4Z background-color-55-65-81-1 border-color-55-65-81-1"></div>
                 </label>
@@ -1161,55 +1161,55 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
               </span>
           </div>
       </div>
-      <div class="i0EfZzmTLElZVOble53D gap-2-rem _yVFMQjJHRhTCuZdvVB5 YHDvP3ICYghqxr_qBeMC">
+      <div class="grid gap-2-rem _yVFMQjJHRhTCuZdvVB5 YHDvP3ICYghqxr_qBeMC">
           <!-- Pricing Card -->
-          <div class="display-flex flex-direction-column rhHZLKCNkg6rp7jwfB1J RV8RoaI_SlEMC5CEQ3ms kGhDh7KA3u9kW8Wcdi48 text-align-center background-color-white-1 border-radius-point-5-rem border-width-1-px border-color-229-231-235-1 lhxYQ_2y3sYNN3W1V_3q IkPgn4A3wHy1Acru69m5 border-color-55-65-81-1 background-color-31-41-55-1 pL0DwyXi_ZrIdI9U6ppa">
-              <h3 class="margin-bottom-1-rem _e063bssp_1bldcJ6kR0 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Starter</h3>
+          <div class="display-flex flex-direction-column rhHZLKCNkg6rp7jwfB1J mx-auto kGhDh7KA3u9kW8Wcdi48 text-center background-color-white-1 rounded-lg border border-color-229-231-235-1 lhxYQ_2y3sYNN3W1V_3q IkPgn4A3wHy1Acru69m5 border-color-55-65-81-1 background-color-31-41-55-1 pL0DwyXi_ZrIdI9U6ppa">
+              <h3 class="mb-4 _e063bssp_1bldcJ6kR0 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Starter</h3>
               <span class="g_WzHOC8DoCX2dG4ENfX font-weight-800 color-17-24-39-1 color-white-255-255-255-1">$29</span>
-              <p class="KgBTWt39fdiAC__YVNt8 RSigS__XSy90w_LER1Bw color-107-114-128-1 text-light color-156-163-175-1">$19 USD per month, paid annually</p>
-              <a href="#" class="display-in-flex jc-center al-center font-weight-500 text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700">
+              <p class="mt-4 RSigS__XSy90w_LER1Bw color-107-114-128-1 text-light color-156-163-175-1">$19 USD per month, paid annually</p>
+              <a href="#" class="inline-flex jc-center items-center font-weight-500 text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700">
                   Go to annual plan
                   <svg class="QGosQoeY76W_hWM2rgwJ width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
               </a>
-              <a href="#" class="color-white-1 background-color-17-24-39-1 cp_PWZGFVjP9OYZEqyk5 _FONMPVaCsLFJJGDaaIL _bKyZ1er5YE_NnrwOCm9 font-weight-500 border-radius-point-5-rem MxG1ClE4KPrIvlL5_Q5x padding-left-right-1-point-25-rem padding-bottom-top-point-625-rem text-align-center _irJB2dBcH9y_8QZZA5G _uoTEG_CU7r6UxI59Mw4 color-white-255-255-255-1 bZKhCKcJzh50OYdd2QVr P53YJBBtllZv8_nFHFHW">Get started</a>
+              <a href="#" class="color-white-1 background-color-17-24-39-1 cp_PWZGFVjP9OYZEqyk5 _FONMPVaCsLFJJGDaaIL _bKyZ1er5YE_NnrwOCm9 font-weight-500 rounded-lg text-sm leading-5 px-5 py-2 text-center _irJB2dBcH9y_8QZZA5G _uoTEG_CU7r6UxI59Mw4 color-white-255-255-255-1 bZKhCKcJzh50OYdd2QVr P53YJBBtllZv8_nFHFHW">Get started</a>
               <!-- List -->
               <ul role="list" class="not-hidden-margin-bottom-top-1-rem text-align-left color-17-24-39-1 color-156-163-175-1">
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"></path><path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clip-rule="evenodd"></path></svg>
                       <span>All tools you need to manage payments</span>
                   </li>
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z" clip-rule="evenodd"></path></svg>
                       <span>No setup, monthly, or hidden fees</span>
                   </li>
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
                       <span>Comprehensive security</span>
                   </li>
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck color-107-114-128-1">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck color-107-114-128-1">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"></path></svg>
                       <span class="_WpI1448IA8LaTDAzPM8">Get hundreds of feature updates</span>
                   </li>
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck color-107-114-128-1">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck color-107-114-128-1">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd"></path></svg>
                       <span class="_WpI1448IA8LaTDAzPM8"> Payouts to your bank account</span>
                   </li>
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck color-107-114-128-1">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck color-107-114-128-1">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11 4a1 1 0 10-2 0v4a1 1 0 102 0V7zm-3 1a1 1 0 10-2 0v3a1 1 0 102 0V8zM8 9a1 1 0 00-2 0v2a1 1 0 102 0V9z" clip-rule="evenodd"></path></svg>
                       <span class="_WpI1448IA8LaTDAzPM8">Financial reconciliation and reporting</span>
                   </li>
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck color-107-114-128-1">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck color-107-114-128-1">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd"></path></svg>    
                       <span class="_WpI1448IA8LaTDAzPM8">24×7 phone, chat, and email support</span>
                   </li>
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck color-107-114-128-1">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck color-107-114-128-1">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z"></path></svg>
                       <span class="_WpI1448IA8LaTDAzPM8">Robust developer platform</span>
@@ -1217,56 +1217,56 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
               </ul>
           </div>
           <!-- Pricing Card -->
-          <div class="display-flex flex-direction-column rhHZLKCNkg6rp7jwfB1J RV8RoaI_SlEMC5CEQ3ms kGhDh7KA3u9kW8Wcdi48 text-align-center background-color-white-1 border-radius-point-5-rem border-width-1-px lhxYQ_2y3sYNN3W1V_3q IkPgn4A3wHy1Acru69m5 border-primary-600 background-color-31-41-55-1 pL0DwyXi_ZrIdI9U6ppa">
-              <div class="rD4HtsUG_hahmbh2Kj09">
-                  <span class="padding-bottom-top-point-25-rem padding-left-right-point-75-rem MxG1ClE4KPrIvlL5_Q5x text-primary-800 bg-primary-100 border-radius-point-25-rem dark:bg-primary-200 dark:text-primary-800">Most popular</span>
+          <div class="display-flex flex-direction-column rhHZLKCNkg6rp7jwfB1J mx-auto kGhDh7KA3u9kW8Wcdi48 text-center background-color-white-1 rounded-lg border lhxYQ_2y3sYNN3W1V_3q IkPgn4A3wHy1Acru69m5 border-primary-600 background-color-31-41-55-1 pL0DwyXi_ZrIdI9U6ppa">
+              <div class="mb-2">
+                  <span class="padding-bottom-top-point-25-rem padding-left-right-point-75-rem text-sm leading-5 text-primary-800 bg-primary-100 border-radius-point-25-rem dark:bg-primary-200 dark:text-primary-800">Most popular</span>
               </div>
-              <h3 class="margin-bottom-1-rem _e063bssp_1bldcJ6kR0 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Premium</h3>
+              <h3 class="mb-4 _e063bssp_1bldcJ6kR0 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Premium</h3>
               <span class="g_WzHOC8DoCX2dG4ENfX font-weight-800 color-17-24-39-1 color-white-255-255-255-1">$199</span>
-              <p class="KgBTWt39fdiAC__YVNt8 RSigS__XSy90w_LER1Bw color-107-114-128-1 text-light color-156-163-175-1">$159 USD per month, paid annually</p>
-              <a href="#" class="display-in-flex jc-center al-center font-weight-500 text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700">
+              <p class="mt-4 RSigS__XSy90w_LER1Bw color-107-114-128-1 text-light color-156-163-175-1">$159 USD per month, paid annually</p>
+              <a href="#" class="inline-flex jc-center items-center font-weight-500 text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700">
                   Go to annual plan
                   <svg class="QGosQoeY76W_hWM2rgwJ width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
               </a>
-              <a href="#" class="color-white-1 bg-primary-600 hover:bg-primary-700 _FONMPVaCsLFJJGDaaIL focus:ring-primary-200 dark:focus:ring-primary-900 font-weight-500 border-radius-point-5-rem MxG1ClE4KPrIvlL5_Q5x padding-left-right-1-point-25-rem padding-bottom-top-point-625-rem text-align-center _irJB2dBcH9y_8QZZA5G">Get started</a>
+              <a href="#" class="color-white-1 bg-primary-600 hover:bg-primary-700 _FONMPVaCsLFJJGDaaIL focus:ring-primary-200 dark:focus:ring-primary-900 font-weight-500 rounded-lg text-sm leading-5 px-5 py-2 text-center _irJB2dBcH9y_8QZZA5G">Get started</a>
               <!-- List -->
               <ul role="list" class="not-hidden-margin-bottom-top-1-rem text-align-left color-17-24-39-1 color-156-163-175-1">
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"></path><path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clip-rule="evenodd"></path></svg>
                       <span>All tools you need to manage payments</span>
                   </li>
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z" clip-rule="evenodd"></path></svg>
                       <span>No setup, monthly, or hidden fees</span>
                   </li>
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
                       <span>Comprehensive security</span>
                   </li>
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"></path></svg>
                       <span>Get hundreds of feature updates</span>
                   </li>
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd"></path></svg>
                       <span> Payouts to your bank account</span>
                   </li>
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck color-107-114-128-1">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck color-107-114-128-1">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11 4a1 1 0 10-2 0v4a1 1 0 102 0V7zm-3 1a1 1 0 10-2 0v3a1 1 0 102 0V8zM8 9a1 1 0 00-2 0v2a1 1 0 102 0V9z" clip-rule="evenodd"></path></svg>
                       <span class="_WpI1448IA8LaTDAzPM8">Financial reconciliation and reporting</span>
                   </li>
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck color-107-114-128-1">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck color-107-114-128-1">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd"></path></svg>    
                       <span class="_WpI1448IA8LaTDAzPM8">24×7 phone, chat, and email support</span>
                   </li>
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck color-107-114-128-1">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck color-107-114-128-1">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z"></path></svg>
                       <span class="_WpI1448IA8LaTDAzPM8">Robust developer platform</span>
@@ -1274,53 +1274,53 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
               </ul>
           </div>
           <!-- Pricing Card -->
-          <div class="display-flex flex-direction-column rhHZLKCNkg6rp7jwfB1J RV8RoaI_SlEMC5CEQ3ms kGhDh7KA3u9kW8Wcdi48 text-align-center background-color-white-1 border-radius-point-5-rem border-width-1-px border-color-229-231-235-1 lhxYQ_2y3sYNN3W1V_3q IkPgn4A3wHy1Acru69m5 border-color-55-65-81-1 background-color-31-41-55-1 pL0DwyXi_ZrIdI9U6ppa">
-              <h3 class="margin-bottom-1-rem _e063bssp_1bldcJ6kR0 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Enterprise</h3>
+          <div class="display-flex flex-direction-column rhHZLKCNkg6rp7jwfB1J mx-auto kGhDh7KA3u9kW8Wcdi48 text-center background-color-white-1 rounded-lg border border-color-229-231-235-1 lhxYQ_2y3sYNN3W1V_3q IkPgn4A3wHy1Acru69m5 border-color-55-65-81-1 background-color-31-41-55-1 pL0DwyXi_ZrIdI9U6ppa">
+              <h3 class="mb-4 _e063bssp_1bldcJ6kR0 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Enterprise</h3>
               <span class="g_WzHOC8DoCX2dG4ENfX font-weight-800 color-17-24-39-1 color-white-255-255-255-1">$599</span>
-              <p class="KgBTWt39fdiAC__YVNt8 RSigS__XSy90w_LER1Bw color-107-114-128-1 text-light color-156-163-175-1">$499 USD per month, paid annually</p>
-              <a href="#" class="display-in-flex jc-center al-center font-weight-500 text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700">
+              <p class="mt-4 RSigS__XSy90w_LER1Bw color-107-114-128-1 text-light color-156-163-175-1">$499 USD per month, paid annually</p>
+              <a href="#" class="inline-flex jc-center items-center font-weight-500 text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700">
                   Go to annual plan
                   <svg class="QGosQoeY76W_hWM2rgwJ width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
               </a>
-              <a href="#" class="color-white-1 background-color-17-24-39-1 cp_PWZGFVjP9OYZEqyk5 _FONMPVaCsLFJJGDaaIL _bKyZ1er5YE_NnrwOCm9 font-weight-500 border-radius-point-5-rem MxG1ClE4KPrIvlL5_Q5x padding-left-right-1-point-25-rem padding-bottom-top-point-625-rem text-align-center _irJB2dBcH9y_8QZZA5G _uoTEG_CU7r6UxI59Mw4 color-white-255-255-255-1 bZKhCKcJzh50OYdd2QVr P53YJBBtllZv8_nFHFHW">Get started</a>
+              <a href="#" class="color-white-1 background-color-17-24-39-1 cp_PWZGFVjP9OYZEqyk5 _FONMPVaCsLFJJGDaaIL _bKyZ1er5YE_NnrwOCm9 font-weight-500 rounded-lg text-sm leading-5 px-5 py-2 text-center _irJB2dBcH9y_8QZZA5G _uoTEG_CU7r6UxI59Mw4 color-white-255-255-255-1 bZKhCKcJzh50OYdd2QVr P53YJBBtllZv8_nFHFHW">Get started</a>
               <!-- List -->
               <ul role="list" class="not-hidden-margin-bottom-top-1-rem text-align-left color-17-24-39-1 color-156-163-175-1">
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"></path><path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clip-rule="evenodd"></path></svg>
                       <span>All tools you need to manage payments</span>
                   </li>
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z" clip-rule="evenodd"></path></svg>
                       <span>No setup, monthly, or hidden fees</span>
                   </li>
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
                       <span>Comprehensive security</span>
                   </li>
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"></path></svg>
                       <span>Get hundreds of feature updates</span>
                   </li>
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd"></path></svg>
                       <span> Payouts to your bank account</span>
                   </li>
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11 4a1 1 0 10-2 0v4a1 1 0 102 0V7zm-3 1a1 1 0 10-2 0v3a1 1 0 102 0V8zM8 9a1 1 0 00-2 0v2a1 1 0 102 0V9z" clip-rule="evenodd"></path></svg>
                       <span>Financial reconciliation and reporting</span>
                   </li>
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd"></path></svg>    
                       <span>24×7 phone, chat, and email support</span>
                   </li>
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z"></path></svg>
                       <span>Robust developer platform</span>

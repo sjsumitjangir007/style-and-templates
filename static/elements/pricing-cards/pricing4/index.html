@@ -34,7 +34,7 @@
 }
 
 :after,:before {
-    --tw-content: ""
+    --content: ""
 }
 
 html {
@@ -216,7 +216,7 @@ img,video {
 }
 
 [multiple],[type=date],[type=datetime-local],[type=email],[type=month],[type=number],[type=password],[type=search],[type=tel],[type=text],[type=time],[type=url],[type=week],select,textarea {
-    --tw-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -230,14 +230,14 @@ img,video {
 }
 
 [multiple]:focus,[type=date]:focus,[type=datetime-local]:focus,[type=email]:focus,[type=month]:focus,[type=number]:focus,[type=password]:focus,[type=search]:focus,[type=tel]:focus,[type=text]:focus,[type=time]:focus,[type=url]:focus,[type=week]:focus,select:focus,textarea:focus {
-    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: #1c64f2;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    --ring-inset: var(--empty,/*!*/ /*!*/);
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: #1c64f2;
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(1px + var(--ring-offset-width)) var(--ring-color);
     border-color: #1c64f2;
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow);
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -287,7 +287,7 @@ select {
 
 [type=checkbox],[type=radio] {
     color-adjust: exact;
-    --tw-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -318,13 +318,13 @@ select {
 }
 
 [type=checkbox]:focus,[type=radio]:focus {
-    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
-    --tw-ring-offset-width: 2px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: #1c64f2;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow);
+    --ring-inset: var(--empty,/*!*/ /*!*/);
+    --ring-offset-width: 2px;
+    --ring-offset-color: #fff;
+    --ring-color: #1c64f2;
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(2px + var(--ring-offset-width)) var(--ring-color);
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -422,11 +422,11 @@ input[type=range]:disabled::-webkit-slider-thumb {
 }
 
 input[type=range]:focus::-webkit-slider-thumb {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-    --tw-ring-opacity: 1px;
-    --tw-ring-color: rgb(164 202 254/var(--tw-ring-opacity));
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(4px + var(--ring-offset-width)) var(--ring-color);
+    --ring-opacity: 1px;
+    --ring-color: rgb(164 202 254/var(--ring-opacity));
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow,0 0 #0000);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -456,51 +456,51 @@ input[type=range]::-ms-fill-lower {
 }
 
 *,:after,:before {
-    --tw-translate-x: 0;
-    --tw-translate-y: 0;
-    --tw-rotate: 0;
-    --tw-skew-x: 0;
-    --tw-skew-y: 0;
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    --tw-pan-x: ;
-    --tw-pan-y: ;
-    --tw-pinch-zoom: ;
-    --tw-scroll-snap-strictness: proximity;
-    --tw-ordinal: ;
-    --tw-slashed-zero: ;
-    --tw-numeric-figure: ;
-    --tw-numeric-spacing: ;
-    --tw-numeric-fraction: ;
-    --tw-ring-inset: ;
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: rgba(63,131,248,.5);
-    --tw-ring-offset-shadow: 0 0 #0000;
-    --tw-ring-shadow: 0 0 #0000;
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    --tw-blur: ;
-    --tw-brightness: ;
-    --tw-contrast: ;
-    --tw-grayscale: ;
-    --tw-hue-rotate: ;
-    --tw-invert: ;
-    --tw-saturate: ;
-    --tw-sepia: ;
-    --tw-drop-shadow: ;
-    --tw-backdrop-blur: ;
-    --tw-backdrop-brightness: ;
-    --tw-backdrop-contrast: ;
-    --tw-backdrop-grayscale: ;
-    --tw-backdrop-hue-rotate: ;
-    --tw-backdrop-invert: ;
-    --tw-backdrop-opacity: ;
-    --tw-backdrop-saturate: ;
-    --tw-backdrop-sepia:
+    --translate-x: 0;
+    --translate-y: 0;
+    --rotate: 0;
+    --skew-x: 0;
+    --skew-y: 0;
+    --scale-x: 1;
+    --scale-y: 1;
+    --pan-x: ;
+    --pan-y: ;
+    --pinch-zoom: ;
+    --scroll-snap-strictness: proximity;
+    --ordinal: ;
+    --slashed-zero: ;
+    --numeric-figure: ;
+    --numeric-spacing: ;
+    --numeric-fraction: ;
+    --ring-inset: ;
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: rgba(63,131,248,.5);
+    --ring-offset-shadow: 0 0 #0000;
+    --ring-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
+    --shadow-colored: 0 0 #0000;
+    --blur: ;
+    --brightness: ;
+    --contrast: ;
+    --grayscale: ;
+    --hue-rotate: ;
+    --invert: ;
+    --saturate: ;
+    --sepia: ;
+    --drop-shadow: ;
+    --backdrop-blur: ;
+    --backdrop-brightness: ;
+    --backdrop-contrast: ;
+    --backdrop-grayscale: ;
+    --backdrop-hue-rotate: ;
+    --backdrop-invert: ;
+    --backdrop-opacity: ;
+    --backdrop-saturate: ;
+    --backdrop-sepia:
 }
 
-.RV8RoaI_SlEMC5CEQ3ms {
+.mx-auto {
     margin-left: auto;
     margin-right: auto
 }
@@ -510,7 +510,7 @@ input[type=range]::-ms-fill-lower {
     margin-top: 1.25rem
 }
 
-.margin-bottom-1-rem {
+.mb-4 {
     margin-bottom: 1rem
 }
 
@@ -526,7 +526,7 @@ input[type=range]::-ms-fill-lower {
     margin-bottom: .25rem
 }
 
-.rD4HtsUG_hahmbh2Kj09 {
+.mb-2 {
     margin-bottom: .5rem
 }
 
@@ -538,7 +538,7 @@ input[type=range]::-ms-fill-lower {
     display: flex
 }
 
-.i0EfZzmTLElZVOble53D {
+.grid {
     display: grid
 }
 
@@ -582,7 +582,7 @@ input[type=range]::-ms-fill-lower {
     flex-direction: column
 }
 
-.al-center {
+.items-center {
     align-items: center
 }
 
@@ -599,28 +599,28 @@ input[type=range]::-ms-fill-lower {
 }
 
 .not-hidden-margin-bottom-top-1-rem>:not([hidden])~:not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-bottom: calc(1rem*var(--tw-space-y-reverse));
-    margin-top: calc(1rem*(1 - var(--tw-space-y-reverse)))
+    --space-y-reverse: 0;
+    margin-bottom: calc(1rem*var(--space-y-reverse));
+    margin-top: calc(1rem*(1 - var(--space-y-reverse)))
 }
 
 .U8OIvG_1p_1DjffaAMcq>:not([hidden])~:not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-left: calc(.625rem*(1 - var(--tw-space-x-reverse)));
-    margin-right: calc(.625rem*var(--tw-space-x-reverse))
+    --space-x-reverse: 0;
+    margin-left: calc(.625rem*(1 - var(--space-x-reverse)));
+    margin-right: calc(.625rem*var(--space-x-reverse))
 }
 
 .rALiclNssVZsLNt7zOhR>:not([hidden])~:not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-left: calc(.5rem*(1 - var(--tw-space-x-reverse)));
-    margin-right: calc(.5rem*var(--tw-space-x-reverse))
+    --space-x-reverse: 0;
+    margin-left: calc(.5rem*(1 - var(--space-x-reverse)));
+    margin-right: calc(.5rem*var(--space-x-reverse))
 }
 
 .border-radius-point-25-rem {
     border-radius: .25rem
 }
 
-.border-radius-point-5-rem {
+.rounded-lg {
     border-radius: .5rem
 }
 
@@ -629,45 +629,45 @@ input[type=range]::-ms-fill-lower {
 }
 
 .border-color-229-231-235-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(229 231 235/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(229 231 235/var(--border-opacity))
 }
 
 .background-color-white-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--bg-opacity))
 }
 
 .rhHZLKCNkg6rp7jwfB1J {
     padding: 1.5rem
 }
 
-.padding-lbottom-top-2-rem {
+.py-8 {
     padding-bottom: 2rem;
     padding-top: 2rem
 }
 
-.padding-left-right-1-rem {
+.px-4 {
     padding-left: 1rem;
     padding-right: 1rem
 }
 
-.padding-left-right-1-point-25-rem {
+.px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem
 }
 
-.padding-bottom-top-point-625-rem {
+.py-2 {
     padding-bottom: .625rem;
     padding-top: .625rem
 }
 
-.padding-bottom-top-point-5-rem {
+.py-2 {
     padding-bottom: .5rem;
     padding-top: .5rem
 }
 
-.text-align-center {
+.text-center {
     text-align: center
 }
 
@@ -676,7 +676,7 @@ input[type=range]::-ms-fill-lower {
     line-height: 2.5rem
 }
 
-.uyo8h_4Kh1IoUwm8bwJI {
+.text-xl leading-7 {
     font-size: 1.25rem;
     line-height: 1.75rem
 }
@@ -691,7 +691,7 @@ input[type=range]::-ms-fill-lower {
     line-height: 1.75rem
 }
 
-.MxG1ClE4KPrIvlL5_Q5x {
+.text-sm leading-5 {
     font-size: .875rem;
     line-height: 1.25rem
 }
@@ -721,70 +721,70 @@ input[type=range]::-ms-fill-lower {
 }
 
 .color-107-114-128-1 {
-    --tw-text-opacity: 1;
-    color: rgb(107 114 128/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(107 114 128/var(--text-opacity))
 }
 
 .color-17-24-39-1 {
-    --tw-text-opacity: 1;
-    color: rgb(17 24 39/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(17 24 39/var(--text-opacity))
 }
 
 .color-white-1 {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(255 255 255/var(--text-opacity))
 }
 
 .ew1_SdwkxzURPvHefr7i {
-    --tw-text-opacity: 1;
-    color: rgb(14 159 110/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(14 159 110/var(--text-opacity))
 }
 
 .lhxYQ_2y3sYNN3W1V_3q {
-    --tw-shadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px -1px rgba(0,0,0,.1);
-    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color),0 1px 2px -1px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)
+    --shadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px -1px rgba(0,0,0,.1);
+    --shadow-colored: 0 1px 3px 0 var(--shadow-color),0 1px 2px -1px var(--shadow-color);
+    box-shadow: var(--ring-offset-shadow,0 0 #0000),var(--ring-shadow,0 0 #0000),var(--shadow)
 }
 
 ._FONMPVaCsLFJJGDaaIL:focus {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(4px + var(--ring-offset-width)) var(--ring-color);
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow,0 0 #0000)
 }
 
 .dark .border-color-55-65-81-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(55 65 81/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(55 65 81/var(--border-opacity))
 }
 
 .dark .background-color-17-24-39-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(17 24 39/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(17 24 39/var(--bg-opacity))
 }
 
 .dark .background-color-55-65-81-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(55 65 81/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(55 65 81/var(--bg-opacity))
 }
 
 .dark .background-color-31-41-55-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(31 41 55/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(31 41 55/var(--bg-opacity))
 }
 
 .dark .color-white-255-255-255-1 {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(255 255 255/var(--text-opacity))
 }
 
 .dark .color-156-163-175-1 {
-    --tw-text-opacity: 1;
-    color: rgb(156 163 175/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(156 163 175/var(--text-opacity))
 }
 
 .dark .tyJFkpWRak_cMAHS46ky {
-    --tw-text-opacity: 1;
-    color: rgb(49 196 141/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(49 196 141/var(--text-opacity))
 }
 
 @media (min-width: 640px) {
@@ -797,9 +797,9 @@ input[type=range]::-ms-fill-lower {
     }
 
     ._rT9gacXyvSO1fCjLFak>:not([hidden])~:not([hidden]) {
-        --tw-space-y-reverse: 0;
-        margin-bottom: calc(0px*var(--tw-space-y-reverse));
-        margin-top: calc(0px*(1 - var(--tw-space-y-reverse)))
+        --space-y-reverse: 0;
+        margin-bottom: calc(0px*var(--space-y-reverse));
+        margin-top: calc(0px*(1 - var(--space-y-reverse)))
     }
 
     .MozT3ykswwrve9XfJmlm {
@@ -849,7 +849,7 @@ input[type=range]::-ms-fill-lower {
         padding-top: 4rem
     }
 
-    .padding-left-right-1-point-5-rem {
+    .px-6 {
         padding-left: 1.5rem;
         padding-right: 1.5rem
     }
@@ -879,57 +879,57 @@ input[type=range]::-ms-fill-lower {
         </head>
         <body>
           <section class="background-color-white-1 background-color-17-24-39-1">
-  <div class="gap-2-rem al-center padding-lbottom-top-2-rem padding-left-right-1-rem RV8RoaI_SlEMC5CEQ3ms max-width-1280-px _RUilKYocHrR4Hi7HUMx bkn9u4HE5LeLYsQ0a0MO WEJ9SRas12vyWn9aNKlS padding-bottom-top-4-rem padding-left-right-1-point-5-rem">
+  <div class="gap-2-rem items-center py-8 px-4 mx-auto max-width-1280-px _RUilKYocHrR4Hi7HUMx bkn9u4HE5LeLYsQ0a0MO WEJ9SRas12vyWn9aNKlS padding-bottom-top-4-rem px-6">
       <div class="color-107-114-128-1 MozT3ykswwrve9XfJmlm">
-          <h2 class="margin-bottom-1-rem _Bu4HL5sPDOGN_IKUsOc letter-spacing-minu-point-025-em font-weight-800 color-17-24-39-1 color-white-255-255-255-1">Why you should upgrade to Flowbite Pro</h2>
+          <h2 class="mb-4 _Bu4HL5sPDOGN_IKUsOc letter-spacing-minu-point-025-em font-weight-800 color-17-24-39-1 color-white-255-255-255-1">Why you should upgrade to Flowbite Pro</h2>
           <p class="_BTfre_DcBxkj7buMlKq font-weight-300 EsIS9JBcwCwjZrc4Kr4F color-156-163-175-1">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value.</p>
-          <div class="i0EfZzmTLElZVOble53D gap-2-rem padding-lbottom-top-2-rem border-top-width-1-px border-color-229-231-235-1 VgKB9lhCAwirDjYWyvla border-color-55-65-81-1 hAFtnIdYDiO6M_67F11P">
+          <div class="grid gap-2-rem py-8 border-top-width-1-px border-color-229-231-235-1 VgKB9lhCAwirDjYWyvla border-color-55-65-81-1 hAFtnIdYDiO6M_67F11P">
               <div class="display-flex">
-                  <div class="display-flex jc-center al-center _ryfipzijJEI18CFfJIm oIyj6uBhU5BaKmBKDrV_ AATaQm5byhqNhQAf0t5v background-color-white-1 border-radius-point-25-rem lhxYQ_2y3sYNN3W1V_3q flex-shrink-0 background-color-55-65-81-1">
+                  <div class="display-flex jc-center items-center _ryfipzijJEI18CFfJIm oIyj6uBhU5BaKmBKDrV_ AATaQm5byhqNhQAf0t5v background-color-white-1 border-radius-point-25-rem lhxYQ_2y3sYNN3W1V_3q flex-shrink-0 background-color-55-65-81-1">
                       <svg class="HMfQov_yvpcryT2VjE29 fGULyrX3v9TS2am2Wk6K color-17-24-39-1 color-156-163-175-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11 4a1 1 0 10-2 0v4a1 1 0 102 0V7zm-3 1a1 1 0 10-2 0v3a1 1 0 102 0V8zM8 9a1 1 0 00-2 0v2a1 1 0 102 0V9z" clip-rule="evenodd"></path></svg>
                   </div>
                   <div>
-                      <h3 class="RSigS__XSy90w_LER1Bw uyo8h_4Kh1IoUwm8bwJI font-weight-700 color-17-24-39-1 color-white-255-255-255-1">Industry analysis</h3>
+                      <h3 class="RSigS__XSy90w_LER1Bw text-xl leading-7 font-weight-700 color-17-24-39-1 color-white-255-255-255-1">Industry analysis</h3>
                       <p class="font-weight-300 color-107-114-128-1 color-156-163-175-1">Benchmark your company against the industry to inform your growth strategy and analyze market trends.</p>
                   </div>
               </div>
               <div class="display-flex">
-                  <div class="display-flex jc-center al-center _ryfipzijJEI18CFfJIm oIyj6uBhU5BaKmBKDrV_ AATaQm5byhqNhQAf0t5v background-color-white-1 border-radius-point-25-rem lhxYQ_2y3sYNN3W1V_3q flex-shrink-0 background-color-55-65-81-1">
+                  <div class="display-flex jc-center items-center _ryfipzijJEI18CFfJIm oIyj6uBhU5BaKmBKDrV_ AATaQm5byhqNhQAf0t5v background-color-white-1 border-radius-point-25-rem lhxYQ_2y3sYNN3W1V_3q flex-shrink-0 background-color-55-65-81-1">
                       <svg class="HMfQov_yvpcryT2VjE29 fGULyrX3v9TS2am2Wk6K color-17-24-39-1 color-156-163-175-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"></path></svg>
                   </div>
                   <div>
-                      <h3 class="RSigS__XSy90w_LER1Bw uyo8h_4Kh1IoUwm8bwJI font-weight-700 color-17-24-39-1 color-white-255-255-255-1">Company analysis</h3>
+                      <h3 class="RSigS__XSy90w_LER1Bw text-xl leading-7 font-weight-700 color-17-24-39-1 color-white-255-255-255-1">Company analysis</h3>
                       <p class="font-weight-300 color-107-114-128-1 color-156-163-175-1">Uncover competitor digital strategies and deep dive into any company’s digital footprint.</p>
                   </div>
               </div>
               <div class="display-flex">
-                  <div class="display-flex jc-center al-center _ryfipzijJEI18CFfJIm oIyj6uBhU5BaKmBKDrV_ AATaQm5byhqNhQAf0t5v background-color-white-1 border-radius-point-25-rem lhxYQ_2y3sYNN3W1V_3q flex-shrink-0 background-color-55-65-81-1">
+                  <div class="display-flex jc-center items-center _ryfipzijJEI18CFfJIm oIyj6uBhU5BaKmBKDrV_ AATaQm5byhqNhQAf0t5v background-color-white-1 border-radius-point-25-rem lhxYQ_2y3sYNN3W1V_3q flex-shrink-0 background-color-55-65-81-1">
                       <svg class="HMfQov_yvpcryT2VjE29 fGULyrX3v9TS2am2Wk6K color-17-24-39-1 color-156-163-175-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7 2a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7zm3 14a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
                   </div>
                   <div>
-                      <h3 class="RSigS__XSy90w_LER1Bw uyo8h_4Kh1IoUwm8bwJI font-weight-700 color-17-24-39-1 color-white-255-255-255-1">App analysis</h3>
+                      <h3 class="RSigS__XSy90w_LER1Bw text-xl leading-7 font-weight-700 color-17-24-39-1 color-white-255-255-255-1">App analysis</h3>
                       <p class="font-weight-300 color-107-114-128-1 color-156-163-175-1">Analyze app industry trends and discover audience interests to learn which apps are gaining traction in the app ecosystem.</p>
                   </div>
               </div>
               <div class="display-flex">
-                  <div class="display-flex jc-center al-center _ryfipzijJEI18CFfJIm oIyj6uBhU5BaKmBKDrV_ AATaQm5byhqNhQAf0t5v background-color-white-1 border-radius-point-25-rem lhxYQ_2y3sYNN3W1V_3q flex-shrink-0 background-color-55-65-81-1">
+                  <div class="display-flex jc-center items-center _ryfipzijJEI18CFfJIm oIyj6uBhU5BaKmBKDrV_ AATaQm5byhqNhQAf0t5v background-color-white-1 border-radius-point-25-rem lhxYQ_2y3sYNN3W1V_3q flex-shrink-0 background-color-55-65-81-1">
                       <svg class="HMfQov_yvpcryT2VjE29 fGULyrX3v9TS2am2Wk6K color-17-24-39-1 color-156-163-175-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"></path></svg>
                   </div>
                   <div>
-                      <h3 class="RSigS__XSy90w_LER1Bw uyo8h_4Kh1IoUwm8bwJI font-weight-700 color-17-24-39-1 color-white-255-255-255-1">Audience analysis</h3>
+                      <h3 class="RSigS__XSy90w_LER1Bw text-xl leading-7 font-weight-700 color-17-24-39-1 color-white-255-255-255-1">Audience analysis</h3>
                       <p class="font-weight-300 color-107-114-128-1 color-156-163-175-1">Benchmark your company against the industry to inform your growth strategy and analyze market trends.</p>
                   </div>
               </div>
           </div>
       </div>
       <!-- Pricing Card -->
-      <div class="display-flex flex-direction-column rhHZLKCNkg6rp7jwfB1J background-color-white-1 border-radius-point-5-rem lhxYQ_2y3sYNN3W1V_3q pL0DwyXi_ZrIdI9U6ppa background-color-31-41-55-1">
-          <div class="jc-space-between al-center display-flex">
+      <div class="display-flex flex-direction-column rhHZLKCNkg6rp7jwfB1J background-color-white-1 rounded-lg lhxYQ_2y3sYNN3W1V_3q pL0DwyXi_ZrIdI9U6ppa background-color-31-41-55-1">
+          <div class="jc-space-between items-center display-flex">
               <div>
-                  <div class="display-flex jc-space-between rD4HtsUG_hahmbh2Kj09">
+                  <div class="display-flex jc-space-between mb-2">
                       <h3 class="_e063bssp_1bldcJ6kR0 font-weight-700 color-17-24-39-1 color-white-255-255-255-1">Pro Plan</h3>
-                      <div class="display-flex al-center hoaz4HQabD9bAPZFqnLC">
-                          <div class="b7Lf_ucBvHbZEidPjF8t uyo8h_4Kh1IoUwm8bwJI font-weight-800 color-17-24-39-1 _8SUuHMbVG_VY3PGjcjL color-white-255-255-255-1">$599</div>
+                      <div class="display-flex items-center hoaz4HQabD9bAPZFqnLC">
+                          <div class="b7Lf_ucBvHbZEidPjF8t text-xl leading-7 font-weight-800 color-17-24-39-1 _8SUuHMbVG_VY3PGjcjL color-white-255-255-255-1">$599</div>
                           <span class="color-107-114-128-1 color-156-163-175-1">/month</span>
                       </div>
                   </div>
@@ -940,7 +940,7 @@ input[type=range]::-ms-fill-lower {
                   <span class="color-107-114-128-1 color-156-163-175-1">per month</span>
               </div>
           </div>
-          <a href="#" class="color-white-1 bg-primary-600 hover:bg-primary-700 _FONMPVaCsLFJJGDaaIL focus:ring-primary-200 font-weight-500 border-radius-point-5-rem MxG1ClE4KPrIvlL5_Q5x padding-left-right-1-point-25-rem padding-bottom-top-point-625-rem text-align-center _XW9I8E3zdpFBUTdXbua margin-bottom-top-2-rem dark:focus:ring-primary-900">Upgrade now</a>
+          <a href="#" class="color-white-1 bg-primary-600 hover:bg-primary-700 _FONMPVaCsLFJJGDaaIL focus:ring-primary-200 font-weight-500 rounded-lg text-sm leading-5 px-5 py-2 text-center _XW9I8E3zdpFBUTdXbua margin-bottom-top-2-rem dark:focus:ring-primary-900">Upgrade now</a>
           <div class="jc-space-between not-hidden-margin-bottom-top-1-rem _rT9gacXyvSO1fCjLFak display-flex">
               <!-- List -->
               <ul role="list" class="not-hidden-margin-bottom-top-1-rem">

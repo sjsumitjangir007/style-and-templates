@@ -126,6 +126,51 @@ func main() {
 			"title": "SJ, Style & Template Lib.",
 		})
 	})
+	router.GET("/portfolio", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "portfolio/index.tmpl", gin.H{
+			"title": "SJ, Style & Template Lib.",
+		})
+	})
+	router.GET("/dashboard", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "dashboard/index.tmpl", gin.H{
+			"title": "SJ, Style & Template Lib.",
+		})
+	})
+	router.GET("/landing", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "landing/index.tmpl", gin.H{
+			"title": "SJ, Style & Template Lib.",
+		})
+	})
+	router.GET("/404", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "404/index.tmpl", gin.H{
+			"title": "SJ, Style & Template Lib.",
+		})
+	})
+	router.GET("/faq", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "faq/index.tmpl", gin.H{
+			"title": "SJ, Style & Template Lib.",
+		})
+	})
+	router.GET("/features", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "features/index.tmpl", gin.H{
+			"title": "SJ, Style & Template Lib.",
+		})
+	})
+	router.GET("/blog", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "blog/index.tmpl", gin.H{
+			"title": "SJ, Style & Template Lib.",
+		})
+	})
+	router.GET("/headers", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "headers/index.tmpl", gin.H{
+			"title": "SJ, Style & Template Lib.",
+		})
+	})
+	router.GET("/generic_layouts", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "generic_layouts/index.tmpl", gin.H{
+			"title": "SJ, Style & Template Lib.",
+		})
+	})
 	router.NoRoute(func(c *gin.Context) {
 		c.HTML(http.StatusNotFound, "not-found/index.tmpl", gin.H{"title": "Page Not Found", "message": "Page not found"})
 	})

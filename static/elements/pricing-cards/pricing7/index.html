@@ -34,7 +34,7 @@
 }
 
 :after,:before {
-    --tw-content: ""
+    --content: ""
 }
 
 html {
@@ -216,7 +216,7 @@ img,video {
 }
 
 [multiple],[type=date],[type=datetime-local],[type=email],[type=month],[type=number],[type=password],[type=search],[type=tel],[type=text],[type=time],[type=url],[type=week],select,textarea {
-    --tw-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -230,14 +230,14 @@ img,video {
 }
 
 [multiple]:focus,[type=date]:focus,[type=datetime-local]:focus,[type=email]:focus,[type=month]:focus,[type=number]:focus,[type=password]:focus,[type=search]:focus,[type=tel]:focus,[type=text]:focus,[type=time]:focus,[type=url]:focus,[type=week]:focus,select:focus,textarea:focus {
-    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: #1c64f2;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    --ring-inset: var(--empty,/*!*/ /*!*/);
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: #1c64f2;
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(1px + var(--ring-offset-width)) var(--ring-color);
     border-color: #1c64f2;
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow);
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -287,7 +287,7 @@ select {
 
 [type=checkbox],[type=radio] {
     color-adjust: exact;
-    --tw-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -318,13 +318,13 @@ select {
 }
 
 [type=checkbox]:focus,[type=radio]:focus {
-    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
-    --tw-ring-offset-width: 2px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: #1c64f2;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow);
+    --ring-inset: var(--empty,/*!*/ /*!*/);
+    --ring-offset-width: 2px;
+    --ring-offset-color: #fff;
+    --ring-color: #1c64f2;
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(2px + var(--ring-offset-width)) var(--ring-color);
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -422,11 +422,11 @@ input[type=range]:disabled::-webkit-slider-thumb {
 }
 
 input[type=range]:focus::-webkit-slider-thumb {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-    --tw-ring-opacity: 1px;
-    --tw-ring-color: rgb(164 202 254/var(--tw-ring-opacity));
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(4px + var(--ring-offset-width)) var(--ring-color);
+    --ring-opacity: 1px;
+    --ring-color: rgb(164 202 254/var(--ring-opacity));
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow,0 0 #0000);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -460,7 +460,7 @@ input[type=range]::-ms-fill-lower {
     border-color: #d1d5db;
     border-radius: 9999px;
     border-width: 1px;
-    box-shadow: var(--tw-ring-inset) 0 0 0 calc(var(--tw-ring-offset-width)) var(--tw-ring-color);
+    box-shadow: var(--ring-inset) 0 0 0 calc(var(--ring-offset-width)) var(--ring-color);
     content: "";
     height: 1.25rem;
     left: .125rem;
@@ -486,48 +486,48 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
 }
 
 *,:after,:before {
-    --tw-translate-x: 0;
-    --tw-translate-y: 0;
-    --tw-rotate: 0;
-    --tw-skew-x: 0;
-    --tw-skew-y: 0;
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    --tw-pan-x: ;
-    --tw-pan-y: ;
-    --tw-pinch-zoom: ;
-    --tw-scroll-snap-strictness: proximity;
-    --tw-ordinal: ;
-    --tw-slashed-zero: ;
-    --tw-numeric-figure: ;
-    --tw-numeric-spacing: ;
-    --tw-numeric-fraction: ;
-    --tw-ring-inset: ;
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: rgba(63,131,248,.5);
-    --tw-ring-offset-shadow: 0 0 #0000;
-    --tw-ring-shadow: 0 0 #0000;
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    --tw-blur: ;
-    --tw-brightness: ;
-    --tw-contrast: ;
-    --tw-grayscale: ;
-    --tw-hue-rotate: ;
-    --tw-invert: ;
-    --tw-saturate: ;
-    --tw-sepia: ;
-    --tw-drop-shadow: ;
-    --tw-backdrop-blur: ;
-    --tw-backdrop-brightness: ;
-    --tw-backdrop-contrast: ;
-    --tw-backdrop-grayscale: ;
-    --tw-backdrop-hue-rotate: ;
-    --tw-backdrop-invert: ;
-    --tw-backdrop-opacity: ;
-    --tw-backdrop-saturate: ;
-    --tw-backdrop-sepia:
+    --translate-x: 0;
+    --translate-y: 0;
+    --rotate: 0;
+    --skew-x: 0;
+    --skew-y: 0;
+    --scale-x: 1;
+    --scale-y: 1;
+    --pan-x: ;
+    --pan-y: ;
+    --pinch-zoom: ;
+    --scroll-snap-strictness: proximity;
+    --ordinal: ;
+    --slashed-zero: ;
+    --numeric-figure: ;
+    --numeric-spacing: ;
+    --numeric-fraction: ;
+    --ring-inset: ;
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: rgba(63,131,248,.5);
+    --ring-offset-shadow: 0 0 #0000;
+    --ring-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
+    --shadow-colored: 0 0 #0000;
+    --blur: ;
+    --brightness: ;
+    --contrast: ;
+    --grayscale: ;
+    --hue-rotate: ;
+    --invert: ;
+    --saturate: ;
+    --sepia: ;
+    --drop-shadow: ;
+    --backdrop-blur: ;
+    --backdrop-brightness: ;
+    --backdrop-contrast: ;
+    --backdrop-grayscale: ;
+    --backdrop-hue-rotate: ;
+    --backdrop-invert: ;
+    --backdrop-opacity: ;
+    --backdrop-saturate: ;
+    --backdrop-sepia:
 }
 
 .rec-clipper {
@@ -585,7 +585,7 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
     z-index: 40
 }
 
-.RV8RoaI_SlEMC5CEQ3ms {
+.mx-auto {
     margin-left: auto;
     margin-right: auto
 }
@@ -609,7 +609,7 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
     margin-bottom: 2rem
 }
 
-.margin-bottom-1-rem {
+.mb-4 {
     margin-bottom: 1rem
 }
 
@@ -670,31 +670,31 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
 }
 
 .panel-transform-toggle {
-    --tw-translate-x: -100%
+    --translate-x: -100%
 }
 
 ._txZr_XzKh1AA2GR58P5,.panel-transform-toggle {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    transform: translate(var(--translate-x),var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y))
 }
 
 ._txZr_XzKh1AA2GR58P5 {
-    --tw-translate-x: 100%
+    --translate-x: 100%
 }
 
 ._0PJkI8eA25FIbUKfI1v {
-    --tw-translate-x: 0px
+    --translate-x: 0px
 }
 
 .R4jqCxTOcV8d4zX2X0UZ,._0PJkI8eA25FIbUKfI1v {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    transform: translate(var(--translate-x),var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y))
 }
 
 .R4jqCxTOcV8d4zX2X0UZ {
-    --tw-rotate: 180deg
+    --rotate: 180deg
 }
 
 .B_Mg78Zl0_AuSOcVLMGS {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    transform: translate(var(--translate-x),var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y))
 }
 
 .cursor-pointer {
@@ -717,7 +717,7 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
     align-items: flex-end
 }
 
-.al-center {
+.items-center {
     align-items: center
 }
 
@@ -738,28 +738,28 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
 }
 
 .y1LFsAp5zejSxGmRC4Ef>:not([hidden])~:not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-bottom: calc(2rem*var(--tw-space-y-reverse));
-    margin-top: calc(2rem*(1 - var(--tw-space-y-reverse)))
+    --space-y-reverse: 0;
+    margin-bottom: calc(2rem*var(--space-y-reverse));
+    margin-top: calc(2rem*(1 - var(--space-y-reverse)))
 }
 
 .not-hidden-margin-bottom-top-1-rem>:not([hidden])~:not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-bottom: calc(1rem*var(--tw-space-y-reverse));
-    margin-top: calc(1rem*(1 - var(--tw-space-y-reverse)))
+    --space-y-reverse: 0;
+    margin-bottom: calc(1rem*var(--space-y-reverse));
+    margin-top: calc(1rem*(1 - var(--space-y-reverse)))
 }
 
 .B1cgbA6Bb4LQo0qFJKck>:not([hidden])~:not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-left: calc(.75rem*(1 - var(--tw-space-x-reverse)));
-    margin-right: calc(.75rem*var(--tw-space-x-reverse))
+    --space-x-reverse: 0;
+    margin-left: calc(.75rem*(1 - var(--space-x-reverse)));
+    margin-right: calc(.75rem*var(--space-x-reverse))
 }
 
 .border-radius-9999-px {
     border-radius: 9999px
 }
 
-.border-radius-point-5-rem {
+.rounded-lg {
     border-radius: .5rem
 }
 
@@ -768,28 +768,28 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
 }
 
 .border-color-28-100-242-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(28 100 242/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(28 100 242/var(--border-opacity))
 }
 
 .border-color-243-244-246-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(243 244 246/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(243 244 246/var(--border-opacity))
 }
 
 .border-color-229-231-235-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(229 231 235/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(229 231 235/var(--border-opacity))
 }
 
 .background-color-243-244-246-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(243 244 246/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(243 244 246/var(--bg-opacity))
 }
 
 .background-color-white-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--bg-opacity))
 }
 
 .background-color-hsla-0-0-per-100-per-point-5 {
@@ -797,40 +797,40 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
 }
 
 .background-color-17-24-39-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(17 24 39/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(17 24 39/var(--bg-opacity))
 }
 
 .vyuwQLkFO7jUAv3Xr23z {
-    --tw-bg-opacity: 1;
-    background-color: rgb(229 231 235/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(229 231 235/var(--bg-opacity))
 }
 
 .F6maSyXBC_uv_A_dciar {
-    --tw-bg-opacity: 0.5
+    --bg-opacity: 0.5
 }
 
-.padding-lbottom-top-2-rem {
+.py-8 {
     padding-bottom: 2rem;
     padding-top: 2rem
 }
 
-.padding-left-right-1-rem {
+.px-4 {
     padding-left: 1rem;
     padding-right: 1rem
 }
 
-.padding-left-right-1-point-25-rem {
+.px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem
 }
 
-.padding-bottom-top-point-625-rem {
+.py-2 {
     padding-bottom: .625rem;
     padding-top: .625rem
 }
 
-.padding-bottom-top-point-5-rem {
+.py-2 {
     padding-bottom: .5rem;
     padding-top: .5rem
 }
@@ -839,7 +839,7 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
     text-align: left
 }
 
-.text-align-center {
+.text-center {
     text-align: center
 }
 
@@ -858,7 +858,7 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
     line-height: 1
 }
 
-.MxG1ClE4KPrIvlL5_Q5x {
+.text-sm leading-5 {
     font-size: .875rem;
     line-height: 1.25rem
 }
@@ -888,28 +888,28 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
 }
 
 .color-17-24-39-1 {
-    --tw-text-opacity: 1;
-    color: rgb(17 24 39/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(17 24 39/var(--text-opacity))
 }
 
 .color-107-114-128-1 {
-    --tw-text-opacity: 1;
-    color: rgb(107 114 128/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(107 114 128/var(--text-opacity))
 }
 
 .color-28-100-242-1 {
-    --tw-text-opacity: 1;
-    color: rgb(28 100 242/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(28 100 242/var(--text-opacity))
 }
 
 .ew1_SdwkxzURPvHefr7i {
-    --tw-text-opacity: 1;
-    color: rgb(14 159 110/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(14 159 110/var(--text-opacity))
 }
 
 .color-white-1 {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(255 255 255/var(--text-opacity))
 }
 
 .opacity-0 {
@@ -921,11 +921,11 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
 }
 
 .ClETfzy1YZDVXhnOVdgH {
-    --tw-blur: blur(8px)
+    --blur: blur(8px)
 }
 
 .ClETfzy1YZDVXhnOVdgH,.__l7tEsuvTIL_QRvY8sk {
-    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+    filter: var(--blur) var(--brightness) var(--contrast) var(--grayscale) var(--hue-rotate) var(--invert) var(--saturate) var(--sepia) var(--drop-shadow)
 }
 
 .yvRWkoRx_Apshie5g15o {
@@ -945,44 +945,44 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
 }
 
 .eFVdWe3MNoaU5uHcs1ZL:hover {
-    --tw-border-opacity: 1;
-    border-color: rgb(209 213 219/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(209 213 219/var(--border-opacity))
 }
 
 .yFAsiu26MUcycUf9RwrL:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(249 250 251/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(249 250 251/var(--bg-opacity))
 }
 
 .djld5jFcbPSy1YdGoI7k:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--bg-opacity))
 }
 
 .WvrFEtphYDYX1sAkd4TH:hover {
-    --tw-text-opacity: 1;
-    color: rgb(55 65 81/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(55 65 81/var(--text-opacity))
 }
 
 ._be7gCNOq8vw6dPtYNE0:hover {
-    --tw-text-opacity: 1;
-    color: rgb(28 100 242/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(28 100 242/var(--text-opacity))
 }
 
 .__3D_PX_oiQ5jff3N7d8:hover {
-    --tw-text-opacity: 1;
-    color: rgb(75 85 99/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(75 85 99/var(--text-opacity))
 }
 
 ._FONMPVaCsLFJJGDaaIL:focus {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(4px + var(--ring-offset-width)) var(--ring-color);
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow,0 0 #0000)
 }
 
 .dark .border-color-63-131-248-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(63 131 248/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(63 131 248/var(--border-opacity))
 }
 
 .dark .border-color-transparent {
@@ -990,23 +990,23 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
 }
 
 .dark .border-color-55-65-81-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(55 65 81/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(55 65 81/var(--border-opacity))
 }
 
 .dark ._uoTEG_CU7r6UxI59Mw4 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(75 85 99/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(75 85 99/var(--bg-opacity))
 }
 
 .dark .background-color-55-65-81-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(55 65 81/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(55 65 81/var(--bg-opacity))
 }
 
 .dark .background-color-31-41-55-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(31 41 55/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(31 41 55/var(--bg-opacity))
 }
 
 .dark .background-color-31-41-55-point-5 {
@@ -1014,57 +1014,57 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
 }
 
 .dark .background-color-17-24-39-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(17 24 39/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(17 24 39/var(--bg-opacity))
 }
 
 .dark .background-opacity-0-point-8 {
-    --tw-bg-opacity: 0.8
+    --bg-opacity: 0.8
 }
 
 .dark .color-white-255-255-255-1 {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(255 255 255/var(--text-opacity))
 }
 
 .dark .color-156-163-175-1 {
-    --tw-text-opacity: 1;
-    color: rgb(156 163 175/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(156 163 175/var(--text-opacity))
 }
 
 .dark .color-63-131-248-1 {
-    --tw-text-opacity: 1;
-    color: rgb(63 131 248/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(63 131 248/var(--text-opacity))
 }
 
 .dark .color-209-213-219-1 {
-    --tw-text-opacity: 1;
-    color: rgb(209 213 219/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(209 213 219/var(--text-opacity))
 }
 
 .dark .xotVay0PVtR3gElm6ql5:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(75 85 99/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(75 85 99/var(--bg-opacity))
 }
 
 .dark .GbuoIVQvgE1sPez3FB0O:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(31 41 55/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(31 41 55/var(--bg-opacity))
 }
 
 .dark .DTyjKhtXBNaebZa5L0l9:hover {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(255 255 255/var(--text-opacity))
 }
 
 .dark .V2alIkRVl_uBQKfQTjue:hover {
-    --tw-text-opacity: 1;
-    color: rgb(63 131 248/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(63 131 248/var(--text-opacity))
 }
 
 .dark ._VCO84hOChxSw1A3KE3f:hover {
-    --tw-text-opacity: 1;
-    color: rgb(209 213 219/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(209 213 219/var(--text-opacity))
 }
 
 @media (min-width: 640px) {
@@ -1103,9 +1103,9 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
     }
 
     .HVdXmugQCakMmyW5hQWa>:not([hidden])~:not([hidden]) {
-        --tw-space-y-reverse: 0;
-        margin-bottom: calc(0px*var(--tw-space-y-reverse));
-        margin-top: calc(0px*(1 - var(--tw-space-y-reverse)))
+        --space-y-reverse: 0;
+        margin-bottom: calc(0px*var(--space-y-reverse));
+        margin-top: calc(0px*(1 - var(--space-y-reverse)))
     }
 
     .padding-bottom-top-4-rem {
@@ -1113,7 +1113,7 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
         padding-top: 4rem
     }
 
-    .padding-left-right-1-point-5-rem {
+    .px-6 {
         padding-left: 1.5rem;
         padding-right: 1.5rem
     }
@@ -1129,17 +1129,17 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
         </head>
         <body>
           <section class="background-color-white-1 background-color-17-24-39-1">
-  <div class="padding-lbottom-top-2-rem padding-left-right-1-rem RV8RoaI_SlEMC5CEQ3ms max-width-1280-px padding-bottom-top-4-rem padding-left-right-1-point-5-rem">
+  <div class="py-8 px-4 mx-auto max-width-1280-px padding-bottom-top-4-rem px-6">
       <div class="max-width-768-px _BTfre_DcBxkj7buMlKq margin-bottom-4-rem">
-          <h2 class="margin-bottom-1-rem _Bu4HL5sPDOGN_IKUsOc letter-spacing-minu-point-025-em font-weight-800 color-17-24-39-1 color-white-255-255-255-1">Designed for business teams like yours</h2>
+          <h2 class="mb-4 _Bu4HL5sPDOGN_IKUsOc letter-spacing-minu-point-025-em font-weight-800 color-17-24-39-1 color-white-255-255-255-1">Designed for business teams like yours</h2>
           <p class="zowa96dbBIC9HZMnkiFW font-weight-300 color-107-114-128-1 HUVIJuZ9QnvurQq0NDcX color-156-163-175-1">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
-          <div class="display-flex al-center">
+          <div class="display-flex items-center">
               <span class="osxEM2eQc4Pc_arzCZsv font-weight-500 color-17-24-39-1 color-white-255-255-255-1">
                 Monthly
               </span>
               <!-- Switch Container -->
               <div>
-                <label for="toggle-example" class="display-flex QYPW4nl6nHaIbrtaXf4h al-center KmicKCo2aIIAJvfPPnrM cursor-pointer">
+                <label for="toggle-example" class="display-flex QYPW4nl6nHaIbrtaXf4h items-center KmicKCo2aIIAJvfPPnrM cursor-pointer">
                   <input type="checkbox" id="toggle-example" class="rec-clipper">
                   <div class="ypyUJHicDkra304ep7aN _XD2a764x49B1E2F9f8X vyuwQLkFO7jUAv3Xr23z border-radius-9999-px bQPRusdUv2Wr50Lq2KOG border-color-229-231-235-1 QCmsfcdBlgf_hEzo7s4Z background-color-55-65-81-1 border-color-55-65-81-1"></div>
                 </label>
@@ -1149,7 +1149,7 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
               </span>
           </div>
       </div>
-      <div class="margin-bottom-1-rem F_2Dre6FGlusaaY9LAdu y1LFsAp5zejSxGmRC4Ef _RUilKYocHrR4Hi7HUMx NLUM9g1CxiratTbPnE1W K6JeoaAB0AqiLUrPNn42 WEJ9SRas12vyWn9aNKlS HVdXmugQCakMmyW5hQWa">
+      <div class="mb-4 F_2Dre6FGlusaaY9LAdu y1LFsAp5zejSxGmRC4Ef _RUilKYocHrR4Hi7HUMx NLUM9g1CxiratTbPnE1W K6JeoaAB0AqiLUrPNn42 WEJ9SRas12vyWn9aNKlS HVdXmugQCakMmyW5hQWa">
           <!-- Pricing Card -->
           <div class="display-flex flex-direction-column _ysO9iH8mcvEpCuwV4T4 color-17-24-39-1 color-156-163-175-1">
               <h3 class="font-weight-600 color-107-114-128-1 text-transform-uppercase color-156-163-175-1">Freelancer</h3>
@@ -1160,18 +1160,18 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
               <p class="font-weight-300 color-107-114-128-1 MozT3ykswwrve9XfJmlm color-209-213-219-1">Best option for personal use and for your next side projects.</p>
               <!-- List -->
               <ul role="list" class="_irJB2dBcH9y_8QZZA5G not-hidden-margin-bottom-top-1-rem text-align-left">
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem ew1_SdwkxzURPvHefr7i" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
                       <span>All tools you need to manage payments</span>
                   </li>
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem ew1_SdwkxzURPvHefr7i" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
                       <span>No setup, monthly, or hidden fees</span>
                   </li>
               </ul>
-              <a href="#" class="color-white-1 bg-primary-600 hover:bg-primary-700 _FONMPVaCsLFJJGDaaIL focus:ring-primary-200 font-weight-500 border-radius-point-5-rem MxG1ClE4KPrIvlL5_Q5x padding-left-right-1-point-25-rem padding-bottom-top-point-625-rem text-align-center dark:focus:ring-primary-900">Get started</a>
+              <a href="#" class="color-white-1 bg-primary-600 hover:bg-primary-700 _FONMPVaCsLFJJGDaaIL focus:ring-primary-200 font-weight-500 rounded-lg text-sm leading-5 px-5 py-2 text-center dark:focus:ring-primary-900">Get started</a>
           </div>
           <!-- Pricing Card -->
           <div class="display-flex flex-direction-column _ysO9iH8mcvEpCuwV4T4 color-17-24-39-1 color-156-163-175-1">
@@ -1183,28 +1183,28 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
               <p class="font-weight-300 color-107-114-128-1 MozT3ykswwrve9XfJmlm color-209-213-219-1">Best option for personal use and for your next side projects.</p>
               <!-- List -->
               <ul role="list" class="_irJB2dBcH9y_8QZZA5G not-hidden-margin-bottom-top-1-rem text-align-left">
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem ew1_SdwkxzURPvHefr7i" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
                       <span>All tools you need to manage payments</span>
                   </li>
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem ew1_SdwkxzURPvHefr7i" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
                       <span>No setup, monthly, or hidden fees</span>
                   </li>
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem ew1_SdwkxzURPvHefr7i" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
                       <span>Comprehensive security and rigorous</span>
                   </li>
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem ew1_SdwkxzURPvHefr7i" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
                       <span>Get hundreds of feature updates</span>
                   </li>
               </ul>
-              <a href="#" class="color-white-1 bg-primary-600 hover:bg-primary-700 _FONMPVaCsLFJJGDaaIL focus:ring-primary-200 font-weight-500 border-radius-point-5-rem MxG1ClE4KPrIvlL5_Q5x padding-left-right-1-point-25-rem padding-bottom-top-point-625-rem text-align-center dark:focus:ring-primary-900">Get started</a>
+              <a href="#" class="color-white-1 bg-primary-600 hover:bg-primary-700 _FONMPVaCsLFJJGDaaIL focus:ring-primary-200 font-weight-500 rounded-lg text-sm leading-5 px-5 py-2 text-center dark:focus:ring-primary-900">Get started</a>
           </div>
           <!-- Pricing Card -->
           <div class="display-flex flex-direction-column _ysO9iH8mcvEpCuwV4T4 color-17-24-39-1 color-156-163-175-1">
@@ -1216,48 +1216,48 @@ input:checked+.QCmsfcdBlgf_hEzo7s4Z {
               <p class="font-weight-300 color-107-114-128-1 MozT3ykswwrve9XfJmlm color-209-213-219-1">Best option for personal use and for your next side projects.</p>
               <!-- List -->
               <ul role="list" class="_irJB2dBcH9y_8QZZA5G not-hidden-margin-bottom-top-1-rem text-align-left">
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem ew1_SdwkxzURPvHefr7i" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
                       <span>All tools you need to manage payments</span>
                   </li>
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem ew1_SdwkxzURPvHefr7i" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
                       <span>No setup, monthly, or hidden fees</span>
                   </li>
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem ew1_SdwkxzURPvHefr7i" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
                       <span>Comprehensive security</span>
                   </li>
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem ew1_SdwkxzURPvHefr7i" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
                       <span>Get hundreds of feature updates</span>
                   </li>
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem ew1_SdwkxzURPvHefr7i" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
                       <span>Payouts to your bank accounts</span>
                   </li>
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem ew1_SdwkxzURPvHefr7i" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
                       <span>Financial reconciliation</span>
                   </li>
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem ew1_SdwkxzURPvHefr7i" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
                       <span>24×7chat and email support</span>
                   </li>
-                  <li class="display-flex al-center B1cgbA6Bb4LQo0qFJKck">
+                  <li class="display-flex items-center B1cgbA6Bb4LQo0qFJKck">
                       <!-- Icon -->
                       <svg class="dJBCIyiM9cLL9095_Hmw width-1-point-25-rem height-1-point-25-rem ew1_SdwkxzURPvHefr7i" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
                       <span>Robust developer platform</span>
                   </li>
               </ul>
-              <a href="#" class="color-white-1 bg-primary-600 hover:bg-primary-700 _FONMPVaCsLFJJGDaaIL focus:ring-primary-200 font-weight-500 border-radius-point-5-rem MxG1ClE4KPrIvlL5_Q5x padding-left-right-1-point-25-rem padding-bottom-top-point-625-rem text-align-center dark:focus:ring-primary-900">Get started</a>
+              <a href="#" class="color-white-1 bg-primary-600 hover:bg-primary-700 _FONMPVaCsLFJJGDaaIL focus:ring-primary-200 font-weight-500 rounded-lg text-sm leading-5 px-5 py-2 text-center dark:focus:ring-primary-900">Get started</a>
           </div>
       </div>
   </div>

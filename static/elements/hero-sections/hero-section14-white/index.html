@@ -35,7 +35,7 @@
 }
 
 :after,:before {
-    --tw-content: ""
+    --content: ""
 }
 
 html {
@@ -217,7 +217,7 @@ img,video {
 }
 
 [multiple],[type=date],[type=datetime-local],[type=email],[type=month],[type=number],[type=password],[type=search],[type=tel],[type=text],[type=time],[type=url],[type=week],select,textarea {
-    --tw-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -231,14 +231,14 @@ img,video {
 }
 
 [multiple]:focus,[type=date]:focus,[type=datetime-local]:focus,[type=email]:focus,[type=month]:focus,[type=number]:focus,[type=password]:focus,[type=search]:focus,[type=tel]:focus,[type=text]:focus,[type=time]:focus,[type=url]:focus,[type=week]:focus,select:focus,textarea:focus {
-    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: #1c64f2;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    --ring-inset: var(--empty,/*!*/ /*!*/);
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: #1c64f2;
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(1px + var(--ring-offset-width)) var(--ring-color);
     border-color: #1c64f2;
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow);
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -288,7 +288,7 @@ select {
 
 [type=checkbox],[type=radio] {
     color-adjust: exact;
-    --tw-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -319,13 +319,13 @@ select {
 }
 
 [type=checkbox]:focus,[type=radio]:focus {
-    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
-    --tw-ring-offset-width: 2px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: #1c64f2;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow);
+    --ring-inset: var(--empty,/*!*/ /*!*/);
+    --ring-offset-width: 2px;
+    --ring-offset-color: #fff;
+    --ring-color: #1c64f2;
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(2px + var(--ring-offset-width)) var(--ring-color);
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -423,11 +423,11 @@ input[type=range]:disabled::-webkit-slider-thumb {
 }
 
 input[type=range]:focus::-webkit-slider-thumb {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-    --tw-ring-opacity: 1px;
-    --tw-ring-color: rgb(164 202 254/var(--tw-ring-opacity));
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(4px + var(--ring-offset-width)) var(--ring-color);
+    --ring-opacity: 1px;
+    --ring-color: rgb(164 202 254/var(--ring-opacity));
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow,0 0 #0000);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -461,48 +461,48 @@ input[type=range]::-ms-fill-lower {
 }
 
 *,:after,:before {
-    --tw-translate-x: 0;
-    --tw-translate-y: 0;
-    --tw-rotate: 0;
-    --tw-skew-x: 0;
-    --tw-skew-y: 0;
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    --tw-pan-x: ;
-    --tw-pan-y: ;
-    --tw-pinch-zoom: ;
-    --tw-scroll-snap-strictness: proximity;
-    --tw-ordinal: ;
-    --tw-slashed-zero: ;
-    --tw-numeric-figure: ;
-    --tw-numeric-spacing: ;
-    --tw-numeric-fraction: ;
-    --tw-ring-inset: ;
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: rgba(63,131,248,.5);
-    --tw-ring-offset-shadow: 0 0 #0000;
-    --tw-ring-shadow: 0 0 #0000;
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    --tw-blur: ;
-    --tw-brightness: ;
-    --tw-contrast: ;
-    --tw-grayscale: ;
-    --tw-hue-rotate: ;
-    --tw-invert: ;
-    --tw-saturate: ;
-    --tw-sepia: ;
-    --tw-drop-shadow: ;
-    --tw-backdrop-blur: ;
-    --tw-backdrop-brightness: ;
-    --tw-backdrop-contrast: ;
-    --tw-backdrop-grayscale: ;
-    --tw-backdrop-hue-rotate: ;
-    --tw-backdrop-invert: ;
-    --tw-backdrop-opacity: ;
-    --tw-backdrop-saturate: ;
-    --tw-backdrop-sepia:
+    --translate-x: 0;
+    --translate-y: 0;
+    --rotate: 0;
+    --skew-x: 0;
+    --skew-y: 0;
+    --scale-x: 1;
+    --scale-y: 1;
+    --pan-x: ;
+    --pan-y: ;
+    --pinch-zoom: ;
+    --scroll-snap-strictness: proximity;
+    --ordinal: ;
+    --slashed-zero: ;
+    --numeric-figure: ;
+    --numeric-spacing: ;
+    --numeric-fraction: ;
+    --ring-inset: ;
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: rgba(63,131,248,.5);
+    --ring-offset-shadow: 0 0 #0000;
+    --ring-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
+    --shadow-colored: 0 0 #0000;
+    --blur: ;
+    --brightness: ;
+    --contrast: ;
+    --grayscale: ;
+    --hue-rotate: ;
+    --invert: ;
+    --saturate: ;
+    --sepia: ;
+    --drop-shadow: ;
+    --backdrop-blur: ;
+    --backdrop-brightness: ;
+    --backdrop-contrast: ;
+    --backdrop-grayscale: ;
+    --backdrop-hue-rotate: ;
+    --backdrop-invert: ;
+    --backdrop-opacity: ;
+    --backdrop-saturate: ;
+    --backdrop-sepia:
 }
 
 .rec-clipper {
@@ -556,12 +556,12 @@ input[type=range]::-ms-fill-lower {
     z-index: 40
 }
 
-.RV8RoaI_SlEMC5CEQ3ms {
+.mx-auto {
     margin-left: auto;
     margin-right: auto
 }
 
-.margin-bottom-1-rem {
+.mb-4 {
     margin-bottom: 1rem
 }
 
@@ -593,7 +593,7 @@ input[type=range]::-ms-fill-lower {
     display: flex
 }
 
-.display-in-flex {
+.inline-flex {
     display: inline-flex
 }
 
@@ -601,7 +601,7 @@ input[type=range]::-ms-fill-lower {
     display: table
 }
 
-.i0EfZzmTLElZVOble53D {
+.grid {
     display: grid
 }
 
@@ -619,7 +619,7 @@ input[type=range]::-ms-fill-lower {
     width: fit-content
 }
 
-.jCISvWkW5oStPH6Wrb_H {
+.w-full {
     width: 100%
 }
 
@@ -635,7 +635,7 @@ input[type=range]::-ms-fill-lower {
     max-width: 1280px
 }
 
-.max-width-42-rem {
+.max-w-2xl {
     max-width: 42rem
 }
 
@@ -648,31 +648,31 @@ input[type=range]::-ms-fill-lower {
 }
 
 .panel-transform-toggle {
-    --tw-translate-x: -100%
+    --translate-x: -100%
 }
 
 ._txZr_XzKh1AA2GR58P5,.panel-transform-toggle {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    transform: translate(var(--translate-x),var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y))
 }
 
 ._txZr_XzKh1AA2GR58P5 {
-    --tw-translate-x: 100%
+    --translate-x: 100%
 }
 
 ._0PJkI8eA25FIbUKfI1v {
-    --tw-translate-x: 0px
+    --translate-x: 0px
 }
 
 .R4jqCxTOcV8d4zX2X0UZ,._0PJkI8eA25FIbUKfI1v {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    transform: translate(var(--translate-x),var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y))
 }
 
 .R4jqCxTOcV8d4zX2X0UZ {
-    --tw-rotate: 180deg
+    --rotate: 180deg
 }
 
 .B_Mg78Zl0_AuSOcVLMGS {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    transform: translate(var(--translate-x),var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y))
 }
 
 .resize-both {
@@ -691,7 +691,7 @@ input[type=range]::-ms-fill-lower {
     align-items: flex-end
 }
 
-.al-center {
+.items-center {
     align-items: center
 }
 
@@ -712,12 +712,12 @@ input[type=range]::-ms-fill-lower {
 }
 
 .not-hidden-margin-bottom-top-1-rem>:not([hidden])~:not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-bottom: calc(1rem*var(--tw-space-y-reverse));
-    margin-top: calc(1rem*(1 - var(--tw-space-y-reverse)))
+    --space-y-reverse: 0;
+    margin-bottom: calc(1rem*var(--space-y-reverse));
+    margin-top: calc(1rem*(1 - var(--space-y-reverse)))
 }
 
-.border-radius-point-5-rem {
+.rounded-lg {
     border-radius: .5rem
 }
 
@@ -740,7 +740,7 @@ input[type=range]::-ms-fill-lower {
     border-top-right-radius: .5rem
 }
 
-.border-width-1-px {
+.border {
     border-width: 1px
 }
 
@@ -757,18 +757,18 @@ input[type=range]::-ms-fill-lower {
 }
 
 .border-color-28-100-242-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(28 100 242/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(28 100 242/var(--border-opacity))
 }
 
 .border-color-243-244-246-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(243 244 246/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(243 244 246/var(--border-opacity))
 }
 
 .border-color-229-231-235-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(229 231 235/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(229 231 235/var(--border-opacity))
 }
 
 .lMMj_jI7FhAsNxo3wSqt {
@@ -776,18 +776,18 @@ input[type=range]::-ms-fill-lower {
 }
 
 .border-color-209-213-219-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(209 213 219/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(209 213 219/var(--border-opacity))
 }
 
 .background-color-243-244-246-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(243 244 246/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(243 244 246/var(--bg-opacity))
 }
 
 .background-color-white-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--bg-opacity))
 }
 
 .background-color-hsla-0-0-per-100-per-point-5 {
@@ -795,37 +795,37 @@ input[type=range]::-ms-fill-lower {
 }
 
 .background-color-17-24-39-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(17 24 39/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(17 24 39/var(--bg-opacity))
 }
 
 ._9SPBQWhzDjyU9q6SuFQ {
-    --tw-bg-opacity: 1;
-    background-color: rgb(213 245 246/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(213 245 246/var(--bg-opacity))
 }
 
 .PH5wV3wWZy_P1FFfKBmW {
-    --tw-bg-opacity: 1;
-    background-color: rgb(229 237 255/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(229 237 255/var(--bg-opacity))
 }
 
 .background-color-237-235-254-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(237 235 254/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(237 235 254/var(--bg-opacity))
 }
 
 ._sKOAvqwIF0JM69g2BaC {
-    --tw-bg-opacity: 1;
-    background-color: rgb(222 247 236/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(222 247 236/var(--bg-opacity))
 }
 
 .background-color-249-250-251-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(249 250 251/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(249 250 251/var(--bg-opacity))
 }
 
 .F6maSyXBC_uv_A_dciar {
-    --tw-bg-opacity: 0.5
+    --bg-opacity: 0.5
 }
 
 .padding-1-rem {
@@ -840,12 +840,12 @@ input[type=range]::-ms-fill-lower {
     padding: .75rem
 }
 
-.padding-left-right-1-rem {
+.px-4 {
     padding-left: 1rem;
     padding-right: 1rem
 }
 
-.padding-lbottom-top-2-rem {
+.py-8 {
     padding-bottom: 2rem;
     padding-top: 2rem
 }
@@ -855,7 +855,7 @@ input[type=range]::-ms-fill-lower {
     padding-right: .75rem
 }
 
-.padding-left-right-1-point-25-rem {
+.px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem
 }
@@ -865,7 +865,7 @@ input[type=range]::-ms-fill-lower {
     padding-top: .75rem
 }
 
-.text-align-center {
+.text-center {
     text-align: center
 }
 
@@ -884,7 +884,7 @@ input[type=range]::-ms-fill-lower {
     line-height: 2.25rem
 }
 
-.MxG1ClE4KPrIvlL5_Q5x {
+.text-sm leading-5 {
     font-size: .875rem;
     line-height: 1.25rem
 }
@@ -919,78 +919,78 @@ input[type=range]::-ms-fill-lower {
 }
 
 .color-17-24-39-1 {
-    --tw-text-opacity: 1;
-    color: rgb(17 24 39/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(17 24 39/var(--text-opacity))
 }
 
 .color-107-114-128-1 {
-    --tw-text-opacity: 1;
-    color: rgb(107 114 128/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(107 114 128/var(--text-opacity))
 }
 
 .color-28-100-242-1 {
-    --tw-text-opacity: 1;
-    color: rgb(28 100 242/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(28 100 242/var(--text-opacity))
 }
 
 ._lb3B3pAdrSXXtqGUCuQ {
-    --tw-text-opacity: 1;
-    color: rgb(4 116 129/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(4 116 129/var(--text-opacity))
 }
 
 .lsoPCHQxlY_tn6Xhqjng {
-    --tw-text-opacity: 1;
-    color: rgb(6 148 162/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(6 148 162/var(--text-opacity))
 }
 
 .GRP_dsVAE74gm8_kj7l2 {
-    --tw-text-opacity: 1;
-    color: rgb(81 69 205/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(81 69 205/var(--text-opacity))
 }
 
 .CrP4xua325RpsslNPXXw {
-    --tw-text-opacity: 1;
-    color: rgb(104 117 245/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(104 117 245/var(--text-opacity))
 }
 
 .lXaL4kpN73np_BIu8mwJ {
-    --tw-text-opacity: 1;
-    color: rgb(108 43 217/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(108 43 217/var(--text-opacity))
 }
 
 .EvOCEFVDaPy_y3MSKXvq {
-    --tw-text-opacity: 1;
-    color: rgb(144 97 249/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(144 97 249/var(--text-opacity))
 }
 
 .O_5dDzDqEhTlUqXNWKXa {
-    --tw-text-opacity: 1;
-    color: rgb(5 122 85/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(5 122 85/var(--text-opacity))
 }
 
 .ew1_SdwkxzURPvHefr7i {
-    --tw-text-opacity: 1;
-    color: rgb(14 159 110/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(14 159 110/var(--text-opacity))
 }
 
 .color-white-1 {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(255 255 255/var(--text-opacity))
 }
 
 ._gVfEzLxxpLq4Jsr0FAx::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgb(107 114 128/var(--tw-placeholder-opacity))
+    --placeholder-opacity: 1;
+    color: rgb(107 114 128/var(--placeholder-opacity))
 }
 
 ._gVfEzLxxpLq4Jsr0FAx:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgb(107 114 128/var(--tw-placeholder-opacity))
+    --placeholder-opacity: 1;
+    color: rgb(107 114 128/var(--placeholder-opacity))
 }
 
 ._gVfEzLxxpLq4Jsr0FAx::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgb(107 114 128/var(--tw-placeholder-opacity))
+    --placeholder-opacity: 1;
+    color: rgb(107 114 128/var(--placeholder-opacity))
 }
 
 .opacity-0 {
@@ -1002,11 +1002,11 @@ input[type=range]::-ms-fill-lower {
 }
 
 .ClETfzy1YZDVXhnOVdgH {
-    --tw-blur: blur(8px)
+    --blur: blur(8px)
 }
 
 .ClETfzy1YZDVXhnOVdgH,.__l7tEsuvTIL_QRvY8sk {
-    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+    filter: var(--blur) var(--brightness) var(--contrast) var(--grayscale) var(--hue-rotate) var(--invert) var(--saturate) var(--sepia) var(--drop-shadow)
 }
 
 .yvRWkoRx_Apshie5g15o {
@@ -1026,39 +1026,39 @@ input[type=range]::-ms-fill-lower {
 }
 
 .eFVdWe3MNoaU5uHcs1ZL:hover {
-    --tw-border-opacity: 1;
-    border-color: rgb(209 213 219/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(209 213 219/var(--border-opacity))
 }
 
 .e0T_q1DG7NhOnorNl6wN:hover {
-    --tw-border-opacity: 1;
-    border-color: rgb(229 231 235/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(229 231 235/var(--border-opacity))
 }
 
 .djld5jFcbPSy1YdGoI7k:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--bg-opacity))
 }
 
 ._be7gCNOq8vw6dPtYNE0:hover {
-    --tw-text-opacity: 1;
-    color: rgb(28 100 242/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(28 100 242/var(--text-opacity))
 }
 
 .__3D_PX_oiQ5jff3N7d8:hover {
-    --tw-text-opacity: 1;
-    color: rgb(75 85 99/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(75 85 99/var(--text-opacity))
 }
 
 ._FONMPVaCsLFJJGDaaIL:focus {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(4px + var(--ring-offset-width)) var(--ring-color);
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow,0 0 #0000)
 }
 
 .dark .border-color-63-131-248-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(63 131 248/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(63 131 248/var(--border-opacity))
 }
 
 .dark .border-color-transparent {
@@ -1066,18 +1066,18 @@ input[type=range]::-ms-fill-lower {
 }
 
 .dark .border-color-55-65-81-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(55 65 81/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(55 65 81/var(--border-opacity))
 }
 
 .dark .border-color-75-85-99-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(75 85 99/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(75 85 99/var(--border-opacity))
 }
 
 .dark .background-color-31-41-55-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(31 41 55/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(31 41 55/var(--bg-opacity))
 }
 
 .dark .background-color-31-41-55-point-5 {
@@ -1085,127 +1085,127 @@ input[type=range]::-ms-fill-lower {
 }
 
 .dark .background-color-17-24-39-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(17 24 39/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(17 24 39/var(--bg-opacity))
 }
 
 .dark .xk4KD1yGvtWsU0cntlQG {
-    --tw-bg-opacity: 1;
-    background-color: rgb(1 68 81/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(1 68 81/var(--bg-opacity))
 }
 
 .dark ._jlawjxOT_6FqI0i_pM6 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(54 47 120/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(54 47 120/var(--bg-opacity))
 }
 
 .dark .P96cfRlu_suUFP7BXmEC {
-    --tw-bg-opacity: 1;
-    background-color: rgb(74 29 150/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(74 29 150/var(--bg-opacity))
 }
 
 .dark ._2PQksopE69Dfbaiti8H {
-    --tw-bg-opacity: 1;
-    background-color: rgb(1 71 55/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(1 71 55/var(--bg-opacity))
 }
 
 .dark ._uoTEG_CU7r6UxI59Mw4 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(75 85 99/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(75 85 99/var(--bg-opacity))
 }
 
 .dark .background-color-55-65-81-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(55 65 81/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(55 65 81/var(--bg-opacity))
 }
 
 .dark .background-opacity-0-point-8 {
-    --tw-bg-opacity: 0.8
+    --bg-opacity: 0.8
 }
 
 .dark .color-white-255-255-255-1 {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(255 255 255/var(--text-opacity))
 }
 
 .dark .color-156-163-175-1 {
-    --tw-text-opacity: 1;
-    color: rgb(156 163 175/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(156 163 175/var(--text-opacity))
 }
 
 .dark .color-63-131-248-1 {
-    --tw-text-opacity: 1;
-    color: rgb(63 131 248/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(63 131 248/var(--text-opacity))
 }
 
 .dark .GDUzZKOD_zRMxrVqEPgZ {
-    --tw-text-opacity: 1;
-    color: rgb(126 220 226/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(126 220 226/var(--text-opacity))
 }
 
 .dark .w1oS334em9K7Y2YlT_P_ {
-    --tw-text-opacity: 1;
-    color: rgb(22 189 202/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(22 189 202/var(--text-opacity))
 }
 
 .dark .vO0B2BPY3lPwzWq8_b4B {
-    --tw-text-opacity: 1;
-    color: rgb(180 198 252/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(180 198 252/var(--text-opacity))
 }
 
 .dark .ZyqYlmYZ7rpY7w_TJ4NN {
-    --tw-text-opacity: 1;
-    color: rgb(141 162 251/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(141 162 251/var(--text-opacity))
 }
 
 .dark .GX5Wvz8QIqlTGz7YbazO {
-    --tw-text-opacity: 1;
-    color: rgb(202 191 253/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(202 191 253/var(--text-opacity))
 }
 
 .dark .KfDe4pGENG3G1l1xmBLz {
-    --tw-text-opacity: 1;
-    color: rgb(172 148 250/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(172 148 250/var(--text-opacity))
 }
 
 .dark .J5YS661Px05AzgP8bTc5 {
-    --tw-text-opacity: 1;
-    color: rgb(132 225 188/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(132 225 188/var(--text-opacity))
 }
 
 .dark .tyJFkpWRak_cMAHS46ky {
-    --tw-text-opacity: 1;
-    color: rgb(49 196 141/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(49 196 141/var(--text-opacity))
 }
 
 .dark .color-156-163-175-1::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgb(156 163 175/var(--tw-placeholder-opacity))
+    --placeholder-opacity: 1;
+    color: rgb(156 163 175/var(--placeholder-opacity))
 }
 
 .dark .color-156-163-175-1:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgb(156 163 175/var(--tw-placeholder-opacity))
+    --placeholder-opacity: 1;
+    color: rgb(156 163 175/var(--placeholder-opacity))
 }
 
 .dark .color-156-163-175-1::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgb(156 163 175/var(--tw-placeholder-opacity))
+    --placeholder-opacity: 1;
+    color: rgb(156 163 175/var(--placeholder-opacity))
 }
 
 .dark .GbuoIVQvgE1sPez3FB0O:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(31 41 55/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(31 41 55/var(--bg-opacity))
 }
 
 .dark .V2alIkRVl_uBQKfQTjue:hover {
-    --tw-text-opacity: 1;
-    color: rgb(63 131 248/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(63 131 248/var(--text-opacity))
 }
 
 .dark ._VCO84hOChxSw1A3KE3f:hover {
-    --tw-text-opacity: 1;
-    color: rgb(209 213 219/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(209 213 219/var(--text-opacity))
 }
 
 @media (min-width: 640px) {
@@ -1226,15 +1226,15 @@ input[type=range]::-ms-fill-lower {
     }
 
     ._rT9gacXyvSO1fCjLFak>:not([hidden])~:not([hidden]) {
-        --tw-space-y-reverse: 0;
-        margin-bottom: calc(0px*var(--tw-space-y-reverse));
-        margin-top: calc(0px*(1 - var(--tw-space-y-reverse)))
+        --space-y-reverse: 0;
+        margin-bottom: calc(0px*var(--space-y-reverse));
+        margin-top: calc(0px*(1 - var(--space-y-reverse)))
     }
 
     ._KsS_4g_CZmc7uVegzjm>:not([hidden])~:not([hidden]) {
-        --tw-space-x-reverse: 0;
-        margin-left: calc(2rem*(1 - var(--tw-space-x-reverse)));
-        margin-right: calc(2rem*var(--tw-space-x-reverse))
+        --space-x-reverse: 0;
+        margin-left: calc(2rem*(1 - var(--space-x-reverse)));
+        margin-right: calc(2rem*var(--space-x-reverse))
     }
 }
 
@@ -1295,10 +1295,10 @@ input[type=range]::-ms-fill-lower {
 <body>
     <section class="background-color-white-1 background-color-17-24-39-1">
         <div
-            class="max-width-1280-px padding-left-right-1-rem padding-lbottom-top-2-rem RV8RoaI_SlEMC5CEQ3ms text-align-center padding-bottom-top-4-rem WCuT1fik3CBnD3pdfvW6">
-            <div class="max-width-42-rem RV8RoaI_SlEMC5CEQ3ms">
+            class="max-width-1280-px px-4 py-8 mx-auto text-center padding-bottom-top-4-rem WCuT1fik3CBnD3pdfvW6">
+            <div class="max-w-2xl mx-auto">
                 <h1
-                    class="margin-bottom-1-rem _Bu4HL5sPDOGN_IKUsOc font-weight-800 letter-spacing-minu-point-025-em line-height-1 color-17-24-39-1 feKIIYgYvgdVAjcEE6Kj _FSCxmo0RizP2YBRYajk color-white-255-255-255-1">
+                    class="mb-4 _Bu4HL5sPDOGN_IKUsOc font-weight-800 letter-spacing-minu-point-025-em line-height-1 color-17-24-39-1 feKIIYgYvgdVAjcEE6Kj _FSCxmo0RizP2YBRYajk color-white-255-255-255-1">
                     Decentralized for a better tomorrow</h1>
                 <p
                     class="_BTfre_DcBxkj7buMlKq VwrSTsh__so52zqMJvws font-weight-400 color-107-114-128-1 UQG9UVQJe8Lmwqvo0kfd EsIS9JBcwCwjZrc4Kr4F color-156-163-175-1">
@@ -1307,38 +1307,38 @@ input[type=range]::-ms-fill-lower {
                     cryptocurrencies on Flowbite</p>
             </div>
             <div
-                class="i0EfZzmTLElZVOble53D lSg6RHKCkPBz2kSnADor _Hd73hs9WJ_nSbZQKC9L hAFtnIdYDiO6M_67F11P vJI0_9_pvj3H7Rk3irhR hj3kXDK3YMv9Y_Usn5Zw">
+                class="grid lSg6RHKCkPBz2kSnADor _Hd73hs9WJ_nSbZQKC9L hAFtnIdYDiO6M_67F11P vJI0_9_pvj3H7Rk3irhR hj3kXDK3YMv9Y_Usn5Zw">
                 <div
-                    class="padding-1-rem text-primary-700 bg-primary-100 border-radius-point-5-rem dark:bg-primary-900 dark:text-primary-300">
+                    class="padding-1-rem text-primary-700 bg-primary-100 rounded-lg dark:bg-primary-900 dark:text-primary-300">
                     <h2 class="G_Z_YOvXu8grS0GsAGg_ font-weight-800 line-height-1-point-25">$76 billion</h2>
                     <span class="text-primary-500 dark:text-primary-400">24h trading volume</span>
                 </div>
                 <div
-                    class="padding-1-rem _lb3B3pAdrSXXtqGUCuQ _9SPBQWhzDjyU9q6SuFQ border-radius-point-5-rem xk4KD1yGvtWsU0cntlQG GDUzZKOD_zRMxrVqEPgZ">
+                    class="padding-1-rem _lb3B3pAdrSXXtqGUCuQ _9SPBQWhzDjyU9q6SuFQ rounded-lg xk4KD1yGvtWsU0cntlQG GDUzZKOD_zRMxrVqEPgZ">
                     <h2 class="G_Z_YOvXu8grS0GsAGg_ font-weight-800 line-height-1-point-25">600+</h2>
                     <span class="lsoPCHQxlY_tn6Xhqjng w1oS334em9K7Y2YlT_P_">Cryptocurrencies listed</span>
                 </div>
                 <div
-                    class="padding-1-rem GRP_dsVAE74gm8_kj7l2 PH5wV3wWZy_P1FFfKBmW border-radius-point-5-rem _jlawjxOT_6FqI0i_pM6 vO0B2BPY3lPwzWq8_b4B">
+                    class="padding-1-rem GRP_dsVAE74gm8_kj7l2 PH5wV3wWZy_P1FFfKBmW rounded-lg _jlawjxOT_6FqI0i_pM6 vO0B2BPY3lPwzWq8_b4B">
                     <h2 class="G_Z_YOvXu8grS0GsAGg_ font-weight-800 line-height-1-point-25">34 million</h2>
                     <span class="CrP4xua325RpsslNPXXw ZyqYlmYZ7rpY7w_TJ4NN">Diluted market cap</span>
                 </div>
                 <div
-                    class="padding-1-rem lXaL4kpN73np_BIu8mwJ background-color-237-235-254-1 border-radius-point-5-rem P96cfRlu_suUFP7BXmEC GX5Wvz8QIqlTGz7YbazO">
+                    class="padding-1-rem lXaL4kpN73np_BIu8mwJ background-color-237-235-254-1 rounded-lg P96cfRlu_suUFP7BXmEC GX5Wvz8QIqlTGz7YbazO">
                     <h2 class="G_Z_YOvXu8grS0GsAGg_ font-weight-800 line-height-1-point-25">90 million</h2>
                     <span class="EvOCEFVDaPy_y3MSKXvq KfDe4pGENG3G1l1xmBLz">Registered users</span>
                 </div>
                 <div
-                    class="padding-1-rem O_5dDzDqEhTlUqXNWKXa _sKOAvqwIF0JM69g2BaC border-radius-point-5-rem J5YS661Px05AzgP8bTc5 _2PQksopE69Dfbaiti8H">
+                    class="padding-1-rem O_5dDzDqEhTlUqXNWKXa _sKOAvqwIF0JM69g2BaC rounded-lg J5YS661Px05AzgP8bTc5 _2PQksopE69Dfbaiti8H">
                     <h2 class="G_Z_YOvXu8grS0GsAGg_ font-weight-800 line-height-1-point-25">0.10%</h2>
                     <span class="ew1_SdwkxzURPvHefr7i tyJFkpWRak_cMAHS46ky">Low transaction fees</span>
                 </div>
             </div>
             <div
-                class="Oa4HnWXPnlCJ_HRWuY4A lsxQ9VBHG6OaaiHcd9sV XfdYxJprcezKbzdyyfmk border-width-1-px border-color-229-231-235-1 border-radius-point-5-rem border-color-55-65-81-1">
+                class="Oa4HnWXPnlCJ_HRWuY4A lsxQ9VBHG6OaaiHcd9sV XfdYxJprcezKbzdyyfmk border border-color-229-231-235-1 rounded-lg border-color-55-65-81-1">
                 <div
-                    class="RV8RoaI_SlEMC5CEQ3ms _BTfre_DcBxkj7buMlKq border-bottom-width-1-px border-color-243-244-246-1 border-color-55-65-81-1 MlAkEYe7e8Wd4x5Bd_SH">
-                    <ul class="display-flex SaxexKs0G0X_YQvtMxF3 _DawcgaK0uxdO3rcylF_ MxG1ClE4KPrIvlL5_Q5x font-weight-500 text-align-center"
+                    class="mx-auto _BTfre_DcBxkj7buMlKq border-bottom-width-1-px border-color-243-244-246-1 border-color-55-65-81-1 MlAkEYe7e8Wd4x5Bd_SH">
+                    <ul class="display-flex SaxexKs0G0X_YQvtMxF3 _DawcgaK0uxdO3rcylF_ text-sm leading-5 font-weight-500 text-center"
                         id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
                         <li class="margin-right-point-5-rem" role="presentation">
                             <button
@@ -1354,16 +1354,16 @@ input[type=range]::-ms-fill-lower {
                         </li>
                     </ul>
                 </div>
-                <div class="_ChiSg4Ylb7kObcUbOpp RV8RoaI_SlEMC5CEQ3ms margin-bottom-1-rem VNqBKe5esu_n9f7_wvuZ"
+                <div class="_ChiSg4Ylb7kObcUbOpp mx-auto mb-4 VNqBKe5esu_n9f7_wvuZ"
                     id="myTabContent">
                     <div id="profile" role="tabpanel" aria-labelledby="profile-tab">
                         <div
-                            class="al-center show not-hidden-margin-bottom-top-1-rem _rT9gacXyvSO1fCjLFak _KsS_4g_CZmc7uVegzjm display-flex">
-                            <div class="jCISvWkW5oStPH6Wrb_H">
+                            class="items-center show not-hidden-margin-bottom-top-1-rem _rT9gacXyvSO1fCjLFak _KsS_4g_CZmc7uVegzjm display-flex">
+                            <div class="w-full">
                                 <label for="euro-form" class="rec-clipper">Username</label>
                                 <div class="display-flex">
                                     <span
-                                        class="display-in-flex al-center padding-left-right-point-75-rem MxG1ClE4KPrIvlL5_Q5x color-107-114-128-1 border-width-1-px S1fnP1ph2_eoPKqn7EW_ border-color-229-231-235-1 background-color-249-250-251-1 viw7YcuIxxJU2IxytoXN _uoTEG_CU7r6UxI59Mw4 color-156-163-175-1 border-color-75-85-99-1">
+                                        class="inline-flex items-center padding-left-right-point-75-rem text-sm leading-5 color-107-114-128-1 border S1fnP1ph2_eoPKqn7EW_ border-color-229-231-235-1 background-color-249-250-251-1 viw7YcuIxxJU2IxytoXN _uoTEG_CU7r6UxI59Mw4 color-156-163-175-1 border-color-75-85-99-1">
                                         <svg class="width-1-rem color-17-24-39-1 color-white-255-255-255-1"
                                             viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_12679_7638)">
@@ -1380,15 +1380,15 @@ input[type=range]::-ms-fill-lower {
                                         </svg>
                                     </span>
                                     <input type="number" id="euro-form"
-                                        class="_uoqSE9tPqjx_6qY1WDg show jCISvWkW5oStPH6Wrb_H s3FwmpfUB_zWo5TWFmRE padding-point-75-rem MxG1ClE4KPrIvlL5_Q5x color-17-24-39-1 _gVfEzLxxpLq4Jsr0FAx border-width-1-px border-color-229-231-235-1 border-color-209-213-219-1 uEowKvkc1nc7mmpJEz2a p__9UE2WpcmP2KFiO8HK background-color-249-250-251-1 focus:ring-primary-500 focus:border-primary-500 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                        class="_uoqSE9tPqjx_6qY1WDg show w-full s3FwmpfUB_zWo5TWFmRE padding-point-75-rem text-sm leading-5 color-17-24-39-1 _gVfEzLxxpLq4Jsr0FAx border border-color-229-231-235-1 border-color-209-213-219-1 uEowKvkc1nc7mmpJEz2a p__9UE2WpcmP2KFiO8HK background-color-249-250-251-1 focus:ring-primary-500 focus:border-primary-500 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500"
                                         placeholder="1000">
                                 </div>
                             </div>
-                            <div class="jCISvWkW5oStPH6Wrb_H">
+                            <div class="w-full">
                                 <label for="bitcoin-form" class="rec-clipper">Username</label>
                                 <div class="display-flex">
                                     <span
-                                        class="display-in-flex al-center padding-left-right-point-75-rem MxG1ClE4KPrIvlL5_Q5x color-107-114-128-1 border-width-1-px S1fnP1ph2_eoPKqn7EW_ border-color-229-231-235-1 background-color-249-250-251-1 viw7YcuIxxJU2IxytoXN _uoTEG_CU7r6UxI59Mw4 color-156-163-175-1 border-color-75-85-99-1">
+                                        class="inline-flex items-center padding-left-right-point-75-rem text-sm leading-5 color-107-114-128-1 border S1fnP1ph2_eoPKqn7EW_ border-color-229-231-235-1 background-color-249-250-251-1 viw7YcuIxxJU2IxytoXN _uoTEG_CU7r6UxI59Mw4 color-156-163-175-1 border-color-75-85-99-1">
                                         <svg class="width-1-rem height-1-rem" viewBox="0 0 15 14"
                                             fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_12679_13602)">
@@ -1408,7 +1408,7 @@ input[type=range]::-ms-fill-lower {
                                         </svg>
                                     </span>
                                     <input type="number" id="bitcoin-form"
-                                        class="_uoqSE9tPqjx_6qY1WDg show jCISvWkW5oStPH6Wrb_H s3FwmpfUB_zWo5TWFmRE padding-point-75-rem MxG1ClE4KPrIvlL5_Q5x color-17-24-39-1 _gVfEzLxxpLq4Jsr0FAx border-width-1-px border-color-229-231-235-1 border-color-209-213-219-1 uEowKvkc1nc7mmpJEz2a p__9UE2WpcmP2KFiO8HK background-color-249-250-251-1 focus:ring-primary-500 focus:border-primary-500 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                        class="_uoqSE9tPqjx_6qY1WDg show w-full s3FwmpfUB_zWo5TWFmRE padding-point-75-rem text-sm leading-5 color-17-24-39-1 _gVfEzLxxpLq4Jsr0FAx border border-color-229-231-235-1 border-color-209-213-219-1 uEowKvkc1nc7mmpJEz2a p__9UE2WpcmP2KFiO8HK background-color-249-250-251-1 focus:ring-primary-500 focus:border-primary-500 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500"
                                         placeholder="1000">
                                 </div>
                             </div>
@@ -1416,12 +1416,12 @@ input[type=range]::-ms-fill-lower {
                     </div>
                     <div id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
                         <div
-                            class="al-center show not-hidden-margin-bottom-top-1-rem _rT9gacXyvSO1fCjLFak _KsS_4g_CZmc7uVegzjm display-flex">
-                            <div class="jCISvWkW5oStPH6Wrb_H">
+                            class="items-center show not-hidden-margin-bottom-top-1-rem _rT9gacXyvSO1fCjLFak _KsS_4g_CZmc7uVegzjm display-flex">
+                            <div class="w-full">
                                 <label for="sell-bitcoin-form" class="rec-clipper">Username</label>
                                 <div class="display-flex">
                                     <span
-                                        class="display-in-flex al-center padding-left-right-point-75-rem MxG1ClE4KPrIvlL5_Q5x color-107-114-128-1 border-width-1-px S1fnP1ph2_eoPKqn7EW_ border-color-229-231-235-1 background-color-249-250-251-1 viw7YcuIxxJU2IxytoXN _uoTEG_CU7r6UxI59Mw4 color-156-163-175-1 border-color-75-85-99-1">
+                                        class="inline-flex items-center padding-left-right-point-75-rem text-sm leading-5 color-107-114-128-1 border S1fnP1ph2_eoPKqn7EW_ border-color-229-231-235-1 background-color-249-250-251-1 viw7YcuIxxJU2IxytoXN _uoTEG_CU7r6UxI59Mw4 color-156-163-175-1 border-color-75-85-99-1">
                                         <svg class="width-1-rem height-1-rem" viewBox="0 0 15 14"
                                             fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_12679_13602)">
@@ -1441,15 +1441,15 @@ input[type=range]::-ms-fill-lower {
                                         </svg>
                                     </span>
                                     <input type="number" id="sell-bitcoin-form"
-                                        class="_uoqSE9tPqjx_6qY1WDg show jCISvWkW5oStPH6Wrb_H s3FwmpfUB_zWo5TWFmRE padding-point-75-rem MxG1ClE4KPrIvlL5_Q5x color-17-24-39-1 _gVfEzLxxpLq4Jsr0FAx border-width-1-px border-color-229-231-235-1 border-color-209-213-219-1 uEowKvkc1nc7mmpJEz2a p__9UE2WpcmP2KFiO8HK background-color-249-250-251-1 focus:ring-primary-500 focus:border-primary-500 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                        class="_uoqSE9tPqjx_6qY1WDg show w-full s3FwmpfUB_zWo5TWFmRE padding-point-75-rem text-sm leading-5 color-17-24-39-1 _gVfEzLxxpLq4Jsr0FAx border border-color-229-231-235-1 border-color-209-213-219-1 uEowKvkc1nc7mmpJEz2a p__9UE2WpcmP2KFiO8HK background-color-249-250-251-1 focus:ring-primary-500 focus:border-primary-500 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500"
                                         placeholder="1000">
                                 </div>
                             </div>
-                            <div class="jCISvWkW5oStPH6Wrb_H">
+                            <div class="w-full">
                                 <label for="sell-euro-form" class="rec-clipper">Username</label>
                                 <div class="display-flex">
                                     <span
-                                        class="display-in-flex al-center padding-left-right-point-75-rem MxG1ClE4KPrIvlL5_Q5x color-107-114-128-1 border-width-1-px S1fnP1ph2_eoPKqn7EW_ border-color-229-231-235-1 background-color-249-250-251-1 viw7YcuIxxJU2IxytoXN _uoTEG_CU7r6UxI59Mw4 color-156-163-175-1 border-color-75-85-99-1">
+                                        class="inline-flex items-center padding-left-right-point-75-rem text-sm leading-5 color-107-114-128-1 border S1fnP1ph2_eoPKqn7EW_ border-color-229-231-235-1 background-color-249-250-251-1 viw7YcuIxxJU2IxytoXN _uoTEG_CU7r6UxI59Mw4 color-156-163-175-1 border-color-75-85-99-1">
                                         <svg class="width-1-rem color-17-24-39-1 color-white-255-255-255-1"
                                             viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_12679_7638)">
@@ -1466,7 +1466,7 @@ input[type=range]::-ms-fill-lower {
                                         </svg>
                                     </span>
                                     <input type="number" id="sell-euro-form"
-                                        class="_uoqSE9tPqjx_6qY1WDg show jCISvWkW5oStPH6Wrb_H s3FwmpfUB_zWo5TWFmRE padding-point-75-rem MxG1ClE4KPrIvlL5_Q5x color-17-24-39-1 _gVfEzLxxpLq4Jsr0FAx border-width-1-px border-color-229-231-235-1 border-color-209-213-219-1 uEowKvkc1nc7mmpJEz2a p__9UE2WpcmP2KFiO8HK background-color-249-250-251-1 focus:ring-primary-500 focus:border-primary-500 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                        class="_uoqSE9tPqjx_6qY1WDg show w-full s3FwmpfUB_zWo5TWFmRE padding-point-75-rem text-sm leading-5 color-17-24-39-1 _gVfEzLxxpLq4Jsr0FAx border border-color-229-231-235-1 border-color-209-213-219-1 uEowKvkc1nc7mmpJEz2a p__9UE2WpcmP2KFiO8HK background-color-249-250-251-1 focus:ring-primary-500 focus:border-primary-500 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500"
                                         placeholder="1000">
                                 </div>
                             </div>
@@ -1474,7 +1474,7 @@ input[type=range]::-ms-fill-lower {
                     </div>
                 </div>
                 <a href="#"
-                    class="display-in-flex al-center jc-center jCISvWkW5oStPH6Wrb_H padding-left-right-1-point-25-rem padding-lbottom-top-point-75-rem osxEM2eQc4Pc_arzCZsv font-weight-500 text-align-center color-white-1 border-radius-point-5-rem _mELhemY9faJ9cOfhVds bg-primary-600 hover:bg-primary-700 _FONMPVaCsLFJJGDaaIL focus:ring-primary-300 dark:focus:ring-primary-900">
+                    class="inline-flex items-center jc-center w-full px-5 padding-lbottom-top-point-75-rem osxEM2eQc4Pc_arzCZsv font-weight-500 text-center color-white-1 rounded-lg _mELhemY9faJ9cOfhVds bg-primary-600 hover:bg-primary-700 _FONMPVaCsLFJJGDaaIL focus:ring-primary-300 dark:focus:ring-primary-900">
                     Connect your wallet
                 </a>
             </div>

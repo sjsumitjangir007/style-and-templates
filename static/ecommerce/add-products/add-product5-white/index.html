@@ -34,7 +34,7 @@
 }
 
 :after,:before {
-    --tw-content: ""
+    --content: ""
 }
 
 html {
@@ -209,7 +209,7 @@ img,video {
 }
 
 [multiple],[type=date],[type=datetime-local],[type=email],[type=month],[type=number],[type=password],[type=search],[type=tel],[type=text],[type=time],[type=url],[type=week],select,textarea {
-    --tw-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -223,14 +223,14 @@ img,video {
 }
 
 [multiple]:focus,[type=date]:focus,[type=datetime-local]:focus,[type=email]:focus,[type=month]:focus,[type=number]:focus,[type=password]:focus,[type=search]:focus,[type=tel]:focus,[type=text]:focus,[type=time]:focus,[type=url]:focus,[type=week]:focus,select:focus,textarea:focus {
-    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: #1c64f2;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    --ring-inset: var(--empty,/*!*/ /*!*/);
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: #1c64f2;
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(1px + var(--ring-offset-width)) var(--ring-color);
     border-color: #1c64f2;
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow);
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -277,7 +277,7 @@ select {
 
 [type=checkbox],[type=radio] {
     color-adjust: exact;
-    --tw-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -308,13 +308,13 @@ select {
 }
 
 [type=checkbox]:focus,[type=radio]:focus {
-    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
-    --tw-ring-offset-width: 2px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: #1c64f2;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow);
+    --ring-inset: var(--empty,/*!*/ /*!*/);
+    --ring-offset-width: 2px;
+    --ring-offset-color: #fff;
+    --ring-color: #1c64f2;
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(2px + var(--ring-offset-width)) var(--ring-color);
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -409,11 +409,11 @@ input[type=range]:disabled::-webkit-slider-thumb {
 }
 
 input[type=range]:focus::-webkit-slider-thumb {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-    --tw-ring-opacity: 1px;
-    --tw-ring-color: rgb(164 202 254/var(--tw-ring-opacity));
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(4px + var(--ring-offset-width)) var(--ring-color);
+    --ring-opacity: 1px;
+    --ring-color: rgb(164 202 254/var(--ring-opacity));
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow,0 0 #0000);
     outline: 2px solid transparent;
     outline-offset: 2px
 }
@@ -593,144 +593,144 @@ input[type=range]::-ms-fill-lower {
 }
 
 *,:after,:before {
-    --tw-border-spacing-x: 0;
-    --tw-border-spacing-y: 0;
-    --tw-translate-x: 0;
-    --tw-translate-y: 0;
-    --tw-rotate: 0;
-    --tw-skew-x: 0;
-    --tw-skew-y: 0;
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    --tw-pan-x: ;
-    --tw-pan-y: ;
-    --tw-pinch-zoom: ;
-    --tw-scroll-snap-strictness: proximity;
-    --tw-ordinal: ;
-    --tw-slashed-zero: ;
-    --tw-numeric-figure: ;
-    --tw-numeric-spacing: ;
-    --tw-numeric-fraction: ;
-    --tw-ring-inset: ;
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: rgba(63,131,248,.5);
-    --tw-ring-offset-shadow: 0 0 #0000;
-    --tw-ring-shadow: 0 0 #0000;
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    --tw-blur: ;
-    --tw-brightness: ;
-    --tw-contrast: ;
-    --tw-grayscale: ;
-    --tw-hue-rotate: ;
-    --tw-invert: ;
-    --tw-saturate: ;
-    --tw-sepia: ;
-    --tw-drop-shadow: ;
-    --tw-backdrop-blur: ;
-    --tw-backdrop-brightness: ;
-    --tw-backdrop-contrast: ;
-    --tw-backdrop-grayscale: ;
-    --tw-backdrop-hue-rotate: ;
-    --tw-backdrop-invert: ;
-    --tw-backdrop-opacity: ;
-    --tw-backdrop-saturate: ;
-    --tw-backdrop-sepia:
+    --border-spacing-x: 0;
+    --border-spacing-y: 0;
+    --translate-x: 0;
+    --translate-y: 0;
+    --rotate: 0;
+    --skew-x: 0;
+    --skew-y: 0;
+    --scale-x: 1;
+    --scale-y: 1;
+    --pan-x: ;
+    --pan-y: ;
+    --pinch-zoom: ;
+    --scroll-snap-strictness: proximity;
+    --ordinal: ;
+    --slashed-zero: ;
+    --numeric-figure: ;
+    --numeric-spacing: ;
+    --numeric-fraction: ;
+    --ring-inset: ;
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: rgba(63,131,248,.5);
+    --ring-offset-shadow: 0 0 #0000;
+    --ring-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
+    --shadow-colored: 0 0 #0000;
+    --blur: ;
+    --brightness: ;
+    --contrast: ;
+    --grayscale: ;
+    --hue-rotate: ;
+    --invert: ;
+    --saturate: ;
+    --sepia: ;
+    --drop-shadow: ;
+    --backdrop-blur: ;
+    --backdrop-brightness: ;
+    --backdrop-contrast: ;
+    --backdrop-grayscale: ;
+    --backdrop-hue-rotate: ;
+    --backdrop-invert: ;
+    --backdrop-opacity: ;
+    --backdrop-saturate: ;
+    --backdrop-sepia:
 }
 
 ::-webkit-backdrop {
-    --tw-border-spacing-x: 0;
-    --tw-border-spacing-y: 0;
-    --tw-translate-x: 0;
-    --tw-translate-y: 0;
-    --tw-rotate: 0;
-    --tw-skew-x: 0;
-    --tw-skew-y: 0;
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    --tw-pan-x: ;
-    --tw-pan-y: ;
-    --tw-pinch-zoom: ;
-    --tw-scroll-snap-strictness: proximity;
-    --tw-ordinal: ;
-    --tw-slashed-zero: ;
-    --tw-numeric-figure: ;
-    --tw-numeric-spacing: ;
-    --tw-numeric-fraction: ;
-    --tw-ring-inset: ;
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: rgba(63,131,248,.5);
-    --tw-ring-offset-shadow: 0 0 #0000;
-    --tw-ring-shadow: 0 0 #0000;
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    --tw-blur: ;
-    --tw-brightness: ;
-    --tw-contrast: ;
-    --tw-grayscale: ;
-    --tw-hue-rotate: ;
-    --tw-invert: ;
-    --tw-saturate: ;
-    --tw-sepia: ;
-    --tw-drop-shadow: ;
-    --tw-backdrop-blur: ;
-    --tw-backdrop-brightness: ;
-    --tw-backdrop-contrast: ;
-    --tw-backdrop-grayscale: ;
-    --tw-backdrop-hue-rotate: ;
-    --tw-backdrop-invert: ;
-    --tw-backdrop-opacity: ;
-    --tw-backdrop-saturate: ;
-    --tw-backdrop-sepia:
+    --border-spacing-x: 0;
+    --border-spacing-y: 0;
+    --translate-x: 0;
+    --translate-y: 0;
+    --rotate: 0;
+    --skew-x: 0;
+    --skew-y: 0;
+    --scale-x: 1;
+    --scale-y: 1;
+    --pan-x: ;
+    --pan-y: ;
+    --pinch-zoom: ;
+    --scroll-snap-strictness: proximity;
+    --ordinal: ;
+    --slashed-zero: ;
+    --numeric-figure: ;
+    --numeric-spacing: ;
+    --numeric-fraction: ;
+    --ring-inset: ;
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: rgba(63,131,248,.5);
+    --ring-offset-shadow: 0 0 #0000;
+    --ring-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
+    --shadow-colored: 0 0 #0000;
+    --blur: ;
+    --brightness: ;
+    --contrast: ;
+    --grayscale: ;
+    --hue-rotate: ;
+    --invert: ;
+    --saturate: ;
+    --sepia: ;
+    --drop-shadow: ;
+    --backdrop-blur: ;
+    --backdrop-brightness: ;
+    --backdrop-contrast: ;
+    --backdrop-grayscale: ;
+    --backdrop-hue-rotate: ;
+    --backdrop-invert: ;
+    --backdrop-opacity: ;
+    --backdrop-saturate: ;
+    --backdrop-sepia:
 }
 
 ::backdrop {
-    --tw-border-spacing-x: 0;
-    --tw-border-spacing-y: 0;
-    --tw-translate-x: 0;
-    --tw-translate-y: 0;
-    --tw-rotate: 0;
-    --tw-skew-x: 0;
-    --tw-skew-y: 0;
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    --tw-pan-x: ;
-    --tw-pan-y: ;
-    --tw-pinch-zoom: ;
-    --tw-scroll-snap-strictness: proximity;
-    --tw-ordinal: ;
-    --tw-slashed-zero: ;
-    --tw-numeric-figure: ;
-    --tw-numeric-spacing: ;
-    --tw-numeric-fraction: ;
-    --tw-ring-inset: ;
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: rgba(63,131,248,.5);
-    --tw-ring-offset-shadow: 0 0 #0000;
-    --tw-ring-shadow: 0 0 #0000;
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    --tw-blur: ;
-    --tw-brightness: ;
-    --tw-contrast: ;
-    --tw-grayscale: ;
-    --tw-hue-rotate: ;
-    --tw-invert: ;
-    --tw-saturate: ;
-    --tw-sepia: ;
-    --tw-drop-shadow: ;
-    --tw-backdrop-blur: ;
-    --tw-backdrop-brightness: ;
-    --tw-backdrop-contrast: ;
-    --tw-backdrop-grayscale: ;
-    --tw-backdrop-hue-rotate: ;
-    --tw-backdrop-invert: ;
-    --tw-backdrop-opacity: ;
-    --tw-backdrop-saturate: ;
-    --tw-backdrop-sepia:
+    --border-spacing-x: 0;
+    --border-spacing-y: 0;
+    --translate-x: 0;
+    --translate-y: 0;
+    --rotate: 0;
+    --skew-x: 0;
+    --skew-y: 0;
+    --scale-x: 1;
+    --scale-y: 1;
+    --pan-x: ;
+    --pan-y: ;
+    --pinch-zoom: ;
+    --scroll-snap-strictness: proximity;
+    --ordinal: ;
+    --slashed-zero: ;
+    --numeric-figure: ;
+    --numeric-spacing: ;
+    --numeric-fraction: ;
+    --ring-inset: ;
+    --ring-offset-width: 0px;
+    --ring-offset-color: #fff;
+    --ring-color: rgba(63,131,248,.5);
+    --ring-offset-shadow: 0 0 #0000;
+    --ring-shadow: 0 0 #0000;
+    --shadow: 0 0 #0000;
+    --shadow-colored: 0 0 #0000;
+    --blur: ;
+    --brightness: ;
+    --contrast: ;
+    --grayscale: ;
+    --hue-rotate: ;
+    --invert: ;
+    --saturate: ;
+    --sepia: ;
+    --drop-shadow: ;
+    --backdrop-blur: ;
+    --backdrop-brightness: ;
+    --backdrop-contrast: ;
+    --backdrop-grayscale: ;
+    --backdrop-hue-rotate: ;
+    --backdrop-invert: ;
+    --backdrop-opacity: ;
+    --backdrop-saturate: ;
+    --backdrop-sepia:
 }
 
 .rec-clipper {
@@ -808,16 +808,16 @@ input[type=range]::-ms-fill-lower {
     z-index: 30
 }
 
-.RV8RoaI_SlEMC5CEQ3ms {
+.mx-auto {
     margin-left: auto;
     margin-right: auto
 }
 
-.margin-bottom-1-rem {
+.mb-4 {
     margin-bottom: 1rem
 }
 
-.rD4HtsUG_hahmbh2Kj09 {
+.mb-2 {
     margin-bottom: .5rem
 }
 
@@ -845,7 +845,7 @@ input[type=range]::-ms-fill-lower {
     display: flex
 }
 
-.display-in-flex {
+.inline-flex {
     display: inline-flex
 }
 
@@ -853,7 +853,7 @@ input[type=range]::-ms-fill-lower {
     display: table
 }
 
-.i0EfZzmTLElZVOble53D {
+.grid {
     display: grid
 }
 
@@ -873,7 +873,7 @@ input[type=range]::-ms-fill-lower {
     height: 1.25rem
 }
 
-.jCISvWkW5oStPH6Wrb_H {
+.w-full {
     width: 100%
 }
 
@@ -889,7 +889,7 @@ input[type=range]::-ms-fill-lower {
     width: 1.25rem
 }
 
-.max-width-42-rem {
+.max-w-2xl {
     max-width: 42rem
 }
 
@@ -898,43 +898,43 @@ input[type=range]::-ms-fill-lower {
 }
 
 .panel-transform-toggle {
-    --tw-translate-x: -100%
+    --translate-x: -100%
 }
 
 ._txZr_XzKh1AA2GR58P5,.panel-transform-toggle {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    transform: translate(var(--translate-x),var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y))
 }
 
 ._txZr_XzKh1AA2GR58P5 {
-    --tw-translate-x: 100%
+    --translate-x: 100%
 }
 
 ._0PJkI8eA25FIbUKfI1v {
-    --tw-translate-x: 0px
+    --translate-x: 0px
 }
 
 .T8ntPwqv9_aqkqQBYkpk,._0PJkI8eA25FIbUKfI1v {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    transform: translate(var(--translate-x),var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y))
 }
 
 .T8ntPwqv9_aqkqQBYkpk {
-    --tw-translate-y: -100%
+    --translate-y: -100%
 }
 
 .mA7nMzdO5NVKdU288J6J {
-    --tw-translate-y: 100%
+    --translate-y: 100%
 }
 
 .R4jqCxTOcV8d4zX2X0UZ,.mA7nMzdO5NVKdU288J6J {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    transform: translate(var(--translate-x),var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y))
 }
 
 .R4jqCxTOcV8d4zX2X0UZ {
-    --tw-rotate: 180deg
+    --rotate: 180deg
 }
 
 .B_Mg78Zl0_AuSOcVLMGS {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    transform: translate(var(--translate-x),var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y))
 }
 
 .transform-none {
@@ -961,7 +961,7 @@ input[type=range]::-ms-fill-lower {
     align-items: flex-end
 }
 
-.al-center {
+.items-center {
     align-items: center
 }
 
@@ -981,25 +981,25 @@ input[type=range]::-ms-fill-lower {
     justify-content: space-between
 }
 
-.Ced8tRkG1VjcbmNVdBtj {
+.gap-4 {
     gap: 1rem
 }
 
 .not-hidden-margin-left-right-point-25-rem>:not([hidden])~:not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-left: calc(.25rem*(1 - var(--tw-space-x-reverse)));
-    margin-right: calc(.25rem*var(--tw-space-x-reverse))
+    --space-x-reverse: 0;
+    margin-left: calc(.25rem*(1 - var(--space-x-reverse)));
+    margin-right: calc(.25rem*var(--space-x-reverse))
 }
 
 .not-hidden-margin-left-right-1-rem>:not([hidden])~:not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-left: calc(1rem*(1 - var(--tw-space-x-reverse)));
-    margin-right: calc(1rem*var(--tw-space-x-reverse))
+    --space-x-reverse: 0;
+    margin-left: calc(1rem*(1 - var(--space-x-reverse)));
+    margin-right: calc(1rem*var(--space-x-reverse))
 }
 
 .yGKSom6xHdY1EhaYGurI>:not([hidden])~:not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgb(229 231 235/var(--tw-divide-opacity))
+    --divide-opacity: 1;
+    border-color: rgb(229 231 235/var(--divide-opacity))
 }
 
 .overflow-hidden {
@@ -1010,7 +1010,7 @@ input[type=range]::-ms-fill-lower {
     border-radius: 9999px
 }
 
-.border-radius-point-5-rem {
+.rounded-lg {
     border-radius: .5rem
 }
 
@@ -1023,7 +1023,7 @@ input[type=range]::-ms-fill-lower {
     border-bottom-right-radius: .5rem
 }
 
-.border-width-1-px {
+.border {
     border-width: 1px
 }
 
@@ -1036,33 +1036,33 @@ input[type=range]::-ms-fill-lower {
 }
 
 .border-color-28-100-242-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(28 100 242/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(28 100 242/var(--border-opacity))
 }
 
 .border-color-243-244-246-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(243 244 246/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(243 244 246/var(--border-opacity))
 }
 
 .border-color-209-213-219-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(209 213 219/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(209 213 219/var(--border-opacity))
 }
 
 .border-color-229-231-235-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(229 231 235/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(229 231 235/var(--border-opacity))
 }
 
 .background-color-243-244-246-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(243 244 246/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(243 244 246/var(--bg-opacity))
 }
 
 .background-color-white-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--bg-opacity))
 }
 
 .background-color-hsla-0-0-per-100-per-point-5 {
@@ -1070,38 +1070,38 @@ input[type=range]::-ms-fill-lower {
 }
 
 .background-color-17-24-39-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(17 24 39/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(17 24 39/var(--bg-opacity))
 }
 
 .background-color-249-250-251-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(249 250 251/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(249 250 251/var(--bg-opacity))
 }
 
 .F6maSyXBC_uv_A_dciar {
-    --tw-bg-opacity: 0.5
+    --bg-opacity: 0.5
 }
 
-.padding-point-625-rem {
+.p-2 {
     padding: .625rem
 }
 
-.padding-point-5-rem {
+.p-2 {
     padding: .5rem
 }
 
-.padding-lbottom-top-2-rem {
+.py-8 {
     padding-bottom: 2rem;
     padding-top: 2rem
 }
 
-.padding-left-right-1-rem {
+.px-4 {
     padding-left: 1rem;
     padding-right: 1rem
 }
 
-.padding-bottom-top-point-5-rem {
+.py-2 {
     padding-bottom: .5rem;
     padding-top: .5rem
 }
@@ -1116,26 +1116,26 @@ input[type=range]::-ms-fill-lower {
     padding-right: 0
 }
 
-.padding-left-right-1-point-25-rem {
+.px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem
 }
 
-.padding-bottom-top-point-625-rem {
+.py-2 {
     padding-bottom: .625rem;
     padding-top: .625rem
 }
 
-.text-align-center {
+.text-center {
     text-align: center
 }
 
-.uyo8h_4Kh1IoUwm8bwJI {
+.text-xl leading-7 {
     font-size: 1.25rem;
     line-height: 1.75rem
 }
 
-.MxG1ClE4KPrIvlL5_Q5x {
+.text-sm leading-5 {
     font-size: .875rem;
     line-height: 1.25rem
 }
@@ -1162,33 +1162,33 @@ input[type=range]::-ms-fill-lower {
 }
 
 .color-17-24-39-1 {
-    --tw-text-opacity: 1;
-    color: rgb(17 24 39/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(17 24 39/var(--text-opacity))
 }
 
 .color-107-114-128-1 {
-    --tw-text-opacity: 1;
-    color: rgb(107 114 128/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(107 114 128/var(--text-opacity))
 }
 
 .color-28-100-242-1 {
-    --tw-text-opacity: 1;
-    color: rgb(28 100 242/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(28 100 242/var(--text-opacity))
 }
 
 .color-156-163-175-1 {
-    --tw-text-opacity: 1;
-    color: rgb(156 163 175/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(156 163 175/var(--text-opacity))
 }
 
 .color-white-1 {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(255 255 255/var(--text-opacity))
 }
 
 ._k4LlnOHrNO4Fe0v_QGs {
-    --tw-text-opacity: 1;
-    color: rgb(31 41 55/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(31 41 55/var(--text-opacity))
 }
 
 .opacity-0 {
@@ -1200,17 +1200,17 @@ input[type=range]::-ms-fill-lower {
 }
 
 .ltPMSn_g3PKyqeS8vmZk {
-    --tw-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
-    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)
+    --shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+    --shadow-colored: 0 1px 2px 0 var(--shadow-color);
+    box-shadow: var(--ring-offset-shadow,0 0 #0000),var(--ring-shadow,0 0 #0000),var(--shadow)
 }
 
 .ClETfzy1YZDVXhnOVdgH {
-    --tw-blur: blur(8px)
+    --blur: blur(8px)
 }
 
 .ClETfzy1YZDVXhnOVdgH,.__l7tEsuvTIL_QRvY8sk {
-    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+    filter: var(--blur) var(--brightness) var(--contrast) var(--grayscale) var(--hue-rotate) var(--invert) var(--saturate) var(--sepia) var(--drop-shadow)
 }
 
 .yvRWkoRx_Apshie5g15o {
@@ -1240,33 +1240,33 @@ input[type=range]::-ms-fill-lower {
 }
 
 .eFVdWe3MNoaU5uHcs1ZL:hover {
-    --tw-border-opacity: 1;
-    border-color: rgb(209 213 219/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(209 213 219/var(--border-opacity))
 }
 
 .djld5jFcbPSy1YdGoI7k:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--bg-opacity))
 }
 
 .DpMPWwlSESiYA8EE1xKM:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(243 244 246/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(243 244 246/var(--bg-opacity))
 }
 
 ._be7gCNOq8vw6dPtYNE0:hover {
-    --tw-text-opacity: 1;
-    color: rgb(28 100 242/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(28 100 242/var(--text-opacity))
 }
 
 .__3D_PX_oiQ5jff3N7d8:hover {
-    --tw-text-opacity: 1;
-    color: rgb(75 85 99/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(75 85 99/var(--text-opacity))
 }
 
 ._xQT_qSXfwWf6ZhwRle4:hover {
-    --tw-text-opacity: 1;
-    color: rgb(17 24 39/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(17 24 39/var(--text-opacity))
 }
 
 .qHIOIw8TObHgD3VvKa5x:focus {
@@ -1275,33 +1275,33 @@ input[type=range]::-ms-fill-lower {
 }
 
 .W83fbcqTDAidAC5iVTZ9:focus {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(var(--tw-ring-offset-width)) var(--tw-ring-color)
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(var(--ring-offset-width)) var(--ring-color)
 }
 
 .W83fbcqTDAidAC5iVTZ9:focus,.X3ifvK6lzvLzkZabaIQd:focus {
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow,0 0 #0000)
 }
 
 .X3ifvK6lzvLzkZabaIQd:focus {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color)
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(2px + var(--ring-offset-width)) var(--ring-color)
 }
 
 ._FONMPVaCsLFJJGDaaIL:focus {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)
+    --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width) var(--ring-offset-color);
+    --ring-shadow: var(--ring-inset) 0 0 0 calc(4px + var(--ring-offset-width)) var(--ring-color);
+    box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow,0 0 #0000)
 }
 
 .dark .WoQqugRcWrYbmsWhxCUr>:not([hidden])~:not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgb(75 85 99/var(--tw-divide-opacity))
+    --divide-opacity: 1;
+    border-color: rgb(75 85 99/var(--divide-opacity))
 }
 
 .dark .border-color-63-131-248-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(63 131 248/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(63 131 248/var(--border-opacity))
 }
 
 .dark .border-color-transparent {
@@ -1309,18 +1309,18 @@ input[type=range]::-ms-fill-lower {
 }
 
 .dark .border-color-55-65-81-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(55 65 81/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(55 65 81/var(--border-opacity))
 }
 
 .dark .border-color-75-85-99-1 {
-    --tw-border-opacity: 1;
-    border-color: rgb(75 85 99/var(--tw-border-opacity))
+    --border-opacity: 1;
+    border-color: rgb(75 85 99/var(--border-opacity))
 }
 
 .dark .background-color-31-41-55-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(31 41 55/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(31 41 55/var(--bg-opacity))
 }
 
 .dark .background-color-31-41-55-point-5 {
@@ -1328,81 +1328,81 @@ input[type=range]::-ms-fill-lower {
 }
 
 .dark .background-color-17-24-39-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(17 24 39/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(17 24 39/var(--bg-opacity))
 }
 
 .dark .background-color-55-65-81-1 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(55 65 81/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(55 65 81/var(--bg-opacity))
 }
 
 .dark .background-opacity-0-point-8 {
-    --tw-bg-opacity: 0.8
+    --bg-opacity: 0.8
 }
 
 .dark .color-white-255-255-255-1 {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(255 255 255/var(--text-opacity))
 }
 
 .dark .color-156-163-175-1 {
-    --tw-text-opacity: 1;
-    color: rgb(156 163 175/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(156 163 175/var(--text-opacity))
 }
 
 .dark .color-63-131-248-1 {
-    --tw-text-opacity: 1;
-    color: rgb(63 131 248/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(63 131 248/var(--text-opacity))
 }
 
 .dark .color-209-213-219-1 {
-    --tw-text-opacity: 1;
-    color: rgb(209 213 219/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(209 213 219/var(--text-opacity))
 }
 
 .dark .color-107-114-128-1 {
-    --tw-text-opacity: 1;
-    color: rgb(107 114 128/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(107 114 128/var(--text-opacity))
 }
 
 .dark .color-156-163-175-1::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgb(156 163 175/var(--tw-placeholder-opacity))
+    --placeholder-opacity: 1;
+    color: rgb(156 163 175/var(--placeholder-opacity))
 }
 
 .dark .color-156-163-175-1::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgb(156 163 175/var(--tw-placeholder-opacity))
+    --placeholder-opacity: 1;
+    color: rgb(156 163 175/var(--placeholder-opacity))
 }
 
 .dark .apRlbPZRJ4JWA5RVdURT {
-    --tw-ring-offset-color: #1f2937
+    --ring-offset-color: #1f2937
 }
 
 .dark .GbuoIVQvgE1sPez3FB0O:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(31 41 55/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(31 41 55/var(--bg-opacity))
 }
 
 .dark .xotVay0PVtR3gElm6ql5:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(75 85 99/var(--tw-bg-opacity))
+    --bg-opacity: 1;
+    background-color: rgb(75 85 99/var(--bg-opacity))
 }
 
 .dark .V2alIkRVl_uBQKfQTjue:hover {
-    --tw-text-opacity: 1;
-    color: rgb(63 131 248/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(63 131 248/var(--text-opacity))
 }
 
 .dark ._VCO84hOChxSw1A3KE3f:hover {
-    --tw-text-opacity: 1;
-    color: rgb(209 213 219/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(209 213 219/var(--text-opacity))
 }
 
 .dark .DTyjKhtXBNaebZa5L0l9:hover {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity))
+    --text-opacity: 1;
+    color: rgb(255 255 255/var(--text-opacity))
 }
 
 @media (min-width: 640px) {
@@ -1431,9 +1431,9 @@ input[type=range]::-ms-fill-lower {
     }
 
     .Nlj9GFezeDrrSMc8mB0T>:not([hidden])~:not([hidden]) {
-        --tw-divide-x-reverse: 0;
-        border-left-width: calc(1px*(1 - var(--tw-divide-x-reverse)));
-        border-right-width: calc(1px*var(--tw-divide-x-reverse))
+        --divide-x-reverse: 0;
+        border-left-width: calc(1px*(1 - var(--divide-x-reverse)));
+        border-right-width: calc(1px*var(--divide-x-reverse))
     }
 
     .sCLAUGaesab9D0cBf8e_ {
@@ -1466,83 +1466,83 @@ input[type=range]::-ms-fill-lower {
         </head>
         <body>
           <section class="background-color-white-1 background-color-17-24-39-1">
-  <div class="padding-lbottom-top-2-rem padding-left-right-1-rem RV8RoaI_SlEMC5CEQ3ms max-width-42-rem padding-bottom-top-4-rem">
+  <div class="py-8 px-4 mx-auto max-w-2xl padding-bottom-top-4-rem">
       <form action="#">
-          <h2 class="margin-bottom-1-rem uyo8h_4Kh1IoUwm8bwJI font-weight-600 line-height-1 color-17-24-39-1 color-white-255-255-255-1">General Information</h2>
-          <div class="i0EfZzmTLElZVOble53D Ced8tRkG1VjcbmNVdBtj margin-bottom-1-rem SsyHV_rMDBj9IOCcJvnZ H9X3EXuW0z4B30VXngca G_gj_kYl8Eu5U5VK4LgX">
+          <h2 class="mb-4 text-xl leading-7 font-weight-600 line-height-1 color-17-24-39-1 color-white-255-255-255-1">General Information</h2>
+          <div class="grid gap-4 mb-4 SsyHV_rMDBj9IOCcJvnZ H9X3EXuW0z4B30VXngca G_gj_kYl8Eu5U5VK4LgX">
               <div class="nqKrWSk_pMaLoiyBLZG5">
-                  <label class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1" for="file_input">Upload avatar</label>
-                  <div class="al-center jCISvWkW5oStPH6Wrb_H display-flex">
-                      <img class="margin-bottom-1-rem HzSN_B__bXx8FUbQhXu_ q6R7ifHNsy60SzijPw4M border-radius-9999-px p53owZpM5bKmL3hRWSQr _6or7OI7iFzuq6XP4tjM" src="/assets/helene-engels.png" alt="Helene avatar">
-                      <div class="jCISvWkW5oStPH6Wrb_H">
-                          <input class="jCISvWkW5oStPH6Wrb_H MxG1ClE4KPrIvlL5_Q5x color-17-24-39-1 background-color-249-250-251-1 border-radius-point-5-rem border-width-1-px border-color-209-213-219-1 cursor-pointer color-156-163-175-1 qHIOIw8TObHgD3VvKa5x background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1" aria-describedby="file_input_help" id="file_input" type="file">
+                  <label class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1" for="file_input">Upload avatar</label>
+                  <div class="items-center w-full display-flex">
+                      <img class="mb-4 HzSN_B__bXx8FUbQhXu_ q6R7ifHNsy60SzijPw4M border-radius-9999-px p53owZpM5bKmL3hRWSQr _6or7OI7iFzuq6XP4tjM" src="/assets/helene-engels.png" alt="Helene avatar">
+                      <div class="w-full">
+                          <input class="w-full text-sm leading-5 color-17-24-39-1 background-color-249-250-251-1 rounded-lg border border-color-209-213-219-1 cursor-pointer color-156-163-175-1 qHIOIw8TObHgD3VvKa5x background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1" aria-describedby="file_input_help" id="file_input" type="file">
                           <p class="SczeiPsQKuBQsFlbqCbz XklWzT8y98pp042XEQp4 font-weight-400 color-107-114-128-1 color-209-213-219-1" id="file_input_help">SVG, PNG, JPG or GIF (MAX. 800x400px).</p>
                       </div>
                   </div>
               </div>
               <div>
-                  <label for="first-name" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">First Name</label>
-                  <input type="text" name="first-name" id="first-name" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="First Name" required="">
+                  <label for="first-name" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">First Name</label>
+                  <input type="text" name="first-name" id="first-name" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="First Name" required="">
               </div>
               <div>
-                  <label for="last-name" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Last Name</label>
-                  <input type="text" name="last-name" id="last-name" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Last Name" required="">
+                  <label for="last-name" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Last Name</label>
+                  <input type="text" name="last-name" id="last-name" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Last Name" required="">
               </div>
               <div>
-                  <label for="email" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Email</label>
-                  <input type="email" name="email" id="email" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="name@company.com" required="">
+                  <label for="email" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Email</label>
+                  <input type="email" name="email" id="email" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="name@company.com" required="">
               </div>
               <div>
-                  <label for="user-permissions" class="display-in-flex al-center rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">
+                  <label for="user-permissions" class="inline-flex items-center mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">
                       User Permissions
                       <button type="button" data-tooltip-target="tooltip-dark" data-tooltip-style="dark" class="margin-left-point-25-rem">
                           <svg aria-hidden="true" class="width-1-rem height-1-rem color-156-163-175-1 _xQT_qSXfwWf6ZhwRle4 color-107-114-128-1 DTyjKhtXBNaebZa5L0l9" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
                           <span class="rec-clipper">Show information</span>
                       </button>
-                      <div id="tooltip-dark" role="tooltip" class="display-in-block position-ab visibility-hidden z-index-10 padding-bottom-top-point-5-rem padding-left-right-point-75-rem wfYeBrW4MRQzEZ3x_GDI XklWzT8y98pp042XEQp4 font-weight-400 color-white-1 background-color-17-24-39-1 border-radius-point-5-rem ltPMSn_g3PKyqeS8vmZk opacity-0 Usqns9w__onp5CWoXDJ0 background-color-55-65-81-1">
+                      <div id="tooltip-dark" role="tooltip" class="display-in-block position-ab visibility-hidden z-index-10 py-2 padding-left-right-point-75-rem wfYeBrW4MRQzEZ3x_GDI XklWzT8y98pp042XEQp4 font-weight-400 color-white-1 background-color-17-24-39-1 rounded-lg ltPMSn_g3PKyqeS8vmZk opacity-0 Usqns9w__onp5CWoXDJ0 background-color-55-65-81-1">
                           User permissions, part of the overall user management process, are access granted to users to specific resources such as files, applications, networks, or devices.
                           <div class="POMYoNHqN8pOsNYFYFHr" data-popper-arrow=""></div>
                       </div>
                   </label>
-                  <select id="user-permissions" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-500 focus:border-primary-500 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                  <select id="user-permissions" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-500 focus:border-primary-500 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500">
                       <option selected="">Operational</option>
                       <option value="NO">Non Operational</option>
                   </select>
               </div>
               <div>
-                  <label for="email-status" class="display-in-flex al-center rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">
+                  <label for="email-status" class="inline-flex items-center mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">
                       Email Status
                       <button type="button" data-tooltip-target="tooltip-email-status" data-tooltip-style="dark" class="margin-left-point-25-rem">
                           <svg aria-hidden="true" class="width-1-rem height-1-rem color-156-163-175-1 _xQT_qSXfwWf6ZhwRle4 color-107-114-128-1 DTyjKhtXBNaebZa5L0l9" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
                           <span class="rec-clipper">Show information</span>
                       </button>
-                      <div id="tooltip-email-status" role="tooltip" class="display-in-block position-ab visibility-hidden z-index-10 padding-bottom-top-point-5-rem padding-left-right-point-75-rem wfYeBrW4MRQzEZ3x_GDI XklWzT8y98pp042XEQp4 font-weight-400 color-white-1 background-color-17-24-39-1 border-radius-point-5-rem ltPMSn_g3PKyqeS8vmZk opacity-0 Usqns9w__onp5CWoXDJ0 background-color-55-65-81-1">
+                      <div id="tooltip-email-status" role="tooltip" class="display-in-block position-ab visibility-hidden z-index-10 py-2 padding-left-right-point-75-rem wfYeBrW4MRQzEZ3x_GDI XklWzT8y98pp042XEQp4 font-weight-400 color-white-1 background-color-17-24-39-1 rounded-lg ltPMSn_g3PKyqeS8vmZk opacity-0 Usqns9w__onp5CWoXDJ0 background-color-55-65-81-1">
                           As an administrator, you can view the status of a user's email. The status indicates whether a user's email is verified or not.
                           <div class="POMYoNHqN8pOsNYFYFHr" data-popper-arrow=""></div>
                       </div>
                   </label>
-                  <select id="email-status" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-500 focus:border-primary-500 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                  <select id="email-status" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-500 focus:border-primary-500 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500">
                       <option selected="">Not verified</option>
                       <option value="VE">Verified</option>
                   </select>
               </div>
               <div>
-                  <label for="job-title" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Job Title</label>
-                  <input type="text" name="job-title" id="job-title" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="e.g React Native Developer" required="">
+                  <label for="job-title" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Job Title</label>
+                  <input type="text" name="job-title" id="job-title" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="e.g React Native Developer" required="">
               </div>
               <div>
-                  <label for="user-role" class="display-in-flex al-center rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">
+                  <label for="user-role" class="inline-flex items-center mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">
                       User Role
                       <button type="button" data-tooltip-target="tooltip-user-role" data-tooltip-style="dark" class="margin-left-point-25-rem">
                           <svg aria-hidden="true" class="width-1-rem height-1-rem color-156-163-175-1 _xQT_qSXfwWf6ZhwRle4 DTyjKhtXBNaebZa5L0l9 color-107-114-128-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
                           <span class="rec-clipper">Show information</span>
                       </button>
-                      <div id="tooltip-user-role" role="tooltip" class="display-in-block position-ab visibility-hidden z-index-10 padding-bottom-top-point-5-rem padding-left-right-point-75-rem wfYeBrW4MRQzEZ3x_GDI XklWzT8y98pp042XEQp4 font-weight-400 color-white-1 background-color-17-24-39-1 border-radius-point-5-rem ltPMSn_g3PKyqeS8vmZk opacity-0 Usqns9w__onp5CWoXDJ0 background-color-55-65-81-1">
+                      <div id="tooltip-user-role" role="tooltip" class="display-in-block position-ab visibility-hidden z-index-10 py-2 padding-left-right-point-75-rem wfYeBrW4MRQzEZ3x_GDI XklWzT8y98pp042XEQp4 font-weight-400 color-white-1 background-color-17-24-39-1 rounded-lg ltPMSn_g3PKyqeS8vmZk opacity-0 Usqns9w__onp5CWoXDJ0 background-color-55-65-81-1">
                           Flowbite provides 7 predefined roles: Owner, Admin, Editor, Contributor and Viewer. Assign the most suitable role to each user, giving them the most appropriate level of control.
                           <div class="POMYoNHqN8pOsNYFYFHr" data-popper-arrow=""></div>
                       </div>
                   </label>
-                  <select id="user-role" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-500 focus:border-primary-500 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                  <select id="user-role" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-500 focus:border-primary-500 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500">
                       <option selected="">Owner</option>
                       <option value="AD">Admin</option>
                       <option value="ED">Editor</option>
@@ -1551,114 +1551,114 @@ input[type=range]::-ms-fill-lower {
                   </select>
               </div>
               <div>
-                  <label for="account" class="display-in-flex al-center rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">
+                  <label for="account" class="inline-flex items-center mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">
                       Account
                       <button type="button" data-tooltip-target="tooltip-account" data-tooltip-style="dark" class="margin-left-point-25-rem">
                           <svg aria-hidden="true" class="width-1-rem height-1-rem color-156-163-175-1 _xQT_qSXfwWf6ZhwRle4 DTyjKhtXBNaebZa5L0l9 color-107-114-128-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
                           <span class="rec-clipper">Show information</span>
                       </button>
-                      <div id="tooltip-account" role="tooltip" class="display-in-block position-ab visibility-hidden z-index-10 padding-bottom-top-point-5-rem padding-left-right-point-75-rem wfYeBrW4MRQzEZ3x_GDI XklWzT8y98pp042XEQp4 font-weight-400 color-white-1 background-color-17-24-39-1 border-radius-point-5-rem ltPMSn_g3PKyqeS8vmZk opacity-0 Usqns9w__onp5CWoXDJ0 background-color-55-65-81-1">
+                      <div id="tooltip-account" role="tooltip" class="display-in-block position-ab visibility-hidden z-index-10 py-2 padding-left-right-point-75-rem wfYeBrW4MRQzEZ3x_GDI XklWzT8y98pp042XEQp4 font-weight-400 color-white-1 background-color-17-24-39-1 rounded-lg ltPMSn_g3PKyqeS8vmZk opacity-0 Usqns9w__onp5CWoXDJ0 background-color-55-65-81-1">
                           Choose here your account type.
                           <div class="POMYoNHqN8pOsNYFYFHr" data-popper-arrow=""></div>
                       </div>
                   </label>
-                  <select id="account" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-500 focus:border-primary-500 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                  <select id="account" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-500 focus:border-primary-500 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500">
                       <option selected="">Choose account type</option>
                       <option value="DF">Default Account</option>
                       <option value="PRO">PRO Account</option>
                   </select>
               </div>
               <div>
-                  <label for="password" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Password</label>
-                  <input type="password" name="password" id="password" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="•••••••••" required="">
+                  <label for="password" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Password</label>
+                  <input type="password" name="password" id="password" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="•••••••••" required="">
               </div>                        
               <div>
-                  <label for="confirm-password" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Confirm password</label>
-                  <input type="password" name="confirm-password" id="confirm-password" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="•••••••••" required="">
+                  <label for="confirm-password" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Confirm password</label>
+                  <input type="password" name="confirm-password" id="confirm-password" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="•••••••••" required="">
               </div>
               <div class="nqKrWSk_pMaLoiyBLZG5">
-                  <label for="biography" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Biography</label>
-                  <div class="jCISvWkW5oStPH6Wrb_H background-color-249-250-251-1 border-radius-point-5-rem border-width-1-px border-color-229-231-235-1 background-color-55-65-81-1 border-color-75-85-99-1">
-                      <div class="display-flex jc-space-between al-center padding-bottom-top-point-5-rem padding-left-right-point-75-rem border-bottom-width-1-px border-color-75-85-99-1">
-                          <div class="display-flex SaxexKs0G0X_YQvtMxF3 al-center yGKSom6xHdY1EhaYGurI Nlj9GFezeDrrSMc8mB0T WoQqugRcWrYbmsWhxCUr">
-                              <div class="display-flex al-center not-hidden-margin-left-right-point-25-rem sCLAUGaesab9D0cBf8e_">
-                                  <button type="button" class="padding-point-5-rem color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
+                  <label for="biography" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Biography</label>
+                  <div class="w-full background-color-249-250-251-1 rounded-lg border border-color-229-231-235-1 background-color-55-65-81-1 border-color-75-85-99-1">
+                      <div class="display-flex jc-space-between items-center py-2 padding-left-right-point-75-rem border-bottom-width-1-px border-color-75-85-99-1">
+                          <div class="display-flex SaxexKs0G0X_YQvtMxF3 items-center yGKSom6xHdY1EhaYGurI Nlj9GFezeDrrSMc8mB0T WoQqugRcWrYbmsWhxCUr">
+                              <div class="display-flex items-center not-hidden-margin-left-right-point-25-rem sCLAUGaesab9D0cBf8e_">
+                                  <button type="button" class="p-2 color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
                                       <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z" clip-rule="evenodd"></path></svg>
                                       <span class="rec-clipper">Attach file</span>
                                   </button>
-                                  <button type="button" class="padding-point-5-rem color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
+                                  <button type="button" class="p-2 color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
                                       <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
                                       <span class="rec-clipper">Embed map</span>
                                   </button>
-                                  <button type="button" class="padding-point-5-rem color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
+                                  <button type="button" class="p-2 color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
                                       <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"></path></svg>
                                       <span class="rec-clipper">Upload image</span>
                                   </button>
-                                  <button type="button" class="padding-point-5-rem color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
+                                  <button type="button" class="p-2 color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
                                       <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                                       <span class="rec-clipper">Format code</span>
                                   </button>
-                                  <button type="button" class="padding-point-5-rem color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
+                                  <button type="button" class="p-2 color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
                                       <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z" clip-rule="evenodd"></path></svg>
                                       <span class="rec-clipper">Add emoji</span>
                                   </button>
                               </div>
-                              <div class="hide SaxexKs0G0X_YQvtMxF3 al-center not-hidden-margin-left-right-point-25-rem display-flex UOs3xk7_SKo_Hcsbq8nt">
-                                  <button type="button" class="padding-point-5-rem color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
+                              <div class="hide SaxexKs0G0X_YQvtMxF3 items-center not-hidden-margin-left-right-point-25-rem display-flex UOs3xk7_SKo_Hcsbq8nt">
+                                  <button type="button" class="p-2 color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
                                       <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
                                       <span class="rec-clipper">Add list</span>
                                   </button>
-                                  <button type="button" class="padding-point-5-rem color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
+                                  <button type="button" class="p-2 color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
                                       <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg>       
                                       <span class="rec-clipper">Settings</span>
                                   </button>
-                                  <button type="button" class="padding-point-5-rem color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
+                                  <button type="button" class="p-2 color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
                                       <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
                                       <span class="rec-clipper">Timeline</span>
                                   </button>
-                                  <button type="button" class="padding-point-5-rem color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
+                                  <button type="button" class="p-2 color-107-114-128-1 border-radius-point-25-rem cursor-pointer _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
                                       <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                                       <span class="rec-clipper">Download</span>
                                   </button>
                               </div>
                           </div>
-                          <button type="button" data-tooltip-target="tooltip-fullscreen" class="padding-point-5-rem color-107-114-128-1 border-radius-point-25-rem cursor-pointer lk_Qvs8GwdI2Q78kOWK_ _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
+                          <button type="button" data-tooltip-target="tooltip-fullscreen" class="p-2 color-107-114-128-1 border-radius-point-25-rem cursor-pointer lk_Qvs8GwdI2Q78kOWK_ _xQT_qSXfwWf6ZhwRle4 DpMPWwlSESiYA8EE1xKM color-156-163-175-1 DTyjKhtXBNaebZa5L0l9 xotVay0PVtR3gElm6ql5">
                               <svg aria-hidden="true" class="width-1-point-25-rem height-1-point-25-rem" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 11-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 01-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 012 0v1.586l2.293-2.293a1 1 0 111.414 1.414L6.414 15H8a1 1 0 010 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 010-2h1.586l-2.293-2.293a1 1 0 111.414-1.414L15 13.586V12a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
                               <span class="rec-clipper">Full screen</span>
                           </button>
-                          <div id="tooltip-fullscreen" role="tooltip" class="display-in-block position-ab visibility-hidden z-index-10 padding-bottom-top-point-5-rem padding-left-right-point-75-rem MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-white-1 background-color-17-24-39-1 border-radius-point-5-rem ltPMSn_g3PKyqeS8vmZk opacity-0 M4SAv60iaayh2_Cd_QyF transition-duration-point-3-s Usqns9w__onp5CWoXDJ0 background-color-55-65-81-1" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 335px, 0px);">
+                          <div id="tooltip-fullscreen" role="tooltip" class="display-in-block position-ab visibility-hidden z-index-10 py-2 padding-left-right-point-75-rem text-sm leading-5 font-weight-500 color-white-1 background-color-17-24-39-1 rounded-lg ltPMSn_g3PKyqeS8vmZk opacity-0 M4SAv60iaayh2_Cd_QyF transition-duration-point-3-s Usqns9w__onp5CWoXDJ0 background-color-55-65-81-1" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 335px, 0px);">
                               Show full screen
                               <div class="POMYoNHqN8pOsNYFYFHr" data-popper-arrow=""></div>
                           </div>
                       </div>
-                      <div class="padding-bottom-top-point-5-rem padding-left-right-1-rem background-color-white-1 HCKAzjPNYaEE1SstZz5I background-color-31-41-55-1">
-                          <textarea id="biography" rows="8" class="show padding-left-right-0 jCISvWkW5oStPH6Wrb_H MxG1ClE4KPrIvlL5_Q5x _k4LlnOHrNO4Fe0v_QGs background-color-white-1 border-width-0 background-color-31-41-55-1 W83fbcqTDAidAC5iVTZ9 color-white-255-255-255-1 color-156-163-175-1" placeholder="Write a message here" required=""></textarea>
+                      <div class="py-2 px-4 background-color-white-1 HCKAzjPNYaEE1SstZz5I background-color-31-41-55-1">
+                          <textarea id="biography" rows="8" class="show padding-left-right-0 w-full text-sm leading-5 _k4LlnOHrNO4Fe0v_QGs background-color-white-1 border-width-0 background-color-31-41-55-1 W83fbcqTDAidAC5iVTZ9 color-white-255-255-255-1 color-156-163-175-1" placeholder="Write a message here" required=""></textarea>
                       </div>
                   </div>
               </div>
               <div>
-                  <label class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1" for="file_input">Assign Role</label>
-                  <div class="display-flex al-center not-hidden-margin-left-right-1-rem">
-                      <div class="display-flex al-center">
+                  <label class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1" for="file_input">Assign Role</label>
+                  <div class="display-flex items-center not-hidden-margin-left-right-1-rem">
+                      <div class="display-flex items-center">
                           <input id="inline-checkbox" type="checkbox" value="" name="role_checkbox" class="width-1-rem height-1-rem text-primary-600 background-color-243-244-246-1 border-radius-point-25-rem border-color-209-213-219-1 focus:ring-primary-500 dark:focus:ring-primary-600 apRlbPZRJ4JWA5RVdURT X3ifvK6lzvLzkZabaIQd background-color-55-65-81-1 border-color-75-85-99-1">
-                          <label for="inline-checkbox" class="QGosQoeY76W_hWM2rgwJ MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-209-213-219-1">Administrator</label>
+                          <label for="inline-checkbox" class="QGosQoeY76W_hWM2rgwJ text-sm leading-5 font-weight-500 color-17-24-39-1 color-209-213-219-1">Administrator</label>
                       </div>
-                      <div class="display-flex al-center">
+                      <div class="display-flex items-center">
                           <input id="inline-2-checkbox" type="checkbox" value="" name="role_checkbox" class="width-1-rem height-1-rem text-primary-600 background-color-243-244-246-1 border-radius-point-25-rem border-color-209-213-219-1 focus:ring-primary-500 dark:focus:ring-primary-600 apRlbPZRJ4JWA5RVdURT X3ifvK6lzvLzkZabaIQd background-color-55-65-81-1 border-color-75-85-99-1">
-                          <label for="inline-2-checkbox" class="QGosQoeY76W_hWM2rgwJ MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-209-213-219-1">Member</label>
+                          <label for="inline-2-checkbox" class="QGosQoeY76W_hWM2rgwJ text-sm leading-5 font-weight-500 color-17-24-39-1 color-209-213-219-1">Member</label>
                       </div>
-                      <div class="display-flex al-center">
+                      <div class="display-flex items-center">
                           <input checked="" id="inline-checked-checkbox" type="checkbox" value="" name="role_checkbox" class="width-1-rem height-1-rem text-primary-600 background-color-243-244-246-1 border-radius-point-25-rem border-color-209-213-219-1 focus:ring-primary-500 dark:focus:ring-primary-600 apRlbPZRJ4JWA5RVdURT X3ifvK6lzvLzkZabaIQd background-color-55-65-81-1 border-color-75-85-99-1">
-                          <label for="inline-checked-checkbox" class="QGosQoeY76W_hWM2rgwJ MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-209-213-219-1">Viewer</label>
+                          <label for="inline-checked-checkbox" class="QGosQoeY76W_hWM2rgwJ text-sm leading-5 font-weight-500 color-17-24-39-1 color-209-213-219-1">Viewer</label>
                       </div>
                   </div>
               </div>
           </div>
-          <h2 class="margin-bottom-1-rem uyo8h_4Kh1IoUwm8bwJI font-weight-600 line-height-1 color-17-24-39-1 color-white-255-255-255-1">Additional Information</h2>
-          <div class="i0EfZzmTLElZVOble53D Ced8tRkG1VjcbmNVdBtj margin-bottom-1-rem SsyHV_rMDBj9IOCcJvnZ H9X3EXuW0z4B30VXngca G_gj_kYl8Eu5U5VK4LgX">
+          <h2 class="mb-4 text-xl leading-7 font-weight-600 line-height-1 color-17-24-39-1 color-white-255-255-255-1">Additional Information</h2>
+          <div class="grid gap-4 mb-4 SsyHV_rMDBj9IOCcJvnZ H9X3EXuW0z4B30VXngca G_gj_kYl8Eu5U5VK4LgX">
               <div>
-                  <label for="country" class="rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Country</label>
-                  <select id="country" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-500 focus:border-primary-500 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                  <label for="country" class="mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Country</label>
+                  <select id="country" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-500 focus:border-primary-500 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500">
                       <option selected="">United States</option>
                       <option value="NO">Australia</option>
                       <option value="NO">United Kingdom</option>
@@ -1670,8 +1670,8 @@ input[type=range]::-ms-fill-lower {
                   </select>
               </div>
               <div>
-                  <label for="city" class="rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">City</label>
-                  <select id="city" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-500 focus:border-primary-500 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                  <label for="city" class="mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">City</label>
+                  <select id="city" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-500 focus:border-primary-500 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500">
                       <option selected="">San Francisco</option>
                       <option value="WA">Washington</option>
                       <option value="NW">New York</option>
@@ -1679,48 +1679,48 @@ input[type=range]::-ms-fill-lower {
                   </select>
               </div>
               <div>
-                  <label for="address" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Address</label>
-                  <input type="text" name="address" id="adress" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Your Location" required="">
+                  <label for="address" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Address</label>
+                  <input type="text" name="address" id="adress" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Your Location" required="">
               </div>
               <div>
-                  <label for="zip" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">ZIP</label>
-                  <input type="number" name="zip" id="zip" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Your Location" required="">
+                  <label for="zip" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">ZIP</label>
+                  <input type="number" name="zip" id="zip" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Your Location" required="">
               </div>
               <div>
-                  <label for="timezone" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Timezone</label>
-                  <input type="text" name="timezone" id="timezone" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="e.g GMT -6" required="">
+                  <label for="timezone" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Timezone</label>
+                  <input type="text" name="timezone" id="timezone" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="e.g GMT -6" required="">
               </div>
               <div>
-                  <label for="phone-number" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Phone Number</label>
-                  <input type="number" name="phone-number" id="phone-number" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Add a phone number" required="">
+                  <label for="phone-number" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Phone Number</label>
+                  <input type="number" name="phone-number" id="phone-number" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Add a phone number" required="">
               </div>
 
               <div>
-                  <label for="linkedin" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Linkedin URL</label>
-                  <input type="url" name="linkedin" id="linkedin" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Linkedin URL" required="">
+                  <label for="linkedin" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Linkedin URL</label>
+                  <input type="url" name="linkedin" id="linkedin" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Linkedin URL" required="">
               </div>
               <div>
-                  <label for="facebook" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Facebook</label>
-                  <input type="url" name="facebook" id="facebook" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Facebook Profile" required="">
+                  <label for="facebook" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Facebook</label>
+                  <input type="url" name="facebook" id="facebook" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Facebook Profile" required="">
               </div>
               <div>
-                  <label for="github" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Github</label>
-                  <input type="url" name="github" id="github" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Github Username" required="">
+                  <label for="github" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Github</label>
+                  <input type="url" name="github" id="github" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Github Username" required="">
               </div>
               <div>
-                  <label for="dribbble" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Dribbble</label>
-                  <input type="url" name="dribbble" id="dribbble" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Dribbble Username" required="">
+                  <label for="dribbble" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Dribbble</label>
+                  <input type="url" name="dribbble" id="dribbble" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Dribbble Username" required="">
               </div>
               <div>
-                  <label for="instagram" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Instagram</label>
-                  <input type="url" name="instagram" id="instagram" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Instagram Username" required="">
+                  <label for="instagram" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Instagram</label>
+                  <input type="url" name="instagram" id="instagram" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Instagram Username" required="">
               </div>
               <div>
-                  <label for="personal-website" class="show rD4HtsUG_hahmbh2Kj09 MxG1ClE4KPrIvlL5_Q5x font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Personal Website</label>
-                  <input type="url" name="personal-website" id="personal-website" class="background-color-249-250-251-1 border-width-1-px border-color-209-213-219-1 color-17-24-39-1 MxG1ClE4KPrIvlL5_Q5x border-radius-point-5-rem focus:ring-primary-600 focus:border-primary-600 show jCISvWkW5oStPH6Wrb_H padding-point-625-rem background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="http://www.example.com" required="">
+                  <label for="personal-website" class="show mb-2 text-sm leading-5 font-weight-500 color-17-24-39-1 color-white-255-255-255-1">Personal Website</label>
+                  <input type="url" name="personal-website" id="personal-website" class="background-color-249-250-251-1 border border-color-209-213-219-1 color-17-24-39-1 text-sm leading-5 rounded-lg focus:ring-primary-600 focus:border-primary-600 show w-full p-2 background-color-55-65-81-1 border-color-75-85-99-1 color-156-163-175-1 color-white-255-255-255-1 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="http://www.example.com" required="">
               </div>
           </div>
-          <button type="submit" class="display-in-flex al-center padding-left-right-1-point-25-rem padding-bottom-top-point-625-rem MxG1ClE4KPrIvlL5_Q5x font-weight-500 text-align-center color-white-1 bg-primary-700 border-radius-point-5-rem _FONMPVaCsLFJJGDaaIL focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800">
+          <button type="submit" class="inline-flex items-center px-5 py-2 text-sm leading-5 font-weight-500 text-center color-white-1 bg-primary-700 rounded-lg _FONMPVaCsLFJJGDaaIL focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800">
               Add product
           </button>
       </form>
