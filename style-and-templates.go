@@ -16,7 +16,7 @@ func formatAsDate(t time.Time) string {
 }
 
 func main() {
-	router := gin.Default()
+	router := gin.New() // gin.Default()
 	router.Use(apmgin.Middleware(router))
 	router.SetFuncMap(template.FuncMap{
 		"formatAsDate": formatAsDate,
@@ -168,6 +168,16 @@ func main() {
 	})
 	router.GET("/generic_layouts", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "generic_layouts/index.tmpl", gin.H{
+			"title": "SJ, Style & Template Lib.",
+		})
+	})
+	router.GET("/footers", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "footers/index.tmpl", gin.H{
+			"title": "SJ, Style & Template Lib.",
+		})
+	})
+	router.GET("/sidebars", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "sidebars/index.tmpl", gin.H{
 			"title": "SJ, Style & Template Lib.",
 		})
 	})
